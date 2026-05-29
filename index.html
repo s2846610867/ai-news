@@ -31,405 +31,49 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue"
 .summary-label{font-weight:700;color:#667eea;margin-bottom:8px;font-size:.9em}
 .plain-summary p{color:#444;font-size:.9em;line-height:1.9}
 .footer{text-align:center;color:#bbb;font-size:.76em;padding:10px 20px 32px}
+.loading{text-align:center;padding:60px 20px;color:#999;font-size:.9em}
 </style>
 </head>
 <body>
 <div class="header">
   <h1>🤖 AI 日报</h1>
-  <p>每天早上 6 点自动更新 · 精选 10 条 AI 资讯 · 共 5 天记录</p>
+  <p id="subtitle">每天早上 6 点自动更新 · 精选 10 条 AI 资讯</p>
 </div>
-<div class="nav"><a href="#2026-05-29">2026-05-29</a><a href="#2026-05-28">2026-05-28</a><a href="#2026-05-27">2026-05-27</a><a href="#2026-05-26">2026-05-26</a><a href="#2026-05-25">2026-05-25</a></div>
-<div class="container">
-        <div class="day-section" id="2026-05-29">
-          <div class="day-header"><h2>2026年05月29日 周五</h2></div>
-          <div class="news-list"><div class="news-item">
-                    <span class="news-num">1</span>
-                    <div class="news-content">
-                        <a href="https://www.qbitai.com/2026/05/426366.html" target="_blank" class="news-title">全球首个事件级预测具身智能世界模型</a>
-                        <p class="news-summary">清华系团队发布全球首个按‘事件’理解世界的具身智能模型，从按帧学动作升级为预测事件。</p>
-                        <p class="news-why">💡 机器人理解世界方式质变，未来家务、服务机器人更智能。</p>
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">2</span>
-                    <div class="news-content">
-                        <a href="https://www.qbitai.com/2026/05/426479.html" target="_blank" class="news-title">全球首个商用AI主机发布</a>
-                        <p class="news-summary">发布全球首个商用AI主机，白送5亿Tokens，让用户放开烧Token。</p>
-                        <p class="news-why">💡 普通人也能低成本用上大模型，像当年印刷机普及知识。</p>
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">3</span>
-                    <div class="news-content">
-                        <a href="https://news.cctv.com/2026/05/28/ARTIYobHXYMXCokJknfRCAPF260528.shtml" target="_blank" class="news-title">两部门联手布局AI计量能力建设</a>
-                        <p class="news-summary">市场监管总局、发改委联合印发《人工智能计量体系和能力建设指引（2026版）》。</p>
-                        <p class="news-why">💡 国家层面规范AI标准，影响未来产品安全和质量。</p>
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">4</span>
-                    <div class="news-content">
-                        <a href="https://www.qbitai.com/2026/05/426542.html" target="_blank" class="news-title">面壁智能开源周：端侧AI系统性亮剑</a>
-                        <p class="news-summary">面壁智能发布系列开源工具，系统性推动端侧AI在手机、IoT设备落地。</p>
-                        <p class="news-why">💡 端侧AI让手机不用联网也能用大模型，隐私更好、速度更快。</p>
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">5</span>
-                    <div class="news-content">
-                        <a href="https://www.qbitai.com/2026/05/426447.html" target="_blank" class="news-title">腾讯AI游戏创作平台发布</a>
-                        <p class="news-summary">腾讯推出AI游戏创作平台，零基础也能做游戏，上限可做3A大作。</p>
-                        <p class="news-why">💡 普通人也能当游戏制作人，创作门槛降到最低。</p>
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">6</span>
-                    <div class="news-content">
-                        <a href="https://www.qbitai.com/2026/05/426353.html" target="_blank" class="news-title">清华团队织成‘智能算力电网’</a>
-                        <p class="news-summary">清华系团队研发智能算力调度系统，单位Token成本降低40%。</p>
-                        <p class="news-why">💡 大模型使用成本大幅下降，普通企业和个人用得起。</p>
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">7</span>
-                    <div class="news-content">
-                        <a href="https://www.qbitai.com/2026/05/426400.html" target="_blank" class="news-title">腾讯发布智能体创意工作室Miora</a>
-                        <p class="news-summary">腾讯推出Miora智能体创意工作室，一个人就能拥有整个创意团队。</p>
-                        <p class="news-why">💡 设计、文案、视频一键生成，打工人效率翻倍。</p>
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">8</span>
-                    <div class="news-content">
-                        <a href="https://36kr.com/p/3830194503526277?f=rss" target="_blank" class="news-title">特斯拉Optimus机器人工厂动工</a>
-                        <p class="news-summary">特斯拉在得州工厂内动工建设专属人形机器人工厂，规划年产能1000万台。</p>
-                        <p class="news-why">💡 人形机器人量产加速，未来可能进家庭、进工厂。</p>
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">9</span>
-                    <div class="news-content">
-                        <a href="https://36kr.com/p/3830194503526277?f=rss" target="_blank" class="news-title">苹果WWDC将重点展示端侧AI能力</a>
-                        <p class="news-summary">苹果据悉将在WWDC上重点展示端侧AI能力，iPhone本地运行大模型。</p>
-                        <p class="news-why">💡 苹果发力端侧AI，影响数亿用户日常体验。</p>
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">10</span>
-                    <div class="news-content">
-                        <a href="https://36kr.com/p/3830254963517318?f=rss" target="_blank" class="news-title">‘穿越者’载人航天完成亿元融资</a>
-                        <p class="news-summary">载人航天公司‘穿越者’完成Pre-A轮亿元融资，用于载人飞船研发。</p>
-                        <p class="news-why">💡 太空旅游离普通人更近一步，AI助力航天技术。</p>
-                    </div>
-                </div></div>
-          <div class="plain-summary">
-            <div class="summary-label">🤖 小白看这里</div>
-            <p>今天AI圈挺热闹！首先，机器人要‘开窍’了——清华搞了个能预测事件的世界模型，以后机器人能看懂你在干嘛，主动帮忙。然后，AI主机和算力电网让用大模型更便宜，白送5亿Tokens，成本降四成，普通人也能随便玩。国家也出手了，两部门联合制定AI计量标准，以后AI产品会更靠谱。腾讯这边，搞了个AI游戏创作平台，零基础也能做游戏；还出了个智能体工作室，一个人顶一个创意团队。特斯拉的人形机器人工厂也动工了，年产千万台，未来可能进你家。苹果也要在WWDC秀端侧AI，手机本地跑大模型。最后，太空旅游公司融了钱，AI也在帮人类上天。总之，今天的关键词是：便宜、好用、落地。</p>
-          </div>
-        </div>
-        <div class="day-section" id="2026-05-28">
-          <div class="day-header"><h2>2026年05月28日 周四</h2></div>
-          <div class="news-list"><div class="news-item">
-                    <span class="news-num">1</span>
-                    <div class="news-content">
-                        <a href="https://www.qbitai.com/2026/05/425511.html" target="_blank" class="news-title">国产AI自己造AI，全球首例</a>
-                        <p class="news-summary">国产AI训练速度比英伟达Megatron快10%，实现全球首次AI自主造AI。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">2</span>
-                    <div class="news-content">
-                        <a href="https://www.qbitai.com/2026/05/425881.html" target="_blank" class="news-title">1400亿Agent入场，流量护城河要塌</a>
-                        <p class="news-summary">大厂押注Agent生态，1400亿参数Agent或颠覆传统流量模式。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">3</span>
-                    <div class="news-content">
-                        <a href="https://www.qbitai.com/2026/05/425870.html" target="_blank" class="news-title">5秒完成3D场景编辑，120倍加速</a>
-                        <p class="news-summary">北大等团队推出VGGT-Edit，5秒编辑3D场景，速度提升120倍。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">4</span>
-                    <div class="news-content">
-                        <a href="https://www.qbitai.com/2026/05/425523.html" target="_blank" class="news-title">DeepSeek开发自动研究Skill</a>
-                        <p class="news-summary">DeepSeek陈德里开发自动研究Agent，写论文人类只动脑2小时。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">5</span>
-                    <div class="news-content">
-                        <a href="https://36kr.com/p/3826390617870984?f=rss" target="_blank" class="news-title">硅谷AI一线：Token消耗焦虑</a>
-                        <p class="news-summary">Meta员工月耗50万美金Token，引发大厂AI军备竞赛焦虑。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">6</span>
-                    <div class="news-content">
-                        <a href="https://www.qbitai.com/2026/05/425660.html" target="_blank" class="news-title">触觉具身梦之队：天使轮近亿</a>
-                        <p class="news-summary">复旦系具身新星获近亿天使轮，让机器人学会“触摸”。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">7</span>
-                    <div class="news-content">
-                        <a href="https://36kr.com/p/3827497128465287?f=rss" target="_blank" class="news-title">可灵AI年收入近5亿美元</a>
-                        <p class="news-summary">快手可灵AI 3月ARR近5亿美元，较去年增长4倍。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">8</span>
-                    <div class="news-content">
-                        <a href="https://www.qbitai.com/2026/05/425810.html" target="_blank" class="news-title">Codex自我蒸馏玩法火了</a>
-                        <p class="news-summary">OpenAI员工亲授Codex自我蒸馏，复制粘贴让AI消灭重复劳动。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">9</span>
-                    <div class="news-content">
-                        <a href="https://www.qbitai.com/2026/05/425600.html" target="_blank" class="news-title">快手Keye2.0开启强化推理新范式</a>
-                        <p class="news-summary">快手将DSA注意力引入多模态，Keye2.0实现强化推理突破。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">10</span>
-                    <div class="news-content">
-                        <a href="https://36kr.com/p/3826922264286083?f=rss" target="_blank" class="news-title">AI母婴品牌获数千万融资</a>
-                        <p class="news-summary">95后团队打造AI母婴智能硬件，获钟鼎资本数千万投资。</p>
-                        
-                    </div>
-                </div></div>
-          <div class="plain-summary">
-            <div class="summary-label">🤖 小白看这里</div>
-            <p>今天AI圈可热闹了！首先，国产AI搞了个大新闻——自己造自己，训练速度比英伟达还快10%，这波属实牛。然后，大厂们都在砸钱搞Agent，1400亿参数的Agent要来了，以后流量可能就不值钱了。还有，北大团队搞了个5秒就能编辑3D场景的技术，速度飞起。DeepSeek更绝，写论文只要人动脑2小时，剩下全是AI干。硅谷那边，Meta员工为了不被裁，一个月烧了50万美金的Token，卷疯了。另外，机器人学会“摸东西”了，复旦系团队拿了近亿融资。快手可灵AI一年赚了5亿美元，厉害吧？还有OpenAI教大家用Codex偷懒，快手搞了个能看懂图片背后意思的模型。最后，连母婴品牌都开始用AI了，95后创业拿了数千万。总之，今天AI啥都能干，就是不知道咱们普通人啥时候能用上这些黑科技。</p>
-          </div>
-        </div>
-        <div class="day-section" id="2026-05-27">
-          <div class="day-header"><h2>2026年05月27日 周三</h2></div>
-          <div class="news-list"><div class="news-item">
-                    <span class="news-num">1</span>
-                    <div class="news-content">
-                        <a href="https://www.qbitai.com/2026/05/425511.html" target="_blank" class="news-title">国产AI自己造AI，速度超英伟达</a>
-                        <p class="news-summary">国产AI训练速度比英伟达Megatron快10%，全球首例。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">2</span>
-                    <div class="news-content">
-                        <a href="https://www.qbitai.com/2026/05/425455.html" target="_blank" class="news-title">DeepMind破解56年数学难题</a>
-                        <p class="news-summary">谷歌DeepMind一口气解决9道埃尔德什问题，包括卡了人类56年的难题。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">3</span>
-                    <div class="news-content">
-                        <a href="https://www.gov.cn/gongbao/2025/issue_12266/202509/content_7039598.html" target="_blank" class="news-title">国务院发布“人工智能+”行动意见</a>
-                        <p class="news-summary">国务院发文推动AI与各行业深度融合，重塑生产生活范式。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">4</span>
-                    <div class="news-content">
-                        <a href="https://www.qbitai.com/2026/05/425296.html" target="_blank" class="news-title">华为发布AI数据中心全栈方案</a>
-                        <p class="news-summary">华为推出AI DC数据基础设施全栈方案，加速行业智能化。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">5</span>
-                    <div class="news-content">
-                        <a href="https://www.qbitai.com/2026/05/425150.html" target="_blank" class="news-title">阿里千问3.7编程能力全球第二</a>
-                        <p class="news-summary">编程权威榜单显示，千问3.7仅次于Claude，阿里跻身全球第一梯队。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">6</span>
-                    <div class="news-content">
-                        <a href="https://www.qbitai.com/2026/05/424851.html" target="_blank" class="news-title">国产Agent模型闯入全球第一梯队</a>
-                        <p class="news-summary">国产Agent模型深度适配主流框架，限时免费试用。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">7</span>
-                    <div class="news-content">
-                        <a href="https://36kr.com/p/3825969453699970?f=rss" target="_blank" class="news-title">图灵奖得主推“机器人幼儿园”</a>
-                        <p class="news-summary">强化学习奠基人萨顿与中企合作，让机器人在试错中学习。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">8</span>
-                    <div class="news-content">
-                        <a href="https://36kr.com/p/3825928694846085?f=rss" target="_blank" class="news-title">字节跳动向AI员工开放“豆包股”</a>
-                        <p class="news-summary">字节跳动首次为Seed部门员工提供低价股票期权，激励AI人才。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">9</span>
-                    <div class="news-content">
-                        <a href="https://36kr.com/p/3825882266407815?f=rss" target="_blank" class="news-title">昆仑万维发布Agent模型SkyClaw</a>
-                        <p class="news-summary">天工AI推出高性能Agent模型，支持百万token上下文，限时免费。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">10</span>
-                    <div class="news-content">
-                        <a href="https://36kr.com/p/3825928694846085?f=rss" target="_blank" class="news-title">三星允许员工使用外部AI模型</a>
-                        <p class="news-summary">三星电子下月起允许员工使用其他公司的生成式AI模型。</p>
-                        
-                    </div>
-                </div></div>
-          <div class="plain-summary">
-            <div class="summary-label">🤖 小白看这里</div>
-            <p>今天AI圈挺热闹！首先，国产AI搞了个大新闻——自己造AI，训练速度比英伟达还快10倍，这波很提气。谷歌DeepMind也没闲着，一口气解了9道数学难题，其中一道卡了人类56年，数学家们要失业了吗？国务院也发话了，要全面推动AI和各行各业结合，看来国家是真要大力搞AI了。华为、阿里、昆仑万维都有新动作，华为推数据中心方案，阿里编程模型排全球第二，昆仑万维的Agent模型还免费试用。另外，图灵奖得主搞了个“机器人幼儿园”，让机器人像小孩一样犯错学习，挺有意思。字节跳动给AI员工发股票，三星也放开员工用外部AI，大厂们都在抢人才、抢技术。总之，今天AI圈是国产崛起、巨头混战的一天！</p>
-          </div>
-        </div>
-        <div class="day-section" id="2026-05-26">
-          <div class="day-header"><h2>2026年05月26日 周二</h2></div>
-          <div class="news-list"><div class="news-item">
-                    <span class="news-num">1</span>
-                    <div class="news-content">
-                        <a href="https://www.qbitai.com/2026/05/424610.html" target="_blank" class="news-title">Waymo因遇水故障大规模召回</a>
-                        <p class="news-summary">无人车遇水则瘫，Waymo召回并暂停多城Robotaxi服务，暴露自动驾驶雨天短板。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">2</span>
-                    <div class="news-content">
-                        <a href="https://www.qbitai.com/2026/05/424277.html" target="_blank" class="news-title">AI全自动办公远未落地</a>
-                        <p class="news-summary">SaaS-Bench评测显示，Claude等模型在真实办公任务中完全通过率不足4%，全自动办公仍是幻想。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">3</span>
-                    <div class="news-content">
-                        <a href="https://www.qbitai.com/2026/05/424552.html" target="_blank" class="news-title">DeepSeek V4缓存技术大降成本</a>
-                        <p class="news-summary">新工具缓存命中率达99.82%，61美元账单降至12美元，AI推理成本打2折。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">4</span>
-                    <div class="news-content">
-                        <a href="https://www.qbitai.com/2026/05/424794.html" target="_blank" class="news-title">AI的终极形态是融入物品</a>
-                        <p class="news-summary">京东JoyInside戴文军称，AI应主动适应人，未来将嵌入每一件硬件。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">5</span>
-                    <div class="news-content">
-                        <a href="https://www.qbitai.com/2026/05/424584.html" target="_blank" class="news-title">蚂蚁灵波要做机器人安卓系统</a>
-                        <p class="news-summary">沈宇军称VLA和世界模型非终局，机器人需物理世界独有模型，论文被顶会接收。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">6</span>
-                    <div class="news-content">
-                        <a href="https://www.qbitai.com/2026/05/424794.html" target="_blank" class="news-title">商汤国香投资空间相机公司</a>
-                        <p class="news-summary">竹马创新获数千万融资，开发消费级空间相机，为具身智能采集真实3D数据。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">7</span>
-                    <div class="news-content">
-                        <a href="https://www.qbitai.com/2026/05/424551.html" target="_blank" class="news-title">2026智源大会即将开幕</a>
-                        <p class="news-summary">图灵奖得主领衔，中国大模型第一梯队集结，探讨AI下一程发展。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">8</span>
-                    <div class="news-content">
-                        <a href="https://36kr.com/p/3824601267196037?f=rss" target="_blank" class="news-title">去除AI味写作手册引热议</a>
-                        <p class="news-summary">网友集体吐槽AI味写作，强调“人味”不可替代，工作暂时安全。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">9</span>
-                    <div class="news-content">
-                        <a href="https://36kr.com/p/3824164325412992?f=rss" target="_blank" class="news-title">新通教育AI转型四阶段</a>
-                        <p class="news-summary">从数字化基建到AI原生业务，传统企业拥抱AI最难在战略落地。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">10</span>
-                    <div class="news-content">
-                        <a href="https://36kr.com/p/3820241871409543?f=rss" target="_blank" class="news-title">中国辅助驾驶出海依赖地图</a>
-                        <p class="news-summary">欧洲地图商TomTom称中国订单暴涨10倍，海外地图成车企智能化关键。</p>
-                        
-                    </div>
-                </div></div>
-          <div class="plain-summary">
-            <div class="summary-label">🤖 小白看这里</div>
-            <p>今天AI圈挺热闹的。首先，Waymo的无人车一遇到下雨就趴窝，被迫召回并暂停服务，看来自动驾驶离完全靠谱还有距离。另一边，大家幻想的AI全自动办公也被泼了冷水——测试下来，Claude等大模型连最简单的办公任务都搞不定，通过率不到4%。好消息是，DeepSeek V4出了个新工具，能把AI使用成本打两折，省大钱了。京东的人说，AI未来不是跟你聊天，而是藏进你家每个电器里，主动服务你。蚂蚁灵波也在搞机器人专属系统，想做机器人界的安卓。还有公司拿了投资，专门做能拍3D照片的相机，给机器人当眼睛用。另外，网上都在吐槽AI写文章一股怪味，看来短期内人类写手还不会被取代。</p>
-          </div>
-        </div>
-        <div class="day-section" id="2026-05-25">
-          <div class="day-header"><h2>2026年05月25日 周一</h2></div>
-          <div class="news-list"><div class="news-item">
-                    <span class="news-num">1</span>
-                    <div class="news-content">
-                        <a href="https://www.qbitai.com/2026/05/424610.html" target="_blank" class="news-title">Waymo无人车遇水召回</a>
-                        <p class="news-summary">Waymo因无人车遇水故障大规模召回，暂停多城Robotaxi服务。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">2</span>
-                    <div class="news-content">
-                        <a href="https://www.qbitai.com/2026/05/424277.html" target="_blank" class="news-title">AI全自动办公梦碎</a>
-                        <p class="news-summary">SaaS-Bench评测显示，Claude等大模型在真实办公任务中完全通过率最高仅3.8%。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">3</span>
-                    <div class="news-content">
-                        <a href="https://www.qbitai.com/2026/05/424552.html" target="_blank" class="news-title">DeepSeek V4成本大降</a>
-                        <p class="news-summary">新工具缓存命中率高达99.82%，账单从61美元直降至12美元。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">4</span>
-                    <div class="news-content">
-                        <a href="https://www.qbitai.com/2026/05/424794.html" target="_blank" class="news-title">AI终极形态是融入物品</a>
-                        <p class="news-summary">京东JoyInside戴文军称AI应主动适应人，融入每件物品。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">5</span>
-                    <div class="news-content">
-                        <a href="https://www.qbitai.com/2026/05/424584.html" target="_blank" class="news-title">蚂蚁灵波要做机器人安卓</a>
-                        <p class="news-summary">蚂蚁灵波沈宇军称VLA和世界模型不是终局，要做物理世界独有模型。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">6</span>
-                    <div class="news-content">
-                        <a href="https://36kr.com/p/3824089662853513?f=rss" target="_blank" class="news-title">商汤投资空间相机公司</a>
-                        <p class="news-summary">竹马创新获商汤国香资本领投，为具身智能采集真实世界3D数据。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">7</span>
-                    <div class="news-content">
-                        <a href="https://www.qbitai.com/2026/05/424551.html" target="_blank" class="news-title">2026智源大会将开幕</a>
-                        <p class="news-summary">图灵奖得主领衔，中国大模型第一梯队集结，报名通道已开。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">8</span>
-                    <div class="news-content">
-                        <a href="https://36kr.com/p/3824601267196037?f=rss" target="_blank" class="news-title">去除AI味写作手册</a>
-                        <p class="news-summary">网友吐槽AI味写作出圈，人人可感知，但暂时不用担心被替代。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">9</span>
-                    <div class="news-content">
-                        <a href="https://36kr.com/p/3824164325412992?f=rss" target="_blank" class="news-title">新通教育AI转型四阶段</a>
-                        <p class="news-summary">从数字化基建到AI Native，传统企业拥抱AI最难是让战略走到一线。</p>
-                        
-                    </div>
-                </div><div class="news-item">
-                    <span class="news-num">10</span>
-                    <div class="news-content">
-                        <a href="https://36kr.com/p/3820241871409543?f=rss" target="_blank" class="news-title">中国辅助驾驶出海靠地图</a>
-                        <p class="news-summary">欧洲地图商TomTom称中国订单暴涨10倍，地图是出海关键。</p>
-                        
-                    </div>
-                </div></div>
-          <div class="plain-summary">
-            <div class="summary-label">🤖 小白看这里</div>
-            <p>今天AI圈挺热闹的。首先，Waymo的无人车遇到水就瘫了，大规模召回，看来自动驾驶离完全靠谱还有距离。另外，别信什么AI全自动办公了，评测显示Claude通过率不到4%，还是得自己动手。好消息是DeepSeek V4出了省钱工具，账单能打2折，真香。京东的人说AI未来不是聊天，是融入你家所有东西，听着挺科幻。蚂蚁灵波要做机器人界的安卓，野心不小。商汤投了一家做空间相机的公司，专门给机器人采集真实世界数据。还有，智源大会要开了，大佬云集。最后，网上都在吐槽AI写文章一股“AI味”，但这也说明人味暂时还值钱。</p>
-          </div>
-        </div></div>
-<div class="footer">最后更新: 2026-05-29 19:17 · 由 DeepSeek 整理生成</div>
+<div class="nav" id="nav"></div>
+<div class="container" id="container"><div class="loading">加载中...</div></div>
+<div class="footer" id="footer">由 DeepSeek 整理生成</div>
+<script>
+const WD = ["周日","周一","周二","周三","周四","周五","周六"];
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
+function fmtDate(d){const[y,m,day]=d.split("-");const wd=WD[new Date(d+"T00:00:00").getDay()];return y+"年"+m+"月"+day+"日 "+wd;}
+function renderDay(day){
+  const items=day.articles.map((a,i)=>`
+    <div class="news-item">
+      <span class="news-num">${i+1}</span>
+      <div class="news-content">
+        <a href="${esc(a.url||"#")}" target="_blank" class="news-title">${esc(a.title||"")}</a>
+        <p class="news-summary">${esc(a.summary||"")}</p>
+        ${a.why?`<p class="news-why">💡 ${esc(a.why)}</p>`:""}
+      </div>
+    </div>`).join("");
+  return `<div class="day-section" id="${day.date}">
+    <div class="day-header"><h2>${fmtDate(day.date)}</h2></div>
+    <div class="news-list">${items}</div>
+    <div class="plain-summary"><div class="summary-label">🤖 小白看这里</div><p>${esc(day.plain_summary||"")}</p></div>
+  </div>`;}
+async function load(){
+  try{
+    const {dates}=await fetch("data/index.json").then(r=>r.json());
+    const days=await Promise.all(dates.map(d=>fetch("data/"+d+".json").then(r=>r.json())));
+    document.getElementById("nav").innerHTML=dates.map(d=>`<a href="#${d}">${d}</a>`).join("");
+    document.getElementById("container").innerHTML=days.map(renderDay).join("");
+    document.getElementById("subtitle").textContent="每天早上 6 点自动更新 · 精选 10 条 AI 资讯 · 共 "+dates.length+" 天记录";
+    document.getElementById("footer").textContent="最后更新: "+dates[0]+" · 由 DeepSeek 整理生成";
+  }catch(e){
+    document.getElementById("container").innerHTML='<p class="loading">加载失败，请刷新重试</p>';
+  }
+}
+load();
+</script>
 </body>
 </html>
