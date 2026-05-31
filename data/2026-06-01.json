@@ -1,0 +1,86 @@
+{
+  "date": "2026-06-01",
+  "articles": [
+    {
+      "title": "英伟达自研CPU笔记本曝光",
+      "summary": "英伟达被曝正在研发自研CPU的笔记本，类似MacBook Pro，可能改变PC市场格局。",
+      "why": "英伟达做CPU意味着未来AI电脑可能更强大、更便宜，普通用户买电脑的选择会变多。",
+      "category": "公司",
+      "beginner_takeaway": "关注英伟达新电脑，未来AI应用可能直接在本地运行更快。",
+      "url": "https://www.qbitai.com/2026/05/426991.html"
+    },
+    {
+      "title": "苹果将把ChatGPT融入iPhone",
+      "summary": "苹果宣布新AI功能，计划把ChatGPT直接集成到iPhone中。",
+      "why": "普通用户用手机就能直接调用顶级AI助手，日常查资料、写东西更方便。",
+      "category": "应用",
+      "beginner_takeaway": "以后iPhone可能自带AI聊天功能，不用再单独下载App。",
+      "url": "https://www.bbc.com/zhongwen/simp/science-69108432"
+    },
+    {
+      "title": "DDIM之父宋佳铭离职",
+      "summary": "AI领域重要研究者宋佳铭宣布离职，他曾是扩散模型（DDIM）的发明者之一。",
+      "why": "核心人才流动可能影响未来AI图像生成技术的发展方向。",
+      "category": "公司",
+      "beginner_takeaway": "AI行业人才变动频繁，新技术可能因此加速或转向。",
+      "url": "https://www.qbitai.com/2026/05/427104.html"
+    },
+    {
+      "title": "特斯拉机器人工厂动工",
+      "summary": "特斯拉在得州工厂内动工建设专属人形机器人产线，规划年产最高1000万台。",
+      "why": "机器人量产加速，未来可能进入家庭或工厂，改变工作和生活方式。",
+      "category": "机器人",
+      "beginner_takeaway": "人形机器人离我们越来越近，可以留意它们能帮你做什么。",
+      "url": "https://36kr.com/p/3830194503526277?f=rss"
+    },
+    {
+      "title": "最大开源具身世界模型发布",
+      "summary": "τ0-WM模型发布，基于17800小时真机数据训练，是最大规模的开源具身世界模型。",
+      "why": "开源意味着更多开发者能免费使用，加速机器人理解真实世界的能力。",
+      "category": "模型",
+      "beginner_takeaway": "开源模型让AI技术更透明，普通人也能看到机器人如何学习。",
+      "url": "https://www.qbitai.com/2026/05/426832.html"
+    },
+    {
+      "title": "复旦提出Agent新训练方法",
+      "summary": "复旦与通义合作提出CUA训练范式，解决AI代理选错工具的问题。",
+      "why": "AI代理更聪明地选择工具，未来帮你订票、点外卖会更靠谱。",
+      "category": "Agent",
+      "beginner_takeaway": "AI代理（Agent）正在变得更“懂事”，出错率会降低。",
+      "url": "https://www.qbitai.com/2026/05/427005.html"
+    },
+    {
+      "title": "机器人原生世界动作模型问世",
+      "summary": "复旦系团队推出时空一体架构的机器人动作模型，半年获5轮融资。",
+      "why": "机器人能同时理解时间和空间，动作更自然，比如抓杯子更稳。",
+      "category": "机器人",
+      "beginner_takeaway": "机器人动作越来越像人，未来家务机器人可能更快落地。",
+      "url": "https://www.qbitai.com/2026/05/426984.html"
+    },
+    {
+      "title": "亚马逊专家：喂垃圾数据浪费钱",
+      "summary": "亚马逊AI专家王晓野指出，给模型喂太多低质量数据导致Token成本高昂。",
+      "why": "提醒普通创作者：训练AI时数据质量比数量重要，省钱又高效。",
+      "category": "工具",
+      "beginner_takeaway": "做AI应用时，先清理数据，别盲目堆量。",
+      "url": "https://www.qbitai.com/2026/05/426970.html"
+    },
+    {
+      "title": "卫星将像自动驾驶一样自主决策",
+      "summary": "中科创星沙龙提出“太空智驾”，卫星将自主感知和规划，不再全靠地面控制。",
+      "why": "卫星更智能后，天气预报、导航服务会更精准及时。",
+      "category": "应用",
+      "beginner_takeaway": "太空AI进步，你手机里的地图和天气App会更好用。",
+      "url": "https://36kr.com/p/3831071878358659?f=rss"
+    },
+    {
+      "title": "MiniMax全员Agent化实践",
+      "summary": "MiniMax公司分享如何让整个组织用AI代理工作，实现“Token无上限”。",
+      "why": "企业全面用AI代理，可能提高效率，普通员工需学会与AI协作。",
+      "category": "公司",
+      "beginner_takeaway": "未来公司可能让AI代理帮你干活，提前学习如何指挥AI。",
+      "url": "https://www.qbitai.com/2026/05/426793.html"
+    }
+  ],
+  "plain_summary": "今天AI圈挺热闹。英伟达要自己造CPU笔记本，可能跟苹果抢生意；苹果则要把ChatGPT塞进iPhone，以后手机直接能聊AI。特斯拉的机器人工厂也动工了，人形机器人量产在即。另外，复旦团队搞出了让机器人更懂时空的新模型，还开源了一个超大机器人训练数据。亚马逊专家提醒大家：别给AI喂垃圾数据，浪费钱。总之，AI正在从电脑、手机走进现实世界，普通人可以期待更智能的工具和机器人帮手。"
+}
