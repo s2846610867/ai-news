@@ -3,74 +3,199 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>AI 日报</title>
+<title>AI 日报｜给 AI 新手看的每日 AI 简报</title>
+<meta name="description" content="每天自动整理10条值得关注的AI资讯，帮助AI新手和普通创作者快速了解AI圈发生了什么、为什么重要、可以学到什么。">
+<meta property="og:title" content="AI 日报｜每日 AI 简报">
+<meta property="og:description" content="给AI新手和普通创作者看的每日AI简报，每天自动更新10条AI资讯。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://s2846610867.github.io/ai-news/">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",Arial,sans-serif;background:#f0f2f5;color:#1d1d1f;line-height:1.6}
-.header{background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);color:#fff;padding:44px 20px 32px;text-align:center}
-.header h1{font-size:2em;font-weight:700;letter-spacing:3px;margin-bottom:8px}
-.header p{color:rgba(255,255,255,.5);font-size:.85em}
+.header{background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);color:#fff;padding:48px 20px 38px;text-align:center}
+.header h1{font-size:2.2em;font-weight:700;letter-spacing:3px;margin-bottom:10px}
+.tagline{font-size:1em;color:rgba(255,255,255,.88);font-weight:500;margin-bottom:14px}
+.desc{font-size:.86em;color:rgba(255,255,255,.5);line-height:1.9;max-width:540px;margin:0 auto 18px}
+.meta-bar{display:flex;justify-content:center;flex-wrap:wrap;gap:6px 18px;font-size:.76em;color:rgba(255,255,255,.38)}
 .nav{background:#fff;padding:12px 20px;text-align:center;box-shadow:0 1px 8px rgba(0,0,0,.06);position:sticky;top:0;z-index:10;overflow-x:auto;white-space:nowrap}
-.nav a{display:inline-block;margin:0 6px;padding:4px 12px;border-radius:20px;font-size:.8em;color:#667eea;text-decoration:none;border:1px solid #667eea}
-.nav a:hover{background:#667eea;color:#fff}
-.container{max-width:780px;margin:0 auto;padding:28px 16px}
+.nav a{display:inline-block;margin:0 5px;padding:4px 12px;border-radius:20px;font-size:.78em;color:#667eea;text-decoration:none;border:1px solid #c5caff}
+.nav a:hover,.nav a.cur{background:#667eea;color:#fff;border-color:#667eea}
+.container{max-width:780px;margin:0 auto;padding:24px 16px}
+.sec-lbl{font-size:.7em;font-weight:700;text-transform:uppercase;letter-spacing:.15em;color:#667eea;margin-bottom:12px}
+/* ── top3 ── */
+.top3-card{background:#fff;border-radius:18px;margin-bottom:22px;box-shadow:0 2px 14px rgba(0,0,0,.07);padding:20px 22px}
+.top3-intro{font-size:.81em;color:#aaa;margin-bottom:14px}
+.top3-item{padding:13px 0;border-bottom:1px solid #f0f0f5}
+.top3-item:last-child{border-bottom:none;padding-bottom:4px}
+.top3-row{display:flex;gap:13px;align-items:flex-start}
+.top3-num{width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#f6a623,#e8860e);color:#fff;font-weight:700;font-size:.8em;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.top3-body{flex:1;min-width:0}
+.top3-title{color:#1a1a2e;font-weight:600;font-size:.93em;text-decoration:none;display:block;margin-bottom:5px}
+.top3-title:hover{color:#667eea}
+.top3-sum{color:#666;font-size:.82em;margin-bottom:7px;line-height:1.6}
+.why-box{background:#f0f1ff;border-left:3px solid #667eea;padding:6px 10px;border-radius:0 8px 8px 0;font-size:.79em;color:#444;line-height:1.6;margin-bottom:7px}
+.why-lbl{font-weight:700;color:#667eea;margin-right:4px}
+.src-link{font-size:.76em;color:#667eea;text-decoration:none;border:1px solid #c5caff;border-radius:10px;padding:2px 10px;display:inline-block}
+.src-link:hover{background:#667eea;color:#fff}
+/* ── concept ── */
+.concept-card{background:#fff;border-radius:18px;margin-bottom:22px;box-shadow:0 2px 14px rgba(0,0,0,.07);padding:20px 22px;border-left:4px solid #52c5a8}
+.concept-name{font-size:1.15em;font-weight:700;color:#1a1a2e;margin-bottom:5px}
+.concept-line{font-size:.88em;color:#52c5a8;font-weight:500;margin-bottom:14px}
+.concept-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:500px){.concept-grid{grid-template-columns:1fr}}
+.c-lbl{font-size:.68em;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#bbb;margin-bottom:4px}
+.c-txt{font-size:.83em;color:#555;line-height:1.65}
+/* ── news days ── */
 .day-section{background:#fff;border-radius:18px;margin-bottom:26px;overflow:hidden;box-shadow:0 2px 14px rgba(0,0,0,.07)}
-.day-header{background:linear-gradient(135deg,#667eea,#764ba2);padding:13px 22px}
-.day-header h2{color:#fff;font-size:1em;font-weight:600}
+.day-hdr{background:linear-gradient(135deg,#667eea,#764ba2);padding:13px 22px}
+.day-hdr h2{color:#fff;font-size:1em;font-weight:600}
 .news-list{padding:6px 0}
-.news-item{display:flex;align-items:flex-start;padding:13px 22px;border-bottom:1px solid #f2f2f2;gap:13px}
-.news-item:last-child{border-bottom:none}
-.news-item:hover{background:#fafbff}
-.news-num{background:#667eea;color:#fff;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.72em;font-weight:700;flex-shrink:0;margin-top:3px}
-.news-content{flex:1;min-width:0}
-.news-title{color:#1a1a2e;font-weight:600;font-size:.93em;text-decoration:none;display:block;margin-bottom:4px}
-.news-title:hover{color:#667eea}
-.news-summary{color:#777;font-size:.83em;line-height:1.55}
-.news-why{color:#667eea;font-size:.8em;margin-top:4px;font-style:italic}
-.plain-summary{background:linear-gradient(135deg,#f8f9ff,#eef0ff);border-top:2px solid #667eea;padding:18px 22px}
-.summary-label{font-weight:700;color:#667eea;margin-bottom:8px;font-size:.9em}
-.plain-summary p{color:#444;font-size:.9em;line-height:1.9}
-.footer{text-align:center;color:#bbb;font-size:.76em;padding:10px 20px 32px}
+.ni{display:flex;align-items:flex-start;padding:13px 22px;border-bottom:1px solid #f2f2f2;gap:13px}
+.ni:last-child{border-bottom:none}
+.ni:hover{background:#fafbff}
+.ni-num{background:#667eea;color:#fff;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.72em;font-weight:700;flex-shrink:0;margin-top:3px}
+.ni-body{flex:1;min-width:0}
+.ni-title{color:#1a1a2e;font-weight:600;font-size:.93em;text-decoration:none;display:block;margin-bottom:4px}
+.ni-title:hover{color:#667eea}
+.ni-sum{color:#777;font-size:.83em;line-height:1.55}
+.ni-why{background:#f0f1ff;border-left:3px solid #667eea;padding:5px 9px;border-radius:0 6px 6px 0;font-size:.78em;color:#444;margin-top:5px;line-height:1.55}
+.ni-tag{display:inline-block;font-size:.69em;padding:2px 7px;border-radius:9px;background:#f0f0f5;color:#888;border:1px solid #e5e5ee;margin-top:5px}
+.ni-learn{background:#f0fff8;border-left:3px solid #52c5a8;padding:5px 9px;border-radius:0 6px 6px 0;font-size:.78em;color:#333;margin-top:5px;line-height:1.55}
+.ni-learn-lbl{font-weight:700;color:#52c5a8;margin-right:3px}
+.plain-sum{background:linear-gradient(135deg,#f8f9ff,#eef0ff);border-top:2px solid #667eea;padding:18px 22px}
+.sum-lbl{font-weight:700;color:#667eea;margin-bottom:8px;font-size:.9em}
+.plain-sum p{color:#444;font-size:.9em;line-height:1.9}
+.footer{text-align:center;color:#ccc;font-size:.75em;padding:10px 20px 36px;line-height:2.2}
 .loading{text-align:center;padding:60px 20px;color:#999;font-size:.9em}
 </style>
 </head>
 <body>
+
+<!-- 1. Hero -->
 <div class="header">
   <h1>🤖 AI 日报</h1>
-  <p id="subtitle">每天早上 6 点自动更新 · 精选 10 条 AI 资讯</p>
+  <p class="tagline">给 AI 新手和普通创作者看的每日 AI 简报</p>
+  <p class="desc">每天自动整理 10 条值得关注的 AI 资讯，用更容易理解的方式告诉你：今天 AI 圈发生了什么，为什么重要，以及普通人可以学到什么。</p>
+  <div class="meta-bar">
+    <span>📅 每天早上 6 点自动更新</span>
+    <span>🤖 由 AI 辅助整理 · 持续人工优化中</span>
+  </div>
 </div>
+
+<!-- sticky nav -->
 <div class="nav" id="nav"></div>
-<div class="container" id="container"><div class="loading">加载中...</div></div>
-<div class="footer" id="footer">由 DeepSeek 整理生成</div>
+
+<div class="container">
+  <!-- 2. 今日最重要 3 条 -->
+  <div id="top3"></div>
+
+  <!-- 3. 今日 AI 概念 -->
+  <div id="concept"></div>
+
+  <!-- 4. 所有日报内容 -->
+  <div id="news-list"><div class="loading">正在加载今日资讯…</div></div>
+</div>
+
+<!-- 5. Footer -->
+<div class="footer">
+  由 AI 辅助整理 · 信息来自公开来源 · 内容仅供学习参考 · 持续优化中<br>
+  <span id="footer-ts"></span>
+</div>
+
+<noscript><p style="text-align:center;padding:60px 20px;color:#999">请启用 JavaScript 以浏览 AI 日报内容。</p></noscript>
+
 <script>
-const WD = ["周日","周一","周二","周三","周四","周五","周六"];
-function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
-function fmtDate(d){const[y,m,day]=d.split("-");const wd=WD[new Date(d+"T00:00:00").getDay()];return y+"年"+m+"月"+day+"日 "+wd;}
+const WD=["周日","周一","周二","周三","周四","周五","周六"];
+
+// 今日数据预埋（每次脚本运行时自动更新）
+const EMBEDDED={"date":"2026-05-31","articles":[{"title":"比亚迪自研4nm AI芯片","summary":"比亚迪发布4nm制程AI芯片，算力对标英伟达，用于智能驾驶。","why":"国产车企自研芯片突破，直接影响智驾体验和行业格局。","url":"https://www.qbitai.com/2026/05/426557.html"},{"title":"英伟达清华推多智能体世界模型","summary":"Gamma-World模型实现多个AI在虚拟世界中共存互动。","why":"世界模型从单机迈向多人协作，是AI交互的重大进步。","url":"https://www.qbitai.com/2026/05/426662.html"},{"title":"全球首个商用AI主机发布","summary":"AI主机送5亿Tokens，可放开使用大模型，定位为新时代印刷机。","why":"普通人也能低成本用AI，像当年印刷机普及知识一样。","url":"https://www.qbitai.com/2026/05/426479.html"},{"title":"面壁智能开源周：端侧AI亮剑","summary":"面壁智能开源端侧AI全套技术，推动AI在手机等设备上运行。","why":"端侧AI让手机不用联网也能智能，隐私和速度双提升。","url":"https://www.qbitai.com/2026/05/426542.html"},{"title":"吉利整合辅助驾驶团队至千里科技","summary":"吉利将数百人辅助驾驶团队并入千里科技，加速智驾研发。","why":"车企整合资源，未来汽车智驾功能会更强大更普及。","url":"https://36kr.com/p/3830580716365449?f=rss"},{"title":"特斯拉Optimus机器人工厂动工","summary":"特斯拉在德州建专属人形机器人工厂，年产能可达1000万台。","why":"人形机器人量产在即，未来可能进入家庭和工厂。","url":"https://36kr.com/p/3830194503526277?f=rss"},{"title":"乘物机器人获融资，服务富士康","summary":"工业具身智能公司乘物机器人获天使轮融资，半年营收超两千万。","why":"机器人进工厂解决实际问题，代表AI落地制造业。","url":"https://36kr.com/p/3831135917107075?f=rss"},{"title":"穿越者载人航天完成亿元融资","summary":"载人航天公司穿越者获Pre-A轮融资，研发可重复使用载人飞船。","why":"太空旅游离普通人更近一步，AI助力航天自主决策。","url":"https://36kr.com/p/3830254963517318?f=rss"},{"title":"词元调用量爆发式增长","summary":"AI基础计量单位词元调用量飙涨超千倍，企业加码布局。","why":"说明AI使用量暴增，普通人日常接触AI越来越多。","url":"https://k.sina.cn/article_7857201856_1d45362c001906656y.html?from=digit"},{"title":"2026世界智能产业博览会开幕","summary":"天津举办智能产业博览会，聚焦AI与经济社会深度融合。","why":"政策风向标，展示AI如何改变工作和生活。","url":"http://china.chinadaily.com.cn/a/202605/30/WS6a1aadafa310942cc49af241.html"}],"plain_summary":"今天AI圈挺热闹的。比亚迪搞出了自己的4nm AI芯片，算力很猛，以后开车可能更智能更安全。英伟达和清华一起做了个新模型，能让多个AI在虚拟世界里一起玩，不再是单机游戏了。还有个公司发布了全球首款商用AI主机，送5亿个Token，普通人也能随便用大模型，就像当年印刷机让书变便宜一样。特斯拉的人形机器人工厂也动工了，未来可能真能帮你干活。另外，吉利把辅助驾驶团队整合到一起，准备在智驾上发力。总之，AI正在从实验室走进你的车、手机和家里，变化越来越快了。"};
+
+// AI 概念库（按日期轮换）
+const CONCEPTS=[
+  {name:"Agent",line:"能根据目标自主规划步骤、调用工具完成任务的 AI 系统。",note:"就像你有个助手，你告诉他「帮我订个下午茶」，他会自己搜索、比价、预约，不用你一步步指挥。",use:"AI 助手、自动化工作流、客服机器人、智能写作工具"},
+  {name:"RAG",line:"让 AI 先查资料再回答，减少胡说的知识增强方法。",note:"普通 AI 靠训练时学的知识回答，RAG 让它先查你的文件或数据库再给答案——更准确、更可信。",use:"企业知识库、文档问答、智能客服、个人笔记助手"},
+  {name:"Token",line:"AI 处理文字时使用的基本单位，可以理解成模型眼里的文字碎片。",note:"AI 不是一字一字读，而是以「词块」为单位处理。1 个汉字约等于 1-2 个 Token，这也是 AI 计费的基础单位。",use:"控制 API 费用、理解上下文限制、估算输入输出长度"},
+  {name:"Prompt",line:"你给 AI 的指令，决定它如何理解任务和输出结果。",note:"同一个问题，换种说法，AI 给的答案可能完全不同。Prompt 就是「怎么问」的艺术，学会它能让 AI 更好地帮你干活。",use:"写作辅助、代码生成、图片生成、数据分析、自动化"},
+  {name:"MCP",line:"让 AI 更标准地连接外部工具、数据和服务的一种协议。",note:"以前每个工具都要单独适配，现在可以用更统一的方式让 AI 调用文件、数据库、浏览器等能力，像给 AI 装了个万能插座。",use:"AI 助手、Claude Code、自动化工作流、知识库、项目管理"},
+  {name:"ModelScope 魔搭",line:"阿里推出的 AI 模型与应用社区，可以找模型、数据集和 AI 应用。",note:"可以理解成 AI 的「应用商店」，里面有各种开源模型可以下载体验，不需要自己训练也能用上别人做好的 AI 能力。",use:"找开源模型、下载数据集、部署 AI 应用、学习 AI 技术"}
+];
+
+function esc(s){return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
+function fmtDate(d){const[y,m,day]=d.split("-");return y+"年"+m+"月"+day+"日 "+WD[new Date(d+"T00:00:00").getDay()];}
+
+function whyHtml(a,cls){
+  const w=a.why||a.why_it_matters||"";
+  return w?`<div class="${cls}"><span class="why-lbl">💡 为什么重要</span>${esc(w)}</div>`:"";
+}
+
+function renderConcept(){
+  const d=new Date();
+  const idx=Math.floor((d-new Date(d.getFullYear(),0,0))/864e5)%CONCEPTS.length;
+  const c=CONCEPTS[idx];
+  document.getElementById("concept").innerHTML=`<div class="concept-card">
+    <div class="sec-lbl">📚 今日 AI 概念</div>
+    <div class="concept-name">${esc(c.name)}</div>
+    <div class="concept-line">${esc(c.line)}</div>
+    <div class="concept-grid">
+      <div><div class="c-lbl">适合新手的理解</div><div class="c-txt">${esc(c.note)}</div></div>
+      <div><div class="c-lbl">可以用在哪</div><div class="c-txt">${esc(c.use)}</div></div>
+    </div></div>`;
+}
+
+function renderTop3(day){
+  if(!day||!day.articles||!day.articles.length)return;
+  const items=day.articles.slice(0,3).map((a,i)=>`
+    <div class="top3-item"><div class="top3-row">
+      <div class="top3-num">${i+1}</div>
+      <div class="top3-body">
+        <a href="${esc(a.url||"#")}" target="_blank" class="top3-title">${esc(a.title||"")}</a>
+        <p class="top3-sum">${esc(a.summary||"")}</p>
+        ${whyHtml(a,"why-box")}
+        ${a.url&&a.url!="#"?`<a href="${esc(a.url)}" target="_blank" class="src-link">阅读原文 →</a>`:""}
+      </div></div></div>`).join("");
+  document.getElementById("top3").innerHTML=`<div class="top3-card">
+    <div class="sec-lbl">⭐ 今日最值得关注的 3 条</div>
+    <p class="top3-intro">如果你今天只看 3 条，先看这里。</p>
+    ${items}</div>`;
+}
+
 function renderDay(day){
   const items=day.articles.map((a,i)=>`
-    <div class="news-item">
-      <span class="news-num">${i+1}</span>
-      <div class="news-content">
-        <a href="${esc(a.url||"#")}" target="_blank" class="news-title">${esc(a.title||"")}</a>
-        <p class="news-summary">${esc(a.summary||"")}</p>
-        ${a.why?`<p class="news-why">💡 ${esc(a.why)}</p>`:""}
-      </div>
-    </div>`).join("");
+    <div class="ni"><span class="ni-num">${i+1}</span>
+    <div class="ni-body">
+      <a href="${esc(a.url||"#")}" target="_blank" class="ni-title">${esc(a.title||"")}</a>
+      <p class="ni-sum">${esc(a.summary||"")}</p>
+      ${whyHtml(a,"ni-why")}
+      ${a.category?`<span class="ni-tag">${esc(a.category)}</span>`:""}
+      ${a.beginner_takeaway?`<div class="ni-learn"><span class="ni-learn-lbl">📖 新手可学</span>${esc(a.beginner_takeaway)}</div>`:""}
+    </div></div>`).join("");
   return `<div class="day-section" id="${day.date}">
-    <div class="day-header"><h2>${fmtDate(day.date)}</h2></div>
+    <div class="day-hdr"><h2>${fmtDate(day.date)}</h2></div>
     <div class="news-list">${items}</div>
-    <div class="plain-summary"><div class="summary-label">🤖 小白看这里</div><p>${esc(day.plain_summary||"")}</p></div>
-  </div>`;}
+    <div class="plain-sum"><div class="sum-lbl">🤖 小白看这里</div><p>${esc(day.plain_summary||"")}</p></div>
+  </div>`;
+}
+
+// 立即用预埋数据渲染，不等 fetch
+renderConcept();
+if(EMBEDDED&&EMBEDDED.articles&&EMBEDDED.articles.length){
+  renderTop3(EMBEDDED);
+  document.getElementById("news-list").innerHTML=renderDay(EMBEDDED);
+}
+
+// 后台加载全部历史数据
 async function load(){
   try{
     const {dates}=await fetch("data/index.json").then(r=>r.json());
     const days=await Promise.all(dates.map(d=>fetch("data/"+d+".json").then(r=>r.json())));
-    document.getElementById("nav").innerHTML=dates.map(d=>`<a href="#${d}">${d}</a>`).join("");
-    document.getElementById("container").innerHTML=days.map(renderDay).join("");
-    document.getElementById("subtitle").textContent="每天早上 6 点自动更新 · 精选 10 条 AI 资讯 · 共 "+dates.length+" 天记录";
-    document.getElementById("footer").textContent="最后更新: "+dates[0]+" · 由 DeepSeek 整理生成";
+    document.getElementById("nav").innerHTML=dates.map((d,i)=>`<a href="#${d}"${i===0?' class="cur"':""}>${d}</a>`).join("");
+    renderTop3(days[0]);
+    document.getElementById("news-list").innerHTML=days.map(renderDay).join("");
+    const ts=document.getElementById("footer-ts");
+    if(ts)ts.textContent="最后更新："+dates[0];
   }catch(e){
-    document.getElementById("container").innerHTML='<p class="loading">加载失败，请刷新重试</p>';
+    // 预埋数据已在，不显示错误，静默降级
+    console.warn("fetch history failed:",e);
   }
 }
 load();
