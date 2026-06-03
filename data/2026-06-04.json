@@ -1,0 +1,96 @@
+{
+  "date": "2026-06-04",
+  "articles": [
+    {
+      "title": "豆包6月下旬正式付费",
+      "summary": "豆包将在6月下旬上线付费订阅，基础版免费，专业版月费500元，后续可能打通抖音电商。",
+      "why": "重要: 你常用的AI工具可能要收费了，但免费版依然能用，付费版适合复杂任务。",
+      "category": "工具",
+      "beginner_takeaway": "关注豆包付费后免费版功能是否缩水，再决定是否升级。",
+      "for_me": "有关系。如果你用豆包写脚本或做视频，先继续用免费版，等付费上线后对比一下功能再决定是否花钱。",
+      "url": "https://36kr.com/p/3835814391100550?f=rss"
+    },
+    {
+      "title": "火山引擎MaaS目标150亿",
+      "summary": "字节火山引擎上调MaaS营收目标至150亿元，视频模型Seedance 2.0单月收入超10亿。",
+      "why": "重要: 视频生成模型赚钱了，说明AI视频市场爆发，你做视频副业有更多工具和机会。",
+      "category": "公司",
+      "beginner_takeaway": "Seedance 2.0是视频生成模型，你可以关注它是否开放给个人创作者。",
+      "for_me": "直接相关。你正在做AI视频，Seedance 2.0这类模型可能帮你更快生成素材，留意它是否开放个人使用。",
+      "url": "https://36kr.com/p/3836973710423429?f=rss"
+    },
+    {
+      "title": "Meta发布AI技能仓库",
+      "summary": "Meta在GitHub开源了OpenSquilla，一个AI技能仓库，让开发者直接调用预训练技能。",
+      "why": "重要: 开源意味着你可以免费使用Meta的AI技能，降低开发门槛。",
+      "category": "开源",
+      "beginner_takeaway": "如果你会一点编程，可以试试OpenSquilla，直接调用现成AI功能。",
+      "for_me": "暂时不用管。如果你是纯新手，这个仓库偏技术，等社区出简单教程后再看。",
+      "url": "https://www.qbitai.com/2026/06/428335.html"
+    },
+    {
+      "title": "MiniMax M3模型实测",
+      "summary": "MiniMax发布新模型M3，能处理复杂任务，比如规划旅游路线。",
+      "why": "重要: 又多了一个能写脚本、做规划的AI模型，你可以对比哪个更好用。",
+      "category": "模型",
+      "beginner_takeaway": "可以试试MiniMax M3，看它写脚本是否比Claude/DeepSeek更顺手。",
+      "for_me": "有关系。你写脚本的工具又多了一个选择，去官网免费试用一下，看哪个更符合你的需求。",
+      "url": "https://www.qbitai.com/2026/06/428092.html"
+    },
+    {
+      "title": "AI达人营销平台崛起",
+      "summary": "一个AI原生达人营销平台入驻超10万达人，头部厂商开始买单。",
+      "why": "重要: 说明AI创作者有了新的变现渠道，你可以关注这类平台接单。",
+      "category": "应用",
+      "beginner_takeaway": "如果你做出AI视频作品，可以尝试入驻这类平台接广告或合作。",
+      "for_me": "直接相关。你正想用AI变现，可以搜索这个平台，看看入驻条件和分成方式。",
+      "url": "https://www.qbitai.com/2026/06/427922.html"
+    },
+    {
+      "title": "三星SK海力士投Anthropic",
+      "summary": "三星和SK海力士投资AI公司Anthropic，估值达9650亿美元。",
+      "why": "重要: 大厂砸钱说明AI行业火热，但对你个人影响不大，别被估值数字吓到。",
+      "category": "公司",
+      "beginner_takeaway": "关注Anthropic的Claude模型更新，你正在用它写脚本。",
+      "for_me": "暂时不用管。这笔投资不会立刻影响你用的Claude，但可以留意后续Claude是否推出新功能。",
+      "url": "https://k.sina.com.cn/article_7711158783_1cb9ef1ff00102lgj4.html"
+    },
+    {
+      "title": "世界模型榜首易主",
+      "summary": "跨维智能的AI模型登顶WorldArena世界模型排行榜。",
+      "why": "重要: 世界模型能理解物理世界，未来可能用于生成更真实的视频。",
+      "category": "模型",
+      "beginner_takeaway": "世界模型是AI视频的未来方向，但你现在还用不上。",
+      "for_me": "暂时不用管。这个技术还在实验室阶段，等你做视频时可能才有实用工具。",
+      "url": "https://www.qbitai.com/2026/06/428435.html"
+    },
+    {
+      "title": "AI削减入门级招聘？",
+      "summary": "Oliver Wyman CEO称AI不会减少入门级招聘，很多公司对AI投资回报不满意。",
+      "why": "重要: 别焦虑AI抢工作，目前AI还替代不了初级岗位，你学AI做副业是安全的。",
+      "category": "政策",
+      "beginner_takeaway": "放心学AI，目前AI更多是辅助工具，不是替代者。",
+      "for_me": "有关系。这条新闻可以缓解你的焦虑，AI暂时不会抢走你的饭碗，反而能帮你提升效率。",
+      "url": "https://www.businesstimes.com.sg/zh-hans/singapore/cut-down-entry-level-hiring-because-ai-far-it-says-oliver-wyman-ceo"
+    },
+    {
+      "title": "AI让大学教育变好了吗",
+      "summary": "BBC调查显示44%英国学生对AI感到兴奋，但教育界仍在适应。",
+      "why": "重要: 说明AI正在改变学习方式，你可以用它自学AI技能。",
+      "category": "应用",
+      "beginner_takeaway": "用AI辅助学习，比如让Claude解释不懂的概念。",
+      "for_me": "有关系。你零基础学AI，可以用AI工具当老师，不懂就问它。",
+      "url": "https://www.bbc.com/zhongwen/articles/cnv19dzz92ro/simp"
+    },
+    {
+      "title": "快手AI催生15个新职业",
+      "summary": "快手平台因AI发展催生了15个新职业，累计189个新职业。",
+      "why": "重要: AI正在创造新岗位，你可以关注这些新职业找变现方向。",
+      "category": "应用",
+      "beginner_takeaway": "搜索快手AI新职业，看有没有适合你的副业方向。",
+      "for_me": "直接相关。你正在找AI变现路子，可以看看这些新职业，比如AI视频剪辑师、AI内容运营等。",
+      "url": "https://36kr.com/p/3834354708031111?f=rss"
+    }
+  ],
+  "plain_summary": "今天AI圈最值得关注的是：豆包马上要收费了，但免费版还能用，别慌；字节的视频模型赚了大钱，说明AI视频市场火了，你做视频副业正赶上好时候；Meta开源了一个AI技能仓库，但新手暂时用不上；还有平台专门帮AI创作者接广告，你可以去试试。另外别担心AI抢工作，大佬说了目前AI还替代不了初级岗位。总之，继续用你手头的工具做视频，多留意新平台和模型，变现机会在变多。"
+}
