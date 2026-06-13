@@ -1,0 +1,96 @@
+{
+  "date": "2026-06-13",
+  "articles": [
+    {
+      "title": "OpenAI秘密提交IPO申请",
+      "summary": "OpenAI已向美国证监会秘密提交上市申请，估值超8500亿美元。",
+      "why": "OpenAI上市可能影响AI产品定价和服务模式，普通用户需关注未来使用成本变化。",
+      "category": "公司",
+      "beginner_takeaway": "关注OpenAI上市后ChatGPT是否会涨价或推出免费版。",
+      "for_me": "如果你在用Claude或DeepSeek写脚本，OpenAI上市可能带动整个行业涨价或出新功能，值得留意后续动态。",
+      "url": "https://k.sina.com.cn/article_7857201856_1d45362c001906jdnq.html"
+    },
+    {
+      "title": "英伟达发布人形机器人模型",
+      "summary": "英伟达发布新一代AI模型与开放式人形机器人，推动机器人技术发展。",
+      "why": "英伟达是AI算力核心，其新模型可能降低视频生成和3D内容制作门槛。",
+      "category": "机器人",
+      "beginner_takeaway": "了解英伟达的新工具，未来可能用于AI视频或动画制作。",
+      "for_me": "暂时不用管，但如果你做AI视频需要高质量渲染，英伟达的新模型可能未来能帮你省时间。",
+      "url": "https://news.softunis.com/60200.html"
+    },
+    {
+      "title": "AI先驱呼吁去中心化AGI",
+      "summary": "AI先驱本·戈策尔认为通用AI应由全人类合作构建，警告政府掌控大公司会抑制创新。",
+      "why": "这影响未来AI工具的开放性和自由度，普通创作者可能受益于更开放的生态。",
+      "category": "政策",
+      "beginner_takeaway": "思考AI工具是否应该被少数公司控制，这对你使用的产品有长远影响。",
+      "for_me": "如果你担心AI工具被垄断或收费过高，这条新闻说明有专家在推动更开放的AI，值得关注。",
+      "url": "https://finance.sina.com.cn/stock/usstock/summary/2026-06-03/doc-iniaaezh1259737.shtml"
+    },
+    {
+      "title": "全球AI巨头竞速IPO",
+      "summary": "多家AI公司加速上市，中国AI企业也在布局资本化。",
+      "why": "上市潮可能带来更多AI投资和产品创新，但也要警惕泡沫风险。",
+      "category": "公司",
+      "beginner_takeaway": "关注上市公司的产品更新，它们可能推出更多免费或低价工具吸引用户。",
+      "for_me": "如果你用即梦或可灵做视频，这些公司上市后可能加大补贴或推出新功能，可以留意优惠活动。",
+      "url": "https://k.sina.com.cn/article_7857201856_1d45362c001906jdnq.html"
+    },
+    {
+      "title": "AI在太空和火星发挥作用",
+      "summary": "AI在太空探索和火星任务中展现变革性影响，推动科研进步。",
+      "why": "说明AI应用范围扩大，未来可能渗透到更多领域，创作者可借鉴跨界思路。",
+      "category": "应用",
+      "beginner_takeaway": "AI不只是聊天和生图，还能用于科研，拓宽你对AI用途的认知。",
+      "for_me": "暂时不用管，但如果你做科幻类AI视频，可以关注太空AI的视觉素材或灵感。",
+      "url": "https://www.news.cn/world/20260203/a173cb66c98a4b1bb551d588fd2f0209/c.html"
+    },
+    {
+      "title": "世界人工智能大会即将召开",
+      "summary": "世界人工智能大会（WAIC）即将举办，展示最新AI技术和产品。",
+      "why": "大会是AI行业风向标，可能发布新工具或政策，影响创作者生态。",
+      "category": "公司",
+      "beginner_takeaway": "关注大会新闻，了解最新AI工具和趋势，可能找到适合你的新平台。",
+      "for_me": "如果你在学AI做视频，大会可能会有新视频生成工具或教程发布，值得关注。",
+      "url": "https://www.worldaic.com.cn/"
+    },
+    {
+      "title": "百度AI试卷识别商用",
+      "summary": "百度AI的试卷切题识别功能正式商用，提供免费测试资源。",
+      "why": "说明AI在教育领域落地，普通用户可低成本试用AI识别功能。",
+      "category": "应用",
+      "beginner_takeaway": "试试百度AI的免费资源，了解AI如何辅助教育或内容创作。",
+      "for_me": "如果你做教育类AI视频，这个功能可能帮你自动识别题目内容，节省后期处理时间。",
+      "url": "https://ai.baidu.com/support/news"
+    },
+    {
+      "title": "AI公司上市或致价格上涨",
+      "summary": "随着大型AI公司计划上市，用户可能面临服务价格上涨。",
+      "why": "直接影响普通用户使用AI工具的成本，需提前规划预算。",
+      "category": "公司",
+      "beginner_takeaway": "留意你常用AI工具的定价变化，考虑是否提前订阅或寻找替代品。",
+      "for_me": "如果你用Claude或DeepSeek写脚本，关注它们是否涨价，可提前囤积免费额度或找平替。",
+      "url": "https://www.catblog.tech/blog/2026-06-08-ai-digest/"
+    },
+    {
+      "title": "ChatGPT/Claude/Gemini对比",
+      "summary": "2026年最新版ChatGPT、Claude、Gemini对比分析视频和文章发布。",
+      "why": "帮助用户选择最适合自己的AI工具，尤其对新手有参考价值。",
+      "category": "模型",
+      "beginner_takeaway": "对比不同AI工具的功能和价格，找到最适合你写脚本或生图的模型。",
+      "for_me": "如果你在纠结用哪个AI写脚本，这个对比能帮你快速决策，节省试错成本。",
+      "url": "https://ai.cbagames.jp/2026/01/07/chatgpt-claude-gemini-comparison-2026/"
+    },
+    {
+      "title": "AI智能体规范发布",
+      "summary": "国家数据局发布多模态生成式AI大模型及智能体规范，加强行业监管。",
+      "why": "规范出台可能影响AI工具的功能限制，创作者需了解合规要求。",
+      "category": "政策",
+      "beginner_takeaway": "了解AI使用规范，避免因违规导致作品下架或账号封禁。",
+      "for_me": "如果你用AI生成视频内容，注意不要触碰版权或敏感话题，规范出台后更需谨慎。",
+      "url": "https://news.softunis.com/60200.html"
+    }
+  ],
+  "plain_summary": "今天AI圈最热闹的是OpenAI要上市了，估值8500亿美元，以后用ChatGPT可能涨价，但也会出新功能。英伟达搞了人形机器人，但跟咱们做视频的关系不大。有个AI大佬说AI应该让所有人一起建，别被大公司垄断，这想法挺酷。另外，百度出了个试卷识别工具，做教育视频的可以试试。世界人工智能大会快开了，到时候会有新东西发布。总之，如果你是新手，先别慌，关注你用的工具会不会涨价就行，其他大新闻看看热闹就好。"
+}
