@@ -1,0 +1,96 @@
+{
+  "date": "2026-06-14",
+  "articles": [
+    {
+      "title": "Claude 5全球禁用",
+      "summary": "Anthropic突然下架刚上线3天的Claude Fable 5，禁止外籍人士访问。",
+      "why": "最强模型突然不能用，影响依赖Claude写脚本的创作者。",
+      "category": "模型",
+      "beginner_takeaway": "别只依赖一个AI工具，多备几个备用。",
+      "for_me": "如果你用Claude写脚本，赶紧备份工作流，试试DeepSeek或国产模型过渡。",
+      "url": "https://36kr.com/p/3851015329027336?f=rss"
+    },
+    {
+      "title": "世界杯首日被AI猜中",
+      "summary": "千问模型精准预测了世界杯首场比赛的比分、红牌和绝杀。",
+      "why": "展示AI预测能力，普通人也能用AI做赛事分析或内容创作。",
+      "category": "应用",
+      "beginner_takeaway": "AI预测不是玄学，可以试试用模型分析体育数据。",
+      "for_me": "做视频的可以蹭世界杯热点，用AI生成预测脚本或解说词，吸引流量。",
+      "url": "https://www.qbitai.com/2026/06/435321.html"
+    },
+    {
+      "title": "SpaceX上市市值破2万亿",
+      "summary": "SpaceX在纳斯达克上市，市值超2万亿美元，马斯克成首位万亿富豪。",
+      "why": "太空算力和星链成为新故事，影响未来AI基础设施。",
+      "category": "公司",
+      "beginner_takeaway": "关注太空AI和卫星互联网，可能是未来创业方向。",
+      "for_me": "暂时不用管，但可以留意太空算力对AI视频渲染的潜在影响。",
+      "url": "https://36kr.com/p/3851073239372809?f=rss"
+    },
+    {
+      "title": "HuggingFace力荐1B小模型",
+      "summary": "仅花1500美元训练出的1B参数模型HRM，获Bengio团队认可。",
+      "why": "小模型低成本高效，普通人也能训练自己的AI。",
+      "category": "模型",
+      "beginner_takeaway": "做AI不一定要大模型，小模型也能解决特定问题。",
+      "for_me": "如果你有特定视频风格或脚本需求，可以研究用小模型微调，省成本。",
+      "url": "https://www.qbitai.com/2026/06/435483.html"
+    },
+    {
+      "title": "具身智能行业标准实施",
+      "summary": "国内首份具身智能标准6月1日实施，机器人从实验室走向产业。",
+      "why": "标准落地意味着机器人产品会更规范，普通人未来可能买到家用机器人。",
+      "category": "政策",
+      "beginner_takeaway": "具身智能是AI+机器人的新赛道，值得关注。",
+      "for_me": "暂时不用管，但做AI视频的可以提前储备机器人相关素材。",
+      "url": "https://www.aifirshe.com/posts/019e953e2d097c16b8865340154a5b08"
+    },
+    {
+      "title": "Agent长出身体：Jiuwen",
+      "summary": "Jiuwen Symbiosis项目让AI智能体拥有物理身体，能操作现实世界。",
+      "why": "AI从屏幕走进现实，未来可能帮你做家务或操作设备。",
+      "category": "Agent",
+      "beginner_takeaway": "AI不再只是聊天，开始有手有脚了。",
+      "for_me": "暂时不用管，但可以想象未来用AI机器人帮你拍摄或布景。",
+      "url": "https://www.qbitai.com/2026/06/435455.html"
+    },
+    {
+      "title": "智源大会：AI+物理+生命",
+      "summary": "2026智源大会开幕，聚焦AI、物理世界和生命科学融合。",
+      "why": "跨学科融合将催生新应用，比如AI辅助药物研发。",
+      "category": "应用",
+      "beginner_takeaway": "AI不只是聊天，还能搞科研和医疗。",
+      "for_me": "暂时不用管，但做科普视频的可以关注大会成果，找选题。",
+      "url": "https://www.qbitai.com/2026/06/435394.html"
+    },
+    {
+      "title": "AI时代留学就业白皮书",
+      "summary": "报告指出AI正在替代传统高薪岗位，留学生需重塑竞争力。",
+      "why": "AI冲击就业市场，提醒普通人要学AI技能。",
+      "category": "应用",
+      "beginner_takeaway": "学AI不是跟风，是应对未来职场变化。",
+      "for_me": "你正在学AI变现，方向对了，继续深耕视频和脚本能力。",
+      "url": "https://36kr.com/p/3846972367866119?f=rss"
+    },
+    {
+      "title": "Kimi推出AI原生信用卡",
+      "summary": "Kimi与国有银行合作，全球首张AI原生信用卡开放预约。",
+      "why": "AI直接介入金融服务，普通人办卡和理财可能更智能。",
+      "category": "工具",
+      "beginner_takeaway": "AI正在改变金融，以后贷款、理财都可能AI化。",
+      "for_me": "暂时不用管，但可以关注AI金融工具，未来可能帮你管理副业收入。",
+      "url": "https://36kr.com/p/3850898430989577?f=rss"
+    },
+    {
+      "title": "中国商业航天十年冷暖",
+      "summary": "SpaceX上市引发关注，回顾中国商业航天从政策破冰到资本涌入。",
+      "why": "航天赛道火热，未来可能催生太空AI应用。",
+      "category": "公司",
+      "beginner_takeaway": "商业航天是下一个风口，但普通人先观望。",
+      "for_me": "暂时不用管，但做科技视频的可以蹭航天热点。",
+      "url": "https://36kr.com/p/3850902095336449?f=rss"
+    }
+  ],
+  "plain_summary": "今天AI圈最炸裂的消息是Claude 5刚上线就被全球禁用，用Claude写脚本的朋友赶紧找替代品。世界杯首日被千问AI精准猜中比分，做视频的可以蹭这个热点。SpaceX上市市值破2万亿，马斯克成万亿富豪，但跟咱们普通人关系不大。好消息是HuggingFace推荐了一个1500美元训出的小模型，说明做AI不一定要烧钱。另外具身智能有了行业标准，机器人离走进生活又近了一步。总之，别慌，AI变化快，多备几个工具，专注做自己的小作品就行。"
+}
