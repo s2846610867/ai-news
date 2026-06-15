@@ -1,0 +1,96 @@
+{
+  "date": "2026-06-15",
+  "articles": [
+    {
+      "title": "Claude 5全球停用",
+      "summary": "Anthropic突然下架了刚上线3天的Claude Fable 5，禁止外籍人士访问。",
+      "why": "影响你用AI写脚本、做视频的模型选择，可能得暂时换回旧版或其他工具。",
+      "category": "模型",
+      "beginner_takeaway": "关注官方后续说明，别急着升级或依赖新模型。",
+      "for_me": "如果你正用Claude写脚本，暂时别升级到Claude 5，继续用旧版或DeepSeek就行。",
+      "url": "https://36kr.com/p/3851015329027336?f=rss"
+    },
+    {
+      "title": "世界杯首日被AI猜中",
+      "summary": "千问模型准确预测了世界杯首场比赛的比分、红牌和绝杀。",
+      "why": "证明AI在数据分析上很准，普通人也能用AI做预测类内容。",
+      "category": "应用",
+      "beginner_takeaway": "可以试试用AI分析体育数据，做预测视频或图文。",
+      "for_me": "做AI视频的新手可以拿这个当选题，用AI预测世界杯结果，做成短视频吸引流量。",
+      "url": "https://www.qbitai.com/2026/06/435321.html"
+    },
+    {
+      "title": "1500美元训出1B模型",
+      "summary": "HuggingFace和Bengio团队用极低成本训练出高性能小模型。",
+      "why": "小模型便宜又好用，普通人也能自己训练或微调AI。",
+      "category": "模型",
+      "beginner_takeaway": "未来可能花很少钱就能定制自己的AI模型。",
+      "for_me": "暂时不用管，但值得关注：以后做AI视频可能用上更便宜、更快的模型。",
+      "url": "https://www.qbitai.com/2026/06/435483.html"
+    },
+    {
+      "title": "AI长出了身体",
+      "summary": "Jiuwen Symbiosis项目让AI Agent能操控物理设备，进入现实世界。",
+      "why": "AI不再只活在电脑里，未来能帮你做家务、跑腿。",
+      "category": "Agent",
+      "beginner_takeaway": "留意AI机器人产品，可能很快有家用版。",
+      "for_me": "暂时不用管，但如果你对AI+硬件感兴趣，可以关注这类新闻找灵感。",
+      "url": "https://www.qbitai.com/2026/06/435455.html"
+    },
+    {
+      "title": "工信部发布AI+通信政策",
+      "summary": "到2028年城域算力1毫秒时延圈覆盖率不低于75%。",
+      "why": "政策推动网络更快，你用AI工具（如生图、视频）会更流畅。",
+      "category": "政策",
+      "beginner_takeaway": "未来用AI做视频、直播会更顺畅，延迟更低。",
+      "for_me": "跟你有关：网络提速后，用即梦、可灵生图生视频会更快，体验更好。",
+      "url": "https://k.sina.com.cn/article_7857201856_1d45362c001906k0h8.html"
+    },
+    {
+      "title": "马斯克成万亿富豪",
+      "summary": "SpaceX上市市值破2万亿，马斯克成为人类首位万亿美金富豪。",
+      "why": "SpaceX的星链和太空算力业务撑起估值，AI算力需求巨大。",
+      "category": "公司",
+      "beginner_takeaway": "AI和太空结合是未来方向，但普通人暂时不用追。",
+      "for_me": "暂时不用管，但可以留意太空算力会不会降低AI使用成本。",
+      "url": "https://www.qbitai.com/2026/06/435339.html"
+    },
+    {
+      "title": "高瓴投资柔性机器人",
+      "summary": "SoulX获高瓴投资，将推出睡眠安抚机器人MoYa。",
+      "why": "AI机器人进入家庭场景，未来可能帮你改善睡眠。",
+      "category": "机器人",
+      "beginner_takeaway": "关注消费级AI机器人，可能成为新副业方向。",
+      "for_me": "暂时不用管，但如果你做AI视频，可以提前了解这类产品，未来做评测或教程。",
+      "url": "https://36kr.com/p/3851572421432324?f=rss"
+    },
+    {
+      "title": "智源大会开幕",
+      "summary": "2026智源大会聚焦AI、物理世界和生命科学融合。",
+      "why": "大会展示AI最新趋势，影响未来工具和模型方向。",
+      "category": "应用",
+      "beginner_takeaway": "关注大会发布的免费工具或模型，可能直接用到。",
+      "for_me": "暂时不用管，但可以搜一下大会有没有发布新工具，比如更好的生图模型。",
+      "url": "https://www.qbitai.com/2026/06/435394.html"
+    },
+    {
+      "title": "AI时代留学就业白皮书",
+      "summary": "36氪发布白皮书，分析AI对留学和就业的影响。",
+      "why": "AI正在改变哪些工作值钱，对普通人选方向有参考。",
+      "category": "应用",
+      "beginner_takeaway": "学AI技能是未来就业加分项，但别盲目跟风。",
+      "for_me": "跟你有关：白皮书能帮你判断学AI做视频有没有前途，可以搜来看看。",
+      "url": "https://36kr.com/p/3846972367866119?f=rss"
+    },
+    {
+      "title": "全球AI产业动态",
+      "summary": "AI在太空、科研等领域发挥作用，但美国企业滥用引发争议。",
+      "why": "AI应用越来越广，但也要注意安全和伦理问题。",
+      "category": "应用",
+      "beginner_takeaway": "用AI时注意数据隐私，别上传敏感信息。",
+      "for_me": "跟你有关：用AI做视频时，别把客户隐私或未公开素材喂给AI。",
+      "url": "https://www.news.cn/world/20260203/a173cb66c98a4b1bb551d588fd2f0209/c.html"
+    }
+  ],
+  "plain_summary": "今天AI圈挺热闹：刚上线3天的Claude 5突然被下架了，用Claude写脚本的朋友先别升级。世界杯首日被千问AI精准猜中比分，做视频的新手可以拿这个当选题。工信部出了新政策，以后网络更快，你用即梦、可灵生图生视频会更流畅。另外，1500美元就能训出一个小模型，未来AI可能越来越便宜。马斯克靠SpaceX成了万亿富豪，但跟咱们关系不大。总之，今天最值得关注的就是Claude 5停用和世界杯预测，其他看看就好。"
+}
