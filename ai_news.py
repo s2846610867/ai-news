@@ -21,7 +21,9 @@ import subprocess
 import sys
 import time
 import concurrent.futures
-from datetime import datetime
+import urllib.request
+import urllib.parse
+from datetime import datetime, timedelta
 from pathlib import Path
 from dotenv import load_dotenv
 
@@ -366,6 +368,116 @@ def process_with_deepseek(news_items: list, api_key: str, recent_titles: list = 
 
 
 # =========================================================
+# GitHub 热门 AI 项目
+# =========================================================
+
+# 用这些 AI 相关 topic 搜索, 覆盖大模型/智能体/生成式
+GH_TOPICS = ["llm", "ai-agent", "generative-ai"]
+
+
+def _gh_search(query: str, per_page: int = 8) -> list:
+    params = urllib.parse.urlencode({
+        "q": query, "sort": "stars", "order": "desc", "per_page": per_page,
+    })
+    url = f"https://api.github.com/search/repositories?{params}"
+    req = urllib.request.Request(url, headers={
+        "Accept": "application/vnd.github+json",
+        "User-Agent": "ai-news-bot",
+    })
+    token = os.getenv("GITHUB_TOKEN", "").strip()
+    if token:
+        req.add_header("Authorization", f"Bearer {token}")
+    with urllib.request.urlopen(req, timeout=20) as resp:
+        data = json.loads(resp.read().decode("utf-8"))
+    items = []
+    for r in data.get("items", []):
+        if not r.get("html_url"):
+            continue
+        items.append({
+            "name": r.get("full_name", ""),
+            "url": r.get("html_url", ""),
+            "stars": r.get("stargazers_count", 0),
+            "language": r.get("language") or "",
+            "desc": (r.get("description") or "")[:300],
+        })
+    return items
+
+
+def _gh_merge_topics(extra: str = "", want: int = 5) -> list:
+    """对多个 AI topic 各搜一次, 合并去重后按星数取前 want 个"""
+    seen, merged = set(), []
+    for t in GH_TOPICS:
+        q = f"topic:{t}" + (f" {extra}" if extra else "")
+        try:
+            for r in _gh_search(q, 8):
+                if r["name"] and r["name"] not in seen:
+                    seen.add(r["name"])
+                    merged.append(r)
+        except Exception as e:
+            log(f"GitHub 搜索失败 (topic:{t} {extra}): {e}")
+    merged.sort(key=lambda x: x.get("stars", 0), reverse=True)
+    return merged[:want]
+
+
+def fetch_github() -> dict:
+    """两个模块: 星标总榜 + 近两周飙升的 AI 新项目"""
+    result = {"top_starred": [], "trending": []}
+    try:
+        result["top_starred"] = _gh_merge_topics("", 5)
+    except Exception as e:
+        log(f"GitHub 星标总榜失败: {e}")
+    try:
+        since = (datetime.now() - timedelta(days=14)).strftime("%Y-%m-%d")
+        result["trending"] = _gh_merge_topics(f"created:>{since}", 5)
+    except Exception as e:
+        log(f"GitHub 飙升榜失败: {e}")
+    log(f"GitHub 获取: 总榜 {len(result['top_starred'])} 条, 飙升 {len(result['trending'])} 条")
+    return result
+
+
+def add_github_explanations(gh: dict, api_key: str) -> dict:
+    """让 DeepSeek 为每个项目写一段面向新手的全面中文解释"""
+    repos = (gh.get("top_starred") or []) + (gh.get("trending") or [])
+    if not repos:
+        return gh
+    from openai import OpenAI
+    client = OpenAI(api_key=api_key, base_url="https://api.deepseek.com", timeout=DEEPSEEK_TIMEOUT)
+    listing = "\n".join(
+        f"[{i+1}] {r['name']} (★{r['stars']}, {r['language'] or '多语言'})\n描述: {r['desc'] or '无'}"
+        for i, r in enumerate(repos)
+    )
+    prompt = f"""下面是一些 GitHub 上的 AI 开源项目。请为每个项目写一段【通俗易懂的中文解释】, 面向 AI 新手和普通创作者, 说清楚三点: 这是什么、能用来做什么、对普通人/创作者有什么用。每段 60-110 字, 少用术语, 不要夸大, 基于给出的信息和你已知的事实, 不要编造。
+
+{listing}
+
+只返回JSON:
+{{"items": [{{"id": 1, "explanation": "..."}}]}}
+id 对应上面方括号里的编号。只返回JSON, 不要其他内容。"""
+    try:
+        resp = retry("GitHub 项目解释", lambda: client.chat.completions.create(
+            model="deepseek-chat",
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0.3,
+        ), delay=8)
+        content = resp.choices[0].message.content.strip()
+        if content.startswith("```"):
+            content = content.split("\n", 1)[1].rsplit("```", 1)[0].strip()
+        try:
+            parsed = json.loads(content)
+        except json.JSONDecodeError:
+            m = re.search(r"\{.*\}", content, re.DOTALL)
+            parsed = json.loads(m.group(0)) if m else {"items": []}
+        exp = {it.get("id"): it.get("explanation", "") for it in parsed.get("items", [])}
+        for i, r in enumerate(repos):
+            r["explanation"] = exp.get(i + 1) or r.get("desc", "")
+    except Exception as e:
+        log(f"GitHub 解释生成失败, 用原描述兜底: {e}")
+        for r in repos:
+            r.setdefault("explanation", r.get("desc", ""))
+    return gh
+
+
+# =========================================================
 # HTML 生成
 # =========================================================
 
@@ -528,6 +640,19 @@ a{text-decoration:none;color:inherit}
 .t3-why-default{background:#f9fafb;border-radius:8px;padding:7px 10px;font-size:.76em;color:#9ca3af;line-height:1.6;font-style:italic}
 .t3-link{align-self:flex-start;font-size:.76em;color:#4f6ef7;border:1px solid rgba(79,110,247,.25);border-radius:10px;padding:3px 12px;margin-top:auto}
 .t3-link:hover{background:#4f6ef7;color:#fff}
+/* === GitHub 板块 === */
+.gh-wrap{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:36px}
+@media(max-width:860px){.gh-wrap{grid-template-columns:1fr}}
+.gh-col{background:#fff;border-radius:16px;padding:18px 18px 8px;box-shadow:0 2px 14px rgba(0,0,0,.055);border:1px solid #eaedf2}
+.gh-col-hd{font-size:.86em;font-weight:800;color:#1e2433;margin-bottom:10px}
+.gh-item{display:block;padding:11px 0;border-bottom:1px solid #f4f5f8}
+.gh-item:last-child{border-bottom:none}
+.gh-item:hover .gh-name{color:#4f6ef7}
+.gh-top{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:4px}
+.gh-name{font-size:.88em;font-weight:700;color:#1e2433;word-break:break-all}
+.gh-star{font-size:.74em;color:#f59e0b;font-weight:700;white-space:nowrap}
+.gh-exp{font-size:.8em;color:#6b7280;line-height:1.62}
+.gh-lang{display:inline-block;margin-top:6px;font-size:.68em;color:#4f6ef7;background:rgba(79,110,247,.08);border:1px solid rgba(79,110,247,.15);padding:1px 8px;border-radius:9px}
 /* === 日期块 === */
 .day-block{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 2px 14px rgba(0,0,0,.055);border:1px solid #eaedf2;margin-bottom:28px}
 .day-hdr{background:linear-gradient(90deg,#4f6ef7,#764ba2);padding:12px 22px}
@@ -602,6 +727,13 @@ a{text-decoration:none;color:inherit}
   </div>
   <div class="top3-grid" id="top3"></div>
 
+  <!-- GitHub 热门项目 -->
+  <div class="sec-hd"><span class="sec-hd-title">💻 GitHub 热门项目</span><span class="sec-hd-sub">每天精选 AI 开源项目，点开就是源码</span></div>
+  <div class="gh-wrap" id="gh-wrap">
+    <div class="gh-col"><div class="gh-col-hd">⭐ AI 星标总榜</div><div id="gh-top"></div></div>
+    <div class="gh-col"><div class="gh-col-hd">🔥 近期飙升</div><div id="gh-trend"></div></div>
+  </div>
+
   <!-- 所有日报 -->
   <div class="sec-hd"><span class="sec-hd-title">📰 今日 AI 资讯</span></div>
   <div id="news-list"><div class="loading">正在加载今日资讯…</div></div>
@@ -665,8 +797,27 @@ function renderDay(day){
   </div>`;
 }
 
+function renderGithub(day){
+  const g=day&&day.github;
+  const wrap=document.getElementById("gh-wrap");
+  const has=g&&((g.top_starred&&g.top_starred.length)||(g.trending&&g.trending.length));
+  if(!has){if(wrap)wrap.style.display="none";return;}
+  if(wrap)wrap.style.display="";
+  function card(r){
+    return `<a href="${esc(r.url)}" target="_blank" rel="noopener" class="gh-item">
+      <div class="gh-top"><span class="gh-name">${esc(r.name)}</span><span class="gh-star">★ ${esc(String(r.stars||0))}</span></div>
+      <div class="gh-exp">${esc(r.explanation||r.desc||"")}</div>
+      ${r.language?`<span class="gh-lang">${esc(r.language)}</span>`:""}
+    </a>`;
+  }
+  const t=document.getElementById("gh-top"),tr=document.getElementById("gh-trend");
+  if(t)t.innerHTML=(g.top_starred||[]).map(card).join("");
+  if(tr)tr.innerHTML=(g.trending||[]).map(card).join("");
+}
+
 if(EMBEDDED&&EMBEDDED.articles&&EMBEDDED.articles.length){
   renderTop3(EMBEDDED);
+  renderGithub(EMBEDDED);
   document.getElementById("news-list").innerHTML=renderDay(EMBEDDED);
 }
 
@@ -676,6 +827,7 @@ async function load(){
     const days=await Promise.all(dates.map(d=>fetch("data/"+d+".json").then(r=>r.json())));
     document.getElementById("nav").innerHTML=dates.map((d,i)=>`<a href="#${d}"${i===0?' class="cur"':""}>${d}</a>`).join("");
     renderTop3(days[0]);
+    renderGithub(days[0]);
     document.getElementById("news-list").innerHTML=days.map(renderDay).join("");
     const ts=document.getElementById("footer-ts");
     if(ts)ts.textContent="最后更新："+dates[0];
@@ -785,10 +937,21 @@ def main(force=False):
         notify("AI 日报失败", "DeepSeek 未返回任何文章")
         sys.exit(1)
 
+    # GitHub 热门 AI 项目板块(失败不影响日报主体)
+    github = {}
+    try:
+        github = fetch_github()
+        if github.get("top_starred") or github.get("trending"):
+            add_github_explanations(github, api_key)
+    except Exception as e:
+        log(f"GitHub 板块失败(已跳过): {e}")
+        github = {}
+
     data["days"].insert(0, {
         "date":          today,
         "articles":      processed["articles"],
         "plain_summary": processed["plain_summary"],
+        "github":        github,
     })
     data["days"] = data["days"][:30]  # 保留最近 30 天
 
