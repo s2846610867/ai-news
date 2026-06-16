@@ -375,7 +375,7 @@ def process_with_deepseek(news_items: list, api_key: str, recent_titles: list = 
 GH_TOPICS = ["llm", "ai-agent", "generative-ai"]
 
 
-def _gh_search(query: str, per_page: int = 8) -> list:
+def _gh_search(query: str, per_page: int = 15) -> list:
     params = urllib.parse.urlencode({
         "q": query, "sort": "stars", "order": "desc", "per_page": per_page,
     })
@@ -397,26 +397,42 @@ def _gh_search(query: str, per_page: int = 8) -> list:
             "name": r.get("full_name", ""),
             "url": r.get("html_url", ""),
             "stars": r.get("stargazers_count", 0),
+            "forks": r.get("forks_count", 0),
             "language": r.get("language") or "",
             "desc": (r.get("description") or "")[:300],
         })
     return items
 
 
+def _gh_is_quality(r: dict) -> bool:
+    """反刷星过滤: 必须有描述; 高星项目的 fork 数要达到星数的 1% 以上
+    (真正热门项目 fork 很多, 刷星 spam 几乎没人 fork)"""
+    if not (r.get("desc") or "").strip():
+        return False
+    stars, forks = r.get("stars", 0), r.get("forks", 0)
+    if stars >= 3000 and forks < stars * 0.01:
+        return False
+    return True
+
+
 def _gh_merge_topics(extra: str = "", want: int = 5) -> list:
-    """对多个 AI topic 各搜一次, 合并去重后按星数取前 want 个"""
+    """对多个 AI topic 各搜一次, 合并去重, 过滤刷星, 再按星数取前 want 个"""
     seen, merged = set(), []
     for t in GH_TOPICS:
         q = f"topic:{t}" + (f" {extra}" if extra else "")
         try:
-            for r in _gh_search(q, 8):
+            for r in _gh_search(q, 15):
                 if r["name"] and r["name"] not in seen:
                     seen.add(r["name"])
                     merged.append(r)
         except Exception as e:
             log(f"GitHub 搜索失败 (topic:{t} {extra}): {e}")
-    merged.sort(key=lambda x: x.get("stars", 0), reverse=True)
-    return merged[:want]
+    quality = [r for r in merged if _gh_is_quality(r)]
+    dropped = len(merged) - len(quality)
+    if dropped:
+        log(f"GitHub 过滤: 候选 {len(merged)} 个, 滤掉疑似刷星/无描述 {dropped} 个")
+    quality.sort(key=lambda x: x.get("stars", 0), reverse=True)
+    return quality[:want]
 
 
 def fetch_github() -> dict:
