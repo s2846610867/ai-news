@@ -48,15 +48,6 @@ a{text-decoration:none;color:inherit}
 .t3-why-default{background:#f9fafb;border-radius:8px;padding:7px 10px;font-size:.76em;color:#9ca3af;line-height:1.6;font-style:italic}
 .t3-link{align-self:flex-start;font-size:.76em;color:#4f6ef7;border:1px solid rgba(79,110,247,.25);border-radius:10px;padding:3px 12px;margin-top:auto}
 .t3-link:hover{background:#4f6ef7;color:#fff}
-/* === 今日 AI 概念 === */
-.concept-wrap{margin-bottom:36px}
-.concept-card{background:#fff;border-radius:16px;padding:22px 24px;box-shadow:0 2px 14px rgba(0,0,0,.055);border:1px solid #eaedf2;border-left:4px solid #52c5a8}
-.concept-name{font-size:1.2em;font-weight:800;color:#1e2433;margin-bottom:5px}
-.concept-line{font-size:.9em;color:#52c5a8;font-weight:600;margin-bottom:16px}
-.concept-body{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-@media(max-width:580px){.concept-body{grid-template-columns:1fr}}
-.c-lbl{font-size:.68em;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#d1d5db;margin-bottom:5px}
-.c-txt{font-size:.84em;color:#4b5563;line-height:1.7}
 /* === 日期块 === */
 .day-block{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 2px 14px rgba(0,0,0,.055);border:1px solid #eaedf2;margin-bottom:28px}
 .day-hdr{background:linear-gradient(90deg,#4f6ef7,#764ba2);padding:12px 22px}
@@ -93,7 +84,7 @@ a{text-decoration:none;color:inherit}
 @media(max-width:600px){
   .hero{padding:38px 16px 32px}
   .wrap{padding:24px 12px 12px}
-  .t3-card,.concept-card{padding:16px}
+  .t3-card{padding:16px}
   .nc{padding:14px 16px}
   .day-hdr{padding:11px 16px}
   .plain-sum{padding:14px 16px}
@@ -131,25 +122,6 @@ a{text-decoration:none;color:inherit}
   </div>
   <div class="top3-grid" id="top3"></div>
 
-  <!-- 今日 AI 概念 -->
-  <div class="sec-hd"><span class="sec-hd-title">📚 今日 AI 概念</span></div>
-  <div class="concept-wrap" id="concept-wrap">
-    <div class="concept-card">
-      <div class="concept-name">MCP</div>
-      <div class="concept-line">MCP 可以理解成 AI 连接外部工具的标准接口。</div>
-      <div class="concept-body">
-        <div>
-          <div class="c-lbl">适合新手的理解</div>
-          <div class="c-txt">以前每个工具都要单独适配，现在可以用更统一的方式让 AI 调用文件、数据库、浏览器、代码工具等能力，像给 AI 装了个万能插座。</div>
-        </div>
-        <div>
-          <div class="c-lbl">可以用在哪</div>
-          <div class="c-txt">AI 助手、自动化工作流、Claude Code、知识库、项目管理工具。</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- 所有日报 -->
   <div class="sec-hd"><span class="sec-hd-title">📰 今日 AI 资讯</span></div>
   <div id="news-list"><div class="loading">正在加载今日资讯…</div></div>
@@ -165,7 +137,7 @@ a{text-decoration:none;color:inherit}
 
 <script>
 const WD=["周日","周一","周二","周三","周四","周五","周六"];
-const EMBEDDED={"date": "2026-06-16", "articles": [{"title": "阿里发布首个具身大模型", "summary": "阿里推出Qwen-Robot系列，让机器人能边走、边看、边思考，融合视觉和语言能力。", "why": "说明AI正从聊天走向物理世界，未来机器人可能像人一样理解环境。", "category": "模型", "beginner_takeaway": "关注大模型如何从文本扩展到现实交互。", "for_me": "暂时不用管，但可以留意这类技术未来如何用于自动生成视频中的3D场景。", "url": "https://www.qbitai.com/2026/06/435873.html"}, {"title": "智谱发布最新旗舰模型GLM-5.2", "summary": "智谱推出新一代大模型GLM-5.2，性能提升，股价创上市新高。", "why": "新模型可能带来更好的文本生成效果，影响你写脚本的质量。", "category": "模型", "beginner_takeaway": "可以试试GLM-5.2写脚本，对比Claude/DeepSeek的效果。", "for_me": "直接相关：写脚本时多一个选择，可能更懂中文语境，值得试用。", "url": "https://36kr.com/p/3854486447510535?f=rss"}, {"title": "大疆发布口袋电影机Pocket 4P", "summary": "大疆推出Osmo Pocket 4P，双摄、专业色彩，起售价3799元，定位口袋电影机。", "why": "AI视频创作者有了更便携的专业拍摄工具，提升素材质量。", "category": "工具", "beginner_takeaway": "做AI视频时，好的原始素材能让AI生成效果更好。", "for_me": "有关系：如果你做AI视频需要实拍素材，这台设备能帮你拍出更专业的画面，配合AI后期。", "url": "https://36kr.com/p/3854510160549124?f=rss"}, {"title": "支付宝政务AI助手服务破1亿次", "summary": "支付宝AI助手“晓政”累计服务超1亿次，覆盖公积金、人社等民生事项。", "why": "AI已大规模进入日常生活，普通人办事更便捷。", "category": "应用", "beginner_takeaway": "AI不只是聊天，还能帮你办政务，值得体验。", "for_me": "直接能用：查公积金、办社保时试试“晓政”，省时间。", "url": "https://36kr.com/p/3854486447510535?f=rss"}, {"title": "小红书或本月提交香港IPO", "summary": "小红书准备月底前秘密提交香港上市申请。", "why": "小红书是AI创作者的重要平台，上市可能带来更多变现机会。", "category": "公司", "beginner_takeaway": "关注平台动态，未来可能有更多创作者扶持政策。", "for_me": "有关系：如果你在小红书发AI视频作品，上市后平台可能更重视创作者变现。", "url": "https://36kr.com/p/3854486447510535?f=rss"}, {"title": "宇树机器人将登珠峰", "summary": "宇树机器人已登顶钦博拉索山，计划挑战珠穆朗玛峰。", "why": "机器人能力突破极限环境，展示AI在极端场景的应用潜力。", "category": "机器人", "beginner_takeaway": "机器人正在变得更强大，未来可能参与更多户外任务。", "for_me": "暂时不用管，但可以关注机器人视频素材，未来做AI视频时可能用到。", "url": "https://www.qbitai.com/2026/06/435817.html"}, {"title": "AnySearch吸引10万开发者", "summary": "专为AI Agent设计的搜索服务AnySearch上线首月吸引10万开发者。", "why": "AI Agent需要更好的搜索能力，AnySearch让AI能获取网页之外的信息。", "category": "Agent", "beginner_takeaway": "Agent是AI的下一个热点，学会用搜索工具能提升AI效率。", "for_me": "暂时不用管，但如果你未来用AI做自动化任务，这类工具会很有用。", "url": "https://www.qbitai.com/2026/06/435861.html"}, {"title": "海洋机器人公司获10亿融资", "summary": "世航智能完成超10亿元A轮融资，朱啸虎第五次投资，用于海洋机器人研发。", "why": "AI+机器人赛道火热，资本看好水下机器人商业化前景。", "category": "公司", "beginner_takeaway": "AI不只在地上，水下也有巨大应用空间。", "for_me": "暂时不用管，但说明AI行业机会多，学AI有长期价值。", "url": "https://36kr.com/p/3853011900142848?f=rss"}, {"title": "山姆总部因食品安全被约谈", "summary": "市场监管总局就食品安全问题约谈山姆总部，要求严格整改。", "why": "食品安全与每个人相关，AI也可用于食品检测和追溯。", "category": "政策", "beginner_takeaway": "AI可用于食品安全监控，是未来应用方向。", "for_me": "暂时不用管，但可以思考AI如何解决生活中的实际问题。", "url": "https://36kr.com/p/3855082873476102?f=rss"}, {"title": "HarmonyOS创新赛学生作品亮眼", "summary": "年轻开发者用HarmonyOS 7开发AI应用，从生活观察出发解决实际问题。", "why": "零基础也能用AI做产品，激励新手动手实践。", "category": "应用", "beginner_takeaway": "AI创作不只看技术，创意和观察更重要。", "for_me": "直接相关：你可以像这些学生一样，从生活小问题出发，用AI做视频或工具。", "url": "https://36kr.com/p/3854243718550528?f=rss"}], "plain_summary": "今天AI圈挺热闹的。阿里出了个新模型，让机器人能看能走能思考，感觉机器人越来越像人了。智谱也发了新模型GLM-5.2，写脚本的又多一个选择。大疆出了个口袋电影机，做AI视频的可以拿来拍素材，配合AI后期效果更好。支付宝的AI助手已经帮了1亿人次办事，AI真的走进生活了。小红书可能要上市，对在上面发作品的创作者是好事。另外，宇树机器人要去爬珠峰，海洋机器人拿了10亿融资，说明AI到处都在用。最接地气的是，一群学生用AI做了很多生活小工具，零基础也能搞，你也可以试试。"};
+const EMBEDDED={"date": "2026-06-16", "articles": [{"title": "Anthropic最强模型被禁", "summary": "美国政府要求Anthropic暂停Mythos 5和Fable 5的海外访问，公司被迫下线。", "why": "影响AI行业格局，可能让非美国AI公司崛起，普通用户未来用顶级模型可能受限。", "category": "政策", "beginner_takeaway": "关注政策变化，了解AI工具可能因政治原因突然不可用。", "for_me": "如果你依赖Claude做脚本，注意未来可能无法访问最新版本，建议备份工作流并关注替代工具。", "url": "https://www.theverge.com/ai-artificial-intelligence/950412/anthropic-trump-adminstration-claude-mythos-fable-5-export-controls"}, {"title": "Facebook搜索接入AI模式", "summary": "Meta推出AI Mode搜索，用你的公开帖子生成答案，同时支持换球衣等照片特效。", "why": "AI开始利用社交数据，创作者可借此获取流量或灵感，但隐私需留意。", "category": "应用", "beginner_takeaway": "试试在Facebook用AI Mode搜索，看它如何利用公开内容。", "for_me": "做AI视频的你可以用这个功能找素材灵感，或观察AI如何理解社交内容，但别依赖它做商业决策。", "url": "https://www.theverge.com/tech/950264/meta-ai-mode-search-facebook"}, {"title": "Anthropic发布Cowork工具", "summary": "Claude推出Cowork，无需编程就能让AI帮你处理文件，团队用Claude Code一周半开发完成。", "why": "AI工具门槛降低，非技术用户也能用AI自动化工作，提升效率。", "category": "工具", "beginner_takeaway": "学用Cowork处理文档，省时省力，适合新手入门。", "for_me": "直接上手！用Cowork帮你整理脚本、生成视频文案，不用写代码，节省时间做创意。", "url": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no"}, {"title": "免费AI编程工具Goose", "summary": "开源工具Goose能替代收费的Claude Code，免费写代码、调试和部署。", "why": "降低AI编程成本，普通创作者也能用AI做自动化，省下订阅费。", "category": "开源", "beginner_takeaway": "想学AI编程但预算有限？试试Goose。", "for_me": "如果你做AI视频需要写点小脚本（比如批量处理图片），用Goose免费搞定，省下每月200美元。", "url": "https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free"}, {"title": "Google搜索框25年来首次改版", "summary": "Google宣布重新设计搜索框，从文字输入转向AI驱动的交互方式。", "why": "搜索方式变革，AI将直接生成答案，影响内容创作者获取信息的方式。", "category": "工具", "beginner_takeaway": "留意新搜索如何改变你找资料的习惯。", "for_me": "做AI视频时，以后搜素材、找教程可能直接得到AI总结，省去翻网页时间，但注意核实信息准确性。", "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think"}, {"title": "Slack推出AI助手Slackbot", "summary": "Salesforce发布新版Slackbot，能搜索数据、写文档、替员工操作。", "why": "AI进入办公场景，提升团队协作效率，创作者可借鉴其自动化思路。", "category": "工具", "beginner_takeaway": "了解AI如何帮你处理日常办公任务。", "for_me": "如果你用Slack和团队协作，试试Slackbot自动整理会议记录或生成脚本草稿，但别让它直接发重要消息。", "url": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and"}, {"title": "马来西亚AI客服公司获投6250万美元", "summary": "Respond.io用AI代理处理客户咨询，按对话收费，计划收购扩张。", "why": "AI客服模式成熟，小企业也能用低成本AI提升服务，变现机会多。", "category": "公司", "beginner_takeaway": "关注AI客服创业方向，可能是副业切入点。", "for_me": "如果你做AI视频想变现，可以研究这类工具，帮小商家做AI客服视频教程，或自己接单做客服自动化。", "url": "https://techcrunch.com/2026/06/15/malaysias-respond-io-raises-62-5m-eyes-acquisitions-in-north-america-and-europe/"}, {"title": "韩国人为何痴迷AI？", "summary": "韩国机场、地铁等场景广泛使用AI，民众接受度极高。", "why": "展示AI融入日常生活的可能性，给创作者提供应用场景灵感。", "category": "应用", "beginner_takeaway": "观察AI如何改变生活，思考自己能用AI做什么。", "for_me": "做AI视频的你可以参考韩国案例，创作“AI改变生活”类内容，容易引发共鸣，但别照搬，结合本地特色。", "url": "https://www.technologyreview.com/2026/06/15/1138983/why-do-south-koreans-love-ai-so-much/"}, {"title": "脑机接口助ALS患者说话", "summary": "一名瘫痪患者用脑植入电极三年，通过AI系统“说话”，成为重度用户。", "why": "AI在医疗领域突破，展示技术的人文价值，激励创作者探索AI+公益。", "category": "应用", "beginner_takeaway": "AI不仅能赚钱，还能帮助他人，思考如何用技术做有意义的事。", "for_me": "如果你对AI视频创作有热情，可以关注这类故事，制作科普或公益视频，传递正能量，但别过度消费患者。", "url": "https://www.technologyreview.com/2026/06/15/1138953/man-als-first-power-user-brain-implant-speak-bci/"}, {"title": "AI初创公司Listen Labs获6900万美元", "summary": "Listen Labs用AI做客户访谈，靠一块“乱码”广告牌招聘走红。", "why": "AI创业新玩法，低成本营销+高融资，给创作者变现新思路。", "category": "公司", "beginner_takeaway": "学学他们如何用创意吸引关注。", "for_me": "做AI视频的你可以借鉴这种“谜题营销”，用AI生成创意内容吸引粉丝，但别只追求噱头，内容质量才是根本。", "url": "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai"}], "plain_summary": "今天AI圈最炸的是Anthropic的顶级模型被美国政府禁了，以后用最新AI可能没那么自由。好消息是，Anthropic马上推出了Cowork，不用写代码就能让AI帮你干活，还有免费的开源工具Goose能替代收费的编程助手。Google搜索框也改了，以后搜东西直接出答案。另外，韩国人超爱AI，脑机接口帮瘫痪患者说话，还有几个AI公司拿到大钱。对咱们做视频的新手来说，工具越来越多、越来越便宜，但政策风险也得留个心眼。"};
 function esc(s){return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
 function fmtDate(d){const[y,m,day]=d.split("-");return y+"年"+m+"月"+day+"日 "+WD[new Date(d+"T00:00:00").getDay()];}
 
