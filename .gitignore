@@ -1,3 +1,4 @@
+.env
 mykey.txt
 ai_news_data.json
 *.log
