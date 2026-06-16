@@ -243,7 +243,7 @@ def fetch_all_news() -> list:
 # DeepSeek 处理
 # =========================================================
 
-def process_with_deepseek(news_items: list, api_key: str) -> dict:
+def process_with_deepseek(news_items: list, api_key: str, recent_titles: list = None) -> dict:
     from openai import OpenAI
     client = OpenAI(api_key=api_key, base_url="https://api.deepseek.com", timeout=DEEPSEEK_TIMEOUT)
 
@@ -253,14 +253,25 @@ def process_with_deepseek(news_items: list, api_key: str) -> dict:
         for i, item in enumerate(news_items[:20])
     ])
 
+    # 最近几天已报道过的标题, 喂给模型避免"换皮"重复报道同一件事
+    recent_titles = recent_titles or []
+    recent_block = ""
+    if recent_titles:
+        lines = "\n".join(f"- {t}" for t in recent_titles if t)
+        recent_block = (
+            "\n\n以下是最近几天【已经报道过】的新闻标题，"
+            "今天不要再选同一件事（即使换了说法、换了角度也算重复）:\n" + lines + "\n"
+        )
+
     prompt = f"""你是AI新闻编辑, 今天是{today}。目标读者是AI新手和普通创作者, 不懂技术术语。具体来说, 读者是一个零基础在学AI、正在做AI视频小作品、关注怎么用AI变现的新手, 目前在用Claude/DeepSeek写脚本、用即梦/可灵生图生视频、想把AI技能变成副业。
 
 以下是今天收集的AI相关新闻:
 {news_text}
-
+{recent_block}
 请按以下标准筛选并排序, 最终挑出最值得关注的约10条:
 - 优先选: 新模型/产品发布、重大技术突破、行业政策、公司重要动态
-- 降低权重: 重复报道同一件事、纯营销软文、泛泛的"AI未来展望"类文章
+- 去重: 多条其实在讲同一件事时只保留信息最全的一条; 不要选已经在上面【已经报道过】列表里出现过的同一件事
+- 降低权重: 纯营销软文、泛泛的"AI未来展望"类文章
 - 排序依据: 对普通读者的实际影响力, 越靠前越重要
 - 语言风格: 通俗口语化, 不要夸大, 不要制造焦虑, 不要写投资建议, 不要写未经证实的结论
 
@@ -274,7 +285,8 @@ def process_with_deepseek(news_items: list, api_key: str) -> dict:
       "category": "分类: 从「模型」「工具」「公司」「应用」「政策」「开源」「视频」「Agent」「机器人」中选一个",
       "beginner_takeaway": "AI新手能从这条新闻学到什么或关注什么 (30字以内, 可以是一个问题或一个值得观察的点)",
       "for_me": "对正在学AI、做AI视频、想用AI变现的新手来说, 这条消息跟他有没有关系、要不要关注、能不能直接用上——大白话说清楚 (50字以内, 说不上来就写「暂时不用管」, 有关系就说具体怎么用或为什么值得看)",
-      "url": "原文链接"
+      "source_id": 这条日报主要依据的那条原始新闻开头中括号里的数字(例如 3 表示基于上面第[3]条),
+      "url": "原文链接(直接照抄对应那条原始新闻的链接, 不要改写或编造)"
     }}
   ],
   "plain_summary": "今天AI圈大白话总结 (150字左右)。假设读者完全不懂技术, 用口语化表达, 像朋友聊天一样说今天最值得关注的AI动态, 可以带上自己的看法。"
@@ -310,6 +322,19 @@ def process_with_deepseek(news_items: list, api_key: str) -> dict:
     # 字段校验,缺失时给默认值,避免后续 KeyError
     parsed.setdefault("articles", [])
     parsed.setdefault("plain_summary", "")
+
+    # 用 source_id 把每条日报映射回原始新闻的真实链接,
+    # 修复 DeepSeek 自行填 URL 时张冠李戴(不同新闻共用一个错链接)的老问题。
+    # 注意: 只改 URL, 不删任何文章, 避免误伤真新闻。
+    for a in parsed["articles"]:
+        sid = a.get("source_id")
+        try:
+            sid = int(sid)
+        except (TypeError, ValueError):
+            sid = None
+        if sid and 1 <= sid <= len(news_items):
+            a["url"] = news_items[sid - 1].get("url", a.get("url", "#"))
+        a.pop("source_id", None)
     return parsed
 
 
@@ -732,10 +757,25 @@ def main(force=False):
         notify("AI 日报失败", f"新闻数量不足: {len(news_items)} 条")
         sys.exit(1)
 
+    # —— 跨天去重: 把最近 7 天已出现过的链接从候选里剔除 ——
+    prev_days = data["days"]  # 此时今天还没插入, 全是历史
+    recent_urls = set()
+    for d in prev_days[:7]:
+        for a in d.get("articles", []):
+            u = (a.get("url") or "").strip()
+            if u:
+                recent_urls.add(u)
+    filtered = [it for it in news_items if (it.get("url") or "").strip() not in recent_urls]
+    if len(filtered) >= 8 and len(filtered) < len(news_items):
+        log(f"跨天去重: 剔除最近7天已出现过的 {len(news_items) - len(filtered)} 条")
+        news_items = filtered
+    # 最近 5 天的标题, 交给 DeepSeek 避免换皮重复报道同一件事
+    recent_titles = [a.get("title", "") for d in prev_days[:5] for a in d.get("articles", [])]
+
     log("DeepSeek 整理中...")
     api_key = get_api_key()
     try:
-        processed = process_with_deepseek(news_items, api_key)
+        processed = process_with_deepseek(news_items, api_key, recent_titles)
     except Exception as e:
         log(f"❌ DeepSeek 处理失败: {e}")
         notify("AI 日报失败", f"DeepSeek 处理失败: {e}")
