@@ -35,9 +35,17 @@ SITE_DIR     = Path(os.getenv("AI_NEWS_SITE_DIR", str(AGENT_DIR / "ai-news-site"
 
 # —— RSS 订阅源 (中文 AI 媒体) ————————————————————
 RSS_FEEDS = [
-    ("机器之心", "https://feeds.feedburner.com/jiqizhixin"),
-    ("量子位",   "https://www.qbitai.com/feed"),
-    ("36氪·AI", "https://36kr.com/feed"),
+    # —— 中文 AI / 科技媒体 ——
+    ("量子位",    "https://www.qbitai.com/feed"),
+    ("36氪",      "https://36kr.com/feed"),
+    ("IT之家",    "https://www.ithome.com/rss/"),
+    ("少数派",    "https://sspai.com/feed"),
+    ("爱范儿",    "https://www.ifanr.com/feed"),
+    # —— 英文 AI 媒体(DeepSeek 会翻译并用中文重写) ——
+    ("TechCrunch AI", "https://techcrunch.com/category/artificial-intelligence/feed/"),
+    ("The Verge AI",  "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml"),
+    ("VentureBeat AI", "https://venturebeat.com/category/ai/feed/"),
+    ("MIT科技评论",   "https://www.technologyreview.com/feed/"),
 ]
 
 WEEKDAYS = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
@@ -145,27 +153,46 @@ def clean_text(text: str) -> str:
 # 抓取新闻
 # =========================================================
 
+def _fetch_one_feed(source: str, url: str) -> tuple:
+    import feedparser
+    feed = feedparser.parse(url)
+    items = []
+    for entry in feed.entries[:6]:
+        title   = clean_text(entry.get("title", ""))
+        link    = entry.get("link", "")
+        summary = clean_text(entry.get("summary", ""))[:400]
+        if title and link:
+            items.append({"title": title, "url": link, "snippet": summary, "source": source})
+    return source, items
+
+
 def fetch_rss() -> list:
     try:
-        import feedparser
+        import feedparser  # noqa: F401
     except ImportError:
         log("⚠️ 未安装 feedparser, 跳过 RSS 抓取")
         return []
 
-    results = []
-    for source, url in RSS_FEEDS:
+    results, ok, empty = [], [], []
+    # 多个源并行抓取, 总耗时≈最慢的单个源, 某个源挂了/超时只跳过它, 不拖累整体
+    with concurrent.futures.ThreadPoolExecutor(max_workers=len(RSS_FEEDS)) as pool:
+        futs = {pool.submit(_fetch_one_feed, s, u): s for s, u in RSS_FEEDS}
         try:
-            feed = retry(f"RSS抓取 ({source})", lambda: feedparser.parse(url), attempts=2, delay=3)
-            for entry in feed.entries[:8]:
-                title   = clean_text(entry.get("title", ""))
-                link    = entry.get("link", "")
-                summary = clean_text(entry.get("summary", ""))[:400]
-                if title and link:
-                    results.append({"title": title, "url": link,
-                                     "snippet": summary, "source": source})
-        except Exception as e:
-            log(f"RSS抓取失败 ({source}): {e}")
-    log(f"RSS 获取 {len(results)} 条")
+            for fut in concurrent.futures.as_completed(futs, timeout=45):
+                src = futs[fut]
+                try:
+                    source, items = fut.result()
+                    if items:
+                        results += items
+                        ok.append(f"{source}:{len(items)}")
+                    else:
+                        empty.append(source)
+                except Exception as e:
+                    empty.append(f"{src}(err)")
+                    log(f"RSS抓取失败 ({src}): {e}")
+        except concurrent.futures.TimeoutError:
+            log("⚠️ 部分 RSS 源超时, 使用已返回的结果")
+    log(f"RSS 获取 {len(results)} 条 | 有内容: {', '.join(ok) or '无'} | 空或失败: {', '.join(empty) or '无'}")
     return results
 
 
@@ -243,24 +270,35 @@ def fetch_all_news() -> list:
 # DeepSeek 处理
 # =========================================================
 
-def process_with_deepseek(news_items: list, api_key: str) -> dict:
+def process_with_deepseek(news_items: list, api_key: str, recent_titles: list = None) -> dict:
     from openai import OpenAI
     client = OpenAI(api_key=api_key, base_url="https://api.deepseek.com", timeout=DEEPSEEK_TIMEOUT)
 
     today = datetime.now().strftime("%Y年%m月%d日")
     news_text = "\n\n".join([
         f"[{i+1}] 标题: {item['title']}\n摘要: {item['snippet']}\n来源: {item['source']}\n链接: {item['url']}"
-        for i, item in enumerate(news_items[:20])
+        for i, item in enumerate(news_items[:30])
     ])
+
+    # 最近几天已报道过的标题, 喂给模型避免"换皮"重复报道同一件事
+    recent_titles = recent_titles or []
+    recent_block = ""
+    if recent_titles:
+        lines = "\n".join(f"- {t}" for t in recent_titles if t)
+        recent_block = (
+            "\n\n以下是最近几天【已经报道过】的新闻标题，"
+            "今天不要再选同一件事（即使换了说法、换了角度也算重复）:\n" + lines + "\n"
+        )
 
     prompt = f"""你是AI新闻编辑, 今天是{today}。目标读者是AI新手和普通创作者, 不懂技术术语。具体来说, 读者是一个零基础在学AI、正在做AI视频小作品、关注怎么用AI变现的新手, 目前在用Claude/DeepSeek写脚本、用即梦/可灵生图生视频、想把AI技能变成副业。
 
 以下是今天收集的AI相关新闻:
 {news_text}
-
+{recent_block}
 请按以下标准筛选并排序, 最终挑出最值得关注的约10条:
 - 优先选: 新模型/产品发布、重大技术突破、行业政策、公司重要动态
-- 降低权重: 重复报道同一件事、纯营销软文、泛泛的"AI未来展望"类文章
+- 去重: 多条其实在讲同一件事时只保留信息最全的一条; 不要选已经在上面【已经报道过】列表里出现过的同一件事; 最终选出的每一条必须来自【不同】的原始新闻编号(source_id 互不相同), 若某条原始新闻同时讲了好几件事, 只取其中最重要的一件, 用别的原始新闻补足到约10条
+- 降低权重: 纯营销软文、泛泛的"AI未来展望"类文章
 - 排序依据: 对普通读者的实际影响力, 越靠前越重要
 - 语言风格: 通俗口语化, 不要夸大, 不要制造焦虑, 不要写投资建议, 不要写未经证实的结论
 
@@ -274,7 +312,8 @@ def process_with_deepseek(news_items: list, api_key: str) -> dict:
       "category": "分类: 从「模型」「工具」「公司」「应用」「政策」「开源」「视频」「Agent」「机器人」中选一个",
       "beginner_takeaway": "AI新手能从这条新闻学到什么或关注什么 (30字以内, 可以是一个问题或一个值得观察的点)",
       "for_me": "对正在学AI、做AI视频、想用AI变现的新手来说, 这条消息跟他有没有关系、要不要关注、能不能直接用上——大白话说清楚 (50字以内, 说不上来就写「暂时不用管」, 有关系就说具体怎么用或为什么值得看)",
-      "url": "原文链接"
+      "source_id": 这条日报主要依据的那条原始新闻开头中括号里的数字(例如 3 表示基于上面第[3]条),
+      "url": "原文链接(直接照抄对应那条原始新闻的链接, 不要改写或编造)"
     }}
   ],
   "plain_summary": "今天AI圈大白话总结 (150字左右)。假设读者完全不懂技术, 用口语化表达, 像朋友聊天一样说今天最值得关注的AI动态, 可以带上自己的看法。"
@@ -310,6 +349,19 @@ def process_with_deepseek(news_items: list, api_key: str) -> dict:
     # 字段校验,缺失时给默认值,避免后续 KeyError
     parsed.setdefault("articles", [])
     parsed.setdefault("plain_summary", "")
+
+    # 用 source_id 把每条日报映射回原始新闻的真实链接,
+    # 修复 DeepSeek 自行填 URL 时张冠李戴(不同新闻共用一个错链接)的老问题。
+    # 注意: 只改 URL, 不删任何文章, 避免误伤真新闻。
+    for a in parsed["articles"]:
+        sid = a.get("source_id")
+        try:
+            sid = int(sid)
+        except (TypeError, ValueError):
+            sid = None
+        if sid and 1 <= sid <= len(news_items):
+            a["url"] = news_items[sid - 1].get("url", a.get("url", "#"))
+        a.pop("source_id", None)
     return parsed
 
 
@@ -476,15 +528,6 @@ a{text-decoration:none;color:inherit}
 .t3-why-default{background:#f9fafb;border-radius:8px;padding:7px 10px;font-size:.76em;color:#9ca3af;line-height:1.6;font-style:italic}
 .t3-link{align-self:flex-start;font-size:.76em;color:#4f6ef7;border:1px solid rgba(79,110,247,.25);border-radius:10px;padding:3px 12px;margin-top:auto}
 .t3-link:hover{background:#4f6ef7;color:#fff}
-/* === 今日 AI 概念 === */
-.concept-wrap{margin-bottom:36px}
-.concept-card{background:#fff;border-radius:16px;padding:22px 24px;box-shadow:0 2px 14px rgba(0,0,0,.055);border:1px solid #eaedf2;border-left:4px solid #52c5a8}
-.concept-name{font-size:1.2em;font-weight:800;color:#1e2433;margin-bottom:5px}
-.concept-line{font-size:.9em;color:#52c5a8;font-weight:600;margin-bottom:16px}
-.concept-body{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-@media(max-width:580px){.concept-body{grid-template-columns:1fr}}
-.c-lbl{font-size:.68em;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#d1d5db;margin-bottom:5px}
-.c-txt{font-size:.84em;color:#4b5563;line-height:1.7}
 /* === 日期块 === */
 .day-block{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 2px 14px rgba(0,0,0,.055);border:1px solid #eaedf2;margin-bottom:28px}
 .day-hdr{background:linear-gradient(90deg,#4f6ef7,#764ba2);padding:12px 22px}
@@ -521,7 +564,7 @@ a{text-decoration:none;color:inherit}
 @media(max-width:600px){
   .hero{padding:38px 16px 32px}
   .wrap{padding:24px 12px 12px}
-  .t3-card,.concept-card{padding:16px}
+  .t3-card{padding:16px}
   .nc{padding:14px 16px}
   .day-hdr{padding:11px 16px}
   .plain-sum{padding:14px 16px}
@@ -558,25 +601,6 @@ a{text-decoration:none;color:inherit}
     <span class="sec-hd-sub">如果你今天只看 3 条，先看这里。</span>
   </div>
   <div class="top3-grid" id="top3"></div>
-
-  <!-- 今日 AI 概念 -->
-  <div class="sec-hd"><span class="sec-hd-title">📚 今日 AI 概念</span></div>
-  <div class="concept-wrap" id="concept-wrap">
-    <div class="concept-card">
-      <div class="concept-name">MCP</div>
-      <div class="concept-line">MCP 可以理解成 AI 连接外部工具的标准接口。</div>
-      <div class="concept-body">
-        <div>
-          <div class="c-lbl">适合新手的理解</div>
-          <div class="c-txt">以前每个工具都要单独适配，现在可以用更统一的方式让 AI 调用文件、数据库、浏览器、代码工具等能力，像给 AI 装了个万能插座。</div>
-        </div>
-        <div>
-          <div class="c-lbl">可以用在哪</div>
-          <div class="c-txt">AI 助手、自动化工作流、Claude Code、知识库、项目管理工具。</div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- 所有日报 -->
   <div class="sec-hd"><span class="sec-hd-title">📰 今日 AI 资讯</span></div>
@@ -732,10 +756,25 @@ def main(force=False):
         notify("AI 日报失败", f"新闻数量不足: {len(news_items)} 条")
         sys.exit(1)
 
+    # —— 跨天去重: 把最近 7 天已出现过的链接从候选里剔除 ——
+    prev_days = data["days"]  # 此时今天还没插入, 全是历史
+    recent_urls = set()
+    for d in prev_days[:7]:
+        for a in d.get("articles", []):
+            u = (a.get("url") or "").strip()
+            if u:
+                recent_urls.add(u)
+    filtered = [it for it in news_items if (it.get("url") or "").strip() not in recent_urls]
+    if len(filtered) >= 8 and len(filtered) < len(news_items):
+        log(f"跨天去重: 剔除最近7天已出现过的 {len(news_items) - len(filtered)} 条")
+        news_items = filtered
+    # 最近 5 天的标题, 交给 DeepSeek 避免换皮重复报道同一件事
+    recent_titles = [a.get("title", "") for d in prev_days[:5] for a in d.get("articles", [])]
+
     log("DeepSeek 整理中...")
     api_key = get_api_key()
     try:
-        processed = process_with_deepseek(news_items, api_key)
+        processed = process_with_deepseek(news_items, api_key, recent_titles)
     except Exception as e:
         log(f"❌ DeepSeek 处理失败: {e}")
         notify("AI 日报失败", f"DeepSeek 处理失败: {e}")
