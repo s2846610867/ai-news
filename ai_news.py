@@ -36,11 +36,9 @@ SITE_DIR     = Path(os.getenv("AI_NEWS_SITE_DIR", str(AGENT_DIR / "ai-news-site"
 # —— RSS 订阅源 (中文 AI 媒体) ————————————————————
 RSS_FEEDS = [
     # —— 中文 AI / 科技媒体 ——
-    ("机器之心",  "https://feeds.feedburner.com/jiqizhixin"),
     ("量子位",    "https://www.qbitai.com/feed"),
     ("36氪",      "https://36kr.com/feed"),
     ("IT之家",    "https://www.ithome.com/rss/"),
-    ("虎嗅",      "https://www.huxiu.com/rss/0.xml"),
     ("少数派",    "https://sspai.com/feed"),
     ("爱范儿",    "https://www.ifanr.com/feed"),
     # —— 英文 AI 媒体(DeepSeek 会翻译并用中文重写) ——
