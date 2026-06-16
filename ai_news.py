@@ -458,6 +458,7 @@ id 对应上面方括号里的编号。只返回JSON, 不要其他内容。"""
             model="deepseek-chat",
             messages=[{"role": "user", "content": prompt}],
             temperature=0.3,
+            response_format={"type": "json_object"},
         ), delay=8)
         content = resp.choices[0].message.content.strip()
         if content.startswith("```"):
