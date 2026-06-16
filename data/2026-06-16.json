@@ -2,181 +2,190 @@
   "date": "2026-06-16",
   "articles": [
     {
-      "title": "Anthropic发布Cowork：不用写代码也能用AI干活",
-      "summary": "Anthropic推出Cowork，一个桌面AI助手，能直接操作你电脑里的文件，不需要任何编程知识。",
-      "why": "对普通创作者来说，这意味着以后做视频、写脚本、整理素材可能直接让AI在电脑里帮你操作，不用再手动复制粘贴。",
+      "title": "Anthropic发布Cowork：零代码AI助手",
+      "summary": "Anthropic推出Cowork，一个能操作电脑文件的AI桌面助手，无需编程即可使用。",
+      "why": "对普通创作者来说，这是第一个真正能帮你处理文档、整理文件的AI工具，门槛极低。",
       "category": "工具",
-      "beginner_takeaway": "可以关注Cowork是否支持你常用的视频剪辑或文档工具，未来可能省掉很多重复劳动。",
-      "for_me": "如果你平时用Claude写脚本、整理素材，Cowork能直接在文件里帮你改，省去手动复制粘贴的麻烦，值得试试。",
+      "beginner_takeaway": "可以试试用Cowork帮你整理脚本、素材，省下重复劳动时间。",
+      "for_me": "直接能用：你写脚本、做视频时，可以让Cowork帮你整理素材、改文案，不用学代码。",
       "url": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no"
     },
     {
-      "title": "谷歌搜索框25年来首次大改，AI直接给答案",
-      "summary": "谷歌宣布彻底重新设计搜索框，不再只返回蓝色链接，而是直接用AI生成答案和内容。",
-      "why": "以后搜“怎么做AI视频”可能直接看到AI生成的步骤和工具推荐，不用再翻网页，但也要注意信息准确性。",
-      "category": "应用",
-      "beginner_takeaway": "以后搜索时多留意AI给出的答案是否可靠，最好再点开原始来源确认。",
-      "for_me": "你平时搜AI教程、工具推荐会更快得到答案，但别全信AI给的，记得自己验证一下。",
+      "title": "谷歌25年来首次改版搜索框",
+      "summary": "谷歌在I/O大会上宣布重新设计搜索框，从文字链接转向AI直接回答。",
+      "why": "搜索方式变了，以后找信息可能不再靠点链接，而是AI直接给你答案。",
+      "category": "工具",
+      "beginner_takeaway": "以后搜“怎么做AI视频”可能直接出步骤，不用翻网页了。",
+      "for_me": "值得关注：你查资料、找教程的方式会变，AI直接给答案可能更快，但也要注意信息来源。",
       "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think"
     },
     {
-      "title": "美国突然封杀Anthropic最强AI模型",
-      "summary": "美国政府要求Anthropic停止向外国人提供其最新AI模型Fable 5和Mythos 5，包括公司自己的外籍员工。",
-      "why": "这说明AI工具可能随时因政策被限制，依赖单一平台有风险，创作者要考虑备用方案。",
-      "category": "政策",
-      "beginner_takeaway": "别把所有AI工具都押在一家上，多试试国产的DeepSeek、即梦等，分散风险。",
-      "for_me": "如果你主要用Claude写脚本，万一哪天被限制，你的工作流会受影响，建议同时熟悉其他AI工具。",
-      "url": "https://techcrunch.com/2026/06/15/the-us-governments-anthropic-models-ban-was-never-about-an-ai-jailbreak/"
-    },
-    {
-      "title": "Facebook搜索加入AI模式，用你的公开帖回答",
-      "summary": "Meta在Facebook搜索中新增“AI模式”，会基于用户公开帖子生成答案。",
-      "why": "你的公开内容可能被AI拿去训练或直接用来回答别人，发帖时要注意隐私。",
-      "category": "应用",
-      "beginner_takeaway": "检查一下你的社交媒体公开内容，不想被AI用的可以设为私密。",
-      "for_me": "如果你在Facebook上发过AI作品或教程，可能会被AI引用，注意保护个人隐私。",
-      "url": "https://www.theverge.com/tech/950264/meta-ai-mode-search-facebook"
-    },
-    {
-      "title": "Slack推出AI助手，能帮你写文档查数据",
-      "summary": "Salesforce发布新版Slackbot，可以搜索公司内部数据、起草文档、代替员工操作。",
-      "why": "AI正在进入日常工作沟通工具，未来做副业也可能用到这类AI助手来管理项目。",
+      "title": "Slack推出AI助手Slackbot",
+      "summary": "Salesforce发布新版Slackbot，能搜索公司数据、写文档、替员工操作。",
+      "why": "办公场景AI落地加速，未来工作可能更依赖AI助手。",
       "category": "工具",
-      "beginner_takeaway": "可以留意Slackbot这类工具，未来接项目时用来整理客户需求、自动回复。",
-      "for_me": "如果你用Slack和客户沟通，这个AI助手能帮你自动回复常见问题、整理聊天记录，省时间。",
+      "beginner_takeaway": "如果你用Slack工作，可以试试这个新功能，省去重复操作。",
+      "for_me": "如果你在团队里做视频或内容，Slackbot能帮你快速找素材、写简报，提高效率。",
       "url": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and"
     },
     {
-      "title": "AI客服公司Respond.io融资6.25亿",
-      "summary": "马来西亚AI客服公司Respond.io获大额融资，用AI代理处理客户咨询，按对话次数收费。",
-      "why": "AI客服是变现热门方向，新手可以关注这类工具如何帮小商家省人工。",
+      "title": "Respond.io获6250万美元融资",
+      "summary": "马来西亚AI客服公司Respond.io用AI代理处理客户咨询，按对话收费。",
+      "why": "AI客服模式创新，按效果付费可能成为趋势。",
       "category": "公司",
-      "beginner_takeaway": "如果你有客户咨询需求，可以研究这类按次收费的AI客服，成本可控。",
-      "for_me": "如果你做副业需要回复客户问题，可以试试这类AI客服工具，按对话收费比雇人便宜。",
+      "beginner_takeaway": "如果你有副业或小生意，可以关注这类按次收费的AI客服工具。",
+      "for_me": "如果你做视频接单或卖课，可以用AI客服自动回复客户问题，省人工成本。",
       "url": "https://techcrunch.com/2026/06/15/malaysias-respond-io-raises-62-5m-eyes-acquisitions-in-north-america-and-europe/"
     },
     {
-      "title": "韩国人为什么这么爱AI？",
-      "summary": "MIT科技评论报道韩国社会对AI的极高接受度，从机场到地铁到处是AI应用。",
-      "why": "韩国案例说明AI融入生活是趋势，创作者可以借鉴他们的AI应用场景。",
+      "title": "Facebook搜索新增AI模式",
+      "summary": "Meta在Facebook搜索中加入AI模式，答案来自公开帖子。",
+      "why": "社交平台搜索变AI化，你的公开内容可能被用来训练答案。",
       "category": "应用",
-      "beginner_takeaway": "可以看看韩国人怎么用AI做日常创作，比如AI视频、AI客服，找灵感。",
-      "for_me": "如果你好奇AI还能怎么用，可以看看韩国案例，比如AI自动生成短视频、AI客服，或许能启发你的副业方向。",
-      "url": "https://www.technologyreview.com/2026/06/15/1138983/why-do-south-koreans-love-ai-so-much/"
+      "beginner_takeaway": "注意你在社交平台发的公开内容，可能被AI抓取。",
+      "for_me": "如果你做视频推广，可以研究AI怎么抓取你的帖子，优化内容让AI推荐你。",
+      "url": "https://www.theverge.com/tech/950264/meta-ai-mode-search-facebook"
     },
     {
-      "title": "AI编码工具Claude Code太贵，免费替代品出现",
-      "summary": "Claude Code每月最高200美元，开源工具Goose免费提供类似功能，引发开发者关注。",
-      "why": "AI工具价格战对新手是好事，免费替代品降低学习成本。",
-      "category": "工具",
-      "beginner_takeaway": "如果你需要AI写代码或自动化任务，可以先试试免费的开源工具。",
-      "for_me": "如果你用AI写脚本或做自动化，Claude Code太贵，可以试试免费的Goose，功能类似。",
-      "url": "https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free"
-    },
-    {
-      "title": "AI云平台Railway获1亿美元融资",
-      "summary": "AI原生云平台Railway获大额融资，已有200万开发者，挑战传统云服务。",
-      "why": "AI专用云服务兴起，未来部署AI应用会更便宜、更方便。",
+      "title": "Railway获1亿美元挑战AWS",
+      "summary": "云平台Railway融资1亿美元，专为AI应用设计，已吸引200万开发者。",
+      "why": "AI专用云服务兴起，可能降低AI应用部署成本。",
       "category": "公司",
-      "beginner_takeaway": "如果你未来想部署自己的AI工具或网站，可以关注这类AI云平台。",
-      "for_me": "暂时不用管，但如果你以后想发布自己的AI作品或工具，这类平台可能比AWS更便宜好用。",
+      "beginner_takeaway": "未来部署AI作品可能更便宜、更简单。",
+      "for_me": "暂时不用管，但如果你以后想发布自己的AI视频工具，可以关注这类平台。",
       "url": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud"
     },
     {
-      "title": "脑机接口让瘫痪者“开口说话”",
-      "summary": "一名ALS患者使用脑机接口三年，成为首位“重度用户”，能通过大脑信号说话。",
-      "why": "AI+脑机接口突破展示了AI在医疗领域的巨大潜力，但离普通人还很远。",
+      "title": "Claude Code太贵，免费替代Goose出现",
+      "summary": "Claude Code每月最高200美元，开源工具Goose免费且功能类似。",
+      "why": "AI编程工具价格战开始，开源方案降低门槛。",
+      "category": "开源",
+      "beginner_takeaway": "如果你学编程或做自动化，可以试试免费的Goose。",
+      "for_me": "如果你用AI写脚本或做自动化，Goose免费替代品值得一试，省下订阅费。",
+      "url": "https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free"
+    },
+    {
+      "title": "Listen Labs融资6900万美元",
+      "summary": "AI客户访谈工具Listen Labs用创意招聘广告吸引工程师，获大额融资。",
+      "why": "AI工具在市场营销和招聘中创新应用。",
       "category": "应用",
-      "beginner_takeaway": "关注AI在医疗等垂直领域的应用，未来可能催生新职业。",
-      "for_me": "暂时不用管，但可以留意AI+医疗方向，未来可能有新的创作或变现机会。",
-      "url": "https://www.technologyreview.com/2026/06/15/1138953/man-als-first-power-user-brain-implant-speak-bci/"
+      "beginner_takeaway": "AI不仅能做产品，还能帮你做营销。",
+      "for_me": "如果你做视频变现，可以学习这种创意营销方式，用AI生成独特内容吸引客户。",
+      "url": "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai"
+    },
+    {
+      "title": "SpaceX上市：你需要知道的一切",
+      "summary": "SpaceX正式上市，TechCrunch发布完整解读包。",
+      "why": "航天巨头上市，可能影响AI在太空领域的应用。",
+      "category": "公司",
+      "beginner_takeaway": "关注科技巨头上市动态，了解行业趋势。",
+      "for_me": "暂时不用管，但如果你投资或关注科技趋势，可以了解AI在航天中的应用。",
+      "url": "https://techcrunch.com/2026/06/15/spacex-is-public-everything-you-need-to-know-post-ipo/"
+    },
+    {
+      "title": "韩国人为何如此热爱AI？",
+      "summary": "MIT报道韩国AI普及现象，从机场到地铁全面应用。",
+      "why": "韩国AI落地经验值得学习，展示AI如何融入日常生活。",
+      "category": "应用",
+      "beginner_takeaway": "看看AI在别的国家怎么用，启发自己的创作。",
+      "for_me": "值得看：了解韩国AI应用案例，比如无人通关、智能地铁，可以借鉴到你的视频内容中。",
+      "url": "https://www.technologyreview.com/2026/06/15/1138983/why-do-south-koreans-love-ai-so-much/"
     }
   ],
-  "plain_summary": "今天AI圈最值得关注的是Anthropic发布了Cowork，一个不用写代码就能帮你操作电脑文件的AI助手，对做视频、写脚本的创作者很实用。另外谷歌搜索25年来首次大改，以后搜东西AI直接给答案。但也要注意，美国政府突然封杀了Anthropic的最强AI模型，说明用AI工具不能只靠一家，多备几个国产工具更稳妥。Facebook搜索也加入了AI模式，会拿你的公开帖来回答问题，记得检查隐私设置。其他消息包括AI客服公司融资、韩国人超爱AI、免费AI编码工具出现等，整体看AI工具越来越便宜、越来越普及，对新手是好事。",
+  "plain_summary": "今天AI圈挺热闹。Anthropic出了个叫Cowork的桌面助手，不用写代码就能帮你整理文件，对做视频的创作者很实用。谷歌25年来第一次改了搜索框，以后搜东西可能直接给你答案，不用翻网页了。Slack也出了AI助手，能帮你干活。另外有个叫Goose的开源工具，免费替代了每月200块的Claude Code，省钱党可以试试。韩国那边AI已经普及到机场和地铁了，值得看看人家怎么用的。总的来说，AI工具越来越接地气，普通人也能直接上手用了。",
   "github": {
     "top_starred": [
       {
         "name": "affaan-m/ECC",
         "url": "https://github.com/affaan-m/ECC",
-        "stars": 216397,
-        "forks": 33254,
+        "stars": 216410,
+        "forks": 33255,
         "language": "JavaScript",
         "desc": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-        "explanation": "这是一个让AI助手（如Claude、Cursor）更高效工作的系统。它能优化AI的技能、记忆和安全性，让AI更聪明、更可靠。普通人可以用它来让AI助手更好地帮你写代码、处理任务，就像给AI装上了“加速器”。"
+        "tagline": "AI代理性能优化系统，提升技能与记忆",
+        "explanation": "这个项目是一个AI代理的性能优化系统，专门为Claude Code、Codex、Cursor等AI编程工具设计。它解决的问题是：AI代理在复杂任务中容易忘记上下文、执行效率低、安全性不足。通过这个系统，AI代理可以拥有更好的“技能”（比如自动调用工具）、“记忆”（记住之前的对话）和“本能”（自动优化行为）。普通人可能用不上，但如果你是开发者，使用AI编程助手时，这个系统能让AI更聪明、更安全。例如，你让AI写一个网页，它能记住你之前喜欢的样式，并自动检查代码漏洞。上手有一定难度，需要了解AI代理的基本概念。"
       },
       {
         "name": "NousResearch/hermes-agent",
         "url": "https://github.com/NousResearch/hermes-agent",
-        "stars": 194834,
-        "forks": 34188,
+        "stars": 194856,
+        "forks": 34192,
         "language": "Python",
         "desc": "The agent that grows with you",
-        "explanation": "这是一个能随着你的使用而不断进步的AI助手。它学习你的习惯和需求，变得越来越懂你。普通人可以用它来获得更贴心的帮助，比如写作、编程或日常咨询，就像有一个越来越聪明的私人助理。"
+        "tagline": "随你成长的AI代理，越用越懂你",
+        "explanation": "这个项目是一个能随着使用不断进化的AI代理。它解决的问题是：传统AI代理功能固定，无法适应个人需求的变化。这个代理会学习你的习惯和偏好，变得越来越好用。普通人可以用它来自动化日常任务，比如整理邮件、安排日程。例如，你每天需要回复固定格式的邮件，它可以学会自动起草并发送。创作者可以用它来管理社交媒体，自动回复评论。上手难度中等，需要一些Python基础来配置，但项目提供了简单接口。"
       },
       {
         "name": "Significant-Gravitas/AutoGPT",
         "url": "https://github.com/Significant-Gravitas/AutoGPT",
-        "stars": 184969,
+        "stars": 184970,
         "forks": 46139,
         "language": "Python",
         "desc": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
-        "explanation": "AutoGPT是一个让AI自动完成复杂任务的工具。你只需告诉它目标，它就能自己规划步骤并执行。普通人可以用它来自动写报告、做研究或管理项目，就像有一个能独立工作的AI员工。"
+        "tagline": "让AI自动完成复杂任务，人人可用",
+        "explanation": "AutoGPT是一个让AI自动执行多步骤任务的工具。它解决的问题是：普通AI只能回答简单问题，无法完成像“帮我研究并写一份市场报告”这样的复杂任务。AutoGPT会把大任务拆解成小步骤，自动调用网络搜索、文件读写等工具，一步步完成。普通人可以用它来自动生成调研报告、写文章。例如，你告诉它“帮我找最近AI新闻并总结”，它就会自动搜索、整理并输出。上手难度中等，需要安装Python环境，但项目有详细教程。"
       },
       {
         "name": "ollama/ollama",
         "url": "https://github.com/ollama/ollama",
         "stars": 174284,
-        "forks": 16643,
+        "forks": 16644,
         "language": "Go",
         "desc": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
-        "explanation": "这是一个让你在电脑上轻松运行各种AI模型的工具。它支持Kimi、DeepSeek、Qwen等热门模型。普通人可以用它来本地使用AI，无需联网，保护隐私，比如用AI聊天、写作或翻译。"
+        "tagline": "一键运行多种AI大模型，本地部署",
+        "explanation": "Ollama是一个让你在本地电脑上轻松运行各种AI大模型的工具。它解决的问题是：运行AI模型通常需要复杂的环境配置，Ollama简化成一条命令。普通人可以用它来体验最新的AI模型，比如DeepSeek、Qwen等，无需联网。例如，你可以下载一个中文模型，然后像聊天一样提问，所有数据都在本地，隐私安全。创作者可以用它来开发AI应用，比如搭建一个本地智能客服。上手非常简单，下载安装后输入命令即可。"
       },
       {
         "name": "f/prompts.chat",
         "url": "https://github.com/f/prompts.chat",
-        "stars": 163802,
+        "stars": 163804,
         "forks": 21244,
         "language": "HTML",
         "desc": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
-        "explanation": "这是一个收集和分享AI提示词（指令）的社区网站。你可以找到别人写好的提示词，直接用来让AI生成更好的内容。普通人可以用它来快速获得高质量的AI回复，比如写文案、画画或编程。"
+        "tagline": "ChatGPT提示词社区，分享与发现",
+        "explanation": "这是一个收集和分享ChatGPT提示词（prompt）的社区网站。提示词就是你给AI的指令，好的提示词能让AI输出更准确。它解决的问题是：很多人不知道如何写有效的提示词，这个项目提供了大量现成的模板。普通人可以直接复制别人写好的提示词，比如“写一首诗”、“生成一份简历”。创作者可以贡献自己的提示词，或者自建私有的提示词库。上手非常简单，打开网页就能用，无需任何技术。"
       }
     ],
     "trending": [
       {
         "name": "DietrichGebert/ponytail",
         "url": "https://github.com/DietrichGebert/ponytail",
-        "stars": 19261,
-        "forks": 807,
+        "stars": 19465,
+        "forks": 820,
         "language": "JavaScript",
         "desc": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-        "explanation": "这是一个让AI学会“偷懒”的工具，让它像最有经验的程序员一样，只写最必要的代码。普通人可以用它来让AI帮你写更简洁、更高效的代码，减少工作量，就像有一个聪明的助手帮你优化。"
+        "tagline": "让AI代理像懒程序员一样写最简代码",
+        "explanation": "这个项目让AI代理在编程时遵循“懒程序员”原则：只写必要的代码，避免过度设计。它解决的问题是：AI经常生成冗余或复杂的代码，增加维护成本。通过这个工具，AI会优先考虑最简单、最直接的实现。开发者可以用它来生成代码，例如，你让AI写一个排序函数，它会用最简洁的写法，而不是花哨的算法。上手需要JavaScript基础，适合有编程经验的用户。"
       },
       {
         "name": "omnigent-ai/omnigent",
         "url": "https://github.com/omnigent-ai/omnigent",
-        "stars": 2144,
-        "forks": 264,
+        "stars": 2154,
+        "forks": 265,
         "language": "Python",
         "desc": "A meta-harness for all your AI agents.  Omnigent provides a common layer over Claude Code, Codex, Pi, and the agents you write yourself: swap or combine harnesses without rewriting, keep them in check with policies and sandboxing, and collaborate in real time on the same live session, from any devic",
-        "explanation": "这是一个统一管理多个AI助手的平台。你可以在一个地方切换使用Claude、Codex等不同AI，还能让它们协作。普通人可以用它来更方便地使用多种AI工具，就像有一个AI“遥控器”。"
+        "tagline": "统一管理所有AI代理的元平台",
+        "explanation": "Omnigent是一个管理多个AI代理的“元平台”。它解决的问题是：如果你同时使用Claude Code、Codex等多个AI代理，切换和管理很麻烦。Omnigent提供一个统一界面，让你可以同时运行、切换、组合这些代理，并设置安全策略。开发者可以用它来让多个代理协作完成一个任务，比如一个写代码，另一个测试。上手难度较高，需要了解AI代理和命令行。"
       },
       {
         "name": "tastyeffectco/sandboxd",
         "url": "https://github.com/tastyeffectco/sandboxd",
-        "stars": 647,
+        "stars": 648,
         "forks": 26,
         "language": "Go",
         "desc": "Self-hosted dev sandboxes with preview URLs. One command. No Kubernetes, perfect for coding agents and Saas factories",
-        "explanation": "这是一个让你一键创建开发环境的工具，自动生成预览链接。适合AI编程助手使用。普通人可以用它来快速测试AI生成的代码，无需复杂配置，就像有一个随时可用的“代码实验室”。"
+        "tagline": "一键创建开发沙箱，自带预览链接",
+        "explanation": "Sandboxd是一个让你快速创建独立开发环境的工具。它解决的问题是：开发AI代理或应用时，需要隔离测试环境，传统方法很复杂。Sandboxd只需一条命令就能创建一个沙箱（sandbox），并生成一个公开的预览链接。开发者可以用它来测试AI生成的代码，或者给客户展示原型。例如，你让AI写了一个网页，用Sandboxd一键部署，就能分享链接给朋友看。上手需要Go语言基础，但使用简单。"
       },
       {
         "name": "kadevin/ilab-gpt-conjure",
         "url": "https://github.com/kadevin/ilab-gpt-conjure",
-        "stars": 479,
+        "stars": 480,
         "forks": 66,
         "language": "Python",
         "desc": "面向 GPT-image-2 的 AI 图片生成 WebUI 工作台，支持 Codex Responses 与 OpenAI 兼容 API 接入，内置公用图库、多类型 Chip 快捷引用、提示词模板、多任务并发和本地队列管理。An AI image generation WebUI workbench for GPT-image-2 with Codex Responses and OpenAI-compatible API support, shared gallery references, multi-type quick chips, prompt templates, concurr",
-        "explanation": "这是一个AI图片生成的工作台，支持多种AI模型。你可以用它来生成图片、管理任务和提示词。普通人可以用它来轻松创作AI绘画，比如设计海报、插画，就像有一个专业的AI画室。"
+        "tagline": "AI图片生成工作台，支持多种模型",
+        "explanation": "这是一个专门用于AI图片生成的网页工具，支持GPT-image-2等模型。它解决的问题是：使用AI生图时，需要反复调整提示词，效率低。这个工作台提供了提示词模板、图库参考、批量生成等功能。普通人可以用它来生成插画、海报，例如，选择“赛博朋克”风格模板，输入“城市夜景”，就能快速出图。创作者可以用它来批量生成素材。上手简单，有图形界面，无需编程。"
       },
       {
         "name": "hoolulu/deep-research",
@@ -185,7 +194,8 @@
         "forks": 32,
         "language": "HTML",
         "desc": "深度调研报告生成 Skill — 一个命令，十分钟，多语言，一份深度专业的调研报告 / Professional deep research report generation Skill · Supports 19 languages",
-        "explanation": "这是一个能自动生成深度调研报告的工具。你只需输入主题，它就能在十分钟内用多种语言写出专业报告。普通人可以用它来快速了解一个领域，比如写论文、做市场分析，就像有一个研究助手。"
+        "tagline": "一键生成深度调研报告，支持多语言",
+        "explanation": "这是一个能自动生成专业调研报告的工具。它解决的问题是：写一份深度报告需要大量时间搜集资料和整理。这个工具只需一个命令，十分钟内就能生成一份多语言、结构完整的报告。普通人可以用它来快速了解一个陌生领域，比如输入“量子计算”，它会自动搜索、分析并输出报告。创作者可以用它来准备演讲稿或文章素材。上手非常简单，安装后运行命令即可。"
       }
     ]
   }
