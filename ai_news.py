@@ -462,12 +462,16 @@ def add_github_explanations(gh: dict, api_key: str) -> dict:
         f"[{i+1}] {r['name']} (★{r['stars']}, {r['language'] or '多语言'})\n描述: {r['desc'] or '无'}"
         for i, r in enumerate(repos)
     )
-    prompt = f"""下面是一些 GitHub 上的 AI 开源项目。请为每个项目写一段【通俗易懂的中文解释】, 面向 AI 新手和普通创作者, 说清楚三点: 这是什么、能用来做什么、对普通人/创作者有什么用。每段 60-110 字, 少用术语, 不要夸大, 基于给出的信息和你已知的事实, 不要编造。
+    prompt = f"""下面是一些 GitHub 上的 AI 开源项目。请为每个项目写【详细的中文讲解】, 面向完全不懂技术的 AI 新手。要让读者不用点进 GitHub 看英文, 光看你的讲解就能明白这是什么、有什么用、适不适合自己。
+
+每个项目给两个字段:
+- tagline: 一句话说清这是什么 (15-30字)
+- explanation: 详细讲解 (150-300字), 必须涵盖: ①它解决什么问题、为什么有用 ②普通人或创作者具体能拿它做什么(举1-2个实际例子) ③适合什么样的人、上手难不难。用大白话, 不堆术语, 万一用到术语就顺手解释一下。基于给出的信息和你已知的事实, 不要编造。
 
 {listing}
 
 只返回JSON:
-{{"items": [{{"id": 1, "explanation": "..."}}]}}
+{{"items": [{{"id": 1, "tagline": "...", "explanation": "..."}}]}}
 id 对应上面方括号里的编号。只返回JSON, 不要其他内容。"""
     try:
         resp = retry("GitHub 项目解释", lambda: client.chat.completions.create(
@@ -484,12 +488,15 @@ id 对应上面方括号里的编号。只返回JSON, 不要其他内容。"""
         except json.JSONDecodeError:
             m = re.search(r"\{.*\}", content, re.DOTALL)
             parsed = json.loads(m.group(0)) if m else {"items": []}
-        exp = {it.get("id"): it.get("explanation", "") for it in parsed.get("items", [])}
+        info = {it.get("id"): it for it in parsed.get("items", [])}
         for i, r in enumerate(repos):
-            r["explanation"] = exp.get(i + 1) or r.get("desc", "")
+            it = info.get(i + 1) or {}
+            r["tagline"] = it.get("tagline") or ""
+            r["explanation"] = it.get("explanation") or r.get("desc", "")
     except Exception as e:
         log(f"GitHub 解释生成失败, 用原描述兜底: {e}")
         for r in repos:
+            r.setdefault("tagline", "")
             r.setdefault("explanation", r.get("desc", ""))
     return gh
 
@@ -657,19 +664,16 @@ a{text-decoration:none;color:inherit}
 .t3-why-default{background:#f9fafb;border-radius:8px;padding:7px 10px;font-size:.76em;color:#9ca3af;line-height:1.6;font-style:italic}
 .t3-link{align-self:flex-start;font-size:.76em;color:#4f6ef7;border:1px solid rgba(79,110,247,.25);border-radius:10px;padding:3px 12px;margin-top:auto}
 .t3-link:hover{background:#4f6ef7;color:#fff}
-/* === GitHub 板块 === */
-.gh-wrap{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:36px}
-@media(max-width:860px){.gh-wrap{grid-template-columns:1fr}}
-.gh-col{background:#fff;border-radius:16px;padding:18px 18px 8px;box-shadow:0 2px 14px rgba(0,0,0,.055);border:1px solid #eaedf2}
-.gh-col-hd{font-size:.86em;font-weight:800;color:#1e2433;margin-bottom:10px}
-.gh-item{display:block;padding:11px 0;border-bottom:1px solid #f4f5f8}
-.gh-item:last-child{border-bottom:none}
-.gh-item:hover .gh-name{color:#4f6ef7}
-.gh-top{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:4px}
-.gh-name{font-size:.88em;font-weight:700;color:#1e2433;word-break:break-all}
-.gh-star{font-size:.74em;color:#f59e0b;font-weight:700;white-space:nowrap}
-.gh-exp{font-size:.8em;color:#6b7280;line-height:1.62}
-.gh-lang{display:inline-block;margin-top:6px;font-size:.68em;color:#4f6ef7;background:rgba(79,110,247,.08);border:1px solid rgba(79,110,247,.15);padding:1px 8px;border-radius:9px}
+/* === GitHub 精选入口 === */
+.gh-entry{display:flex;align-items:center;justify-content:space-between;gap:14px;background:#fff;border:1px solid #eaedf2;border-left:4px solid #4f6ef7;border-radius:16px;padding:18px 22px;margin-bottom:36px;box-shadow:0 2px 14px rgba(0,0,0,.055)}
+.gh-entry:hover{box-shadow:0 4px 20px rgba(79,110,247,.16);border-color:#4f6ef7}
+.gh-entry-main{display:flex;align-items:center;gap:14px;min-width:0}
+.gh-entry-icon{font-size:1.6em;flex-shrink:0}
+.gh-entry-text{display:flex;flex-direction:column;min-width:0}
+.gh-entry-text b{font-size:.98em;font-weight:800;color:#1e2433}
+.gh-entry-text i{font-size:.8em;color:#6b7280;font-style:normal;margin-top:2px}
+.gh-entry-arrow{font-size:.82em;font-weight:700;color:#4f6ef7;white-space:nowrap;flex-shrink:0}
+@media(max-width:600px){.gh-entry{padding:16px}.gh-entry-text i{font-size:.74em}}
 /* === 日期块 === */
 .day-block{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 2px 14px rgba(0,0,0,.055);border:1px solid #eaedf2;margin-bottom:28px}
 .day-hdr{background:linear-gradient(90deg,#4f6ef7,#764ba2);padding:12px 22px}
@@ -744,12 +748,14 @@ a{text-decoration:none;color:inherit}
   </div>
   <div class="top3-grid" id="top3"></div>
 
-  <!-- GitHub 热门项目 -->
-  <div class="sec-hd"><span class="sec-hd-title">💻 GitHub 热门项目</span><span class="sec-hd-sub">每天精选 AI 开源项目，点开就是源码</span></div>
-  <div class="gh-wrap" id="gh-wrap">
-    <div class="gh-col"><div class="gh-col-hd">⭐ AI 星标总榜</div><div id="gh-top"></div></div>
-    <div class="gh-col"><div class="gh-col-hd">🔥 近期飙升</div><div id="gh-trend"></div></div>
-  </div>
+  <!-- GitHub 精选入口 -->
+  <a href="github.html" class="gh-entry">
+    <span class="gh-entry-main">
+      <span class="gh-entry-icon">💻</span>
+      <span class="gh-entry-text"><b>GitHub 精选</b><i>每天精选 10 个热门 AI 开源项目，附详细中文讲解</i></span>
+    </span>
+    <span class="gh-entry-arrow">进入查看 →</span>
+  </a>
 
   <!-- 所有日报 -->
   <div class="sec-hd"><span class="sec-hd-title">📰 今日 AI 资讯</span></div>
@@ -814,27 +820,8 @@ function renderDay(day){
   </div>`;
 }
 
-function renderGithub(day){
-  const g=day&&day.github;
-  const wrap=document.getElementById("gh-wrap");
-  const has=g&&((g.top_starred&&g.top_starred.length)||(g.trending&&g.trending.length));
-  if(!has){if(wrap)wrap.style.display="none";return;}
-  if(wrap)wrap.style.display="";
-  function card(r){
-    return `<a href="${esc(r.url)}" target="_blank" rel="noopener" class="gh-item">
-      <div class="gh-top"><span class="gh-name">${esc(r.name)}</span><span class="gh-star">★ ${esc(String(r.stars||0))}</span></div>
-      <div class="gh-exp">${esc(r.explanation||r.desc||"")}</div>
-      ${r.language?`<span class="gh-lang">${esc(r.language)}</span>`:""}
-    </a>`;
-  }
-  const t=document.getElementById("gh-top"),tr=document.getElementById("gh-trend");
-  if(t)t.innerHTML=(g.top_starred||[]).map(card).join("");
-  if(tr)tr.innerHTML=(g.trending||[]).map(card).join("");
-}
-
 if(EMBEDDED&&EMBEDDED.articles&&EMBEDDED.articles.length){
   renderTop3(EMBEDDED);
-  renderGithub(EMBEDDED);
   document.getElementById("news-list").innerHTML=renderDay(EMBEDDED);
 }
 
@@ -844,7 +831,6 @@ async function load(){
     const days=await Promise.all(dates.map(d=>fetch("data/"+d+".json").then(r=>r.json())));
     document.getElementById("nav").innerHTML=dates.map((d,i)=>`<a href="#${d}"${i===0?' class="cur"':""}>${d}</a>`).join("");
     renderTop3(days[0]);
-    renderGithub(days[0]);
     document.getElementById("news-list").innerHTML=days.map(renderDay).join("");
     const ts=document.getElementById("footer-ts");
     if(ts)ts.textContent="最后更新："+dates[0];
@@ -859,6 +845,94 @@ load();
     (SITE_DIR / "index.html").write_text(content, encoding="utf-8")
     log(f"站点页面已生成: {SITE_DIR / 'index.html'}")
 
+
+def generate_github_html(day):
+    """生成独立的「GitHub 精选」页面(github.html), 服务端直出, 含详细讲解"""
+    g = (day or {}).get("github") or {}
+    date = (day or {}).get("date", "")
+
+    def cards(arr):
+        if not arr:
+            return '<p class="ghp-empty">今日暂无数据</p>'
+        out = []
+        for i, r in enumerate(arr, 1):
+            url = html.escape(r.get("url", "#"))
+            lang = f'<span class="ghp-lang">{html.escape(r.get("language") or "")}</span>' if r.get("language") else ""
+            tag = html.escape(r.get("tagline") or "")
+            exp = html.escape(r.get("explanation") or r.get("desc") or "")
+            tag_h = f'<div class="ghp-tag">{tag}</div>' if tag else ""
+            out.append(f"""<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">{i}</span>
+          <a href="{url}" target="_blank" rel="noopener" class="ghp-name">{html.escape(r.get('name',''))}</a>
+          <span class="ghp-star">★ {html.escape(str(r.get('stars',0)))}</span>
+        </div>
+        {tag_h}
+        <div class="ghp-exp">{exp}</div>
+        <div class="ghp-foot">{lang}<a href="{url}" target="_blank" rel="noopener" class="ghp-open">打开 GitHub →</a></div>
+      </div>""")
+        return "\n".join(out)
+
+    top_html = cards(g.get("top_starred"))
+    trend_html = cards(g.get("trending"))
+    page = """<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>GitHub 精选 ｜ AI 日报</title>
+<meta name="description" content="每天精选热门 AI 开源项目，附详细中文讲解，不用看英文也能看懂这个项目能做什么。">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;background:#f4f6f9;color:#1e2433;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+.top{background:#fff;border-bottom:1px solid #eaedf2;padding:0 20px;height:50px;display:flex;align-items:center;gap:14px;position:sticky;top:0;z-index:100;box-shadow:0 1px 8px rgba(0,0,0,.04)}
+.top a{font-size:.82em;color:#4f6ef7;font-weight:600}
+.top-brand{font-size:.86em;font-weight:700;margin-left:auto;color:#1e2433}
+.hero{background:linear-gradient(145deg,#eef2ff 0%,#e8f3fe 45%,#eafaf5 100%);padding:42px 20px 34px;text-align:center;border-bottom:1px solid rgba(79,110,247,.07)}
+.hero h1{font-size:clamp(1.6em,5vw,2.1em);font-weight:800;letter-spacing:1px;margin-bottom:8px}
+.hero p{font-size:.86em;color:#6b7280}
+.wrap{max-width:860px;margin:0 auto;padding:30px 16px 50px}
+.sec{font-size:1.05em;font-weight:800;color:#1e2433;margin:10px 0 16px;display:flex;align-items:center;gap:8px}
+.sec.second{margin-top:38px}
+.ghp-card{background:#fff;border-radius:16px;padding:18px 20px;margin-bottom:16px;box-shadow:0 2px 14px rgba(0,0,0,.055);border:1px solid #eaedf2}
+.ghp-hd{display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap}
+.ghp-rank{width:24px;height:24px;border-radius:50%;background:linear-gradient(135deg,#4f6ef7,#7c9dff);color:#fff;font-size:.74em;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ghp-name{font-size:1em;font-weight:800;color:#1e2433;word-break:break-all}
+.ghp-name:hover{color:#4f6ef7}
+.ghp-star{font-size:.78em;color:#f59e0b;font-weight:700;white-space:nowrap;margin-left:auto}
+.ghp-tag{font-size:.9em;color:#4f6ef7;font-weight:600;margin-bottom:8px}
+.ghp-exp{font-size:.9em;color:#4b5563;line-height:1.85}
+.ghp-foot{display:flex;align-items:center;gap:10px;margin-top:12px}
+.ghp-lang{font-size:.7em;color:#6b7280;background:#f3f4f6;border:1px solid #e5e7eb;padding:2px 9px;border-radius:9px}
+.ghp-open{font-size:.78em;color:#4f6ef7;border:1px solid rgba(79,110,247,.3);border-radius:10px;padding:3px 12px;margin-left:auto}
+.ghp-open:hover{background:#4f6ef7;color:#fff}
+.ghp-empty{color:#9ca3af;font-size:.9em;padding:20px 0}
+.foot{text-align:center;color:#9ca3af;font-size:.75em;padding:10px 20px 30px}
+@media(max-width:600px){.wrap{padding:22px 12px 40px}.ghp-card{padding:16px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a href="index.html">← 返回 AI 日报</a>
+  <span class="top-brand">🤖 AI 日报</span>
+</header>
+<section class="hero">
+  <h1>💻 GitHub 精选</h1>
+  <p>每天精选热门 AI 开源项目 · 附详细中文讲解 · 不用看英文也能懂</p>
+</section>
+<main class="wrap">
+  <div class="sec">⭐ AI 星标总榜</div>
+  __TOP__
+  <div class="sec second">🔥 近期飙升</div>
+  __TREND__
+</main>
+<footer class="foot">数据来自 GitHub · 讲解由 AI 生成 · 仅供参考 · 最后更新 __DATE__</footer>
+</body>
+</html>"""
+    page = page.replace("__TOP__", top_html).replace("__TREND__", trend_html).replace("__DATE__", html.escape(date))
+    (SITE_DIR / "github.html").write_text(page, encoding="utf-8")
+    log(f"GitHub 精选页已生成: {SITE_DIR / 'github.html'}")
 
 
 # =========================================================
@@ -975,6 +1049,7 @@ def main(force=False):
     save_data(data)
     export_json(data)
     generate_site_html(data["days"][0] if data["days"] else None)
+    generate_github_html(data["days"][0] if data["days"] else None)
     generate_html(data)
     log("✅ 完成!")
 
