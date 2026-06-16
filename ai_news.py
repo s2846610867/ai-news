@@ -35,9 +35,19 @@ SITE_DIR     = Path(os.getenv("AI_NEWS_SITE_DIR", str(AGENT_DIR / "ai-news-site"
 
 # —— RSS 订阅源 (中文 AI 媒体) ————————————————————
 RSS_FEEDS = [
-    ("机器之心", "https://feeds.feedburner.com/jiqizhixin"),
-    ("量子位",   "https://www.qbitai.com/feed"),
-    ("36氪·AI", "https://36kr.com/feed"),
+    # —— 中文 AI / 科技媒体 ——
+    ("机器之心",  "https://feeds.feedburner.com/jiqizhixin"),
+    ("量子位",    "https://www.qbitai.com/feed"),
+    ("36氪",      "https://36kr.com/feed"),
+    ("IT之家",    "https://www.ithome.com/rss/"),
+    ("虎嗅",      "https://www.huxiu.com/rss/0.xml"),
+    ("少数派",    "https://sspai.com/feed"),
+    ("爱范儿",    "https://www.ifanr.com/feed"),
+    # —— 英文 AI 媒体(DeepSeek 会翻译并用中文重写) ——
+    ("TechCrunch AI", "https://techcrunch.com/category/artificial-intelligence/feed/"),
+    ("The Verge AI",  "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml"),
+    ("VentureBeat AI", "https://venturebeat.com/category/ai/feed/"),
+    ("MIT科技评论",   "https://www.technologyreview.com/feed/"),
 ]
 
 WEEKDAYS = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
@@ -145,27 +155,46 @@ def clean_text(text: str) -> str:
 # 抓取新闻
 # =========================================================
 
+def _fetch_one_feed(source: str, url: str) -> tuple:
+    import feedparser
+    feed = feedparser.parse(url)
+    items = []
+    for entry in feed.entries[:6]:
+        title   = clean_text(entry.get("title", ""))
+        link    = entry.get("link", "")
+        summary = clean_text(entry.get("summary", ""))[:400]
+        if title and link:
+            items.append({"title": title, "url": link, "snippet": summary, "source": source})
+    return source, items
+
+
 def fetch_rss() -> list:
     try:
-        import feedparser
+        import feedparser  # noqa: F401
     except ImportError:
         log("⚠️ 未安装 feedparser, 跳过 RSS 抓取")
         return []
 
-    results = []
-    for source, url in RSS_FEEDS:
+    results, ok, empty = [], [], []
+    # 多个源并行抓取, 总耗时≈最慢的单个源, 某个源挂了/超时只跳过它, 不拖累整体
+    with concurrent.futures.ThreadPoolExecutor(max_workers=len(RSS_FEEDS)) as pool:
+        futs = {pool.submit(_fetch_one_feed, s, u): s for s, u in RSS_FEEDS}
         try:
-            feed = retry(f"RSS抓取 ({source})", lambda: feedparser.parse(url), attempts=2, delay=3)
-            for entry in feed.entries[:8]:
-                title   = clean_text(entry.get("title", ""))
-                link    = entry.get("link", "")
-                summary = clean_text(entry.get("summary", ""))[:400]
-                if title and link:
-                    results.append({"title": title, "url": link,
-                                     "snippet": summary, "source": source})
-        except Exception as e:
-            log(f"RSS抓取失败 ({source}): {e}")
-    log(f"RSS 获取 {len(results)} 条")
+            for fut in concurrent.futures.as_completed(futs, timeout=45):
+                src = futs[fut]
+                try:
+                    source, items = fut.result()
+                    if items:
+                        results += items
+                        ok.append(f"{source}:{len(items)}")
+                    else:
+                        empty.append(source)
+                except Exception as e:
+                    empty.append(f"{src}(err)")
+                    log(f"RSS抓取失败 ({src}): {e}")
+        except concurrent.futures.TimeoutError:
+            log("⚠️ 部分 RSS 源超时, 使用已返回的结果")
+    log(f"RSS 获取 {len(results)} 条 | 有内容: {', '.join(ok) or '无'} | 空或失败: {', '.join(empty) or '无'}")
     return results
 
 
@@ -250,7 +279,7 @@ def process_with_deepseek(news_items: list, api_key: str, recent_titles: list = 
     today = datetime.now().strftime("%Y年%m月%d日")
     news_text = "\n\n".join([
         f"[{i+1}] 标题: {item['title']}\n摘要: {item['snippet']}\n来源: {item['source']}\n链接: {item['url']}"
-        for i, item in enumerate(news_items[:20])
+        for i, item in enumerate(news_items[:30])
     ])
 
     # 最近几天已报道过的标题, 喂给模型避免"换皮"重复报道同一件事
@@ -501,15 +530,6 @@ a{text-decoration:none;color:inherit}
 .t3-why-default{background:#f9fafb;border-radius:8px;padding:7px 10px;font-size:.76em;color:#9ca3af;line-height:1.6;font-style:italic}
 .t3-link{align-self:flex-start;font-size:.76em;color:#4f6ef7;border:1px solid rgba(79,110,247,.25);border-radius:10px;padding:3px 12px;margin-top:auto}
 .t3-link:hover{background:#4f6ef7;color:#fff}
-/* === 今日 AI 概念 === */
-.concept-wrap{margin-bottom:36px}
-.concept-card{background:#fff;border-radius:16px;padding:22px 24px;box-shadow:0 2px 14px rgba(0,0,0,.055);border:1px solid #eaedf2;border-left:4px solid #52c5a8}
-.concept-name{font-size:1.2em;font-weight:800;color:#1e2433;margin-bottom:5px}
-.concept-line{font-size:.9em;color:#52c5a8;font-weight:600;margin-bottom:16px}
-.concept-body{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-@media(max-width:580px){.concept-body{grid-template-columns:1fr}}
-.c-lbl{font-size:.68em;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#d1d5db;margin-bottom:5px}
-.c-txt{font-size:.84em;color:#4b5563;line-height:1.7}
 /* === 日期块 === */
 .day-block{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 2px 14px rgba(0,0,0,.055);border:1px solid #eaedf2;margin-bottom:28px}
 .day-hdr{background:linear-gradient(90deg,#4f6ef7,#764ba2);padding:12px 22px}
@@ -546,7 +566,7 @@ a{text-decoration:none;color:inherit}
 @media(max-width:600px){
   .hero{padding:38px 16px 32px}
   .wrap{padding:24px 12px 12px}
-  .t3-card,.concept-card{padding:16px}
+  .t3-card{padding:16px}
   .nc{padding:14px 16px}
   .day-hdr{padding:11px 16px}
   .plain-sum{padding:14px 16px}
@@ -583,25 +603,6 @@ a{text-decoration:none;color:inherit}
     <span class="sec-hd-sub">如果你今天只看 3 条，先看这里。</span>
   </div>
   <div class="top3-grid" id="top3"></div>
-
-  <!-- 今日 AI 概念 -->
-  <div class="sec-hd"><span class="sec-hd-title">📚 今日 AI 概念</span></div>
-  <div class="concept-wrap" id="concept-wrap">
-    <div class="concept-card">
-      <div class="concept-name">MCP</div>
-      <div class="concept-line">MCP 可以理解成 AI 连接外部工具的标准接口。</div>
-      <div class="concept-body">
-        <div>
-          <div class="c-lbl">适合新手的理解</div>
-          <div class="c-txt">以前每个工具都要单独适配，现在可以用更统一的方式让 AI 调用文件、数据库、浏览器、代码工具等能力，像给 AI 装了个万能插座。</div>
-        </div>
-        <div>
-          <div class="c-lbl">可以用在哪</div>
-          <div class="c-txt">AI 助手、自动化工作流、Claude Code、知识库、项目管理工具。</div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- 所有日报 -->
   <div class="sec-hd"><span class="sec-hd-title">📰 今日 AI 资讯</span></div>
