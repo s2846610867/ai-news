@@ -39,6 +39,7 @@ jobs:
       - name: Generate daily news
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          GITHUB_TOKEN: ${{ github.token }}
           AI_NEWS_SITE_DIR: ${{ github.workspace }}
           AI_NEWS_AGENT_DIR: ${{ runner.temp }}/agent
         run: |
