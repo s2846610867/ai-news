@@ -1,0 +1,202 @@
+{
+  "date": "2026-06-17",
+  "articles": [
+    {
+      "title": "SpaceX 600亿收购Cursor",
+      "summary": "SpaceX上市后花600亿美元买下AI编程工具Cursor，抢企业客户。",
+      "why": "AI编程工具被巨头高价收购，说明AI写代码价值巨大，创作者可关注类似工具。",
+      "category": "公司",
+      "beginner_takeaway": "AI编程工具越来越值钱，学AI时多试试这类工具。",
+      "for_me": "如果你用AI写脚本，Cursor这类工具未来可能更强大，但暂时不用急着换。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/950571/spacex-is-officially-buying-cursor-for-60-billion"
+    },
+    {
+      "title": "Anthropic与政府冲突反助销量",
+      "summary": "Anthropic因模型出口限制与特朗普政府争执，但企业用户反而更爱用。",
+      "why": "争议反而让Claude更火，说明用户看重产品本身，新手选工具不必跟风。",
+      "category": "公司",
+      "beginner_takeaway": "选AI工具看实际体验，别被新闻带节奏。",
+      "for_me": "你用的Claude可能更受关注，但功能没变，安心用就行。",
+      "url": "https://techcrunch.com/2026/06/16/anthropics-latest-feud-with-the-trump-admin-may-actually-help-it-sales-data-suggests/"
+    },
+    {
+      "title": "Android 17发布，AI功能升级",
+      "summary": "谷歌发布Android 17，新增多任务和Gemini AI功能，手机更智能。",
+      "why": "手机系统直接集成AI，普通用户日常用AI更方便。",
+      "category": "应用",
+      "beginner_takeaway": "新手机系统自带AI，可以试试语音助手和智能建议。",
+      "for_me": "如果你是安卓用户，更新后能用Gemini辅助创作，比如快速生成文案。",
+      "url": "https://techcrunch.com/2026/06/16/android-17-launches-with-new-multitasking-tools-as-google-expands-gemini-features/"
+    },
+    {
+      "title": "苹果带摄像头AirPods推迟到2027",
+      "summary": "苹果带摄像头的AirPods计划2027年推出，用于AI视觉识别。",
+      "why": "耳机加摄像头是AI新形态，但离普通人还很远。",
+      "category": "工具",
+      "beginner_takeaway": "AI硬件还在早期，别急着买，先玩好软件。",
+      "for_me": "暂时不用管，继续用你手里的工具做视频就行。",
+      "url": "https://www.theverge.com/tech/950826/apple-airpod-camera-ai-foldable-iphone-rumor"
+    },
+    {
+      "title": "高通新芯片让智能眼镜更强",
+      "summary": "高通发布Snapdragon Reality Elite芯片，下一代智能眼镜性能提升。",
+      "why": "智能眼镜硬件升级，未来AI眼镜可能更实用。",
+      "category": "工具",
+      "beginner_takeaway": "关注智能眼镜，但现阶段还是手机和电脑更靠谱。",
+      "for_me": "做AI视频暂时用不上眼镜，但可以留意未来是否出现新创作方式。",
+      "url": "https://www.theverge.com/gadgets/950229/qualcomm-snapdragon-reality-elite-xr-smart-glasses-wearables"
+    },
+    {
+      "title": "Pinterest推出AI购物助手",
+      "summary": "Pinterest上线实验性AI购物App，用户可对话找商品推荐。",
+      "why": "AI购物更自然，创作者可借鉴这种交互做视频带货。",
+      "category": "应用",
+      "beginner_takeaway": "AI对话式购物是趋势，做视频时可以模仿这种推荐逻辑。",
+      "for_me": "如果你做带货视频，可以研究Pinterest的推荐方式，用在脚本里。",
+      "url": "https://techcrunch.com/2026/06/17/pinterest-launches-an-experimental-ai-shopping-app-called-ask-pinterest/"
+    },
+    {
+      "title": "DeepL收购Mixhalo做实时翻译",
+      "summary": "翻译工具DeepL买下音频公司，进军现场活动实时翻译。",
+      "why": "AI翻译进入线下场景，创作者做跨国内容更方便。",
+      "category": "工具",
+      "beginner_takeaway": "AI翻译越来越强，做视频时可以加多语言字幕。",
+      "for_me": "如果你想把视频发到海外，DeepL的翻译质量不错，可以试试。",
+      "url": "https://techcrunch.com/2026/06/17/deepl-acquires-mixhalo-for-live-event-audio-streaming-and-translation/"
+    },
+    {
+      "title": "加拿大养老金投资印度AI数据中心",
+      "summary": "加拿大养老金买下印度数据中心公司8.2%股份，押注AI算力需求。",
+      "why": "AI算力需求爆发，数据中心成热门投资，普通人用AI成本可能下降。",
+      "category": "公司",
+      "beginner_takeaway": "AI背后需要大量算力，但对你用AI做视频影响不大。",
+      "for_me": "暂时不用管，但长期看AI工具可能更便宜。",
+      "url": "https://techcrunch.com/2026/06/17/canadian-pension-giant-joins-race-to-fund-indias-ai-fueled-data-center-boom/"
+    },
+    {
+      "title": "法国机器人Eno不像人但实用",
+      "summary": "法国公司发布机器人Eno，没头没腿，轮子底座可折叠，强调功能不模仿人。",
+      "why": "机器人设计更务实，未来AI硬件可能更注重实用而非外观。",
+      "category": "机器人",
+      "beginner_takeaway": "AI机器人不一定要像人，功能才是关键。",
+      "for_me": "做AI视频时，可以想象未来机器人形态，增加创意灵感。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/951283/genesis-ai-humanoid-robot-eno"
+    },
+    {
+      "title": "GLM-5.2成Claude 5替代品",
+      "summary": "实测GLM-5.2在Claude 5关停后表现稳定，可作平替。",
+      "why": "国产模型能顶替国际大模型，新手多一个选择。",
+      "category": "模型",
+      "beginner_takeaway": "国产AI模型进步快，做视频时可以试试GLM。",
+      "for_me": "如果你之前用Claude写脚本，现在可以试试GLM-5.2，效果不错。",
+      "url": "https://www.ifanr.com/1669127?utm_source=rss&utm_medium=rss&utm_campaign="
+    }
+  ],
+  "plain_summary": "今天AI圈挺热闹：SpaceX花600亿美元买下编程工具Cursor，说明AI写代码越来越值钱；Anthropic跟政府吵架反而让Claude更受欢迎，选工具还是看产品本身；谷歌发布Android 17，手机AI功能更强了；苹果带摄像头的AirPods要等到2027年，别急；高通新芯片让智能眼镜更牛，但离普通人还远；Pinterest出了AI购物助手，做带货视频的可以学学；DeepL收购公司做实时翻译，做跨国内容更方便；加拿大养老金投印度数据中心，算力需求真大；法国出了个不像人的机器人，实用就行；国产GLM-5.2能顶替Claude 5，写脚本又多一个选择。整体看，AI工具越来越丰富，对做视频的新手是好事，多试试总没错。",
+  "github": {
+    "top_starred": [
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "stars": 217062,
+        "forks": 33328,
+        "language": "JavaScript",
+        "desc": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+        "tagline": "让AI助手更聪明、更安全的性能优化系统",
+        "explanation": "① 这个项目解决的是AI编程助手（比如Claude Code、Cursor等）在复杂任务中表现不够稳定、容易出错的问题。它通过优化AI的“技能”、“直觉”和“记忆”，让AI更可靠，同时加入安全机制，防止AI做出危险操作。② 普通人可能用不上，但如果你是开发者，用Cursor写代码时，这个系统能让AI更懂你的项目，自动记住你之前的偏好，减少重复劳动。比如你写一个网页，AI能记住你喜欢的代码风格，自动补全时更准确。③ 适合有一定编程经验的开发者，尤其是经常使用AI编程助手的人。上手需要一些配置，但项目提供了文档，跟着做就行。"
+      },
+      {
+        "name": "NousResearch/hermes-agent",
+        "url": "https://github.com/NousResearch/hermes-agent",
+        "stars": 195881,
+        "forks": 34432,
+        "language": "Python",
+        "desc": "The agent that grows with you",
+        "tagline": "能随着你的使用不断进化的AI助手",
+        "explanation": "① 这个项目旨在打造一个“成长型”AI代理，它会根据你的使用习惯和反馈逐渐变得更懂你、更高效。传统AI助手每次对话都是独立的，而它能够积累经验，长期为你服务。② 比如你经常用它来写邮件，它慢慢学会你的语气和常用短语，自动生成更符合你风格的草稿。或者你用它管理日程，它会记住你的时间偏好，主动提醒重要事项。③ 适合任何希望有个性化AI助手的人，尤其是需要长期协作的场景。上手不难，项目提供了简单的安装和启动指南，但需要一些Python基础。"
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "stars": 184988,
+        "forks": 46134,
+        "language": "Python",
+        "desc": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+        "tagline": "让每个人都能轻松使用和构建的AI自动化工具",
+        "explanation": "① AutoGPT是一个能自动完成复杂任务的AI代理，比如自动搜索信息、写报告、管理文件等。它解决了普通人不会编程也能利用AI完成多步骤工作的问题。② 比如你想研究某个市场趋势，告诉AutoGPT目标，它就会自动搜索网页、整理数据、生成一份报告。或者让它帮你自动整理电脑里的文件，按规则分类。③ 适合所有对AI感兴趣的人，无论技术背景。上手需要下载安装，但项目有图形界面和详细教程，跟着步骤走就行。"
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "stars": 174366,
+        "forks": 16664,
+        "language": "Go",
+        "desc": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+        "tagline": "一键运行各种大语言模型的本地工具",
+        "explanation": "① 这个项目让你能在自己的电脑上轻松运行各种AI大模型（比如DeepSeek、Qwen等），无需联网，保护隐私。它解决了使用云AI时数据可能泄露、需要付费的问题。② 比如你写文章时，可以用它本地运行一个写作助手模型，随时帮你润色文字，所有数据留在电脑里。或者你是个开发者，想测试不同模型的效果，一键切换即可。③ 适合注重隐私的用户和开发者。上手简单，下载安装后，命令行输入一条指令就能启动模型，但需要电脑配置较好（有独立显卡更好）。"
+      },
+      {
+        "name": "f/prompts.chat",
+        "url": "https://github.com/f/prompts.chat",
+        "stars": 163843,
+        "forks": 21249,
+        "language": "HTML",
+        "desc": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+        "tagline": "社区分享和发现ChatGPT提示词的免费平台",
+        "explanation": "① 这个项目是一个提示词（Prompt）的分享网站，提示词就是给AI的指令，好的提示词能让AI输出更准确。它解决了普通人不会写提示词、找不到好模板的问题。② 比如你想让ChatGPT写一首诗，但不知道怎么说，可以在这里搜索“写诗”找到别人分享的提示词，直接复制使用。或者你是个老师，想用AI出题，也能找到相关提示词。③ 适合所有使用ChatGPT等AI聊天机器人的人，完全零门槛。网站是开源的，你也可以自己搭建一个私有的版本，保护隐私。"
+      }
+    ],
+    "trending": [
+      {
+        "name": "DietrichGebert/ponytail",
+        "url": "https://github.com/DietrichGebert/ponytail",
+        "stars": 28967,
+        "forks": 1284,
+        "language": "JavaScript",
+        "desc": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+        "tagline": "让AI助手学会偷懒，写出最简洁的代码",
+        "explanation": "① 这个项目教AI编程助手像资深程序员一样，只写最必要的代码，避免冗余。它解决了AI经常生成过多无用代码、增加维护负担的问题。② 比如你让AI写一个排序函数，它可能生成几十行，但用了这个工具后，AI会写出最精简的几行，就像老手写的。③ 适合使用AI编程助手的开发者，尤其是追求代码质量的人。上手需要安装一个插件或配置，但项目提供了简单示例。"
+      },
+      {
+        "name": "omnigent-ai/omnigent",
+        "url": "https://github.com/omnigent-ai/omnigent",
+        "stars": 3259,
+        "forks": 363,
+        "language": "Python",
+        "desc": "A meta-harness for all your AI agents.  Omnigent provides a common layer over Claude Code, Codex, Pi, and the agents you write yourself: swap or combine harnesses without rewriting, keep them in check with policies and sandboxing, and collaborate in real time on the same live session, from any devic",
+        "tagline": "统一管理所有AI代理的超级控制台",
+        "explanation": "① 这个项目让你在一个地方管理多个AI代理（比如Claude Code、自己写的代理等），可以互相切换、组合使用，还能设置安全策略。它解决了同时使用多个AI工具时切换麻烦、难以协作的问题。② 比如你同时用Claude Code写代码、用Pi聊天，以前要开两个窗口，现在在一个界面里就能和它们对话，还能让它们合作完成一个任务。③ 适合重度使用多个AI工具的开发者或团队。上手需要一些配置，但项目提供了清晰的文档。"
+      },
+      {
+        "name": "kadevin/ilab-gpt-conjure",
+        "url": "https://github.com/kadevin/ilab-gpt-conjure",
+        "stars": 491,
+        "forks": 68,
+        "language": "Python",
+        "desc": "面向 GPT-image-2 的 AI 图片生成 WebUI 工作台，支持 Codex Responses 与 OpenAI 兼容 API 接入，内置公用图库、多类型 Chip 快捷引用、提示词模板、多任务并发和本地队列管理。An AI image generation WebUI workbench for GPT-image-2 with Codex Responses and OpenAI-compatible API support, shared gallery references, multi-type quick chips, prompt templates, concurr",
+        "tagline": "专为GPT-image-2打造的AI图片生成工作台",
+        "explanation": "① 这个项目是一个网页界面，让你更方便地使用GPT-image-2模型生成图片。它解决了直接调用API麻烦、没有图库管理、提示词不好写的问题。② 比如你想生成一张“猫在太空”的图片，可以在工作台里输入提示词，选择风格模板，一键生成。还能把生成的图片保存到内置图库，方便以后参考。③ 适合设计师、内容创作者等需要频繁生成图片的人。上手简单，打开网页就能用，但需要自己有GPT-image-2的API密钥。"
+      },
+      {
+        "name": "hoolulu/deep-research",
+        "url": "https://github.com/hoolulu/deep-research",
+        "stars": 358,
+        "forks": 32,
+        "language": "HTML",
+        "desc": "深度调研报告生成 Skill — 一个命令，十分钟，多语言，一份深度专业的调研报告 / Professional deep research report generation Skill · Supports 19 languages",
+        "tagline": "一键生成深度专业调研报告的AI技能",
+        "explanation": "① 这个项目是一个AI技能，能自动进行深度调研并生成专业报告。它解决了传统调研耗时费力、信息整理难的问题。② 比如你想了解“新能源汽车市场趋势”，只需输入主题，等十分钟，它就会生成一份包含数据、图表、分析的详细报告，支持多种语言。③ 适合学生、研究员、商业分析师等需要快速获取深度信息的人。上手简单，安装后通过命令行或界面使用，但需要联网。"
+      },
+      {
+        "name": "cobusgreyling/loop-engineering",
+        "url": "https://github.com/cobusgreyling/loop-engineering",
+        "stars": 350,
+        "forks": 46,
+        "language": "JavaScript",
+        "desc": "Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny). Includes loop-audit, loop-init, loop-cost.",
+        "tagline": "用AI编程代理进行循环开发的实用工具集",
+        "explanation": "① 这个项目提供了一套工具和模式，帮助开发者用AI代理进行“循环工程”——即让AI反复改进代码。它解决了AI一次生成代码不够完美、需要多次迭代的问题。② 比如你让AI写一个函数，第一次结果不满意，可以用这个工具让AI自动分析问题、修改代码，再检查，直到满意。③ 适合使用AI编程助手的开发者，尤其是追求代码质量的人。上手需要一些命令行基础，但项目提供了现成的命令和示例。"
+      }
+    ]
+  }
+}
