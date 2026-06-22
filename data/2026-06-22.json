@@ -1,0 +1,202 @@
+{
+  "date": "2026-06-22",
+  "articles": [
+    {
+      "title": "阿里发布视频模型HappyHorse 1.1",
+      "summary": "阿里推出视频生成模型HappyHorse 1.1，在画质、动作流畅度等五大维度全面升级。",
+      "why": "做AI视频的创作者又多了一个新工具，画质和流畅度提升直接关系到作品质量。",
+      "category": "视频",
+      "beginner_takeaway": "可以试试用这个模型生成更自然的视频片段。",
+      "for_me": "直接能用：做AI视频时，可以用HappyHorse 1.1生成更流畅的素材，减少后期修补工作量。",
+      "url": "https://www.qbitai.com/2026/06/437317.html"
+    },
+    {
+      "title": "iOS 27实用AI功能来了",
+      "summary": "苹果iOS 27除了Siri升级，还带来照片修图、邮件摘要等实用AI功能。",
+      "why": "iPhone用户日常就能用上AI，不用额外学工具。",
+      "category": "应用",
+      "beginner_takeaway": "更新系统后，留意相册和邮件里的新AI按钮。",
+      "for_me": "有关系：如果你用iPhone做视频或写脚本，iOS 27的AI修图和摘要功能能帮你省时间。",
+      "url": "https://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27/"
+    },
+    {
+      "title": "DeepSeek疯狂招Agent人才",
+      "summary": "DeepSeek到处贴广告招Agent方向人才，全力押注AI智能体。",
+      "why": "说明Agent（能自己干活的AI）是下一个大方向，学这个技能有前途。",
+      "category": "公司",
+      "beginner_takeaway": "Agent是AI的下一个风口，可以开始了解。",
+      "for_me": "值得关注：如果你未来想用AI做副业，Agent能帮你自动完成重复任务，比如自动发视频、回复评论。",
+      "url": "https://www.qbitai.com/2026/06/437249.html"
+    },
+    {
+      "title": "微信要给AI手机开门",
+      "summary": "微信计划开放接口，让AI应用能直接调用微信功能，比如发消息、查聊天记录。",
+      "why": "微信是日常高频应用，AI接入后能帮你自动处理消息、管理社群。",
+      "category": "应用",
+      "beginner_takeaway": "以后AI可以帮你回微信消息了。",
+      "for_me": "直接能用：做社群运营或卖课的创作者，未来可以用AI自动回复粉丝、发通知，省人工。",
+      "url": "https://www.ifanr.com/1669522?utm_source=rss&utm_medium=rss&utm_campaign="
+    },
+    {
+      "title": "AI硬件618卖爆了",
+      "summary": "钉钉A1录音设备在618拿下天猫、抖音、京东三平台销量第一。",
+      "why": "AI硬件开始被普通人接受，说明AI工具正在走进日常。",
+      "category": "工具",
+      "beginner_takeaway": "AI录音笔能自动转文字、做摘要，适合听课和采访。",
+      "for_me": "有关系：如果你做视频需要采访或录音，AI录音笔能直接生成文字稿，省去手动整理时间。",
+      "url": "https://www.qbitai.com/2026/06/437308.html"
+    },
+    {
+      "title": "清华开源空间模型打败Gemini",
+      "summary": "清华开源模型能边看120分钟长视频边学习空间变化，性能超过谷歌Gemini。",
+      "why": "空间智能是AI理解真实世界的关键，开源意味着大家都能用。",
+      "category": "模型",
+      "beginner_takeaway": "AI现在能看懂视频里的物体怎么移动了。",
+      "for_me": "暂时不用管，但值得关注：未来做AI视频时，这类模型能帮你自动识别场景变化，减少手动打关键帧。",
+      "url": "https://www.qbitai.com/2026/06/437235.html"
+    },
+    {
+      "title": "特朗普打压Anthropic谁受益",
+      "summary": "特朗普政府再次针对Anthropic，引发AI生态格局变化讨论。",
+      "why": "政策变动可能影响你用的AI工具是否稳定可用。",
+      "category": "政策",
+      "beginner_takeaway": "关注政策变化，避免依赖单一AI工具。",
+      "for_me": "有关系：如果你用Claude做脚本，注意政策风险，建议同时熟悉DeepSeek等国产模型作为备选。",
+      "url": "https://techcrunch.com/2026/06/21/when-the-trump-administration-cracks-down-on-anthropic-who-benefits/"
+    },
+    {
+      "title": "AI初创公司突破大模型瓶颈",
+      "summary": "AI公司Subquadratic声称解决了大模型数学瓶颈，可能让模型更快更便宜。",
+      "why": "如果成真，AI工具使用成本会降低，对创作者是好事。",
+      "category": "模型",
+      "beginner_takeaway": "AI模型可能会变得更便宜、更快。",
+      "for_me": "值得关注：如果模型成本下降，你用的即梦、可灵等视频工具可能降价或出更高级功能。",
+      "url": "https://www.technologyreview.com/2026/06/19/1139327/the-download-llms-bottleneck-breakthrough-bci-trials-take-off/"
+    },
+    {
+      "title": "用AI写代码小心安全漏洞",
+      "summary": "有人用AI“氛围编码”做网站，结果隐藏了SQL注入漏洞，几个月后才被发现。",
+      "why": "AI生成代码可能带安全风险，新手容易忽略。",
+      "category": "工具",
+      "beginner_takeaway": "AI生成的代码要检查安全，不能直接上线。",
+      "for_me": "直接相关：如果你用AI写脚本或做网站，记得找人检查安全，或者只用AI生成内容，别碰数据库操作。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/950844/vibe-coding-security-risks-apps"
+    },
+    {
+      "title": "SpaceX与AI公司签63亿算力合同",
+      "summary": "SpaceX与开源AI公司Reflection签算力协议，最高价值63亿美元。",
+      "why": "算力是AI的基础，大公司抢算力说明AI竞争白热化。",
+      "category": "公司",
+      "beginner_takeaway": "AI背后需要大量算力，大公司都在抢资源。",
+      "for_me": "暂时不用管，但说明AI行业很热，学AI技能长期看有市场。",
+      "url": "https://www.ithome.com/0/967/236.htm"
+    }
+  ],
+  "plain_summary": "今天AI圈挺热闹。阿里发了新视频模型HappyHorse 1.1，做AI视频的可以试试。苹果iOS 27也来了不少实用AI功能，修图、摘要啥的，iPhone用户直接能用。微信准备给AI开门，以后AI能帮你回消息，做社群运营的福音。DeepSeek疯狂招Agent人才，说明能自己干活的AI是下一个风口。另外注意，特朗普又在搞Anthropic，用Claude的朋友最好备个国产模型。还有，用AI写代码要小心安全漏洞，别直接上线。总之，AI工具越来越多，对创作者是好事，但也别忘了留个心眼。",
+  "github": {
+    "top_starred": [
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "stars": 219749,
+        "forks": 33677,
+        "language": "JavaScript",
+        "desc": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+        "tagline": "优化AI代理性能的系统，提升技能、记忆和安全性。",
+        "explanation": "这个项目是一个工具，专门用来让AI代理（比如Claude Code、Codex、Cursor等）运行得更快、更聪明、更安全。它解决的是AI代理在复杂任务中容易出错、效率低下的问题。对于普通人来说，如果你在用AI写代码或处理任务，这个系统能让AI记住你的偏好、学会新技能，并且保护你的数据安全。比如，你可以让AI代理自动完成一个复杂的编程项目，它会记住你之前的编码风格，避免重复犯错。适合有一定技术基础的人，比如开发者或AI爱好者，上手需要一些配置，但文档很详细。"
+      },
+      {
+        "name": "NousResearch/hermes-agent",
+        "url": "https://github.com/NousResearch/hermes-agent",
+        "stars": 199724,
+        "forks": 35498,
+        "language": "Python",
+        "desc": "The agent that grows with you",
+        "tagline": "能随着你的使用不断成长的AI代理。",
+        "explanation": "这是一个AI代理框架，核心特点是它会根据你的使用习惯和反馈逐渐进化，变得更懂你。它解决的是传统AI代理“一成不变”的问题，让代理能适应个人需求。比如，你经常用它来整理邮件，它就会学会你的分类逻辑，自动把重要邮件标出来；或者你用它写报告，它会学习你的写作风格。适合任何想拥有个性化AI助手的人，尤其是创作者和普通用户。上手不难，有图形界面或简单命令行，但需要一些Python基础来定制。"
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "stars": 185075,
+        "forks": 46115,
+        "language": "Python",
+        "desc": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+        "tagline": "让每个人都能轻松使用和构建AI的自动化工具。",
+        "explanation": "AutoGPT是一个开源项目，目标是让AI自动化复杂任务，比如自动搜索信息、写文章、管理文件等。它解决的是人们需要手动操作多个步骤的麻烦，让AI自己规划和执行。比如，你可以让它“帮我研究一下新能源汽车市场，并写一份报告”，它会自动搜索、整理、生成文档。适合对AI感兴趣但不会编程的人，上手有教程，但需要一点耐心学习如何给它下指令。"
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "stars": 174725,
+        "forks": 16706,
+        "language": "Go",
+        "desc": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+        "tagline": "一键运行多种大语言模型的本地工具。",
+        "explanation": "Ollama让你能在自己的电脑上轻松运行各种AI模型，比如DeepSeek、Qwen等，无需联网。它解决的是隐私和成本问题——你不需要把数据上传到云端，也不用付费。比如，你可以用它本地运行一个聊天机器人，完全离线，保护隐私。适合注重隐私的普通用户和开发者，上手非常简单，下载安装后命令行输入模型名即可。"
+      },
+      {
+        "name": "f/prompts.chat",
+        "url": "https://github.com/f/prompts.chat",
+        "stars": 164093,
+        "forks": 21257,
+        "language": "HTML",
+        "desc": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+        "tagline": "社区驱动的ChatGPT提示词分享平台。",
+        "explanation": "这是一个收集和分享ChatGPT提示词（prompts）的网站，提示词就是你给AI的指令。它解决的是很多人不知道如何有效提问的问题，通过社区贡献的优质提示词，让AI输出更好。比如，你可以找到“写一首诗”或“解释量子物理”的提示词，直接复制使用。适合所有ChatGPT用户，完全不需要技术背景，打开网页就能用。"
+      }
+    ],
+    "trending": [
+      {
+        "name": "DietrichGebert/ponytail",
+        "url": "https://github.com/DietrichGebert/ponytail",
+        "stars": 48941,
+        "forks": 2390,
+        "language": "JavaScript",
+        "desc": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+        "tagline": "让AI代理像最懒的高级程序员一样思考。",
+        "explanation": "这个项目教AI代理如何“偷懒”——只写最必要的代码，避免过度工程。它解决的是AI经常生成冗余代码的问题，让代码更简洁高效。比如，你让AI写一个排序函数，它不会写一堆注释和额外功能，而是直接给出最简实现。适合开发者，尤其是那些希望AI代码更干净的人。上手需要一些编程知识，但概念简单。"
+      },
+      {
+        "name": "omnigent-ai/omnigent",
+        "url": "https://github.com/omnigent-ai/omnigent",
+        "stars": 4435,
+        "forks": 501,
+        "language": "Python",
+        "desc": "Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in real time from any device.",
+        "tagline": "开源AI代理框架，统一管理多种AI工具。",
+        "explanation": "Omnigent是一个平台，让你能同时控制多个AI代理（如Claude Code、Cursor等），并切换它们而不用重写代码。它解决的是多工具切换麻烦、策略不一致的问题。比如，你可以让Claude Code写代码，然后让Cursor审查，所有规则统一。适合需要多个AI协作的团队或高级用户，上手需要一定技术背景。"
+      },
+      {
+        "name": "eli-labz/Third-Eye",
+        "url": "https://github.com/eli-labz/Third-Eye",
+        "stars": 747,
+        "forks": 11,
+        "language": "TypeScript",
+        "desc": "A production-grade OSINT platform that provides situational awareness across multiple intelligence domains.",
+        "tagline": "生产级开源情报平台，提供多领域态势感知。",
+        "explanation": "Third-Eye是一个情报收集和分析工具，用于从公开信息中获取洞察。它解决的是信息过载问题，自动聚合和分析数据。比如，安全研究人员可以用它监控网络威胁，记者可以用它追踪事件发展。适合安全专家、记者等专业人士，上手需要技术知识，但功能强大。"
+      },
+      {
+        "name": "cobusgreyling/loop-engineering",
+        "url": "https://github.com/cobusgreyling/loop-engineering",
+        "stars": 663,
+        "forks": 88,
+        "language": "JavaScript",
+        "desc": "Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny). Includes loop-audit, loop-init, loop-cost.",
+        "tagline": "AI编码代理的循环工程工具集。",
+        "explanation": "这个项目提供模式和命令行工具，帮助开发者设计AI代理的工作流程。它解决的是如何让AI代理高效地迭代任务（比如写代码-测试-修改）。比如，你可以用它的工具自动审计AI代理的每次操作，或者初始化一个项目。适合有经验的开发者，需要熟悉命令行。"
+      },
+      {
+        "name": "dzcmemory-web/bazi-ziwei-skill",
+        "url": "https://github.com/dzcmemory-web/bazi-ziwei-skill",
+        "stars": 475,
+        "forks": 61,
+        "language": "TypeScript",
+        "desc": "AI 八字 + 紫微斗数排盘与综合印证 Skill：算法精准排盘（不靠 LLM 猜），三种分析模式，一键生成水墨风 HTML 命盘海报。兼容 Claude / Codex / Cursor / Workbuddy 等 SKILL.md Agent。",
+        "tagline": "AI八字和紫微斗数排盘工具，生成水墨风命盘海报。",
+        "explanation": "这是一个中国传统命理学的AI工具，能精准排盘（不靠AI瞎猜），并生成漂亮的水墨风格海报。它解决的是传统排盘复杂、不直观的问题。比如，你输入出生日期，它就能排出八字和紫微斗数命盘，并给出分析。适合对命理感兴趣的普通人，上手简单，有图形界面，但需要了解一些命理基础。"
+      }
+    ]
+  }
+}
