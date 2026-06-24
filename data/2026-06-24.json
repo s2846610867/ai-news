@@ -1,0 +1,202 @@
+{
+  "date": "2026-06-24",
+  "articles": [
+    {
+      "title": "OpenAI发布自研AI芯片",
+      "summary": "OpenAI与Broadcom合作推出首款AI推理芯片Jalapeño，专为大模型设计。",
+      "why": "芯片更高效可能降低AI使用成本，未来你用的AI工具可能更快更便宜。",
+      "category": "公司",
+      "beginner_takeaway": "关注AI硬件进步，它会影响你用的AI工具速度和价格。",
+      "for_me": "暂时不用管，但长远看芯片升级会让AI视频生成更快，值得留意。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/955939/openai-reveals-its-first-ai-processor-jalapeno"
+    },
+    {
+      "title": "Anthropic推出Cowork助手",
+      "summary": "Anthropic发布Cowork，让非技术用户也能用AI操作电脑文件，无需编程。",
+      "why": "普通人也能用AI处理文档、整理文件，降低AI使用门槛。",
+      "category": "工具",
+      "beginner_takeaway": "试试用AI帮你整理素材或写脚本，不用学代码。",
+      "for_me": "直接能用！写脚本、整理视频素材时，让Cowork帮你操作文件，省时间。",
+      "url": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no"
+    },
+    {
+      "title": "Facebook推AI创作者助手",
+      "summary": "Facebook测试AI伴侣App，内置AI助手帮创作者生成内容、管理账号。",
+      "why": "创作者可借助AI提高效率，可能成为副业新工具。",
+      "category": "应用",
+      "beginner_takeaway": "关注社交平台AI工具，它们能帮你快速产出内容。",
+      "for_me": "有关系！如果你用Facebook发视频，这个AI助手能帮你写文案、做封面，省力。",
+      "url": "https://techcrunch.com/2026/06/24/facebook-rolls-out-an-ai-companion-app-for-creators/"
+    },
+    {
+      "title": "Figma新增AI动效工具",
+      "summary": "Figma在Config大会上推出AI动效和着色器工具，帮设计师自动化繁琐任务。",
+      "why": "AI让设计更简单，创作者可快速生成动效，提升视频质量。",
+      "category": "工具",
+      "beginner_takeaway": "学设计工具中的AI功能，能帮你做更炫的视频效果。",
+      "for_me": "有关系！做AI视频时，用Figma的AI动效工具给画面加特效，提升质感。",
+      "url": "https://www.theverge.com/tech/955831/figma-code-design-tools-config-2026-announcements"
+    },
+    {
+      "title": "AI工程师岗位反而更稳",
+      "summary": "数据显示AI并未取代工程师，反而工程师在新员工中占比上升。",
+      "why": "AI不是抢饭碗，而是创造新机会，学AI技能仍有价值。",
+      "category": "政策",
+      "beginner_takeaway": "别怕AI取代工作，学会用它反而能提升竞争力。",
+      "for_me": "有关系！你学AI做副业的方向是对的，AI技能需求在涨，坚持下去。",
+      "url": "https://techcrunch.com/2026/06/24/ai-was-supposed-to-kill-engineering-jobs-but-new-data-suggests-theyre-the-most-resilient/"
+    },
+    {
+      "title": "公司开始限制AI使用量",
+      "summary": "员工用AI做小任务导致预算超支，企业开始限制每人AI使用额度。",
+      "why": "AI虽好用但成本不低，个人创作者需合理规划使用。",
+      "category": "公司",
+      "beginner_takeaway": "用AI时注意控制次数，避免浪费额度。",
+      "for_me": "有关系！如果你用付费AI工具做视频，注意别浪费额度，集中用在关键步骤。",
+      "url": "https://techcrunch.com/2026/06/24/companies-are-scrambling-to-stop-employees-from-maxing-out-ai-budgets-with-small-tasks/"
+    },
+    {
+      "title": "Google搜索框25年来首次改版",
+      "summary": "Google宣布重新设计搜索框，从纯文本转向更智能的交互方式。",
+      "why": "搜索方式改变，未来找信息可能更依赖AI对话而非关键词。",
+      "category": "工具",
+      "beginner_takeaway": "留意搜索方式变化，学会用AI提问比搜关键词更高效。",
+      "for_me": "暂时不用管，但以后找素材、查资料时，试试用AI对话式搜索，更快。",
+      "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think"
+    },
+    {
+      "title": "AI芯片公司Cerebras股价大跌",
+      "summary": "Cerebras财报后股价暴跌，因核心业务利润率预期低于市场理解。",
+      "why": "AI芯片竞争激烈，投资者情绪波动大，但长期看AI硬件需求仍在。",
+      "category": "公司",
+      "beginner_takeaway": "AI行业波动正常，关注技术本身而非股价。",
+      "for_me": "暂时不用管，别跟风投资，专注学AI做作品就好。",
+      "url": "https://techcrunch.com/2026/06/24/cerebras-stock-plunges-after-earnings-as-ceo-says-margin-outlook-was-misunderstood/"
+    },
+    {
+      "title": "AI研究者持续离开谷歌",
+      "summary": "又两位顶级AI研究员从谷歌跳槽到Anthropic，人才流向竞争对手。",
+      "why": "AI人才争夺激烈，公司间竞争可能加速技术迭代。",
+      "category": "公司",
+      "beginner_takeaway": "人才流动说明AI领域创新活跃，新工具会不断出现。",
+      "for_me": "暂时不用管，但可以关注Anthropic的新产品，可能更好用。",
+      "url": "https://techcrunch.com/2026/06/24/ai-researchers-continue-to-leave-google-for-its-rivals/"
+    },
+    {
+      "title": "AI初创公司Railway获1亿美元",
+      "summary": "云平台Railway获1亿美元融资，挑战AWS，专注AI原生云服务。",
+      "why": "AI云服务竞争加剧，未来部署AI应用可能更便宜、更方便。",
+      "category": "公司",
+      "beginner_takeaway": "云服务降价对个人创作者是好事，部署AI作品成本更低。",
+      "for_me": "暂时不用管，但如果你以后想发布AI视频网站，这类服务可能更划算。",
+      "url": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud"
+    }
+  ],
+  "plain_summary": "今天AI圈挺热闹：OpenAI自己造了芯片，以后AI可能更快更便宜；Anthropic出了个叫Cowork的助手，不会编程也能让AI帮你整理文件，写脚本更方便；Facebook也给创作者出了AI伴侣，做视频发内容更省力。还有个好消息：AI没抢工程师饭碗，反而需求更大了，所以学AI做副业这条路没问题。不过公司开始限制AI用量了，因为太费钱，咱们自己用也得省着点。另外Google搜索框25年来第一次大改，以后找东西可能不是搜关键词，而是跟AI聊天了。总之，AI工具越来越多，对普通人越来越友好，抓住机会学起来。",
+  "github": {
+    "top_starred": [
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "stars": 221161,
+        "forks": 33869,
+        "language": "JavaScript",
+        "desc": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+        "tagline": "让AI助手更聪明、更安全的性能优化系统",
+        "explanation": "这个项目是一个工具，专门用来提升AI编程助手（比如Claude Code、Codex、Cursor等）的表现。它解决的是AI助手在写代码时可能不够高效、容易出错或不够安全的问题。通过给AI添加“技能”、“直觉”、“记忆”和“安全机制”，让它们更像一个经验丰富的程序员。普通人或创作者可以用它来让AI助手更懂你的项目，比如自动记住你常用的代码风格，或者避免写出有安全漏洞的代码。适合开发者，尤其是那些经常使用AI编程助手的人。上手有一定难度，需要了解基本的编程概念和AI工具的使用。"
+      },
+      {
+        "name": "NousResearch/hermes-agent",
+        "url": "https://github.com/NousResearch/hermes-agent",
+        "stars": 202009,
+        "forks": 36099,
+        "language": "Python",
+        "desc": "The agent that grows with you",
+        "tagline": "能随着你的需求成长的AI助手",
+        "explanation": "这个项目是一个AI助手框架，它的特点是“随着你成长”。意思是它可以根据你的使用习惯和需求，逐渐变得更懂你、更高效。它解决的是通用AI助手不够个性化的问题。比如，你是一个作家，它可能学会帮你整理写作灵感；你是一个程序员，它可能学会帮你自动修复常见错误。适合任何想拥有一个越来越懂自己的AI助手的人。上手难度中等，需要一些Python基础来配置和扩展功能。"
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "stars": 185153,
+        "forks": 46123,
+        "language": "Python",
+        "desc": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+        "tagline": "让每个人都能轻松使用和构建的AI自动化工具",
+        "explanation": "AutoGPT是一个开源项目，目标是让AI自动化变得人人可用。它解决的是普通人难以利用AI完成复杂任务的问题。比如，你可以让它自动研究一个话题并生成报告，或者帮你管理社交媒体账号。它就像一个能自己思考、自己行动的AI助手。适合对AI感兴趣但不会编程的人，也适合开发者用来构建更复杂的自动化流程。上手难度中等，有图形界面和命令行两种方式，初学者可以从图形界面开始。"
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "stars": 174865,
+        "forks": 16720,
+        "language": "Go",
+        "desc": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+        "tagline": "一键运行多种AI大模型的本地工具",
+        "explanation": "这个项目让你能在自己的电脑上轻松运行各种AI大模型，比如DeepSeek、Qwen、Gemma等。它解决的是普通人想用AI但不想依赖网络或付费API的问题。比如，你可以下载一个模型到本地，然后离线使用AI聊天、写文章、甚至编程。适合注重隐私或需要离线使用AI的人。上手难度低，只需下载安装，然后选择模型即可运行。"
+      },
+      {
+        "name": "f/prompts.chat",
+        "url": "https://github.com/f/prompts.chat",
+        "stars": 164260,
+        "forks": 21269,
+        "language": "HTML",
+        "desc": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+        "tagline": "分享和发现优质ChatGPT提示词的社区",
+        "explanation": "这是一个收集和分享ChatGPT提示词（prompt）的网站。提示词就是你给AI的指令，好的提示词能让AI给出更好的回答。它解决的是很多人不知道如何有效使用ChatGPT的问题。比如，你可以找到“写一封专业邮件”的提示词，直接复制使用，或者自己贡献好的提示词。适合所有使用ChatGPT的人，尤其是新手。上手难度极低，打开网站就能用。"
+      }
+    ],
+    "trending": [
+      {
+        "name": "DietrichGebert/ponytail",
+        "url": "https://github.com/DietrichGebert/ponytail",
+        "stars": 55022,
+        "forks": 2777,
+        "language": "JavaScript",
+        "desc": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+        "tagline": "让AI助手学会偷懒，只写最必要的代码",
+        "explanation": "这个项目教AI助手像最懒的高级程序员一样思考：不写多余的代码。它解决的是AI经常生成冗余代码的问题。比如，你让AI写一个功能，它可能写了一大堆，但实际只需要几行。这个工具会让AI优先考虑最简洁、最有效的方案。适合开发者，尤其是那些希望代码干净高效的人。上手难度中等，需要集成到AI编程助手中使用。"
+      },
+      {
+        "name": "omnigent-ai/omnigent",
+        "url": "https://github.com/omnigent-ai/omnigent",
+        "stars": 4717,
+        "forks": 557,
+        "language": "Python",
+        "desc": "Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in real time from any device.",
+        "tagline": "统一管理多种AI助手的开源框架",
+        "explanation": "这个项目是一个AI助手管理平台，让你能同时控制Claude Code、Codex、Cursor等多个AI助手。它解决的是切换不同AI工具时的不便。比如，你可以设置一个任务，让不同的AI助手协作完成，或者统一管理它们的安全策略。适合经常使用多种AI工具的开发者。上手难度较高，需要一定的技术背景来配置。"
+      },
+      {
+        "name": "eli-labz/Third-Eye",
+        "url": "https://github.com/eli-labz/Third-Eye",
+        "stars": 844,
+        "forks": 13,
+        "language": "TypeScript",
+        "desc": "A production-grade OSINT platform that provides situational awareness across multiple intelligence domains.",
+        "tagline": "专业级开源情报分析平台",
+        "explanation": "这是一个用于收集和分析公开信息的平台，帮助用户了解当前局势。它解决的是情报收集碎片化的问题。比如，安全研究人员可以用它监控网络威胁，记者可以用它追踪事件发展。适合安全专家、记者或研究人员。上手难度高，需要了解情报分析的基础知识。"
+      },
+      {
+        "name": "sums001/Windows-Copilot-API",
+        "url": "https://github.com/sums001/Windows-Copilot-API",
+        "stars": 657,
+        "forks": 234,
+        "language": "Python",
+        "desc": "Reverse engineered Windows Copilot into an OpenAI-compatible API. Access GPT-4 and GPT-5 models through a simple REST interface without API keys or billing.",
+        "tagline": "免费使用GPT-4和GPT-5的API接口",
+        "explanation": "这个项目通过逆向工程，让你能免费调用Windows Copilot背后的GPT-4和GPT-5模型。它解决的是OpenAI API收费且需要申请的问题。比如，开发者可以把它集成到自己的应用中，无需付费就能使用强大的AI能力。适合开发者，但注意逆向工程可能违反服务条款。上手难度中等，需要编程知识。"
+      },
+      {
+        "name": "dzcmemory-web/bazi-ziwei-skill",
+        "url": "https://github.com/dzcmemory-web/bazi-ziwei-skill",
+        "stars": 500,
+        "forks": 64,
+        "language": "TypeScript",
+        "desc": "AI 八字 + 紫微斗数排盘与综合印证 Skill：算法精准排盘（不靠 LLM 猜），三种分析模式，一键生成水墨风 HTML 命盘海报。兼容 Claude / Codex / Cursor / Workbuddy 等 SKILL.md Agent。",
+        "tagline": "AI帮你排八字和紫微斗数，生成水墨风命盘",
+        "explanation": "这个项目让AI能精准排算八字和紫微斗数命盘，并生成水墨风格的海报。它解决的是传统命理排盘复杂且依赖人工的问题。比如，你输入出生时间，AI自动排出命盘并给出分析，还能生成一张漂亮的图片分享。适合对命理感兴趣的人。上手难度低，只需输入信息即可。"
+      }
+    ]
+  }
+}
