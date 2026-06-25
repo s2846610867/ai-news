@@ -1,0 +1,193 @@
+{
+  "date": "2026-06-25",
+  "articles": [
+    {
+      "title": "Claude付费用户反超ChatGPT",
+      "summary": "数据显示，越来越多付费用户选择Anthropic的Claude，ChatGPT的付费市场主导地位正在被蚕食。",
+      "why": "你正在用Claude写脚本，说明它越来越受认可，未来可能更好用、更稳定。",
+      "category": "公司",
+      "beginner_takeaway": "关注Claude的更新和付费方案，它可能成为你的主力工具。",
+      "for_me": "有关系。你已经在用Claude，这条消息说明它值得长期投入，未来功能可能会更强，变现机会更多。",
+      "url": "https://techcrunch.com/2026/06/25/anthropics-claude-is-winning-over-paid-consumers-a-market-owned-by-chatgpt/"
+    },
+    {
+      "title": "IBM新芯片让电脑快10年",
+      "summary": "IBM造出指甲盖大小、含1000亿晶体管的芯片，密度翻倍，未来电脑更快更省电。",
+      "why": "芯片更强意味着AI工具（如视频生成）会更快、更便宜，你用的即梦/可灵可能受益。",
+      "category": "工具",
+      "beginner_takeaway": "不用懂技术，只需知道未来AI工具会越来越流畅。",
+      "for_me": "暂时不用管。这是硬件底层进步，短期内不会直接影响你做视频，但长期看AI工具成本会下降。",
+      "url": "https://www.technologyreview.com/2026/06/25/1139696/ibm-unveils-sub1nm-chip/"
+    },
+    {
+      "title": "GPT-5.6推迟发布",
+      "summary": "应特朗普政府要求，OpenAI推迟GPT-5.6的广泛发布，先只给少数人试用。",
+      "why": "新模型推迟，意味着你短期内用不上更强的AI写脚本或生成视频。",
+      "category": "政策",
+      "beginner_takeaway": "关注GPT-5.6的后续动态，它可能带来写脚本和视频生成的大升级。",
+      "for_me": "有关系。如果你期待用新模型提升创作效率，现在得继续用现有工具，但可以趁这段时间把基础打牢。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/957372/openai-will-delay-gpt-5-6-after-trump-administration-request"
+    },
+    {
+      "title": "AI省电1000倍新技术",
+      "summary": "前Databricks AI负责人推出新图像生成系统，号称能把AI耗电量降低1000倍。",
+      "why": "省电意味着AI工具成本大降，你用即梦/可灵生图可能更便宜、更环保。",
+      "category": "工具",
+      "beginner_takeaway": "留意这类“省电”技术，未来AI工具可能会降价。",
+      "for_me": "暂时不用管。技术还在早期，但值得关注，如果落地，你做视频的成本会降低。",
+      "url": "https://techcrunch.com/2026/06/25/databricks-former-ai-chief-thinks-he-can-cut-ais-power-bill-by-1000x/"
+    },
+    {
+      "title": "AI测试公司获5000万美元",
+      "summary": "Patronus AI融资5000万美元，专门测试AI智能体（如客服机器人）的可靠性。",
+      "why": "AI测试越成熟，你用的工具越不容易出错，做视频时翻车概率降低。",
+      "category": "公司",
+      "beginner_takeaway": "AI测试行业在壮大，说明AI工具会越来越靠谱。",
+      "for_me": "暂时不用管。这是行业后端的事，但间接让你用的AI更稳定。",
+      "url": "https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/"
+    },
+    {
+      "title": "福特AI出错，返聘老员工",
+      "summary": "福特因自动化系统出错，不得不请回退休工程师修复问题，暴露AI在生产中的局限。",
+      "why": "提醒你AI不是万能的，做视频时也要人工检查，别全信AI。",
+      "category": "应用",
+      "beginner_takeaway": "AI工具输出要人工审核，避免低级错误。",
+      "for_me": "有关系。你做AI视频时，一定要自己检查脚本和画面，别直接发布，避免翻车。",
+      "url": "https://www.theverge.com/transportation/956316/ford-quality-jd-power-ranking-ai-automated-mistakes"
+    },
+    {
+      "title": "Facebook复活创作者AI助手",
+      "summary": "Meta把旧版Creator Studio重做成AI助手App，帮创作者涨粉、管理内容。",
+      "why": "如果你用Facebook发视频，这个AI助手能帮你省时间、涨粉丝。",
+      "category": "工具",
+      "beginner_takeaway": "可以试试这个新App，看它能不能帮你提升视频播放量。",
+      "for_me": "有关系。如果你打算在Facebook上发AI视频变现，这个工具能帮你管理账号、分析数据，值得一试。",
+      "url": "https://www.theverge.com/tech/956668/meta-facebook-creator-studio-ai-app-relaunch"
+    },
+    {
+      "title": "Claude代码工具贵，免费版出现",
+      "summary": "Claude Code每月最高200美元，但开源替代品Goose免费，功能类似。",
+      "why": "如果你未来想用AI写代码或做自动化，免费工具能省一大笔钱。",
+      "category": "工具",
+      "beginner_takeaway": "先别急着付费，免费替代品可能够用。",
+      "for_me": "暂时不用管。你目前主要写脚本和做视频，暂时用不上代码工具，但未来如果想自动化工作流，可以关注Goose。",
+      "url": "https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free"
+    },
+    {
+      "title": "AI帮高考生填志愿",
+      "summary": "百度AI志愿助手已有1500万人使用，阿里千问大模型生成500万份志愿报告。",
+      "why": "说明AI在生活场景中越来越实用，你以后也可以用它做决策参考。",
+      "category": "应用",
+      "beginner_takeaway": "AI可以帮你做信息整理和推荐，但最终决定还得靠自己。",
+      "for_me": "暂时不用管。虽然不直接相关，但说明AI在信息处理上很靠谱，你写脚本时也可以让AI帮你查资料。",
+      "url": "https://36kr.com/p/3868502221018370?f=rss"
+    }
+  ],
+  "plain_summary": "今天AI圈最值得关注的是：Claude在付费用户上开始超过ChatGPT，说明它越来越靠谱，你用它写脚本是对的。另外GPT-5.6被美国政府要求推迟发布，短期内你用不上新模型，但现有工具够用。IBM出了超强芯片，未来AI工具会更快更便宜。福特AI翻车提醒你：做视频一定要自己检查，别全信AI。Facebook出了个AI助手帮你涨粉，如果你在Facebook发视频可以试试。其他像AI省电技术、免费代码工具等，暂时跟你关系不大，但值得留意。总之，今天没有爆炸性新闻，但Claude和GPT的消息对你影响最大。",
+  "github": {
+    "top_starred": [
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "stars": 221735,
+        "forks": 33946,
+        "language": "JavaScript",
+        "desc": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+        "tagline": "让AI助手更聪明、更安全的性能优化系统",
+        "explanation": "这个项目是一个工具，专门用来提升AI助手（比如Claude Code、Codex等）的表现。它解决的核心问题是：AI助手在写代码或执行任务时，可能会不够高效、容易忘记上下文、或者有安全风险。ECC通过给AI添加“技能”、“直觉”、“记忆”等功能，让AI变得更聪明、更稳定。普通人可能不太直接用到，但如果你是开发者，用AI写代码时，这个系统能让AI更懂你的需求，减少错误。上手有一定难度，需要了解AI助手的基本使用，但项目提供了详细说明。"
+      },
+      {
+        "name": "NousResearch/hermes-agent",
+        "url": "https://github.com/NousResearch/hermes-agent",
+        "stars": 203029,
+        "forks": 36330,
+        "language": "Python",
+        "desc": "The agent that grows with you",
+        "tagline": "一个能随着你成长而进化的AI助手",
+        "explanation": "这个项目是一个AI代理（可以理解为一个智能助手），它会根据你的使用习惯和需求不断学习和改进。它解决的问题是：很多AI工具是固定的，不会主动适应你。而hermes-agent会记住你的偏好，越用越顺手。比如，你经常用它整理文件，它就会自动优化整理方式；或者你用它写邮件，它会学习你的语气。适合想要一个个性化AI助手的人，尤其是经常需要重复性任务的人。上手不难，有Python基础就能用，但完全新手可能需要一点学习。"
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "stars": 185154,
+        "forks": 46132,
+        "language": "Python",
+        "desc": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+        "tagline": "让每个人都能轻松使用和构建的AI工具",
+        "explanation": "AutoGPT是一个开源项目，目标是让AI变得人人可用。它解决的是：普通人也能用AI完成复杂任务，而不需要懂编程。比如，你可以告诉AutoGPT“帮我研究一下新能源汽车市场”，它就会自动搜索、整理信息并生成报告。或者让它帮你写一个简单的网站。它适合所有想用AI提高效率的人，无论是学生、上班族还是创业者。上手很简单，下载安装后，用自然语言告诉它你想做什么就行。"
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "stars": 174909,
+        "forks": 16724,
+        "language": "Go",
+        "desc": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+        "tagline": "一键运行多种AI大模型的本地工具",
+        "explanation": "Ollama是一个让你在电脑上轻松运行各种AI大模型（比如DeepSeek、Qwen等）的工具。它解决的问题是：通常运行AI模型需要复杂的环境配置，而Ollama简化了过程，只需几条命令就能下载和运行模型。普通人可以用它来体验不同的AI，比如让AI写诗、回答问题，或者生成代码。适合对AI感兴趣、想本地运行模型但不想折腾技术细节的人。上手很容易，有命令行基础就行。"
+      },
+      {
+        "name": "f/prompts.chat",
+        "url": "https://github.com/f/prompts.chat",
+        "stars": 164351,
+        "forks": 21284,
+        "language": "HTML",
+        "desc": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+        "tagline": "发现和分享ChatGPT提示词的社区",
+        "explanation": "这是一个收集和分享ChatGPT提示词（prompt，即你给AI的指令）的网站。它解决的问题是：很多人不知道如何写好提示词让AI给出好答案，而这里汇集了社区贡献的高质量提示词。比如，你想让ChatGPT写一封专业的求职信，可以直接用别人分享的提示词模板。适合所有使用ChatGPT的人，尤其是新手。上手零门槛，直接访问网站就能浏览和使用提示词。"
+      }
+    ],
+    "trending": [
+      {
+        "name": "DietrichGebert/ponytail",
+        "url": "https://github.com/DietrichGebert/ponytail",
+        "stars": 57936,
+        "forks": 2945,
+        "language": "JavaScript",
+        "desc": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+        "tagline": "让AI像最懒的资深程序员一样思考",
+        "explanation": "这个项目是一个AI代理的“思维模式”，它让AI学会偷懒，只写最必要的代码。它解决的问题是：AI有时会生成冗余或复杂的代码，而Ponytail让AI优先考虑简洁和高效。比如，你让AI写一个排序函数，它可能会用最少的代码实现，而不是堆砌功能。适合开发者，尤其是希望AI生成干净代码的人。上手需要一点编程知识，但项目使用简单。"
+      },
+      {
+        "name": "eli-labz/Third-Eye",
+        "url": "https://github.com/eli-labz/Third-Eye",
+        "stars": 874,
+        "forks": 12,
+        "language": "TypeScript",
+        "desc": "A production-grade OSINT platform that provides situational awareness across multiple intelligence domains.",
+        "tagline": "专业级开源情报分析平台",
+        "explanation": "Third-Eye是一个用于开源情报（OSINT，即从公开信息中收集情报）的平台。它解决的问题是：在网络安全、调查等领域，需要从大量公开数据中提取有用信息，而Third-Eye能自动化这个过程。比如，安全研究员可以用它追踪网络威胁，或者记者用它调查事件。适合网络安全专家、调查记者等专业人士。上手有一定门槛，需要了解OSINT概念，但平台提供了生产级功能。"
+      },
+      {
+        "name": "sums001/Windows-Copilot-API",
+        "url": "https://github.com/sums001/Windows-Copilot-API",
+        "stars": 739,
+        "forks": 261,
+        "language": "Python",
+        "desc": "Reverse engineered Windows Copilot into an OpenAI-compatible API. Access GPT-4 and GPT-5 models through a simple REST interface without API keys or billing.",
+        "tagline": "免费使用GPT-4/5的API接口",
+        "explanation": "这个项目逆向工程了Windows Copilot，提供了一个兼容OpenAI的API，让你可以免费调用GPT-4和GPT-5模型。它解决的问题是：通常使用GPT-4需要付费，而这个项目让你绕过付费，直接通过简单接口使用。比如，开发者可以把它集成到自己的应用中，实现智能对话功能。适合开发者，尤其是想免费使用高级AI模型的人。上手需要一些编程知识，但接口很简单。"
+      },
+      {
+        "name": "raiyanyahya/recall",
+        "url": "https://github.com/raiyanyahya/recall",
+        "stars": 537,
+        "forks": 24,
+        "language": "Python",
+        "desc": "Stop wasting tokens and re-explaining your project every session. Recall gives Claude Code durable memory — entirely offline.",
+        "tagline": "给Claude Code的离线持久记忆",
+        "explanation": "Recall是一个工具，让Claude Code（一个AI编程助手）拥有长期记忆，并且完全离线。它解决的问题是：每次和AI对话，它都会忘记之前的上下文，导致重复解释。Recall让AI记住你的项目信息，节省时间。比如，你开发一个项目，AI会记住你的代码风格和偏好。适合使用Claude Code的开发者。上手不难，安装后自动生效。"
+      },
+      {
+        "name": "dzcmemory-web/bazi-ziwei-skill",
+        "url": "https://github.com/dzcmemory-web/bazi-ziwei-skill",
+        "stars": 508,
+        "forks": 66,
+        "language": "TypeScript",
+        "desc": "AI 八字 + 紫微斗数排盘与综合印证 Skill：算法精准排盘（不靠 LLM 猜），三种分析模式，一键生成水墨风 HTML 命盘海报。兼容 Claude / Codex / Cursor / Workbuddy 等 SKILL.md Agent。",
+        "tagline": "AI八字和紫微斗数排盘工具",
+        "explanation": "这个项目是一个AI技能包，用于八字和紫微斗数（中国传统命理学）的排盘和分析。它解决的问题是：传统排盘需要手动计算，而AI可以自动精准排盘，并提供多种分析模式。比如，输入你的出生时间，AI就能生成命盘海报，并给出解读。适合对命理感兴趣的人，尤其是想用AI辅助分析的人。上手简单，只需提供出生信息即可。"
+      }
+    ]
+  }
+}
