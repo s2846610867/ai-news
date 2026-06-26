@@ -1,0 +1,202 @@
+{
+  "date": "2026-06-26",
+  "articles": [
+    {
+      "title": "GPT-5.6三款模型发布",
+      "summary": "OpenAI发布GPT-5.6系列，包括旗舰Sol、中端Terra和轻量Luna，但受美国政府限制，先限量预览。",
+      "why": "你用的AI工具可能很快升级，新模型更聪明，但政策限制可能影响你能否用上。",
+      "category": "模型",
+      "beginner_takeaway": "关注新模型是否支持你常用的AI视频或脚本工具，性能提升可能让生成效果更好。",
+      "for_me": "如果你用ChatGPT写脚本，新模型可能让输出更流畅，但暂时别急着换，等正式版。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/957845/openai-gpt-5-6-trump-administration-ai-preview"
+    },
+    {
+      "title": "Anthropic模型仍被禁",
+      "summary": "Anthropic的Mythos模型下线两周，与特朗普政府谈判无果，公司拒绝评论。",
+      "why": "你用的Claude可能受影响，模型被禁意味着功能受限或替代方案需准备。",
+      "category": "政策",
+      "beginner_takeaway": "留意Claude是否变慢或出错，考虑备用工具如DeepSeek。",
+      "for_me": "如果你用Claude写脚本，建议备份到DeepSeek，避免突然用不了。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/957327/anthropic-mythos-fable-ai-trump-administration-negotiations"
+    },
+    {
+      "title": "OpenAI自研芯片Jalapeño",
+      "summary": "OpenAI与Broadcom合作推出定制推理芯片Jalapeño，减少对英伟达依赖。",
+      "why": "芯片竞争可能降低AI服务成本，未来你用AI工具可能更便宜。",
+      "category": "工具",
+      "beginner_takeaway": "关注AI工具是否会降价或推出新功能，芯片升级可能让生成速度更快。",
+      "for_me": "暂时不用管，但长期看，AI视频生成成本可能下降，适合变现时留意。",
+      "url": "https://techcrunch.com/video/why-everyone-from-openai-to-spacex-is-building-their-own-chips-and-turning-up-the-heat-on-nvidia/"
+    },
+    {
+      "title": "美图发布8款AI产品",
+      "summary": "美图一口气推出8款AI影像工具，聚焦直接交付能力，提升创作效率。",
+      "why": "你用的即梦、可灵有更多竞品，美图新工具可能帮你更快做视频或图片。",
+      "category": "工具",
+      "beginner_takeaway": "试试美图新工具，看能否替代或补充你现有的生图/视频流程。",
+      "for_me": "如果你做AI视频，美图新工具可能简化后期，值得试用，尤其关注一键生成功能。",
+      "url": "https://www.ifanr.com/1670054?utm_source=rss&utm_medium=rss&utm_campaign="
+    },
+    {
+      "title": "Slackbot升级为AI助手",
+      "summary": "Salesforce推出新版Slackbot，能搜索数据、写文档、替员工操作，面向企业用户。",
+      "why": "AI助手进入办公场景，未来你可能用类似工具自动化重复工作。",
+      "category": "应用",
+      "beginner_takeaway": "学习用AI助手处理日常任务，节省时间做创作。",
+      "for_me": "如果你有副业需要管理客户或文档，这类工具能帮你自动化，但个人版可能稍后才有。",
+      "url": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and"
+    },
+    {
+      "title": "AI面试公司获6900万美元",
+      "summary": "Listen Labs用AI做客户访谈，靠创意招聘广告融资6900万美元。",
+      "why": "AI在商业调研中越来越实用，你可用类似工具了解用户需求。",
+      "category": "应用",
+      "beginner_takeaway": "考虑用AI工具做市场调研，帮你优化视频内容或变现方向。",
+      "for_me": "如果你做AI视频想变现，可用AI访谈工具了解观众喜好，但暂时不是必须。",
+      "url": "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai"
+    },
+    {
+      "title": "AI重塑零售幕后决策",
+      "summary": "AI正改变零售业搜索、库存和代码开发，消费者不易察觉。",
+      "why": "AI影响购物体验，你作为创作者可关注AI如何推荐商品。",
+      "category": "应用",
+      "beginner_takeaway": "了解AI如何影响你看到的广告和推荐，有助于优化你的变现策略。",
+      "for_me": "如果你用AI做带货视频，了解推荐算法能帮你选品，但暂时不用深究。",
+      "url": "https://www.technologyreview.com/2026/06/25/1137848/repositioning-retail-for-the-ai-era/"
+    },
+    {
+      "title": "中科闻歌上市暴涨81%",
+      "summary": "中科闻歌在港交所上市，开盘涨81%，市值190亿港元，专注AI大数据。",
+      "why": "AI公司上市受追捧，显示行业热度，但投资需谨慎。",
+      "category": "公司",
+      "beginner_takeaway": "AI行业在增长，但别盲目跟风投资，专注提升自己的技能。",
+      "for_me": "暂时不用管，但可关注AI公司动态，了解行业趋势。",
+      "url": "https://36kr.com/p/3869622921041156?f=rss"
+    },
+    {
+      "title": "OpenAI挖角Uber印度高管",
+      "summary": "OpenAI聘请Uber印度负责人领导其最大海外市场，加速印度扩张。",
+      "why": "OpenAI全球化可能带来更多本地化服务，影响你使用的工具。",
+      "category": "公司",
+      "beginner_takeaway": "关注OpenAI在亚洲的布局，可能推出更适合中文用户的版本。",
+      "for_me": "暂时不用管，但未来可能有更便宜的AI服务或本地化功能。",
+      "url": "https://techcrunch.com/2026/06/26/openai-poaches-uber-india-chief-to-lead-its-biggest-market-outside-the-u-s/"
+    },
+    {
+      "title": "AI政治影响加剧",
+      "summary": "AI模型能力带来政治后果，需集体行动应对，不再只是公司竞争。",
+      "why": "AI政策变化可能影响你使用的工具，需关注法规动态。",
+      "category": "政策",
+      "beginner_takeaway": "留意AI监管新闻，避免因政策变动影响你的创作或变现。",
+      "for_me": "如果你依赖Claude或ChatGPT，政策风险可能让工具不稳定，建议多备几个。",
+      "url": "https://techcrunch.com/2026/06/26/its-not-about-anthropic-vs-openai-anymore/"
+    }
+  ],
+  "plain_summary": "今天AI圈挺热闹：OpenAI终于发布了GPT-5.6，但被美国政府限制只能先限量预览，你用的ChatGPT可能很快变聪明。另一边，Anthropic的模型还被禁着，用Claude的朋友得留个心眼。OpenAI还搞了个自研芯片Jalapeño，想摆脱英伟达，未来AI服务可能更便宜。美图也发了8款AI工具，做视频的可以试试。Slackbot升级成AI助手，办公效率要起飞。还有家AI面试公司融了6900万美元，AI在商业里越来越实用。总之，工具越来越强，但政策风险也在，建议多备几个AI工具，别吊死在一棵树上。",
+  "github": {
+    "top_starred": [
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "stars": 222160,
+        "forks": 34023,
+        "language": "JavaScript",
+        "desc": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+        "tagline": "让AI助手更聪明、更懂你的性能优化系统",
+        "explanation": "这个项目就像给AI助手装上一个“大脑增强器”。平时你用Claude、Cursor等AI工具时，它们可能记不住你之前说过的话，或者不会自动学习你的习惯。ECC系统让AI拥有“技能”（比如写代码、做设计）、“直觉”（预测你的需求）、“记忆”（记住你的偏好）和“安全防护”。举个例子：你让AI帮你写一个网站，它不仅能记住你上次喜欢的风格，还能自动调用你常用的代码库，甚至在你修改需求时主动提醒潜在问题。适合开发者或重度AI用户，需要一些配置，但上手不算难，跟着文档一步步来就行。"
+      },
+      {
+        "name": "NousResearch/hermes-agent",
+        "url": "https://github.com/NousResearch/hermes-agent",
+        "stars": 203759,
+        "forks": 36558,
+        "language": "Python",
+        "desc": "The agent that grows with you",
+        "tagline": "一个能随着你学习而成长的AI助手",
+        "explanation": "这个项目打造了一个“会成长的AI代理”。普通的AI工具功能固定，而Hermes Agent能根据你的使用习惯不断进化。比如你经常用它整理文档，它就会自动优化整理流程；你开始学编程，它就会主动提供代码建议。它解决的是“AI不够个性化”的问题。适合任何想拥有专属AI助手的人，尤其是创作者、学生和创业者。上手简单，安装后就能用，它会自己学习你的需求。"
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "stars": 185161,
+        "forks": 46132,
+        "language": "Python",
+        "desc": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+        "tagline": "让每个人都能轻松使用和构建的AI工具",
+        "explanation": "AutoGPT是一个能自动完成复杂任务的AI系统。比如你告诉它“帮我研究一下新能源汽车市场”，它就会自己上网搜索、整理信息、生成报告，全程不需要你一步步指挥。它解决的是“AI只能回答简单问题”的痛点。普通人可以用它做市场调研、写文章、管理日程；开发者可以基于它构建自己的AI应用。上手有一定门槛，需要懂一点编程，但社区有大量教程。"
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "stars": 174946,
+        "forks": 16735,
+        "language": "Go",
+        "desc": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+        "tagline": "一键运行多种AI大模型的本地工具",
+        "explanation": "Ollama让你在电脑上轻松运行各种AI模型，比如DeepSeek、Qwen等。它解决的是“使用AI需要联网、付费”的问题。你下载后，只需输入一行命令就能启动一个AI聊天机器人，完全离线、免费、保护隐私。普通人可以用它当私人助手，写邮件、翻译、写代码；开发者可以把它集成到自己的应用里。上手非常简单，下载安装后跟着提示操作就行。"
+      },
+      {
+        "name": "f/prompts.chat",
+        "url": "https://github.com/f/prompts.chat",
+        "stars": 164393,
+        "forks": 21286,
+        "language": "HTML",
+        "desc": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+        "tagline": "收集和分享AI提示词的社区平台",
+        "explanation": "这个项目是一个提示词（Prompt）的共享库。提示词就是你跟AI说的话，好的提示词能让AI给出更好的答案。比如你想让ChatGPT写一首诗，但直接说“写首诗”效果一般，而用“以春天为主题，模仿李白的风格写一首七言绝句”效果就好很多。这个网站收集了成千上万条高质量的提示词，你可以直接复制使用，也可以分享自己的。适合所有AI用户，完全免费，无需任何技术知识。"
+      }
+    ],
+    "trending": [
+      {
+        "name": "eli-labz/Third-Eye",
+        "url": "https://github.com/eli-labz/Third-Eye",
+        "stars": 885,
+        "forks": 12,
+        "language": "TypeScript",
+        "desc": "A production-grade OSINT platform that provides situational awareness across multiple intelligence domains.",
+        "tagline": "专业的情报收集与分析平台",
+        "explanation": "Third-Eye是一个开源情报（OSINT）工具，用于从公开信息中收集和分析数据。比如调查人员可以用它追踪某个人的社交媒体活动、查找域名注册信息、分析网络威胁。它解决的是“手动收集信息效率低”的问题。适合安全研究员、记者、侦探等专业人士。上手需要一些技术背景，但界面友好，有文档指导。"
+      },
+      {
+        "name": "sums001/Windows-Copilot-API",
+        "url": "https://github.com/sums001/Windows-Copilot-API",
+        "stars": 804,
+        "forks": 276,
+        "language": "Python",
+        "desc": "Reverse engineered Windows Copilot into an OpenAI-compatible API. Access GPT-4 and GPT-5 models through a simple REST interface without API keys or billing.",
+        "tagline": "免费使用GPT-4/5的API接口",
+        "explanation": "这个项目把Windows Copilot（微软的AI助手）逆向工程，变成了一个兼容OpenAI格式的API。也就是说，你可以用这个API免费调用GPT-4甚至GPT-5模型，不需要注册、不需要付费。比如开发者可以把它集成到自己的聊天机器人或工具中，普通人可以用它来写文章、编程。上手简单，只需发送HTTP请求即可，但注意这是非官方渠道，可能不稳定。"
+      },
+      {
+        "name": "raiyanyahya/recall",
+        "url": "https://github.com/raiyanyahya/recall",
+        "stars": 570,
+        "forks": 30,
+        "language": "Python",
+        "desc": "Stop wasting tokens and re-explaining your project every session. Recall gives Claude Code durable memory — entirely offline.",
+        "tagline": "给Claude Code装上离线记忆功能",
+        "explanation": "Recall解决了一个痛点：每次和AI对话，它都会忘记之前的内容，导致你要重复解释。这个工具给Claude Code（一个编程助手）添加了持久记忆，而且完全离线，保护隐私。比如你正在开发一个项目，第一次告诉它项目结构，之后它就能记住，不用每次重新说。适合程序员，安装后自动生效，无需额外操作。"
+      },
+      {
+        "name": "dzcmemory-web/bazi-ziwei-skill",
+        "url": "https://github.com/dzcmemory-web/bazi-ziwei-skill",
+        "stars": 517,
+        "forks": 69,
+        "language": "TypeScript",
+        "desc": "AI 八字 + 紫微斗数排盘与综合印证 Skill：算法精准排盘（不靠 LLM 猜），三种分析模式，一键生成水墨风 HTML 命盘海报。兼容 Claude / Codex / Cursor / Workbuddy 等 SKILL.md Agent。",
+        "tagline": "AI帮你算八字和紫微斗数，生成命盘海报",
+        "explanation": "这个项目结合AI和传统命理学，能精准排盘（不靠AI瞎猜）。比如你输入出生时间，它就能算出你的八字和紫微斗数命盘，并生成一张水墨风格的海报。它有三种分析模式：快速、详细、综合。适合对命理感兴趣的人，尤其是想生成精美海报分享的。上手简单，在支持的AI工具（如Claude）中导入即可使用。"
+      },
+      {
+        "name": "benchflow-ai/awesome-evals",
+        "url": "https://github.com/benchflow-ai/awesome-evals",
+        "stars": 456,
+        "forks": 30,
+        "language": "",
+        "desc": "A curated, non-BS library of the best resources for building and evaluating AI agents — papers, blogs, talks, tools, benchmarks. Maintained by BenchFlow.",
+        "tagline": "AI代理评估资源的精选库",
+        "explanation": "这是一个收集了关于如何构建和评估AI代理（AI Agent）的最佳资源列表，包括论文、博客、工具等。比如你想知道怎么测试你的AI助手是否靠谱，这里就有各种评估方法和基准测试。它解决的是“AI评估资料分散难找”的问题。适合AI开发者和研究者，需要一定专业知识，但列表整理得很清晰。"
+      }
+    ]
+  }
+}
