@@ -1,0 +1,202 @@
+{
+  "date": "2026-06-28",
+  "articles": [
+    {
+      "title": "GPT-5.6正式发布",
+      "summary": "OpenAI发布了GPT-5.6系列三款模型，性能大幅提升，但部分功能受限。",
+      "why": "这是目前最强的AI模型之一，直接影响你写脚本、生成视频的质量和效率。",
+      "category": "模型",
+      "beginner_takeaway": "关注新模型在创意写作和视频脚本上的表现，可以试试免费版。",
+      "for_me": "直接相关：如果你用AI写脚本，GPT-5.6可能让脚本更流畅、更有创意，值得去体验一下。",
+      "url": "https://www.qbitai.com/2026/06/438895.html"
+    },
+    {
+      "title": "微软AI职场报告",
+      "summary": "微软发布年度AI报告，称员工已准备好用AI，但公司还没跟上。",
+      "why": "说明AI工具普及是大趋势，个人先学会AI技能更容易在职场和副业中占优势。",
+      "category": "应用",
+      "beginner_takeaway": "学AI现在是个人领先公司的好机会，别等公司培训。",
+      "for_me": "有关系：你正在学AI做副业，这份报告说明个人先行是正确策略，继续加油。",
+      "url": "https://www.qbitai.com/2026/06/439032.html"
+    },
+    {
+      "title": "BrowserBC克隆人类点击",
+      "summary": "新工具BrowserBC让AI模拟人类操作网页，一次录制即可自动执行。",
+      "why": "这意味着你可以让AI自动帮你做重复性网页操作，比如批量生成视频或发布内容。",
+      "category": "工具",
+      "beginner_takeaway": "学会录制操作，AI就能帮你自动干活，省时间。",
+      "for_me": "能用上：如果你做AI视频需要批量上传或处理素材，这个工具能帮你自动化，省力。",
+      "url": "https://www.qbitai.com/2026/06/439393.html"
+    },
+    {
+      "title": "AI帮癌症患者对抗病魔",
+      "summary": "一位创业者用Claude分析自己的血检、扫描数据等，辅助治疗癌症。",
+      "why": "展示了AI在个人健康管理上的潜力，普通人也能用AI处理自己的数据。",
+      "category": "应用",
+      "beginner_takeaway": "AI不只是写脚本，还能帮你分析健康数据，但别替代医生。",
+      "for_me": "暂时不用管，但值得了解：未来你也能用AI分析自己的健康数据，现在先熟悉Claude。",
+      "url": "https://techcrunch.com/2026/06/27/the-fittest-founder-in-the-room-got-cancer-heres-how-he-used-ai-to-fight-back/"
+    },
+    {
+      "title": "Apple Vision Pro高管跳槽OpenAI",
+      "summary": "苹果Vision Pro负责人Paul Meade将加入OpenAI硬件团队。",
+      "why": "OpenAI正在组建硬件团队，未来可能推出AI眼镜或头显，影响内容创作方式。",
+      "category": "公司",
+      "beginner_takeaway": "关注OpenAI硬件动向，未来AI视频可能在新设备上播放。",
+      "for_me": "暂时不用管，但值得关注：如果OpenAI出硬件，可能会改变你创作视频的格式和平台。",
+      "url": "https://techcrunch.com/2026/06/27/apple-vision-pro-exec-is-reportedly-leaving-for-openai/"
+    },
+    {
+      "title": "英国新建国家级超算",
+      "summary": "英国投资67亿元建设新一代超算，可模拟量子、地震等复杂现象。",
+      "why": "超算能力提升会加速AI模型训练，未来你用的AI工具会更强大。",
+      "category": "政策",
+      "beginner_takeaway": "国家投资超算意味着AI基础设施在变强，你用的工具会越来越好。",
+      "for_me": "暂时不用管，但长期利好：未来AI视频生成会更流畅、更逼真。",
+      "url": "https://www.ithome.com/0/969/517.htm"
+    },
+    {
+      "title": "Margaret Atwood批评AI",
+      "summary": "著名作家Atwood称AI问题是“垃圾进，垃圾出”，并分享了自己用AI的经历。",
+      "why": "提醒AI新手：输入质量决定输出质量，别盲目依赖AI。",
+      "category": "应用",
+      "beginner_takeaway": "用AI时，先确保你给它的指令和素材是高质量的。",
+      "for_me": "直接相关：你写脚本时，给AI清晰、具体的指令，才能得到好结果。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/958715/margaret-atwood-ai-problem-garbage-in-garbage-out"
+    },
+    {
+      "title": "理想全自动充电站上线",
+      "summary": "理想汽车推出行业首座全自动充电站，车辆自动泊入并自动插枪充电。",
+      "why": "AI和自动化正在进入日常生活，未来更多场景会无人化。",
+      "category": "机器人",
+      "beginner_takeaway": "AI不只是软件，也在改变硬件和基础设施。",
+      "for_me": "暂时不用管，但可以观察：未来AI视频创作也可能出现类似的自动化工具。",
+      "url": "https://www.ithome.com/0/969/518.htm"
+    },
+    {
+      "title": "端侧多模态AI模型发布",
+      "summary": "杭州团队推出全球首个端侧流式多模态AI模型，可在手机上运行。",
+      "why": "这意味着AI能力不再依赖云端，手机就能跑复杂模型，创作更便捷。",
+      "category": "模型",
+      "beginner_takeaway": "未来你可以在手机上直接用AI生成视频，不用等上传。",
+      "for_me": "有关系：如果你用手机做AI视频，这个技术能让创作更流畅、更私密。",
+      "url": "https://www.qbitai.com/2026/06/439236.html"
+    },
+    {
+      "title": "欧洲热浪影响电网",
+      "summary": "欧洲极端高温导致电力紧张，AI数据中心能耗问题再次被关注。",
+      "why": "AI耗电量大，热浪可能影响AI服务稳定性，提醒你备份方案。",
+      "category": "政策",
+      "beginner_takeaway": "AI工具可能因电力问题暂时不可用，重要工作记得本地备份。",
+      "for_me": "暂时不用管，但值得留意：如果你依赖在线AI工具，热浪期间可能遇到服务不稳定。",
+      "url": "https://www.technologyreview.com/2026/06/25/1139690/europe-heat-wave-grid/"
+    }
+  ],
+  "plain_summary": "今天AI圈挺热闹：GPT-5.6正式发布了，性能更强，写脚本和做视频可能更顺手。微软的报告说员工比公司更想用AI，所以你自学AI做副业这条路没错。还有个叫BrowserBC的工具，能让你录一次操作，AI就自动帮你干活，做视频批量处理能省不少时间。另外，苹果Vision Pro的高管跳槽去了OpenAI，看来OpenAI要搞硬件了。英国砸了67亿建超算，未来AI会更强。作家Atwood提醒大家：AI输出质量取决于你输入的质量，所以指令要写清楚。理想汽车搞了全自动充电站，AI正在进入生活方方面面。杭州团队还做出了能在手机上跑的AI模型，以后用手机做视频更方便。最后，欧洲热浪可能导致AI服务不稳定，重要工作记得备份。",
+  "github": {
+    "top_starred": [
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "stars": 222608,
+        "forks": 34078,
+        "language": "JavaScript",
+        "desc": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+        "tagline": "AI编程助手的性能优化系统，提升效率与安全性。",
+        "explanation": "这个项目是一个为AI编程助手（如Claude Code、Cursor等）设计的性能优化系统。它通过管理技能、直觉、记忆和安全策略，让AI助手更高效、更安全地工作。普通人可能不直接使用它，但如果你是开发者，使用AI编程助手时，这个系统能让AI更懂你的项目，减少错误，提升代码质量。例如，它可以帮助AI记住你项目的特殊规则，避免生成不安全的代码。上手需要一定的编程基础，但如果你是AI编程助手的用户，可以尝试集成它来优化体验。"
+      },
+      {
+        "name": "NousResearch/hermes-agent",
+        "url": "https://github.com/NousResearch/hermes-agent",
+        "stars": 204327,
+        "forks": 36765,
+        "language": "Python",
+        "desc": "The agent that grows with you",
+        "tagline": "能随着你的使用而成长的AI智能体。",
+        "explanation": "这是一个AI智能体项目，特点是它会随着你的使用而不断学习和适应，变得越来越懂你。它解决的是通用AI不够个性化的问题。普通人可以用它来创建一个私人助手，比如帮你管理日程、回答问题，而且越用越顺手。创作者可以基于它开发自己的智能体应用。上手难度中等，需要一些Python编程知识，但项目提供了文档和示例，适合有一定技术背景的用户。"
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "stars": 185186,
+        "forks": 46128,
+        "language": "Python",
+        "desc": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+        "tagline": "让每个人都能使用和构建的AI智能体。",
+        "explanation": "AutoGPT是一个开源项目，目标是让AI智能体变得人人可用。它解决的是如何让AI自主完成复杂任务的问题。普通人可以用它来自动化工作，比如让它帮你研究一个话题并生成报告，或者自动管理你的社交媒体。创作者可以基于它构建自己的AI应用。上手有一定难度，需要了解基本的编程和命令行操作，但社区资源丰富，适合愿意学习的新手。"
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "stars": 174996,
+        "forks": 16747,
+        "language": "Go",
+        "desc": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+        "tagline": "本地运行多种AI大模型的工具。",
+        "explanation": "Ollama是一个让你在本地电脑上运行各种AI大模型（如DeepSeek、Qwen等）的工具。它解决的是使用AI模型需要联网和付费的问题。普通人可以用它离线使用AI，比如本地聊天、写作辅助，完全免费且保护隐私。创作者可以基于它开发本地AI应用。上手简单，只需下载安装，然后通过命令行运行模型，适合所有对AI感兴趣的人。"
+      },
+      {
+        "name": "f/prompts.chat",
+        "url": "https://github.com/f/prompts.chat",
+        "stars": 164438,
+        "forks": 21288,
+        "language": "HTML",
+        "desc": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+        "tagline": "社区驱动的ChatGPT提示词分享平台。",
+        "explanation": "这是一个收集和分享ChatGPT提示词（prompts）的开源网站。提示词就是你给AI的指令，好的提示词能让AI给出更好的回答。它解决的是很多人不知道如何有效使用ChatGPT的问题。普通人可以在这里找到各种场景的提示词，比如写邮件、编程、创意写作等，直接复制使用。创作者可以贡献自己的提示词。上手零门槛，直接访问网站即可，适合所有ChatGPT用户。"
+      }
+    ],
+    "trending": [
+      {
+        "name": "sums001/Windows-Copilot-API",
+        "url": "https://github.com/sums001/Windows-Copilot-API",
+        "stars": 857,
+        "forks": 282,
+        "language": "Python",
+        "desc": "Reverse engineered Windows Copilot into an OpenAI-compatible API. Access GPT-4 and GPT-5 models through a simple REST interface without API keys or billing.",
+        "tagline": "将Windows Copilot转为通用API，免费使用GPT-4/5。",
+        "explanation": "这个项目通过逆向工程，把Windows Copilot（微软的AI助手）变成了一个兼容OpenAI格式的API接口。它解决的是普通用户无法免费使用GPT-4/5模型的问题。开发者可以用它来免费调用GPT-4/5，无需API密钥，无需付费。例如，你可以用它开发一个聊天机器人或自动化工具。上手需要一定的编程知识，但项目提供了简单的REST接口，适合有技术背景的开发者。"
+      },
+      {
+        "name": "raiyanyahya/recall",
+        "url": "https://github.com/raiyanyahya/recall",
+        "stars": 583,
+        "forks": 31,
+        "language": "Python",
+        "desc": "Stop wasting tokens and re-explaining your project every session. Recall gives Claude Code durable memory — entirely offline.",
+        "tagline": "给Claude Code添加离线持久记忆，避免重复解释。",
+        "explanation": "这个项目为Claude Code（一个AI编程助手）添加了持久记忆功能，完全离线运行。它解决的是每次使用AI助手都需要重新解释项目背景的问题。开发者可以用它让Claude Code记住项目的上下文、偏好设置等，从而更高效地工作。例如，你之前告诉过AI你的代码风格，它下次会自动遵循。上手需要一些配置，但项目文档清晰，适合使用Claude Code的开发者。"
+      },
+      {
+        "name": "benchflow-ai/awesome-evals",
+        "url": "https://github.com/benchflow-ai/awesome-evals",
+        "stars": 530,
+        "forks": 39,
+        "language": "",
+        "desc": "A curated, non-BS library of the best resources for building and evaluating AI agents — papers, blogs, talks, tools, benchmarks. Maintained by BenchFlow.",
+        "tagline": "精选的AI智能体评估资源库。",
+        "explanation": "这是一个精心整理的资源集合，包含论文、博客、工具和基准测试，用于构建和评估AI智能体。它解决的是AI开发者难以找到高质量评估资料的问题。普通人可能不直接使用，但AI研究人员或开发者可以从中获取最佳实践和最新研究。例如，你可以找到如何测试你的AI智能体性能的方法。上手需要一定的AI知识，适合专业开发者或研究者。"
+      },
+      {
+        "name": "shy3130/tickflow-stock-panel",
+        "url": "https://github.com/shy3130/tickflow-stock-panel",
+        "stars": 401,
+        "forks": 78,
+        "language": "TypeScript",
+        "desc": "自托管、零运维的 A 股「选股 + 监控 + 回测」量化工作台 | 基于 TickFlow 数据 | LLM能力驱使策略定制+个股分析+复盘 | 自由接入第三方个性化扩展数据",
+        "tagline": "自托管A股量化工作台，集成选股、监控与回测。",
+        "explanation": "这是一个专为A股设计的量化交易工作台，支持选股、实时监控和策略回测。它基于TickFlow数据，并利用大语言模型（LLM）辅助策略定制和个股分析。解决的是个人投资者难以搭建专业量化系统的问题。普通人可以用它来筛选股票、测试交易策略，比如设置条件自动选出符合要求的股票。上手需要一定的编程和金融知识，但项目提供了界面，适合对量化交易感兴趣的投资者。"
+      },
+      {
+        "name": "Lolner95/AIGX",
+        "url": "https://github.com/Lolner95/AIGX",
+        "stars": 261,
+        "forks": 55,
+        "language": "JavaScript",
+        "desc": "Open, MIT context format for AI coding agents: centralized .aigx/ rules + a per-file boundary index that targets the right rules, forbidden imports, and gotchas to each file. The only context format validated in a controlled benchmark. Tool-agnostic; nothing injected into your source.",
+        "tagline": "AI编程助手的开放上下文格式，提升代码准确性。",
+        "explanation": "这是一个为AI编程助手设计的上下文格式，通过集中管理规则和文件边界索引，让AI更准确地理解你的项目。它解决的是AI编程助手经常忽略项目特定规则的问题。开发者可以用它来定义项目的编码规范、禁止导入等，让AI生成的代码更符合要求。例如，你可以指定某个文件不能使用某些库。上手需要一些配置，但格式是工具无关的，适合使用AI编程助手的开发者。"
+      }
+    ]
+  }
+}
