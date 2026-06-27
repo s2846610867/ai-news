@@ -1,0 +1,202 @@
+{
+  "date": "2026-06-27",
+  "articles": [
+    {
+      "title": "亚洲AI模型崛起",
+      "summary": "因Anthropic出口禁令，亚洲初创公司推出类似Mythos的模型，美国AI公司可能失去巨大市场。",
+      "why": "对用户来说，未来可能用上更便宜、不受限制的亚洲AI模型，选择更多。",
+      "category": "模型",
+      "beginner_takeaway": "关注亚洲AI模型，它们可能成为你的新工具。",
+      "for_me": "如果你用Claude受限，可以留意亚洲新模型，未来做视频脚本或许有更多选择。",
+      "url": "https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/"
+    },
+    {
+      "title": "苹果因AI涨价",
+      "summary": "库克称涨价不可避免，MacBook Pro涨300美元，iPad Air涨150美元，HomePod Mini涨30美元。",
+      "why": "AI成本转嫁消费者，买苹果产品更贵了，影响日常消费决策。",
+      "category": "公司",
+      "beginner_takeaway": "AI发展让硬件变贵，买前多比价。",
+      "for_me": "如果你打算买苹果设备做AI视频，现在更贵了，可以考虑山姆代购或二手。",
+      "url": "https://www.theverge.com/report/958678/apple-consumer-price-increase-ai-big-tech"
+    },
+    {
+      "title": "GPT-5.6发布但受限",
+      "summary": "OpenAI发布GPT-5.6，但能力太强，使用资格和方式受到严格限制。",
+      "why": "最强模型却用不上，说明AI监管和门槛越来越高，普通用户可能被挡在门外。",
+      "category": "模型",
+      "beginner_takeaway": "AI工具虽强，但可能不是人人都能用。",
+      "for_me": "暂时用不上GPT-5.6，继续用Claude或DeepSeek写脚本就行，别焦虑。",
+      "url": "https://www.ifanr.com/1670225?utm_source=rss&utm_medium=rss&utm_campaign="
+    },
+    {
+      "title": "DeepSeek大规模招聘",
+      "summary": "DeepSeek计划将所有部门规模扩大至少一倍，正在疯狂招人。",
+      "why": "国内AI公司扩张，说明行业火热，也意味着更多工具和机会。",
+      "category": "公司",
+      "beginner_takeaway": "AI行业在招人，学AI可能找到工作。",
+      "for_me": "如果你学AI想变现，可以关注DeepSeek的招聘方向，未来可能出更好用的视频工具。",
+      "url": "https://36kr.com/p/3870720040588295?f=rss"
+    },
+    {
+      "title": "美国开放Mythos给百家公司",
+      "summary": "特朗普政府授权超100家美国公司和机构使用Anthropic的Mythos 5模型。",
+      "why": "顶级模型被政府放开，企业能用上更强AI，但普通人可能仍受限。",
+      "category": "政策",
+      "beginner_takeaway": "AI模型的使用权正在被政治化。",
+      "for_me": "对个人创作者暂时没直接影响，但说明AI工具越来越受政策影响，选工具时要考虑稳定性。",
+      "url": "https://techcrunch.com/2026/06/26/trump-admin-releases-anthropic-mythos-to-be-used-by-more-than-100-us-companies-agencies/"
+    },
+    {
+      "title": "G7易流发布穿戴AI硬件",
+      "summary": "货运行业首款穿戴式AI硬件“拍拍豆”发布，司机佩戴后可自动录制并上传视频。",
+      "why": "AI硬件落地到物流，说明AI正在渗透各行各业，普通人也能用上。",
+      "category": "应用",
+      "beginner_takeaway": "AI硬件不只有手机，还有穿戴设备。",
+      "for_me": "如果你做AI视频，可以学习这种“录制+上传”的思路，用在你的创作流程中。",
+      "url": "https://36kr.com/p/3869740772316162?f=rss"
+    },
+    {
+      "title": "理想自研电池和芯片",
+      "summary": "理想汽车首次回应自研电池，并已在L8上搭载；同时自研芯片马赫M100上车。",
+      "why": "车企自研核心部件，说明AI和新能源深度融合，未来汽车更智能。",
+      "category": "公司",
+      "beginner_takeaway": "AI不仅用在软件，也用在汽车硬件。",
+      "for_me": "暂时不用管，但如果你对AI+汽车感兴趣，可以关注理想的技术路线。",
+      "url": "https://36kr.com/p/3866946087867394?f=rss"
+    },
+    {
+      "title": "热浪影响大脑和电网",
+      "summary": "欧洲热浪破纪录，科学家研究高温如何影响大脑；同时电网面临压力。",
+      "why": "极端天气影响AI数据中心运行，也提醒普通人注意健康。",
+      "category": "应用",
+      "beginner_takeaway": "AI数据中心很耗电，天气热可能影响服务。",
+      "for_me": "做AI视频时注意电脑散热，高温可能影响性能；另外关注AI工具是否会因天气限流。",
+      "url": "https://www.technologyreview.com/2026/06/26/1139760/heat-waves-mess-with-your-brain-scientists-are-trying-to-figure-out-why/"
+    },
+    {
+      "title": "苹果涨价引发代购潮",
+      "summary": "苹果涨价后，山姆超市未调价，引发代购抢购iPad和Mac，部分门店断货。",
+      "why": "消费者用脚投票，寻找更便宜渠道，说明价格敏感度很高。",
+      "category": "公司",
+      "beginner_takeaway": "买东西前多比价，代购有风险。",
+      "for_me": "如果你需要苹果设备做AI视频，可以试试山姆代购，但注意加价和售后。",
+      "url": "https://36kr.com/p/3870720040588295?f=rss"
+    },
+    {
+      "title": "联想警告内存价格持续高",
+      "summary": "联想称存储芯片高价将成新常态，到2030年都难回落，涨价后不会再降。",
+      "why": "内存涨价影响电脑和手机价格，普通消费者购买成本增加。",
+      "category": "公司",
+      "beginner_takeaway": "电脑内存涨价，买设备要趁早或等促销。",
+      "for_me": "如果你打算升级电脑做AI视频，内存涨价意味着成本更高，建议趁早入手或关注二手。",
+      "url": "https://www.ithome.com/0/969/500.htm"
+    }
+  ],
+  "plain_summary": "今天AI圈挺热闹：GPT-5.6发布了但普通人可能用不上，别慌，继续用Claude和DeepSeek就行；亚洲那边因为美国禁令，自己搞出了类似Mythos的模型，以后选择更多；苹果因为AI成本涨价，买MacBook和iPad更贵了，想省钱可以看看山姆代购；DeepSeek在疯狂招人，说明国内AI还在扩张；另外内存也要涨价，做视频的电脑趁早买。总之，AI工具越来越强，但门槛和成本也在涨，咱们新手稳住心态，用好手头的工具就行。",
+  "github": {
+    "top_starred": [
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "stars": 222409,
+        "forks": 34042,
+        "language": "JavaScript",
+        "desc": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+        "tagline": "AI代理性能优化系统，提升技能、记忆与安全性",
+        "explanation": "这个项目是一个为AI编程助手（如Claude Code、Cursor等）设计的性能优化系统。它解决的是AI代理在编程时效率不高、容易忘记上下文、安全性不足的问题。通过内置的技能、直觉、记忆和安全机制，让AI代理更聪明、更稳定。普通人或创作者可以用它来优化自己的AI编程助手，比如让AI记住你项目的特殊规则，或者避免生成不安全的代码。适合有一定编程基础、想提升AI助手效率的开发者。上手需要一些配置，但项目提供了详细文档。"
+      },
+      {
+        "name": "NousResearch/hermes-agent",
+        "url": "https://github.com/NousResearch/hermes-agent",
+        "stars": 204111,
+        "forks": 36680,
+        "language": "Python",
+        "desc": "The agent that grows with you",
+        "tagline": "能随着你成长而进化的AI代理",
+        "explanation": "这是一个AI代理框架，核心特点是“随着你成长”——它会根据你的使用习惯和反馈不断调整自己的行为，变得更符合你的需求。它解决的是通用AI代理不够个性化的问题。比如，你经常用它写Python代码，它就会逐渐优化对Python的支持；或者你用它管理日程，它会学习你的时间偏好。适合希望AI工具能长期适应自己工作流的用户。上手难度中等，需要Python基础，但项目提供了示例和文档。"
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "stars": 185175,
+        "forks": 46126,
+        "language": "Python",
+        "desc": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+        "tagline": "让每个人都能使用和构建的AI代理平台",
+        "explanation": "AutoGPT是一个开源项目，目标是让AI代理（能自主完成任务的AI）变得人人可用。它解决的是普通人难以利用AI完成复杂任务的问题。比如，你可以告诉它“帮我研究一下新能源汽车市场，并写一份报告”，它就会自动搜索、整理信息并生成文档。或者让它自动管理你的社交媒体。适合所有对AI感兴趣的人，即使不懂编程也能通过简单配置使用。上手不难，有图形界面和预设模板。"
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "stars": 174976,
+        "forks": 16743,
+        "language": "Go",
+        "desc": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+        "tagline": "一键运行多种大语言模型的本地工具",
+        "explanation": "Ollama是一个让你在本地电脑上轻松运行各种大语言模型（如DeepSeek、Qwen等）的工具。它解决的是使用AI模型需要联网、付费或复杂配置的问题。比如，你可以下载一个模型到本地，然后像聊天一样使用它，完全离线、免费、保护隐私。适合担心数据泄露或想离线使用AI的用户。上手非常简单，下载安装后，在命令行输入一条命令就能启动模型。"
+      },
+      {
+        "name": "f/prompts.chat",
+        "url": "https://github.com/f/prompts.chat",
+        "stars": 164425,
+        "forks": 21285,
+        "language": "HTML",
+        "desc": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+        "tagline": "社区驱动的ChatGPT提示词分享平台",
+        "explanation": "这是一个收集和分享ChatGPT提示词（即你输入给AI的指令）的网站。它解决的是很多人不知道如何有效提问AI的问题。比如，你想让ChatGPT写一封专业的求职信，但不知道怎么说，就可以在这里找到别人写好的提示词，直接复制使用。适合所有使用ChatGPT的人，尤其是新手。完全免费，无需注册，打开网页就能浏览和分享。"
+      }
+    ],
+    "trending": [
+      {
+        "name": "sums001/Windows-Copilot-API",
+        "url": "https://github.com/sums001/Windows-Copilot-API",
+        "stars": 844,
+        "forks": 282,
+        "language": "Python",
+        "desc": "Reverse engineered Windows Copilot into an OpenAI-compatible API. Access GPT-4 and GPT-5 models through a simple REST interface without API keys or billing.",
+        "tagline": "将Windows Copilot转为通用API，免费使用GPT-4/5",
+        "explanation": "这个项目通过逆向工程，把Windows内置的Copilot功能包装成一个标准的API接口，让你可以像调用OpenAI的API一样使用它，而且不需要API密钥和付费。它解决的是普通用户无法免费使用GPT-4/5模型的问题。比如，开发者可以写一个程序，通过这个API自动调用GPT-4来写文章或分析数据。适合有编程基础、想免费使用高级AI模型的人。上手需要一些技术知识，但项目提供了清晰的说明。"
+      },
+      {
+        "name": "raiyanyahya/recall",
+        "url": "https://github.com/raiyanyahya/recall",
+        "stars": 579,
+        "forks": 31,
+        "language": "Python",
+        "desc": "Stop wasting tokens and re-explaining your project every session. Recall gives Claude Code durable memory — entirely offline.",
+        "tagline": "为Claude Code提供离线持久记忆，节省Token",
+        "explanation": "这个工具给Claude Code（一个AI编程助手）添加了长期记忆功能，而且完全离线运行。它解决的是每次和AI对话时，它都会忘记之前的内容，导致你需要重复解释项目背景，浪费时间和费用（Token）。比如，你昨天让AI了解了一个项目的代码结构，今天它还记得，不用再说一遍。适合频繁使用AI编程助手的开发者。上手简单，安装后自动生效。"
+      },
+      {
+        "name": "benchflow-ai/awesome-evals",
+        "url": "https://github.com/benchflow-ai/awesome-evals",
+        "stars": 522,
+        "forks": 39,
+        "language": "",
+        "desc": "A curated, non-BS library of the best resources for building and evaluating AI agents — papers, blogs, talks, tools, benchmarks. Maintained by BenchFlow.",
+        "tagline": "精选AI代理构建与评估资源库",
+        "explanation": "这是一个精心整理的资源集合，包含论文、博客、工具、基准测试等，帮助人们构建和评估AI代理。它解决的是AI代理领域信息杂乱、难以找到高质量资料的问题。比如，你想学习如何测试一个AI代理的性能，这里直接列出了最好的论文和工具。适合AI研究人员、开发者或对AI代理感兴趣的学习者。无需上手，直接浏览即可。"
+      },
+      {
+        "name": "shy3130/tickflow-stock-panel",
+        "url": "https://github.com/shy3130/tickflow-stock-panel",
+        "stars": 395,
+        "forks": 77,
+        "language": "TypeScript",
+        "desc": "自托管、零运维的 A 股「选股 + 监控 + 回测」量化工作台 | 基于 TickFlow 数据 | 能力驱动适配全档位订阅 | 自由接入第三方扩展数据(Tushare 等)",
+        "tagline": "自托管A股量化工作台，支持选股、监控与回测",
+        "explanation": "这是一个面向A股投资者的量化分析工具，可以自己部署在服务器上，无需维护。它解决的是普通投资者难以进行专业量化分析的问题。比如，你可以设置条件自动筛选出市盈率低于10、涨幅超过5%的股票，并实时监控；或者用历史数据测试你的交易策略。适合有编程基础（TypeScript）的股票投资者。上手需要一些配置，但项目提供了详细教程。"
+      },
+      {
+        "name": "Lolner95/AIGX",
+        "url": "https://github.com/Lolner95/AIGX",
+        "stars": 261,
+        "forks": 55,
+        "language": "JavaScript",
+        "desc": "Open, MIT context format for AI coding agents: centralized .aigx/ rules + a per-file boundary index that targets the right rules, forbidden imports, and gotchas to each file. The only context format validated in a controlled benchmark. Tool-agnostic; nothing injected into your source.",
+        "tagline": "开放、MIT协议的AI编程上下文格式",
+        "explanation": "这是一个为AI编程助手设计的上下文管理格式，通过一个中心文件（.aigx）和文件边界索引，让AI更准确地理解每个文件的作用和限制。它解决的是AI编程时容易混淆不同文件的规则或引入错误依赖的问题。比如，你有一个项目，其中某些文件不能使用某个库，这个格式会自动告诉AI避免。适合使用AI编程助手的开发者。上手需要了解项目结构，但格式简单，易于集成。"
+      }
+    ]
+  }
+}
