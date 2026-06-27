@@ -27,6 +27,10 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from dotenv import load_dotenv
 
+# —— 时区: 统一钉成北京时间, 避免在 UTC 服务器(GitHub Actions)上 datetime.now() 差一天 ——
+os.environ["TZ"] = "Asia/Shanghai"
+time.tzset()
+
 # —— 路径配置 (均可被环境变量覆盖, 默认与本地 Mac 行为一致) ————————
 AGENT_DIR = Path(os.getenv("AI_NEWS_AGENT_DIR", str(Path.home() / "DeepSeek智能体")))
 load_dotenv(AGENT_DIR / ".env", override=True)
