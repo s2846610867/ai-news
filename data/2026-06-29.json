@@ -1,0 +1,202 @@
+{
+  "date": "2026-06-29",
+  "articles": [
+    {
+      "title": "DeepSeek发布DSpark",
+      "summary": "DeepSeek推出新模型DSpark，让AI回答更流畅、不“挤牙膏”，背后是系统工程优化。",
+      "why": "你用的DeepSeek升级了，写脚本可能更快、更自然，直接提升创作效率。",
+      "category": "模型",
+      "beginner_takeaway": "关注DSpark是否免费可用，试试写脚本效果。",
+      "for_me": "有关系！如果你用DeepSeek写脚本，DSpark可能让回答更连贯，省去反复修改的时间。",
+      "url": "https://www.ifanr.com/1670249?utm_source=rss&utm_medium=rss&utm_campaign="
+    },
+    {
+      "title": "福特AI翻车，返聘老员工",
+      "summary": "福特发现AI没达到预期，重新请回有经验的老工程师来把关质量。",
+      "why": "提醒你：AI不是万能，做视频时别完全依赖它，人工审核和创意依然重要。",
+      "category": "公司",
+      "beginner_takeaway": "AI工具要当助手，别当老板，自己多检查。",
+      "for_me": "有关系！做AI视频时，AI生成的画面和脚本一定要自己过一遍，避免翻车。",
+      "url": "https://techcrunch.com/2026/06/28/ford-rehires-gray-beard-engineers-after-ai-falls-short/"
+    },
+    {
+      "title": "Suno推新计划扶持独立音乐人",
+      "summary": "AI音乐公司Suno启动Spark孵化器，给独立音乐人提供资金和推广，但需授权作品给AI训练。",
+      "why": "如果你用AI做音乐或视频配乐，这可能带来新机会，但也涉及版权问题。",
+      "category": "应用",
+      "beginner_takeaway": "想用AI音乐变现？关注Suno计划，但先了解授权条款。",
+      "for_me": "有关系！如果你做AI视频需要配乐，Suno的AI音乐工具可能更专业，但注意别侵权。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/958801/suno-launches-spark-incubator-program-to-feed-independent-artists-to-its-ai-machine"
+    },
+    {
+      "title": "中国Z.ai模型追上Mythos",
+      "summary": "智谱AI发布GLM-5.2，在网络安全任务上媲美Anthropic的Mythos模型，缩小了中美差距。",
+      "why": "国产AI越来越强，未来你可能有更多免费或低价的好模型可用。",
+      "category": "模型",
+      "beginner_takeaway": "国产模型进步快，可以试试GLM-5.2做脚本或分析。",
+      "for_me": "有关系！如果你用即梦/可灵生图，未来可能集成更强国产模型，效果更好。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/958804/chinas-z-ai-glm-52-mythos-cybersecurity"
+    },
+    {
+      "title": "百度昆仑芯计划赴港上市",
+      "summary": "百度旗下AI芯片公司昆仑芯估值500亿美元，计划香港IPO，腾讯已成客户。",
+      "why": "AI芯片需求火爆，可能影响未来AI工具的价格和性能。",
+      "category": "公司",
+      "beginner_takeaway": "芯片是AI的“发动机”，关注它可了解行业趋势。",
+      "for_me": "暂时不用管，但长期看，芯片进步会让AI视频生成更快更便宜。",
+      "url": "https://www.ithome.com/0/969/732.htm"
+    },
+    {
+      "title": "ChatGPT日志成纵火案证据",
+      "summary": "检察官在洛杉矶山火案中，用嫌疑人的ChatGPT聊天记录作为证据，引发隐私争议。",
+      "why": "提醒你：AI对话记录可能被用作法律证据，注意隐私保护。",
+      "category": "政策",
+      "beginner_takeaway": "别在AI工具里聊敏感或违法内容。",
+      "for_me": "有关系！你用AI写脚本时，别输入个人隐私或商业机密，数据可能被留存。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/958751/prosecutors-chatgpt-palisades-wildfire-arson-mistrial"
+    },
+    {
+      "title": "美光被华尔街看好成下个英伟达",
+      "summary": "华尔街认为存储芯片公司美光可能像英伟达一样因AI大涨，投资者抢购。",
+      "why": "AI发展带动存储需求，但普通人别跟风炒股，关注技术趋势即可。",
+      "category": "公司",
+      "beginner_takeaway": "AI需要大量存储，未来工具可能更依赖硬件升级。",
+      "for_me": "暂时不用管，但如果你做AI视频，未来电脑内存需求可能更高。",
+      "url": "https://techcrunch.com/2026/06/28/why-wall-street-thinks-us-memory-maker-micron-is-the-next-nvidia/"
+    },
+    {
+      "title": "Anthropic模型Mythos 5恢复",
+      "summary": "经过与政府谈判，Anthropic的Mythos 5模型重新上线，但仅限部分组织使用。",
+      "why": "顶级AI模型仍受监管限制，普通用户可能暂时用不上。",
+      "category": "模型",
+      "beginner_takeaway": "关注Mythos 5何时开放公众，它可能比现有模型更强。",
+      "for_me": "暂时不用管，但如果你追求极致脚本质量，未来可以留意。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/958458/anthropic-mythos-5-is-back-trump-negotiations"
+    },
+    {
+      "title": "抱抱脸模型榜被个人开发者霸榜",
+      "summary": "一位叫yuxinlu1的个人开发者，在Hugging Face模型排行榜上击败众多大厂。",
+      "why": "个人开发者也能做出顶尖AI模型，说明AI创作门槛在降低。",
+      "category": "开源",
+      "beginner_takeaway": "你也可以尝试在Hugging Face上找免费模型用。",
+      "for_me": "有关系！你可以去Hugging Face搜yuxinlu1的模型，可能找到好用的免费工具。",
+      "url": "https://www.qbitai.com/2026/06/439603.html"
+    },
+    {
+      "title": "宁德时代等巨头推电池回收指南",
+      "summary": "宁德时代、宝马、谷歌等成立联盟，制定电池可循环设计指南，2027年发布。",
+      "why": "AI设备（如手机、电脑）的电池未来更环保，但短期不影响你。",
+      "category": "政策",
+      "beginner_takeaway": "关注环保趋势，未来AI硬件可能更耐用。",
+      "for_me": "暂时不用管，但如果你买AI相关硬件，未来可留意环保标识。",
+      "url": "https://www.ithome.com/0/969/728.htm"
+    }
+  ],
+  "plain_summary": "今天AI圈挺热闹：你常用的DeepSeek出了新模型DSpark，写脚本会更顺；但福特用AI翻车了，提醒咱们别全信AI，自己得把关。国产模型智谱AI也追上国际水平，以后选择更多。另外，Suno搞了个扶持音乐人的计划，做视频配乐可能用得上。还有件要紧事：ChatGPT聊天记录被当证据了，所以别在AI里聊隐私。其他像芯片公司上市、模型恢复、个人开发者逆袭这些，看看就行，暂时不用急着跟。总之，AI工具越来越强，但用的时候多留个心眼。",
+  "github": {
+    "top_starred": [
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "stars": 223021,
+        "forks": 34158,
+        "language": "JavaScript",
+        "desc": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+        "tagline": "让AI助手更聪明、更懂你的性能优化系统",
+        "explanation": "这个项目是一个工具，专门用来提升AI助手（比如Claude Code、Codex等）的表现。它解决的问题是：AI助手有时会忘记之前的对话、反应慢或者不够安全。这个系统通过给AI添加“技能”、“直觉”、“记忆”等功能，让AI更稳定、更聪明。普通人可能用不上，但如果你是开发者，正在用AI写代码或做自动化任务，这个工具能让你的AI助手更高效、更可靠。上手需要一些编程基础，但项目提供了文档，跟着做就行。"
+      },
+      {
+        "name": "NousResearch/hermes-agent",
+        "url": "https://github.com/NousResearch/hermes-agent",
+        "stars": 204942,
+        "forks": 36949,
+        "language": "Python",
+        "desc": "The agent that grows with you",
+        "tagline": "一个能随着你的使用而成长的AI助手",
+        "explanation": "这个项目是一个AI助手，它的特别之处在于“成长性”——它会根据你的使用习惯和反馈不断改进自己。解决的问题是：很多AI助手是固定的，不会越用越懂你。而Hermes Agent能记住你的偏好，调整自己的行为。比如，你经常让它帮你整理邮件，它就会越来越擅长这个任务。适合喜欢个性化体验的普通用户，也适合开发者二次开发。上手不难，安装后就能用，但需要一点耐心让它学习你的习惯。"
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "stars": 185198,
+        "forks": 46127,
+        "language": "Python",
+        "desc": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+        "tagline": "让每个人都能轻松使用和构建的AI自动化工具",
+        "explanation": "AutoGPT是一个强大的AI工具，它能自动完成复杂任务，比如写报告、做研究、管理社交媒体。解决的问题是：普通人想用AI做点事，但需要写很多指令或编程。AutoGPT可以自己分解任务、调用工具，最终给出结果。例如，你可以让它“帮我研究一下新能源汽车市场，并写一份摘要”，它会自动搜索、整理信息。适合想用AI提高效率但不懂编程的人，也适合开发者在此基础上构建更复杂的应用。上手需要一些学习，但社区有很多教程。"
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "stars": 175070,
+        "forks": 16759,
+        "language": "Go",
+        "desc": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+        "tagline": "一键运行各种大语言模型的本地工具",
+        "explanation": "Ollama是一个让你在电脑上轻松运行各种AI模型（比如DeepSeek、Qwen等）的工具。解决的问题是：使用AI模型通常需要联网或复杂配置，而Ollama让你本地运行，保护隐私且无需网络。比如，你可以下载一个中文模型，然后离线跟它聊天或让它帮你写文案。适合对隐私敏感的用户、开发者，或者想尝试不同模型的人。上手非常简单，下载安装后，用命令行输入模型名字就能运行。"
+      },
+      {
+        "name": "f/prompts.chat",
+        "url": "https://github.com/f/prompts.chat",
+        "stars": 164470,
+        "forks": 21290,
+        "language": "HTML",
+        "desc": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+        "tagline": "发现和分享ChatGPT提示词的社区平台",
+        "explanation": "这是一个收集和分享ChatGPT提示词（prompt）的网站。提示词就是你跟AI说的话，好的提示词能让AI给出更好的回答。解决的问题是：很多人不知道怎么写提示词，导致AI回答不理想。这个平台让你浏览别人分享的高质量提示词，比如“写一首诗”、“解释量子物理”等。你可以直接复制使用，也可以自己贡献。适合所有ChatGPT用户，尤其是新手。上手零门槛，打开网页就能用。"
+      }
+    ],
+    "trending": [
+      {
+        "name": "sums001/Windows-Copilot-API",
+        "url": "https://github.com/sums001/Windows-Copilot-API",
+        "stars": 925,
+        "forks": 309,
+        "language": "Python",
+        "desc": "Reverse engineered Windows Copilot into an OpenAI-compatible API. Access GPT-4 and GPT-5 models through a simple REST interface without API keys or billing.",
+        "tagline": "免费使用GPT-4和GPT-5的API接口",
+        "explanation": "这个项目把Windows Copilot（微软的AI助手）逆向工程，变成了一个兼容OpenAI的API接口。解决的问题是：OpenAI的API需要付费，而且有使用限制。这个工具让你免费调用GPT-4甚至GPT-5模型，无需API密钥。比如，开发者可以把它集成到自己的应用里，实现智能对话功能。适合开发者或技术爱好者，但注意它依赖Windows Copilot服务，可能不稳定。上手需要一些编程知识。"
+      },
+      {
+        "name": "raiyanyahya/recall",
+        "url": "https://github.com/raiyanyahya/recall",
+        "stars": 607,
+        "forks": 33,
+        "language": "Python",
+        "desc": "Stop wasting tokens and re-explaining your project every session. Recall gives Claude Code durable memory — entirely offline.",
+        "tagline": "让Claude Code记住你的项目，不再重复解释",
+        "explanation": "这个工具给Claude Code（一个AI编程助手）添加了持久记忆功能。解决的问题是：每次和AI对话，它都会忘记之前的上下文，导致你需要重复解释项目背景。Recall让AI记住你的项目信息，比如代码结构、偏好设置，下次直接接着聊。比如，你昨天让AI优化了一个函数，今天它还记得。适合经常用AI写代码的开发者。上手简单，安装后自动生效。"
+      },
+      {
+        "name": "benchflow-ai/awesome-evals",
+        "url": "https://github.com/benchflow-ai/awesome-evals",
+        "stars": 559,
+        "forks": 41,
+        "language": "",
+        "desc": "A curated, non-BS library of the best resources for building and evaluating AI agents — papers, blogs, talks, tools, benchmarks. Maintained by BenchFlow.",
+        "tagline": "精选的AI智能体评估资源合集",
+        "explanation": "这是一个整理好的资源列表，包含论文、博客、工具等，教你如何评估和构建AI智能体（能自主完成任务的AI）。解决的问题是：AI智能体领域信息杂乱，新手不知道从哪学起。这个项目精选了最优质的内容，比如“如何测试AI的推理能力”。适合AI研究者、开发者或想深入了解AI的人。上手需要一定的技术背景，但列表本身是免费的，直接浏览即可。"
+      },
+      {
+        "name": "shy3130/tickflow-stock-panel",
+        "url": "https://github.com/shy3130/tickflow-stock-panel",
+        "stars": 542,
+        "forks": 108,
+        "language": "TypeScript",
+        "desc": "自托管、零运维的 A 股「选股 + 监控 + 回测」量化工作台 | 基于 TickFlow 数据 | LLM能力驱使策略定制+个股分析+复盘 | 自由接入第三方个性化扩展数据",
+        "tagline": "自托管A股量化交易工作台，支持选股和回测",
+        "explanation": "这是一个针对A股（中国股票）的量化交易工具，可以选股、监控、回测（用历史数据测试策略）。解决的问题是：普通股民很难自己搭建量化系统，而付费平台又贵。这个工具免费、自托管，数据基于TickFlow，还支持用AI（大语言模型）辅助制定策略。比如，你可以让AI分析某只股票，或者回测一个“均线金叉”策略。适合对股票量化感兴趣的投资者，需要一些编程基础来部署。"
+      },
+      {
+        "name": "abundantbeing/hermes-browser-extension",
+        "url": "https://github.com/abundantbeing/hermes-browser-extension",
+        "stars": 282,
+        "forks": 23,
+        "language": "JavaScript",
+        "desc": "Browser-native side panel for Hermes Agent — connect web context to your local Hermes runtime.",
+        "tagline": "在浏览器中直接使用Hermes AI助手的侧边栏",
+        "explanation": "这是一个浏览器扩展，在侧边栏里集成了Hermes Agent（一个AI助手）。解决的问题是：使用AI助手通常需要切换窗口或复制粘贴内容。这个扩展让你在浏览网页时，直接呼出AI，并让它分析当前页面。比如，你正在看一篇新闻，可以问AI“总结一下这篇文章”。适合经常需要边浏览边用AI的人。上手简单，安装扩展后登录即可。"
+      }
+    ]
+  }
+}
