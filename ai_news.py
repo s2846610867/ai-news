@@ -506,6 +506,237 @@ id 对应上面方括号里的编号。只返回JSON, 不要其他内容。"""
 
 
 # =========================================================
+# HuggingFace 热门(在线应用 Spaces / 模型 / 每日论文)
+# =========================================================
+
+HF_BASE = "https://huggingface.co"
+
+
+def _hf_get(path: str, timeout: int = 20):
+    req = urllib.request.Request(HF_BASE + path, headers={
+        "Accept": "application/json",
+        "User-Agent": "ai-news-bot",
+    })
+    token = os.getenv("HF_TOKEN", "").strip()
+    if token:
+        req.add_header("Authorization", f"Bearer {token}")
+    with urllib.request.urlopen(req, timeout=timeout) as resp:
+        return json.loads(resp.read().decode("utf-8"))
+
+
+def _hf_model_base(model_id: str) -> str:
+    """同一模型的不同量化/格式副本去重用的基名: 去掉 -GGUF/-AWQ 等后缀"""
+    name = re.sub(
+        r"[-_.](gguf|awq|gptq|fp8|fp16|int4|int8|mlx|onnx|bnb|exl2|quantized|q\d)\b.*$",
+        "", model_id, flags=re.I)
+    return name.lower()
+
+
+def fetch_hf_spaces(n: int = 5) -> list:
+    """趋势热门的在线 demo(能直接在浏览器玩)"""
+    items = []
+    try:
+        data = _hf_get(f"/api/spaces?sort=trendingScore&direction=-1&limit={n * 3}&full=true")
+        for s in data:
+            sid = s.get("id", "")
+            if not sid:
+                continue
+            cd = s.get("cardData") or {}
+            desc = cd.get("short_description") or cd.get("title") or ""
+            items.append({
+                "name": sid,
+                "url": f"{HF_BASE}/spaces/{sid}",
+                "likes": s.get("likes", 0),
+                "sdk": s.get("sdk", "") or "",
+                "desc": (desc or "")[:300],
+            })
+            if len(items) >= n:
+                break
+    except Exception as e:
+        log(f"HF Spaces 获取失败: {e}")
+    return items
+
+
+def fetch_hf_models(n: int = 5) -> list:
+    """趋势热门模型, 合并同一模型的量化/微调副本"""
+    items, seen = [], set()
+    try:
+        data = _hf_get(f"/api/models?sort=trendingScore&direction=-1&limit={n * 5}")
+        for m in data:
+            mid = m.get("id", "")
+            if not mid:
+                continue
+            base = _hf_model_base(mid)
+            if base in seen:
+                continue
+            seen.add(base)
+            items.append({
+                "name": mid,
+                "url": f"{HF_BASE}/{mid}",
+                "likes": m.get("likes", 0),
+                "downloads": m.get("downloads", 0),
+                "pipeline_tag": m.get("pipeline_tag", "") or "",
+            })
+            if len(items) >= n:
+                break
+    except Exception as e:
+        log(f"HF 模型获取失败: {e}")
+    return items
+
+
+def fetch_hf_papers(num_days: int = 7, per_day: int = 5, max_lookback: int = 21) -> list:
+    """最近 num_days 个【有论文的日子】(自动跳过周末/空白天), 每天取热度最高的 per_day 篇。
+    返回按日期从新到旧排列的分组列表。"""
+    groups = []
+    for back in range(max_lookback):
+        if len(groups) >= num_days:
+            break
+        d = (datetime.now() - timedelta(days=back)).strftime("%Y-%m-%d")
+        try:
+            data = _hf_get(f"/api/daily_papers?date={d}")
+        except Exception as e:
+            log(f"HF 论文获取失败 ({d}): {e}")
+            continue
+        if not data:
+            continue
+        rows = []
+        for p in data:
+            pa = p.get("paper", {}) or {}
+            pid = pa.get("id", "") or ""
+            title = (pa.get("title") or p.get("title") or "").strip()
+            if not title:
+                continue
+            rows.append({
+                "id": pid,
+                "title_en": title,
+                "summary": (pa.get("summary") or p.get("summary") or "").strip()[:500],
+                "upvotes": pa.get("upvotes", 0) or 0,
+                "url": f"{HF_BASE}/papers/{pid}" if pid else f"{HF_BASE}/papers",
+            })
+        rows.sort(key=lambda x: x["upvotes"], reverse=True)
+        if rows:
+            groups.append({"date": d, "items": rows[:per_day]})
+    return groups
+
+
+def fetch_huggingface() -> dict:
+    """三个板块: 在线应用(Spaces) + 热门模型 + 每日论文(滚动7天)"""
+    result = {"spaces": [], "models": [], "papers": []}
+    try:
+        result["spaces"] = fetch_hf_spaces(5)
+    except Exception as e:
+        log(f"HF Spaces 板块失败: {e}")
+    try:
+        result["models"] = fetch_hf_models(5)
+    except Exception as e:
+        log(f"HF 模型板块失败: {e}")
+    try:
+        result["papers"] = fetch_hf_papers(7, 5)
+    except Exception as e:
+        log(f"HF 论文板块失败: {e}")
+    np = sum(len(g["items"]) for g in result["papers"])
+    log(f"HuggingFace 获取: 应用 {len(result['spaces'])} 个, 模型 {len(result['models'])} 个, 论文 {len(result['papers'])} 天共 {np} 篇")
+    return result
+
+
+def add_hf_explanations(hf: dict, api_key: str) -> dict:
+    """让 DeepSeek 给应用/模型写中文讲解, 给论文翻译标题并写一句话点评"""
+    from openai import OpenAI
+    client = OpenAI(api_key=api_key, base_url="https://api.deepseek.com", timeout=DEEPSEEK_TIMEOUT)
+
+    # —— 应用 + 模型: 一句话 + 详细讲解 ——
+    spaces = hf.get("spaces") or []
+    models = hf.get("models") or []
+    apps = spaces + models
+    if apps:
+        listing = "\n".join(
+            f"[{i+1}] {r['name']}\n类型: {r.get('sdk') or r.get('pipeline_tag') or '未知'}\n描述: {r.get('desc') or '无'}"
+            for i, r in enumerate(apps)
+        )
+        model_idx = f"{len(spaces)+1}~{len(apps)}" if models else "无"
+        prompt = f"""下面是 HuggingFace 上一些热门的 AI 在线应用和模型。请为每个写【中文讲解】, 面向技术零基础、正在跟进AI圈/学英语/备考AI方向的新手。让读者不用看英文、不用懂技术就明白这是什么、能拿来做什么。
+
+每个给两个字段:
+- tagline: 一句话说清这是什么 (15-30字)
+- explanation: 详细讲解 (120-220字), 说清楚: ①它是干嘛的、解决什么问题 ②普通人/学生具体能拿它做什么(举1个实际例子, 尽量贴近"学英语/了解AI") ③上手难不难。大白话, 不堆术语, 万一用术语顺手解释。不要编造。
+
+另外给一个 models_summary 字段: 只针对其中的【模型】(上面第 {model_idx} 条), 用 80-120 字大白话总结这几个热门模型整体反映出什么趋势、对一个想跟进AI圈和备考AI方向的人值得注意什么。
+
+{listing}
+
+只返回JSON: {{"items": [{{"id": 1, "tagline": "...", "explanation": "..."}}], "models_summary": "..."}}
+id 对应上面方括号里的编号。只返回JSON。"""
+        try:
+            resp = retry("HF 应用解释", lambda: client.chat.completions.create(
+                model="deepseek-chat",
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.3,
+                response_format={"type": "json_object"},
+            ), delay=8)
+            content = resp.choices[0].message.content.strip()
+            if content.startswith("```"):
+                content = content.split("\n", 1)[1].rsplit("```", 1)[0].strip()
+            try:
+                parsed = json.loads(content)
+            except json.JSONDecodeError:
+                m = re.search(r"\{.*\}", content, re.DOTALL)
+                parsed = json.loads(m.group(0)) if m else {"items": []}
+            info = {it.get("id"): it for it in parsed.get("items", [])}
+            for i, r in enumerate(apps):
+                it = info.get(i + 1) or {}
+                r["tagline"] = it.get("tagline") or ""
+                r["explanation"] = it.get("explanation") or r.get("desc", "")
+            hf["models_summary"] = parsed.get("models_summary", "") or ""
+        except Exception as e:
+            log(f"HF 应用解释失败, 用原描述兜底: {e}")
+            for r in apps:
+                r.setdefault("tagline", "")
+                r.setdefault("explanation", r.get("desc", ""))
+
+    # —— 论文: 翻译标题 + 一句话点评(把7天所有论文一起批量处理) ——
+    flat = [it for g in (hf.get("papers") or []) for it in g.get("items", [])]
+    if flat:
+        listing = "\n".join(f"[{i+1}] {p['title_en']}\n摘要: {p.get('summary') or '无'}" for i, p in enumerate(flat))
+        prompt = f"""下面是 HuggingFace 上最近几天热门的 AI 论文(英文)。读者是技术零基础、正在跟进AI圈/学英语/备考AI方向的新手。请为每篇给:
+- title_cn: 把英文标题翻译成通顺的中文标题
+- note: 一句话点评 (40字以内), 说清这篇大概研究啥、对一个想跟AI前沿+学英语+备考的人有没有看头。说不上来就写"了解个大概即可"。
+
+另外给一个 papers_summary 字段: 用 80-120 字大白话总结这批论文整体在研究哪些方向、最近 AI 学术圈在热门什么, 对一个备考AI方向的新手值得记住哪些关键词。
+
+{listing}
+
+只返回JSON: {{"items": [{{"id": 1, "title_cn": "...", "note": "..."}}], "papers_summary": "..."}}
+id 对应方括号编号。只返回JSON。"""
+        try:
+            resp = retry("HF 论文翻译", lambda: client.chat.completions.create(
+                model="deepseek-chat",
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.3,
+                response_format={"type": "json_object"},
+            ), delay=8)
+            content = resp.choices[0].message.content.strip()
+            if content.startswith("```"):
+                content = content.split("\n", 1)[1].rsplit("```", 1)[0].strip()
+            try:
+                parsed = json.loads(content)
+            except json.JSONDecodeError:
+                m = re.search(r"\{.*\}", content, re.DOTALL)
+                parsed = json.loads(m.group(0)) if m else {"items": []}
+            info = {it.get("id"): it for it in parsed.get("items", [])}
+            for i, p in enumerate(flat):
+                it = info.get(i + 1) or {}
+                p["title_cn"] = it.get("title_cn") or p["title_en"]
+                p["note"] = it.get("note") or ""
+            hf["papers_summary"] = parsed.get("papers_summary", "") or ""
+        except Exception as e:
+            log(f"HF 论文翻译失败, 用英文标题兜底: {e}")
+            for p in flat:
+                p.setdefault("title_cn", p["title_en"])
+                p.setdefault("note", "")
+    return hf
+
+
+# =========================================================
 # HTML 生成
 # =========================================================
 
@@ -677,6 +908,9 @@ a{text-decoration:none;color:inherit}
 .gh-entry-text b{font-size:.98em;font-weight:800;color:#1e2433}
 .gh-entry-text i{font-size:.8em;color:#6b7280;font-style:normal;margin-top:2px}
 .gh-entry-arrow{font-size:.82em;font-weight:700;color:#4f6ef7;white-space:nowrap;flex-shrink:0}
+.hf-entry{border-left-color:#f59e0b}
+.hf-entry:hover{box-shadow:0 4px 20px rgba(245,158,11,.16);border-color:#f59e0b}
+.hf-entry .gh-entry-arrow{color:#f59e0b}
 @media(max-width:600px){.gh-entry{padding:16px}.gh-entry-text i{font-size:.74em}}
 /* === 日期块 === */
 .day-block{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 2px 14px rgba(0,0,0,.055);border:1px solid #eaedf2;margin-bottom:28px}
@@ -757,6 +991,15 @@ a{text-decoration:none;color:inherit}
     <span class="gh-entry-main">
       <span class="gh-entry-icon">💻</span>
       <span class="gh-entry-text"><b>GitHub 精选</b><i>每天精选 10 个热门 AI 开源项目，附详细中文讲解</i></span>
+    </span>
+    <span class="gh-entry-arrow">进入查看 →</span>
+  </a>
+
+  <!-- HuggingFace 精选入口 -->
+  <a href="huggingface.html" class="gh-entry hf-entry">
+    <span class="gh-entry-main">
+      <span class="gh-entry-icon">🤗</span>
+      <span class="gh-entry-text"><b>HuggingFace 精选</b><i>每天精选热门 AI 应用、模型和论文，附中文讲解</i></span>
     </span>
     <span class="gh-entry-arrow">进入查看 →</span>
   </a>
@@ -912,6 +1155,8 @@ a{text-decoration:none;color:inherit}
 .ghp-open{font-size:.78em;color:#4f6ef7;border:1px solid rgba(79,110,247,.3);border-radius:10px;padding:3px 12px;margin-left:auto}
 .ghp-open:hover{background:#4f6ef7;color:#fff}
 .ghp-empty{color:#9ca3af;font-size:.9em;padding:20px 0}
+.ghp-summary{background:linear-gradient(135deg,#fff7ed,#fefce8);border:1px solid #fde68a;border-radius:14px;padding:15px 18px;margin:4px 0 6px;font-size:.88em;color:#5b4636;line-height:1.85}
+.ghp-summary-lbl{display:block;font-size:.82em;font-weight:800;color:#c2410c;margin-bottom:6px}
 .foot{text-align:center;color:#9ca3af;font-size:.75em;padding:10px 20px 30px}
 @media(max-width:600px){.wrap{padding:22px 12px 40px}.ghp-card{padding:16px}}
 </style>
@@ -937,6 +1182,172 @@ a{text-decoration:none;color:inherit}
     page = page.replace("__TOP__", top_html).replace("__TREND__", trend_html).replace("__DATE__", html.escape(date))
     (SITE_DIR / "github.html").write_text(page, encoding="utf-8")
     log(f"GitHub 精选页已生成: {SITE_DIR / 'github.html'}")
+
+
+def _fmt_num(n) -> str:
+    try:
+        n = int(n)
+    except Exception:
+        return "0"
+    if n >= 10000:
+        return f"{n / 10000:.1f}万"
+    return str(n)
+
+
+def generate_hf_html(day):
+    """生成独立的「HuggingFace 精选」页面(huggingface.html): 应用 + 模型 + 每日论文(滚动7天)"""
+    g = (day or {}).get("huggingface") or {}
+    date = (day or {}).get("date", "")
+
+    def app_card(r, i, is_space):
+        url = html.escape(r.get("url", "#"))
+        tag = html.escape(r.get("tagline") or "")
+        exp = html.escape(r.get("explanation") or r.get("desc") or "")
+        tag_h = f'<div class="ghp-tag">{tag}</div>' if tag else ""
+        if is_space:
+            metric = f'❤️ {_fmt_num(r.get("likes", 0))}'
+            sdk = html.escape(r.get("sdk") or "")
+            type_h = f'<span class="ghp-type play">🟢 可在线玩{" · " + sdk if sdk else ""}</span>'
+            open_txt = "在线试玩 →"
+        else:
+            metric = f'❤️ {_fmt_num(r.get("likes", 0))} <span class="dl">⬇️ {_fmt_num(r.get("downloads", 0))}</span>'
+            pt = html.escape(r.get("pipeline_tag") or "")
+            type_h = f'<span class="ghp-type">{pt}</span>' if pt else ""
+            open_txt = "打开 →"
+        return f"""<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">{i}</span>
+          <a href="{url}" target="_blank" rel="noopener" class="ghp-name">{html.escape(r.get('name',''))}</a>
+          <span class="ghp-metric">{metric}</span>
+        </div>
+        {tag_h}
+        <div class="ghp-exp">{exp}</div>
+        <div class="ghp-foot">{type_h}<a href="{url}" target="_blank" rel="noopener" class="ghp-open">{open_txt}</a></div>
+      </div>"""
+
+    def cards(arr, is_space):
+        if not arr:
+            return '<p class="ghp-empty">今日暂无数据</p>'
+        return "\n".join(app_card(r, i, is_space) for i, r in enumerate(arr, 1))
+
+    def paper_cards(groups):
+        if not groups:
+            return '<p class="ghp-empty">最近暂无论文</p>'
+        out = []
+        for grp in groups:
+            out.append(f'<div class="ghp-daygrp">{html.escape(format_date(grp.get("date","")))}</div>')
+            for i, p in enumerate(grp.get("items", []), 1):
+                url = html.escape(p.get("url", "#"))
+                title_cn = html.escape(p.get("title_cn") or p.get("title_en") or "")
+                en = html.escape(p.get("title_en") or "")
+                note = html.escape(p.get("note") or "")
+                note_h = f'<div class="ghp-exp">{note}</div>' if note else ""
+                out.append(f"""<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">{i}</span>
+          <a href="{url}" target="_blank" rel="noopener" class="ghp-name">{title_cn}</a>
+          <span class="ghp-metric">👍 {_fmt_num(p.get('upvotes',0))}</span>
+        </div>
+        <div class="ghp-en">原题:{en}</div>
+        {note_h}
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="{url}" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>""")
+        return "\n".join(out)
+
+    def summary_box(text):
+        if not text:
+            return ""
+        return f'<div class="ghp-summary"><span class="ghp-summary-lbl">🤖 小结</span>{html.escape(text)}</div>'
+
+    spaces_html = cards(g.get("spaces"), True)
+    models_html = cards(g.get("models"), False)
+    papers_html = paper_cards(g.get("papers"))
+    models_sum_html = summary_box(g.get("models_summary"))
+    papers_sum_html = summary_box(g.get("papers_summary"))
+
+    page = """<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>HuggingFace 精选 ｜ AI 日报</title>
+<meta name="description" content="每天精选 HuggingFace 上最火的 AI 应用、模型和论文，附中文讲解，不用看英文也能懂。">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;background:#f4f6f9;color:#1e2433;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+.top{background:#fff;border-bottom:1px solid #eaedf2;padding:0 20px;height:50px;display:flex;align-items:center;gap:14px;position:sticky;top:0;z-index:100;box-shadow:0 1px 8px rgba(0,0,0,.04)}
+.top a{font-size:.82em;color:#4f6ef7;font-weight:600}
+.top-brand{font-size:.86em;font-weight:700;margin-left:auto;color:#1e2433}
+.hero{background:linear-gradient(145deg,#fff7ed 0%,#fef9c3 45%,#eef2ff 100%);padding:42px 20px 34px;text-align:center;border-bottom:1px solid rgba(245,158,11,.12)}
+.hero h1{font-size:clamp(1.6em,5vw,2.1em);font-weight:800;letter-spacing:1px;margin-bottom:8px}
+.hero p{font-size:.86em;color:#6b7280}
+.wrap{max-width:860px;margin:0 auto;padding:30px 16px 50px}
+.sec{font-size:1.05em;font-weight:800;color:#1e2433;margin:10px 0 6px;display:flex;align-items:center;gap:8px}
+.sec.second{margin-top:38px}
+.sec-sub{font-size:.78em;color:#9ca3af;margin:0 0 16px 2px}
+.ghp-daygrp{font-size:.84em;font-weight:800;color:#c2410c;margin:20px 0 12px;padding-left:2px;border-left:3px solid #fbbf24;padding-left:10px}
+.ghp-card{background:#fff;border-radius:16px;padding:18px 20px;margin-bottom:16px;box-shadow:0 2px 14px rgba(0,0,0,.055);border:1px solid #eaedf2}
+.ghp-hd{display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap}
+.ghp-rank{width:24px;height:24px;border-radius:50%;background:linear-gradient(135deg,#f59e0b,#fbbf24);color:#fff;font-size:.74em;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ghp-name{font-size:1em;font-weight:800;color:#1e2433;word-break:break-all}
+.ghp-name:hover{color:#4f6ef7}
+.ghp-metric{font-size:.78em;color:#f43f5e;font-weight:700;white-space:nowrap;margin-left:auto}
+.ghp-metric .dl{color:#6b7280;margin-left:8px}
+.ghp-tag{font-size:.9em;color:#c2410c;font-weight:600;margin-bottom:8px}
+.ghp-exp{font-size:.9em;color:#4b5563;line-height:1.85}
+.ghp-en{font-size:.78em;color:#9ca3af;margin-bottom:6px;font-style:italic}
+.ghp-foot{display:flex;align-items:center;gap:10px;margin-top:12px;flex-wrap:wrap}
+.ghp-type{font-size:.7em;color:#6b7280;background:#f3f4f6;border:1px solid #e5e7eb;padding:2px 9px;border-radius:9px}
+.ghp-type.play{color:#15803d;background:#f0fdf4;border-color:#bbf7d0}
+.ghp-open{font-size:.78em;color:#4f6ef7;border:1px solid rgba(79,110,247,.3);border-radius:10px;padding:3px 12px;margin-left:auto}
+.ghp-open:hover{background:#4f6ef7;color:#fff}
+.ghp-empty{color:#9ca3af;font-size:.9em;padding:20px 0}
+.ghp-summary{background:linear-gradient(135deg,#fff7ed,#fefce8);border:1px solid #fde68a;border-radius:14px;padding:15px 18px;margin:4px 0 6px;font-size:.88em;color:#5b4636;line-height:1.85}
+.ghp-summary-lbl{display:block;font-size:.82em;font-weight:800;color:#c2410c;margin-bottom:6px}
+.foot{text-align:center;color:#9ca3af;font-size:.75em;padding:10px 20px 30px}
+@media(max-width:600px){.wrap{padding:22px 12px 40px}.ghp-card{padding:16px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a href="index.html">← 返回 AI 日报</a>
+  <span class="top-brand">🤖 AI 日报</span>
+</header>
+<section class="hero">
+  <h1>🤗 HuggingFace 精选</h1>
+  <p>每天精选最火的 AI 应用 · 模型 · 论文 · 附中文讲解 · 不用看英文也能懂</p>
+</section>
+<main class="wrap">
+  <div class="sec">🎮 热门 AI 应用(Spaces)</div>
+  <div class="sec-sub">能直接在浏览器里玩的 AI 小工具，不用写代码 · 每天更新</div>
+  __SPACES__
+  <div class="sec second">🧠 热门模型</div>
+  <div class="sec-sub">当下最火的 AI 模型（同一模型的量化副本已自动合并）· 每天更新</div>
+  __MODELS__
+  __MODELS_SUM__
+  <div class="sec second">📄 每日热门论文</div>
+  <div class="sec-sub">最近 7 天最受关注的 AI 论文 · 中文标题为翻译 · 顺带练英语 · 最新在上</div>
+  __PAPERS__
+  __PAPERS_SUM__
+</main>
+<footer class="foot">数据来自 HuggingFace · 讲解由 AI 生成 · 仅供参考 · 最后更新 __DATE__</footer>
+</body>
+</html>"""
+    page = (page.replace("__SPACES__", spaces_html)
+                .replace("__MODELS_SUM__", models_sum_html)
+                .replace("__MODELS__", models_html)
+                .replace("__PAPERS_SUM__", papers_sum_html)
+                .replace("__PAPERS__", papers_html)
+                .replace("__DATE__", html.escape(date)))
+    (SITE_DIR / "huggingface.html").write_text(page, encoding="utf-8")
+    log(f"HuggingFace 精选页已生成: {SITE_DIR / 'huggingface.html'}")
+    # 方案A: 让脚本把新页面加入 git 暂存, 这样工作流提交时会带上它(无需改工作流权限)
+    try:
+        subprocess.run(["git", "-C", str(SITE_DIR), "add", "huggingface.html"],
+                       check=False, capture_output=True, timeout=30)
+    except Exception as e:
+        log(f"huggingface.html git add 跳过: {e}")
 
 
 # =========================================================
@@ -1042,11 +1453,22 @@ def main(force=False):
         log(f"GitHub 板块失败(已跳过): {e}")
         github = {}
 
+    # HuggingFace 热门(应用/模型/论文)板块(失败不影响日报主体)
+    huggingface = {}
+    try:
+        huggingface = fetch_huggingface()
+        if huggingface.get("spaces") or huggingface.get("models") or huggingface.get("papers"):
+            add_hf_explanations(huggingface, api_key)
+    except Exception as e:
+        log(f"HuggingFace 板块失败(已跳过): {e}")
+        huggingface = {}
+
     data["days"].insert(0, {
         "date":          today,
         "articles":      processed["articles"],
         "plain_summary": processed["plain_summary"],
         "github":        github,
+        "huggingface":   huggingface,
     })
     data["days"] = data["days"][:30]  # 保留最近 30 天
 
@@ -1054,6 +1476,7 @@ def main(force=False):
     export_json(data)
     generate_site_html(data["days"][0] if data["days"] else None)
     generate_github_html(data["days"][0] if data["days"] else None)
+    generate_hf_html(data["days"][0] if data["days"] else None)
     generate_html(data)
     log("✅ 完成!")
 
