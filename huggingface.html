@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>HuggingFace 精选 ｜ AI 日报</title>
+<meta name="description" content="每天精选 HuggingFace 上最火的 AI 应用、模型和论文，附中文讲解，不用看英文也能懂。">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;background:#f4f6f9;color:#1e2433;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+.top{background:#fff;border-bottom:1px solid #eaedf2;padding:0 20px;height:50px;display:flex;align-items:center;gap:14px;position:sticky;top:0;z-index:100;box-shadow:0 1px 8px rgba(0,0,0,.04)}
+.top a{font-size:.82em;color:#4f6ef7;font-weight:600}
+.top-brand{font-size:.86em;font-weight:700;margin-left:auto;color:#1e2433}
+.hero{background:linear-gradient(145deg,#fff7ed 0%,#fef9c3 45%,#eef2ff 100%);padding:42px 20px 34px;text-align:center;border-bottom:1px solid rgba(245,158,11,.12)}
+.hero h1{font-size:clamp(1.6em,5vw,2.1em);font-weight:800;letter-spacing:1px;margin-bottom:8px}
+.hero p{font-size:.86em;color:#6b7280}
+.wrap{max-width:860px;margin:0 auto;padding:30px 16px 50px}
+.sec{font-size:1.05em;font-weight:800;color:#1e2433;margin:10px 0 6px;display:flex;align-items:center;gap:8px}
+.sec.second{margin-top:38px}
+.sec-sub{font-size:.78em;color:#9ca3af;margin:0 0 16px 2px}
+.ghp-daygrp{font-size:.84em;font-weight:800;color:#c2410c;margin:20px 0 12px;padding-left:2px;border-left:3px solid #fbbf24;padding-left:10px}
+.ghp-card{background:#fff;border-radius:16px;padding:18px 20px;margin-bottom:16px;box-shadow:0 2px 14px rgba(0,0,0,.055);border:1px solid #eaedf2}
+.ghp-hd{display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap}
+.ghp-rank{width:24px;height:24px;border-radius:50%;background:linear-gradient(135deg,#f59e0b,#fbbf24);color:#fff;font-size:.74em;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ghp-name{font-size:1em;font-weight:800;color:#1e2433;word-break:break-all}
+.ghp-name:hover{color:#4f6ef7}
+.ghp-metric{font-size:.78em;color:#f43f5e;font-weight:700;white-space:nowrap;margin-left:auto}
+.ghp-metric .dl{color:#6b7280;margin-left:8px}
+.ghp-tag{font-size:.9em;color:#c2410c;font-weight:600;margin-bottom:8px}
+.ghp-exp{font-size:.9em;color:#4b5563;line-height:1.85}
+.ghp-en{font-size:.78em;color:#9ca3af;margin-bottom:6px;font-style:italic}
+.ghp-foot{display:flex;align-items:center;gap:10px;margin-top:12px;flex-wrap:wrap}
+.ghp-type{font-size:.7em;color:#6b7280;background:#f3f4f6;border:1px solid #e5e7eb;padding:2px 9px;border-radius:9px}
+.ghp-type.play{color:#15803d;background:#f0fdf4;border-color:#bbf7d0}
+.ghp-open{font-size:.78em;color:#4f6ef7;border:1px solid rgba(79,110,247,.3);border-radius:10px;padding:3px 12px;margin-left:auto}
+.ghp-open:hover{background:#4f6ef7;color:#fff}
+.ghp-empty{color:#9ca3af;font-size:.9em;padding:20px 0}
+.ghp-summary{background:linear-gradient(135deg,#fff7ed,#fefce8);border:1px solid #fde68a;border-radius:14px;padding:15px 18px;margin:4px 0 6px;font-size:.88em;color:#5b4636;line-height:1.85}
+.ghp-summary-lbl{display:block;font-size:.82em;font-weight:800;color:#c2410c;margin-bottom:6px}
+.foot{text-align:center;color:#9ca3af;font-size:.75em;padding:10px 20px 30px}
+@media(max-width:600px){.wrap{padding:22px 12px 40px}.ghp-card{padding:16px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a href="index.html">← 返回 AI 日报</a>
+  <span class="top-brand">🤖 AI 日报</span>
+</header>
+<section class="hero">
+  <h1>🤗 HuggingFace 精选</h1>
+  <p>每天精选最火的 AI 应用 · 模型 · 论文 · 附中文讲解 · 不用看英文也能懂</p>
+</section>
+<main class="wrap">
+  <div class="sec">🎮 热门 AI 应用(Spaces)</div>
+  <div class="sec-sub">能直接在浏览器里玩的 AI 小工具，不用写代码 · 每天更新</div>
+  <div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">1</span>
+          <a href="https://huggingface.co/spaces/Sneak-Moose/Pro-Realism-Edit-Studio" target="_blank" rel="noopener" class="ghp-name">Sneak-Moose/Pro-Realism-Edit-Studio</a>
+          <span class="ghp-metric">❤️ 235</span>
+        </div>
+        <div class="ghp-tag">专业级图片编辑工具，支持单张或双张图片处理</div>
+        <div class="ghp-exp">①这是一个强大的图片编辑应用，可以让你对一张或两张图片进行精细修改，比如调整颜色、修复瑕疵、合成新图等。②比如你拍了一张英语学习笔记的照片，但光线太暗，用这个工具可以一键提亮、增强对比度，让文字更清晰。③上手简单，打开网页就能用，不需要安装任何软件，适合零基础用户。</div>
+        <div class="ghp-foot"><span class="ghp-type play">🟢 可在线玩 · gradio</span><a href="https://huggingface.co/spaces/Sneak-Moose/Pro-Realism-Edit-Studio" target="_blank" rel="noopener" class="ghp-open">在线试玩 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">2</span>
+          <a href="https://huggingface.co/spaces/webml-community/gemma-4-webgpu-kernels" target="_blank" rel="noopener" class="ghp-name">webml-community/gemma-4-webgpu-kernels</a>
+          <span class="ghp-metric">❤️ 220</span>
+        </div>
+        <div class="ghp-tag">在浏览器中运行Gemma 4模型的WebGPU加速工具</div>
+        <div class="ghp-exp">①这是一个技术工具，让AI模型Gemma 4能在你的浏览器里快速运行，利用WebGPU技术提升速度。②普通人暂时用不上，但如果你对AI感兴趣，可以了解它让AI在本地运行更流畅，未来可能用于在线翻译或写作助手。③需要一定技术背景才能使用，新手可以先了解概念。</div>
+        <div class="ghp-foot"><span class="ghp-type play">🟢 可在线玩 · static</span><a href="https://huggingface.co/spaces/webml-community/gemma-4-webgpu-kernels" target="_blank" rel="noopener" class="ghp-open">在线试玩 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">3</span>
+          <a href="https://huggingface.co/spaces/r3gm/wan2-2-fp8da-aoti-preview-2" target="_blank" rel="noopener" class="ghp-name">r3gm/wan2-2-fp8da-aoti-preview-2</a>
+          <span class="ghp-metric">❤️ 1912</span>
+        </div>
+        <div class="ghp-tag">根据图片和文字描述生成视频的AI工具</div>
+        <div class="ghp-exp">①这个应用能根据你提供的一张图片和一段文字描述，自动生成一段视频。比如你有一张风景照，输入“日落时分的海滩”，它就会生成动态的海浪和夕阳视频。②学英语时，你可以用描述生成视频来练习写作，比如写一段英文描述，看看AI能否准确生成对应画面。③操作简单，上传图片、输入文字即可，适合新手体验AI视频生成。</div>
+        <div class="ghp-foot"><span class="ghp-type play">🟢 可在线玩 · gradio</span><a href="https://huggingface.co/spaces/r3gm/wan2-2-fp8da-aoti-preview-2" target="_blank" rel="noopener" class="ghp-open">在线试玩 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">4</span>
+          <a href="https://huggingface.co/spaces/baidu/Unlimited-OCR" target="_blank" rel="noopener" class="ghp-name">baidu/Unlimited-OCR</a>
+          <span class="ghp-metric">❤️ 96</span>
+        </div>
+        <div class="ghp-tag">无限次使用的OCR文字识别工具</div>
+        <div class="ghp-exp">①这是一个文字识别应用，可以从图片中提取文字，比如扫描文档、截图等，而且不限次数。②比如你看到一张英文海报，想复制上面的文字，用这个工具上传图片就能得到可编辑的文本，方便学习英语。③完全免费，上传图片即可识别，零门槛。</div>
+        <div class="ghp-foot"><span class="ghp-type play">🟢 可在线玩 · gradio</span><a href="https://huggingface.co/spaces/baidu/Unlimited-OCR" target="_blank" rel="noopener" class="ghp-open">在线试玩 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">5</span>
+          <a href="https://huggingface.co/spaces/build-small-hackathon/OpenMythos" target="_blank" rel="noopener" class="ghp-name">build-small-hackathon/OpenMythos</a>
+          <span class="ghp-metric">❤️ 125</span>
+        </div>
+        <div class="ghp-tag">开源网络安全助手，帮你分析安全威胁</div>
+        <div class="ghp-exp">①这是一个开源的网络安全AI助手，可以回答网络安全问题、分析潜在风险。②比如你收到一封可疑邮件，可以问它是否安全，它会给出建议。③对普通人来说，直接使用可能有点技术门槛，但可以了解AI在安全领域的应用。</div>
+        <div class="ghp-foot"><span class="ghp-type play">🟢 可在线玩 · gradio</span><a href="https://huggingface.co/spaces/build-small-hackathon/OpenMythos" target="_blank" rel="noopener" class="ghp-open">在线试玩 →</a></div>
+      </div>
+  <div class="sec second">🧠 热门模型</div>
+  <div class="sec-sub">当下最火的 AI 模型（同一模型的量化副本已自动合并）· 每天更新</div>
+  <div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">1</span>
+          <a href="https://huggingface.co/baidu/Unlimited-OCR" target="_blank" rel="noopener" class="ghp-name">baidu/Unlimited-OCR</a>
+          <span class="ghp-metric">❤️ 1341 <span class="dl">⬇️ 36.3万</span></span>
+        </div>
+        <div class="ghp-tag">支持图片和文字输入的OCR模型</div>
+        <div class="ghp-exp">①这是一个AI模型，能同时理解图片和文字，主要用于文字识别。②比如你拍下英文菜单，它可以识别出文字并翻译。③作为模型，需要开发者调用，但普通用户可以通过上面的应用使用。</div>
+        <div class="ghp-foot"><span class="ghp-type">image-text-to-text</span><a href="https://huggingface.co/baidu/Unlimited-OCR" target="_blank" rel="noopener" class="ghp-open">打开 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">2</span>
+          <a href="https://huggingface.co/zai-org/GLM-5.2" target="_blank" rel="noopener" class="ghp-name">zai-org/GLM-5.2</a>
+          <span class="ghp-metric">❤️ 2907 <span class="dl">⬇️ 13.3万</span></span>
+        </div>
+        <div class="ghp-tag">新一代GLM语言模型，擅长文本生成</div>
+        <div class="ghp-exp">①这是一个文本生成模型，可以写文章、回答问题、翻译等。②比如你写英语作文时，它可以帮你润色或生成段落。③模型需要编程调用，但未来会有更多应用集成它。</div>
+        <div class="ghp-foot"><span class="ghp-type">text-generation</span><a href="https://huggingface.co/zai-org/GLM-5.2" target="_blank" rel="noopener" class="ghp-open">打开 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">3</span>
+          <a href="https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF" target="_blank" rel="noopener" class="ghp-name">empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF</a>
+          <span class="ghp-metric">❤️ 900 <span class="dl">⬇️ 90.8万</span></span>
+        </div>
+        <div class="ghp-tag">支持图文输入的多模态模型，基于Claude优化</div>
+        <div class="ghp-exp">①这是一个多模态模型，能同时处理图片和文字，比如根据图片描述内容。②比如你上传一张图表，它可以解释数据含义。③需要技术背景使用，但展示了AI理解多模态信息的能力。</div>
+        <div class="ghp-foot"><span class="ghp-type">image-text-to-text</span><a href="https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF" target="_blank" rel="noopener" class="ghp-open">打开 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">4</span>
+          <a href="https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B-GGUF" target="_blank" rel="noopener" class="ghp-name">deepreinforce-ai/Ornith-1.0-35B-GGUF</a>
+          <span class="ghp-metric">❤️ 455 <span class="dl">⬇️ 12.4万</span></span>
+        </div>
+        <div class="ghp-tag">35B参数的大语言模型，擅长复杂文本生成</div>
+        <div class="ghp-exp">①这是一个大型语言模型，有350亿参数，能生成高质量文本。②比如写长篇英语论文或故事，它可以提供灵感或草稿。③模型较大，需要较强硬件，但体现了AI规模化的趋势。</div>
+        <div class="ghp-foot"><span class="ghp-type">text-generation</span><a href="https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B-GGUF" target="_blank" rel="noopener" class="ghp-open">打开 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">5</span>
+          <a href="https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF" target="_blank" rel="noopener" class="ghp-name">yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF</a>
+          <span class="ghp-metric">❤️ 832 <span class="dl">⬇️ 24.1万</span></span>
+        </div>
+        <div class="ghp-tag">基于Gemma 4的智能体模型，支持复杂任务</div>
+        <div class="ghp-exp">①这是一个智能体模型，能自主完成多步骤任务，比如规划旅行路线。②比如你让它“帮我制定一周英语学习计划”，它会分解任务并给出方案。③技术门槛较高，但代表了AI从对话到行动的发展方向。</div>
+        <div class="ghp-foot"><span class="ghp-type">text-generation</span><a href="https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF" target="_blank" rel="noopener" class="ghp-open">打开 →</a></div>
+      </div>
+  <div class="ghp-summary"><span class="ghp-summary-lbl">🤖 小结</span>这些热门模型反映了AI向多模态（图文结合）、大规模参数和智能体方向发展的趋势。对于想跟进AI圈和备考的人，值得注意：多模态模型（如6、8）能同时理解文字和图片，是未来应用重点；大参数模型（如9）性能更强但需要更多资源；智能体模型（如10）能自主完成任务，是AI实用化的关键。了解这些方向有助于把握AI前沿动态。</div>
+  <div class="sec second">📄 每日热门论文</div>
+  <div class="sec-sub">最近 7 天最受关注的 AI 论文 · 中文标题为翻译 · 顺带练英语 · 最新在上</div>
+  <div class="ghp-daygrp">2026年06月29日 周一</div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">1</span>
+          <a href="https://huggingface.co/papers/2606.28128" target="_blank" rel="noopener" class="ghp-name">物理强化：用于机器人操作的物理增强世界模拟器</a>
+          <span class="ghp-metric">👍 34</span>
+        </div>
+        <div class="ghp-en">原题:PhysisForcing: Physics Reinforced World Simulator for Robotic Manipulation</div>
+        <div class="ghp-exp">研究视频生成模型在机器人模拟中的物理合理性，适合了解AI在机器人领域的应用。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.28128" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">2</span>
+          <a href="https://huggingface.co/papers/2606.28133" target="_blank" rel="noopener" class="ghp-name">翻译作为桥梁：将操作技能从人类转移到机器人</a>
+          <span class="ghp-metric">👍 28</span>
+        </div>
+        <div class="ghp-en">原题:Translation as a Bridging Action: Transferring Manipulation Skills from Humans to Robots</div>
+        <div class="ghp-exp">探索从人类动作数据学习机器人技能，对理解机器人学习前沿有帮助。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.28133" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">3</span>
+          <a href="https://huggingface.co/papers/2606.27608" target="_blank" rel="noopener" class="ghp-name">Qwen-Image-2.0-RL技术报告</a>
+          <span class="ghp-metric">👍 23</span>
+        </div>
+        <div class="ghp-en">原题:Qwen-Image-2.0-RL Technical Report</div>
+        <div class="ghp-exp">用强化学习提升图像生成质量，了解AI图像生成的最新方法。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.27608" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">4</span>
+          <a href="https://huggingface.co/papers/2606.27378" target="_blank" rel="noopener" class="ghp-name">形式化潜在思维：LLM中思维表示的四条公理</a>
+          <span class="ghp-metric">👍 17</span>
+        </div>
+        <div class="ghp-en">原题:Formalizing Latent Thoughts: Four Axioms of Thought Representation in LLMs</div>
+        <div class="ghp-exp">提出评估LLM内部思维表示的公理框架，适合深入理解LLM机制。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.27378" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">5</span>
+          <a href="https://huggingface.co/papers/2606.28057" target="_blank" rel="noopener" class="ghp-name">MultiHashFormer：基于哈希的生成式语言模型</a>
+          <span class="ghp-metric">👍 16</span>
+        </div>
+        <div class="ghp-en">原题:MultiHashFormer: Hash-based Generative Language Models</div>
+        <div class="ghp-exp">用哈希表示token以减少参数，了解语言模型参数效率创新。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.28057" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-daygrp">2026年06月26日 周五</div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">1</span>
+          <a href="https://huggingface.co/papers/2606.27377" target="_blank" rel="noopener" class="ghp-name">DanceOPD：基于策略的生成式场蒸馏</a>
+          <span class="ghp-metric">👍 73</span>
+        </div>
+        <div class="ghp-en">原题:DanceOPD: On-Policy Generative Field Distillation</div>
+        <div class="ghp-exp">统一图像生成的多能力模型，了解图像生成模型训练挑战。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.27377" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">2</span>
+          <a href="https://huggingface.co/papers/2606.26025" target="_blank" rel="noopener" class="ghp-name">上下文世界建模用于机器人控制</a>
+          <span class="ghp-metric">👍 57</span>
+        </div>
+        <div class="ghp-en">原题:In-Context World Modeling for Robotic Control</div>
+        <div class="ghp-exp">让VLA模型通过上下文适应新环境，了解机器人泛化技术。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.26025" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">3</span>
+          <a href="https://huggingface.co/papers/2606.26790" target="_blank" rel="noopener" class="ghp-name">OPID：用于智能体强化学习的基于策略的技能蒸馏</a>
+          <span class="ghp-metric">👍 49</span>
+        </div>
+        <div class="ghp-en">原题:OPID: On-Policy Skill Distillation for Agentic Reinforcement Learning</div>
+        <div class="ghp-exp">通过蒸馏提供密集奖励信号，了解语言智能体强化学习。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.26790" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">4</span>
+          <a href="https://huggingface.co/papers/2606.26907" target="_blank" rel="noopener" class="ghp-name">Qwen-Image-Agent：弥合真实世界图像生成的上下文差距</a>
+          <span class="ghp-metric">👍 45</span>
+        </div>
+        <div class="ghp-en">原题:Qwen-Image-Agent: Bridging the Context Gap in Real-World Image Generation</div>
+        <div class="ghp-exp">用智能体框架解决图像生成上下文不足问题，了解AI智能体应用。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.26907" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">5</span>
+          <a href="https://huggingface.co/papers/2606.26300" target="_blank" rel="noopener" class="ghp-name">验证地平线：编码智能体奖励没有银弹</a>
+          <span class="ghp-metric">👍 42</span>
+        </div>
+        <div class="ghp-en">原题:The Verification Horizon: No Silver Bullet for Coding Agent Rewards</div>
+        <div class="ghp-exp">讨论编码智能体验证的困难，了解AI编码评估挑战。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.26300" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-daygrp">2026年06月25日 周四</div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">1</span>
+          <a href="https://huggingface.co/papers/2606.24775" target="_blank" rel="noopener" class="ghp-name">我们准备好迎接智能体原生记忆系统了吗？</a>
+          <span class="ghp-metric">👍 107</span>
+        </div>
+        <div class="ghp-en">原题:Are We Ready For An Agent-Native Memory System?</div>
+        <div class="ghp-exp">评估LLM智能体记忆系统，了解智能体记忆管理前沿。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.24775" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">2</span>
+          <a href="https://huggingface.co/papers/2606.25041" target="_blank" rel="noopener" class="ghp-name">Wan-Streamer v0.1：端到端实时交互基础模型</a>
+          <span class="ghp-metric">👍 100</span>
+        </div>
+        <div class="ghp-en">原题:Wan-Streamer v0.1: End-to-end Real-time Interactive Foundation Models</div>
+        <div class="ghp-exp">实时音视频交互基础模型，了解多模态实时AI。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.25041" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">3</span>
+          <a href="https://huggingface.co/papers/2606.26058" target="_blank" rel="noopener" class="ghp-name">DomainShuttle：自由形式开放域主题驱动文本到视频生成</a>
+          <span class="ghp-metric">👍 65</span>
+        </div>
+        <div class="ghp-en">原题:DomainShuttle: Freeform Open Domain Subject-driven Text-to-video Generation</div>
+        <div class="ghp-exp">主题驱动的视频生成，了解文本到视频生成技术。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.26058" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">4</span>
+          <a href="https://huggingface.co/papers/2606.25763" target="_blank" rel="noopener" class="ghp-name">ShutterMuse：MLLM的拍摄时摄影指导</a>
+          <span class="ghp-metric">👍 45</span>
+        </div>
+        <div class="ghp-en">原题:ShutterMuse: Capture-Time Photography Guidance with MLLMs</div>
+        <div class="ghp-exp">用多模态大模型指导摄影构图，了解AI在摄影中的应用。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.25763" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">5</span>
+          <a href="https://huggingface.co/papers/2606.25331" target="_blank" rel="noopener" class="ghp-name">改进的大型语言扩散模型</a>
+          <span class="ghp-metric">👍 41</span>
+        </div>
+        <div class="ghp-en">原题:Improved Large Language Diffusion Models</div>
+        <div class="ghp-exp">用双向注意力的扩散语言模型，了解非自回归语言模型。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.25331" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-daygrp">2026年06月24日 周三</div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">1</span>
+          <a href="https://huggingface.co/papers/2606.24597" target="_blank" rel="noopener" class="ghp-name">Qwen-AgentWorld：通用智能体的语言世界模型</a>
+          <span class="ghp-metric">👍 139</span>
+        </div>
+        <div class="ghp-en">原题:Qwen-AgentWorld: Language World Models for General Agents</div>
+        <div class="ghp-exp">用语言模型模拟环境，了解世界模型在智能体中的应用。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.24597" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">2</span>
+          <a href="https://huggingface.co/papers/2606.24530" target="_blank" rel="noopener" class="ghp-name">NatureBench：编码智能体能达到Nature论文的SOTA吗？</a>
+          <span class="ghp-metric">👍 61</span>
+        </div>
+        <div class="ghp-en">原题:NatureBench: Can Coding Agents Match the Published SOTA of Nature-Family Papers?</div>
+        <div class="ghp-exp">评估AI编码智能体在科学问题上的能力，了解AI for Science。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.24530" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">3</span>
+          <a href="https://huggingface.co/papers/2606.24428" target="_blank" rel="noopener" class="ghp-name">逃离自我确认陷阱：智能体经验学习的执行-蒸馏-验证范式</a>
+          <span class="ghp-metric">👍 51</span>
+        </div>
+        <div class="ghp-en">原题:Escaping the Self-Confirmation Trap: An Execute-Distill-Verify Paradigm for Agentic Experience Learning</div>
+        <div class="ghp-exp">改进智能体经验学习避免错误累积，了解智能体自我进化。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.24428" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">4</span>
+          <a href="https://huggingface.co/papers/2606.24855" target="_blank" rel="noopener" class="ghp-name">OpenThoughts-Agent：智能体模型的数据配方</a>
+          <span class="ghp-metric">👍 46</span>
+        </div>
+        <div class="ghp-en">原题:OpenThoughts-Agent: Data Recipes for Agentic Models</div>
+        <div class="ghp-exp">开源智能体训练数据流程，了解智能体模型训练。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.24855" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">5</span>
+          <a href="https://huggingface.co/papers/2606.19926" target="_blank" rel="noopener" class="ghp-name">MemGUI-Agent：具有主动上下文管理的端到端长时移动GUI智能体</a>
+          <span class="ghp-metric">👍 42</span>
+        </div>
+        <div class="ghp-en">原题:MemGUI-Agent: An End-to-End Long-Horizon Mobile GUI Agent with Proactive Context Management</div>
+        <div class="ghp-exp">长时移动GUI智能体，了解AI在移动端应用。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.19926" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-daygrp">2026年06月23日 周二</div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">1</span>
+          <a href="https://huggingface.co/papers/2606.22388" target="_blank" rel="noopener" class="ghp-name">PlanBench-XL：在大规模工具生态系统中评估LLM工具使用智能体的长时规划</a>
+          <span class="ghp-metric">👍 95</span>
+        </div>
+        <div class="ghp-en">原题:PlanBench-XL: Evaluating Long-Horizon Planning of LLM Tool-Use Agents in Large-Scale Tool Ecosystems</div>
+        <div class="ghp-exp">评估智能体在大型工具生态中的规划能力，了解工具使用智能体。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.22388" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">2</span>
+          <a href="https://huggingface.co/papers/2606.23654" target="_blank" rel="noopener" class="ghp-name">EnterpriseClawBench：从真实工作会话中基准测试智能体</a>
+          <span class="ghp-metric">👍 79</span>
+        </div>
+        <div class="ghp-en">原题:EnterpriseClawBench: Benchmarking Agents from Real Workplace Sessions</div>
+        <div class="ghp-exp">企业智能体基准测试，了解AI在企业场景的应用。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.23654" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">3</span>
+          <a href="https://huggingface.co/papers/2606.19409" target="_blank" rel="noopener" class="ghp-name">OpenRath：智能体系统的会话中心运行时状态</a>
+          <span class="ghp-metric">👍 76</span>
+        </div>
+        <div class="ghp-en">原题:OpenRath: Session-Centered Runtime State for Agent Systems</div>
+        <div class="ghp-exp">统一智能体运行时状态管理，了解智能体系统架构。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.19409" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">4</span>
+          <a href="https://huggingface.co/papers/2606.20945" target="_blank" rel="noopener" class="ghp-name">分组查询专家：GQA自注意力上的混合专家</a>
+          <span class="ghp-metric">👍 75</span>
+        </div>
+        <div class="ghp-en">原题:Grouped Query Experts: Mixture-of-Experts on GQA Self-Attention</div>
+        <div class="ghp-exp">用MoE优化自注意力计算，了解Transformer效率优化。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.20945" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">5</span>
+          <a href="https://huggingface.co/papers/2606.21337" target="_blank" rel="noopener" class="ghp-name">DataClaw0：从原始流中智能定制多模态数据</a>
+          <span class="ghp-metric">👍 73</span>
+        </div>
+        <div class="ghp-en">原题:DataClaw0: Agentic Tailoring Multimodal Data from Raw Streams</div>
+        <div class="ghp-exp">主动处理多模态数据，了解数据工程前沿。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.21337" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-daygrp">2026年06月22日 周一</div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">1</span>
+          <a href="https://huggingface.co/papers/2606.17162" target="_blank" rel="noopener" class="ghp-name">MemSlides：用于个性化幻灯片生成的分层记忆驱动智能体框架</a>
+          <span class="ghp-metric">👍 171</span>
+        </div>
+        <div class="ghp-en">原题:MemSlides: A Hierarchical Memory Driven Agent Framework for Personalized Slide Generation with Multi-turn Local Revision</div>
+        <div class="ghp-exp">分层记忆用于个性化生成，了解AI在办公场景应用。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.17162" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">2</span>
+          <a href="https://huggingface.co/papers/2606.19534" target="_blank" rel="noopener" class="ghp-name">PerceptionDLM：多模态扩散语言模型的并行区域感知</a>
+          <span class="ghp-metric">👍 64</span>
+        </div>
+        <div class="ghp-en">原题:PerceptionDLM: Parallel Region Perception with Multimodal Diffusion Language Models</div>
+        <div class="ghp-exp">扩散语言模型用于高效区域感知，了解多模态感知新方法。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.19534" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">3</span>
+          <a href="https://huggingface.co/papers/2606.18508" target="_blank" rel="noopener" class="ghp-name">MCompassRAG：主题元数据作为段落级检索的语义指南针</a>
+          <span class="ghp-metric">👍 21</span>
+        </div>
+        <div class="ghp-en">原题:MCompassRAG: Topic Metadata as a Semantic Compass for Paragraph-Level Retrieval</div>
+        <div class="ghp-exp">用主题元数据改进RAG检索，了解RAG系统优化。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.18508" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">4</span>
+          <a href="https://huggingface.co/papers/2606.18829" target="_blank" rel="noopener" class="ghp-name">GateMem：多主体共享记忆智能体的记忆治理基准</a>
+          <span class="ghp-metric">👍 18</span>
+        </div>
+        <div class="ghp-en">原题:GateMem: Benchmarking Memory Governance in Multi-Principal Shared-Memory Agents</div>
+        <div class="ghp-exp">评估共享记忆智能体的记忆治理，了解多用户AI系统。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.18829" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">5</span>
+          <a href="https://huggingface.co/papers/2606.18381" target="_blank" rel="noopener" class="ghp-name">SproutRAG：注意力引导的树搜索与渐进嵌入用于长文档RAG</a>
+          <span class="ghp-metric">👍 18</span>
+        </div>
+        <div class="ghp-en">原题:SproutRAG: Attention-Guided Tree Search with Progressive Embeddings for Long-Document RAG</div>
+        <div class="ghp-exp">层次化RAG框架处理长文档，了解长文档检索技术。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.18381" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-daygrp">2026年06月19日 周五</div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">1</span>
+          <a href="https://huggingface.co/papers/2606.19195" target="_blank" rel="noopener" class="ghp-name">Moebius：0.2B轻量级图像修复框架达到10B级性能</a>
+          <span class="ghp-metric">👍 138</span>
+        </div>
+        <div class="ghp-en">原题:Moebius: 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance</div>
+        <div class="ghp-exp">轻量级图像修复模型，了解模型压缩与效率。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.19195" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">2</span>
+          <a href="https://huggingface.co/papers/2606.15133" target="_blank" rel="noopener" class="ghp-name">DragMesh-2：与铰接物体的物理合理灵巧手交互</a>
+          <span class="ghp-metric">👍 74</span>
+        </div>
+        <div class="ghp-en">原题:DragMesh-2: Physically Plausible Dexterous Hand-Object Interaction with Articulated Objects</div>
+        <div class="ghp-exp">灵巧手与铰接物体交互，了解机器人操作前沿。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.15133" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">3</span>
+          <a href="https://huggingface.co/papers/2606.20517" target="_blank" rel="noopener" class="ghp-name">Multi-LCB：将LiveCodeBench扩展到多种编程语言</a>
+          <span class="ghp-metric">👍 60</span>
+        </div>
+        <div class="ghp-en">原题:Multi-LCB: Extending LiveCodeBench to Multiple Programming Languages</div>
+        <div class="ghp-exp">多语言代码生成基准，了解代码评估扩展。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.20517" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">4</span>
+          <a href="https://huggingface.co/papers/2606.19419" target="_blank" rel="noopener" class="ghp-name">玩耍式智能体机器人学习</a>
+          <span class="ghp-metric">👍 50</span>
+        </div>
+        <div class="ghp-en">原题:Playful Agentic Robot Learning</div>
+        <div class="ghp-exp">机器人通过玩耍学习技能，了解机器人自主学习。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.19419" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+<div class="ghp-card">
+        <div class="ghp-hd">
+          <span class="ghp-rank">5</span>
+          <a href="https://huggingface.co/papers/2606.19704" target="_blank" rel="noopener" class="ghp-name">超越静态排行榜：LLM智能体评估的预测有效性</a>
+          <span class="ghp-metric">👍 41</span>
+        </div>
+        <div class="ghp-en">原题:Beyond Static Leaderboards: Predictive Validity for the Evaluation of LLM Agents</div>
+        <div class="ghp-exp">讨论智能体评估的预测有效性，了解AI评估方法论。</div>
+        <div class="ghp-foot"><span class="ghp-type">📄 论文</span><a href="https://huggingface.co/papers/2606.19704" target="_blank" rel="noopener" class="ghp-open">看论文 →</a></div>
+      </div>
+  <div class="ghp-summary"><span class="ghp-summary-lbl">🤖 小结</span>这批论文热点集中在智能体（Agent）系统，包括记忆管理、工具使用、规划评估等；机器人操作与技能迁移；多模态生成（图像、视频、音频）；以及语言模型架构创新（扩散模型、哈希表示、MoE）。备考新手应记住关键词：智能体、世界模型、RAG、多模态、强化学习、蒸馏。</div>
+</main>
+<footer class="foot">数据来自 HuggingFace · 讲解由 AI 生成 · 仅供参考 · 最后更新 2026-06-30</footer>
+</body>
+</html>
