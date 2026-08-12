@@ -1,0 +1,652 @@
+{
+  "date": "2026-08-13",
+  "articles": [
+    {
+      "title": "阿里开源2.4万亿参数大模型",
+      "summary": "阿里发布Qwen3.8-2.4T-A95B，首次开源超大模型权重，支持超长上下文，性能对标GPT-5.6。",
+      "why": "开源让普通人和小公司也能用上顶级AI，推动应用创新，AI工具会更强大。",
+      "category": "开源",
+      "beginner_takeaway": "关注开源模型，未来可能有免费或便宜的AI工具可用。",
+      "for_me": "这是AI圈大事，值得关注。开源意味着未来可能有免费或便宜的AI工具，对你的学习和备考都有帮助。",
+      "url": "https://www.ithome.com/0/989/001.htm"
+    },
+    {
+      "title": "Grok 4.6发布，对标GPT-5.6",
+      "summary": "SpaceXAI发布Grok 4.6，强化智能体任务，性能与GPT-5.6持平，已在Cursor上线。",
+      "why": "AI竞争加剧，模型能力提升，用户有更多选择，工具更智能。",
+      "category": "模型",
+      "beginner_takeaway": "多关注Grok，它可能成为ChatGPT的有力竞争者。",
+      "for_me": "新模型发布，你可以关注Grok在写作辅助上的表现，或许能帮你学英语。",
+      "url": "https://www.ithome.com/0/988/999.htm"
+    },
+    {
+      "title": "DeepSeek新模型深夜上线",
+      "summary": "DeepSeek官网API新增V4-Pro-0813模型，支持思考模式，但尚未发布更新日志。",
+      "why": "DeepSeek是国产模型，新版本可能带来更强性能，值得关注。",
+      "category": "模型",
+      "beginner_takeaway": "留意DeepSeek的更新，它可能提供免费或低价API。",
+      "for_me": "DeepSeek是国产模型，可能便宜好用，你可以试试用它辅助英语学习。",
+      "url": "https://www.ithome.com/0/988/998.htm"
+    },
+    {
+      "title": "Google搜索框25年来首次改版",
+      "summary": "Google宣布重新设计搜索框，从传统文本框转向AI驱动的新界面，影响数十亿用户。",
+      "why": "搜索是互联网入口，改版意味着AI将重塑信息获取方式。",
+      "category": "工具",
+      "beginner_takeaway": "学习使用AI搜索，未来信息检索方式将改变。",
+      "for_me": "你常用Google找资料，改版后搜索会更智能，能帮你更高效地查英语学习资源。",
+      "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think"
+    },
+    {
+      "title": "Claude新水印引发争议",
+      "summary": "Anthropic为Claude引入水印系统，可检测AI生成内容，用户担心被用于作弊检测。",
+      "why": "水印影响所有AI用户，涉及隐私和诚信问题。",
+      "category": "政策",
+      "beginner_takeaway": "了解AI水印，注意使用AI时的合规性。",
+      "for_me": "如果你用AI写作业，水印可能被老师发现，要注意学术诚信。",
+      "url": "https://techcrunch.com/2026/08/12/some-claude-users-are-mad-that-anthropics-new-watermarks-will-catch-them-cheating-at-their-jobs-classes/"
+    },
+    {
+      "title": "Twitch主播可退出AI训练",
+      "summary": "Twitch允许用户选择退出内容被用于训练亚马逊AI，保护创作者权益。",
+      "why": "创作者可以控制自己的内容，避免被AI无偿使用。",
+      "category": "政策",
+      "beginner_takeaway": "关注内容版权，了解如何保护自己的创作。",
+      "for_me": "如果你未来创作内容，可以借鉴这个机制保护自己的作品。",
+      "url": "https://www.theverge.com/tech/979112/twitch-streamers-can-now-opt-out-from-training-amazons-ai"
+    },
+    {
+      "title": "AI先驱呼吁保持开放",
+      "summary": "Hinton、李飞飞、吴恩达在会议上辩论AI安全，主张开源和开放研究。",
+      "why": "AI发展路线之争影响未来监管和开源生态。",
+      "category": "政策",
+      "beginner_takeaway": "了解AI开放与安全的平衡，形成自己的观点。",
+      "for_me": "这关系到AI行业走向，对你备考AI研究生有参考价值。",
+      "url": "https://techcrunch.com/2026/08/12/as-ai-safety-concerns-mount-three-pioneers-make-the-case-for-staying-open/"
+    },
+    {
+      "title": "AI编程公司Cognition估值400亿",
+      "summary": "AI编程初创Cognition据悉正洽谈融资，估值达400亿美元，资本热捧。",
+      "why": "AI编程工具是热点，高估值反映行业前景。",
+      "category": "公司",
+      "beginner_takeaway": "关注AI编程工具，未来可能改变工作方式。",
+      "for_me": "虽然你不编程，但AI编程工具可能影响未来就业，值得留意。",
+      "url": "https://techcrunch.com/2026/08/12/ai-coding-startup-cognition-reportedly-already-in-talks-to-raise-at-40b-valuation/"
+    },
+    {
+      "title": "Grok Bot：AI代理替你干活",
+      "summary": "SpaceXAI推出Grok Bot，AI代理可自主完成多步骤工作，如登录应用、处理任务。",
+      "why": "AI代理将自动化日常办公，提高效率。",
+      "category": "Agent",
+      "beginner_takeaway": "了解AI代理，未来可能成为你的数字助手。",
+      "for_me": "AI代理能帮你自动处理邮件、整理资料，对学英语也有用。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/978666/spacexai-grok-bot-ai-agent-beta-launch"
+    },
+    {
+      "title": "苹果AI功能或收费",
+      "summary": "iOS 27曝光苹果AI功能可能收费，用户需付费才能使用高级AI。",
+      "why": "AI服务收费趋势，影响用户使用成本。",
+      "category": "公司",
+      "beginner_takeaway": "关注AI服务定价，合理选择免费或付费工具。",
+      "for_me": "如果苹果AI收费，你可以考虑其他免费替代品。",
+      "url": "https://www.ifanr.com/1674897?utm_source=rss&utm_medium=rss&utm_campaign="
+    }
+  ],
+  "plain_summary": "今天AI圈挺热闹：阿里开源了超大模型，DeepSeek和Grok也发了新版本，模型竞争白热化。Google搜索框改版，AI搜索要来了。Claude加了个水印，Twitch主播能退出AI训练，这些跟你的创作和隐私有关。AI先驱们还在吵开放和安全，但别慌，对普通人来说，工具越来越多，越来越强，你只要跟着用就行。记住，新模型不一定最好，但开源和免费工具值得多试。",
+  "github": {
+    "top_starred": [
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "stars": 239744,
+        "forks": 36387,
+        "language": "JavaScript",
+        "desc": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+        "tagline": "AI代理性能优化系统，提升Claude Code等工具效率",
+        "explanation": "这个项目是一个为AI代理（比如Claude Code、Codex等编程助手）设计的性能优化系统。它解决的是AI代理在复杂任务中反应慢、记忆差、安全性不足的问题。通过提供技能、直觉、记忆和安全机制，让AI代理更聪明、更可靠。普通人可能用不到，但如果你是开发者，用这些AI编程工具时，它能帮你减少等待时间，让AI更懂你的需求。比如，你让AI修改代码，它能更快找到相关文件并执行。上手有一定难度，需要了解AI代理的基本用法，但项目提供了文档，适合有一定技术背景的用户。"
+      },
+      {
+        "name": "NousResearch/hermes-agent",
+        "url": "https://github.com/NousResearch/hermes-agent",
+        "stars": 229546,
+        "forks": 45314,
+        "language": "Python",
+        "desc": "The agent that grows with you",
+        "tagline": "能随你成长的AI代理，越用越懂你",
+        "explanation": "这个项目是一个AI代理，特点是能根据你的使用习惯和反馈不断进化。它解决的是通用AI助手不够个性化的问题，让AI更贴合你的需求。比如，你经常让它整理邮件，它会逐渐学会你的偏好，更高效地处理。普通人可以把它当作个人助理，用于日程管理、信息筛选等。上手难度中等，需要一些配置，但项目提供了友好的界面。适合愿意花时间定制AI体验的用户。"
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "stars": 186562,
+        "forks": 46090,
+        "language": "Python",
+        "desc": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+        "tagline": "让每个人都能用上AI的自动化工具",
+        "explanation": "AutoGPT是一个开源项目，目标是让AI自动化任务变得简单。它解决的是普通人不会编程也能让AI帮忙完成复杂工作的问题。比如，你可以告诉它“帮我研究一下新能源车市场”，它会自动搜索资料、整理报告。它适合非技术用户，因为操作类似聊天，但需要明确指令。上手不难，但需要耐心调试。它让AI从回答问题升级为执行任务，是AI普及的重要一步。"
+      },
+      {
+        "name": "ollama/ollama",
+        "url": "https://github.com/ollama/ollama",
+        "stars": 178367,
+        "forks": 17378,
+        "language": "Go",
+        "desc": "Get up and running with Kimi-K2.6, GLM-5.2, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+        "tagline": "一键运行多种大模型的本地工具",
+        "explanation": "这个项目是一个本地运行AI模型的工具，支持Kimi、DeepSeek、Qwen等众多模型。它解决的是在线AI服务可能收费、隐私泄露的问题，让你在电脑上免费、离线使用AI。比如，你可以下载一个模型，然后像使用ChatGPT一样提问，但数据不出电脑。适合注重隐私或需要离线工作的用户。上手简单，有图形界面，但需要一定的电脑配置。它是AI爱好者的必备工具。"
+      },
+      {
+        "name": "f/prompts.chat",
+        "url": "https://github.com/f/prompts.chat",
+        "stars": 167060,
+        "forks": 21561,
+        "language": "HTML",
+        "desc": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+        "tagline": "海量ChatGPT提示词分享社区",
+        "explanation": "这是一个收集和分享ChatGPT提示词（prompts）的网站，提示词就是给AI的指令。它解决的是很多人不知道如何有效提问的问题，让你直接使用别人验证过的好指令。比如，你想让AI写简历，可以找到专门的提示词，复制粘贴就能得到高质量结果。适合所有使用ChatGPT的人，无需技术背景。上手零门槛，浏览网站即可。它让AI使用更高效，是新手的好帮手。"
+      }
+    ],
+    "trending": [
+      {
+        "name": "FareedKhan-dev/kimi-k3-in-c",
+        "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
+        "stars": 5174,
+        "forks": 836,
+        "language": "C",
+        "desc": "A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portable C99: no BLAS, no framework, no GPU.",
+        "tagline": "超大规模AI模型在普通电脑上运行",
+        "explanation": "这个项目实现了在单个CPU上运行一个2.78万亿参数的AI模型，且内存占用仅8GB。它解决的是大模型通常需要昂贵GPU的问题，让普通电脑也能运行顶级模型。比如，你可以在没有显卡的旧电脑上运行Kimi K3，进行文本生成。适合技术爱好者，因为需要编译C代码，但项目提供了详细说明。上手较难，但意义重大，让AI更普及。"
+      },
+      {
+        "name": "SaladDay/pi-from-scratch",
+        "url": "https://github.com/SaladDay/pi-from-scratch",
+        "stars": 746,
+        "forks": 47,
+        "language": "TypeScript",
+        "desc": "600 行 TypeScript 写成的超级迷你版 pi，让你轻松从 0 写出属于你的 pi-agent",
+        "tagline": "用600行代码教你写AI代理",
+        "explanation": "这是一个教学项目，用600行TypeScript代码实现了一个迷你版AI代理（pi-agent）。它解决的是AI代理原理复杂、难以理解的问题，让你通过阅读代码轻松掌握核心概念。比如，你可以看到AI如何接收指令、调用工具、生成回复。适合想学习AI编程的开发者，需要TypeScript基础。上手难度中等，但代码简洁，是学习的好材料。"
+      },
+      {
+        "name": "fuxicodex/Fuxi",
+        "url": "https://github.com/fuxicodex/Fuxi",
+        "stars": 472,
+        "forks": 47,
+        "language": "HTML",
+        "desc": "FuXi is a fast, self-contained AI coding agent that lives in your terminal — edit code, run commands, and drive tools, with cost-aware routing across LLM providers.",
+        "tagline": "终端里的快速AI编程助手",
+        "explanation": "FuXi是一个在终端（命令行）中运行的AI编程助手，能编辑代码、执行命令，并根据成本选择不同的AI模型。它解决的是开发者频繁切换工具的问题，让你在一个地方完成编码任务。比如，你可以让它“修复这个bug”，它会自动修改文件并运行测试。适合程序员，需要熟悉命令行。上手不难，安装后即可使用，能提高开发效率。"
+      },
+      {
+        "name": "patchy631/time-to-first-token",
+        "url": "https://github.com/patchy631/time-to-first-token",
+        "stars": 416,
+        "forks": 52,
+        "language": "HTML",
+        "desc": "A 10-week, 30-minutes-a-day roadmap for LLM inference serving and optimization. vLLM, SGLang, quantization, speculative decoding, benchmarking.",
+        "tagline": "10周学会AI模型推理优化",
+        "explanation": "这是一个学习路线图，用10周时间，每天30分钟，教你如何优化AI模型的推理（即模型运行速度）。它解决的是AI模型运行慢、资源消耗大的问题，让你学会使用vLLM、量化等技术加速。比如，你可以学会如何让大模型在普通电脑上跑得更快。适合有一定AI基础的技术人员，需要Python知识。上手有门槛，但内容系统，是进阶的好资源。"
+      },
+      {
+        "name": "Anionex/agent-vision-toolkit",
+        "url": "https://github.com/Anionex/agent-vision-toolkit",
+        "stars": 401,
+        "forks": 19,
+        "language": "Python",
+        "desc": "为纯文本模型\"看图“设计更好的视觉工具箱和技能，支持多图理解，图片问答，前端UI还原、GUI 自动化等，并可选无缝接入多个主流agent，直接识别粘贴图片｜ A vision toolkit and skill designed for text-only llms — image Q&A, long-screenshot OCR, frontend UI restoration, and GUI automation, with optional seamless integration for Codex, Claude Code, Pi, Oh My Pi, and OpenCode",
+        "tagline": "让纯文本AI也能看懂图片的工具箱",
+        "explanation": "这个项目为纯文本AI（如某些语言模型）提供视觉能力，支持多图理解、图片问答、界面还原等。它解决的是很多AI只能处理文字，无法理解图片的问题。比如，你可以让AI识别一张截图并生成代码，或者回答图片中的问题。适合创作者和开发者，可以集成到Claude Code等工具中。上手中等，需要Python基础，但功能强大，扩展了AI的应用范围。"
+      }
+    ]
+  },
+  "huggingface": {
+    "spaces": [
+      {
+        "name": "cinderholm/wan2-2-i2v-v3",
+        "url": "https://huggingface.co/spaces/cinderholm/wan2-2-i2v-v3",
+        "likes": 907,
+        "sdk": "gradio",
+        "desc": "Wan2.2 14B Fast Preview [NEW]",
+        "tagline": "用一张图生成视频的AI工具，最新版更快更清晰。",
+        "explanation": "这个工具叫Wan2.2，是阿里通义实验室开源的视频生成模型。你给它一张图片，它就能根据图片内容生成一段动态视频，比如让照片里的人物动起来、场景发生变化。对于普通人来说，你可以拿它把旅游照片变成小视频发朋友圈，或者把历史人物的画像变成“活”的，增加趣味性。对于学英语或了解AI，你可以用它生成一些场景视频来辅助口语练习，比如生成一个咖啡馆的场景，然后自己描述。上手难度：它是在线演示，你只需要上传图片，点击生成，等待几分钟就能看到结果，不需要任何编程知识。不过，生成效果可能受图片质量影响，有时需要多试几次。"
+      },
+      {
+        "name": "prithivMLmods/Qwen-Image-Edit-2511-LoRAs-Fast",
+        "url": "https://huggingface.co/spaces/prithivMLmods/Qwen-Image-Edit-2511-LoRAs-Fast",
+        "likes": 2478,
+        "sdk": "gradio",
+        "desc": "Demo of the Collection of Qwen Image Edit LoRAs",
+        "tagline": "用文字指令修改图片的AI，集合多种风格调整。",
+        "explanation": "这个工具是Qwen图像编辑模型的集合，你可以用文字指令来修改图片，比如“把背景换成海滩”、“给人物戴上墨镜”等。它解决了普通人不会PS的问题，只需描述你想要的效果，AI就能帮你实现。对于学生，你可以用它来制作学习资料中的插图，比如把一张普通照片改成卡通风格，或者把图表中的文字替换掉。上手难度：非常简单，上传图片，输入指令，点击运行，几秒钟就能看到修改后的结果。它基于Qwen模型，支持多种编辑功能，但具体效果取决于指令的清晰度。"
+      },
+      {
+        "name": "multimodalart/minimax-h3",
+        "url": "https://huggingface.co/spaces/multimodalart/minimax-h3",
+        "likes": 236,
+        "sdk": "gradio",
+        "desc": "Video generation with a synchronized soundtrack",
+        "tagline": "生成带同步音效的视频，让画面更有沉浸感。",
+        "explanation": "MiniMax-H3是一个视频生成模型，特别之处在于它能生成与画面同步的音效。比如你生成一段海浪的视频，它会自动配上海浪的声音，让视频更真实。对于普通人，你可以用它制作短视频的素材，无需额外找背景音乐。对于学英语，你可以生成一些场景视频（如街头、餐厅）并配上环境音，用来练习听力或口语。上手难度：在线演示，上传图片或输入文字，选择生成视频和音效，等待片刻即可。不过，音效的同步性可能不是完美，但整体体验不错。"
+      },
+      {
+        "name": "Lynote/free-ai-detector",
+        "url": "https://huggingface.co/spaces/Lynote/free-ai-detector",
+        "likes": 210,
+        "sdk": "static",
+        "desc": "Free AI detector - AI/human/mixed scores. Lynote page.",
+        "tagline": "免费检测文本是AI写的还是人写的，给出混合评分。",
+        "explanation": "这个工具是一个免费的AI检测器，你粘贴一段文字，它就能判断是AI生成的、人类写的，还是混合的，并给出评分。它解决了人们担心AI内容泛滥的问题，比如老师可以用它检查学生作业是否抄袭AI，编辑可以用它判断投稿是否由AI生成。对于学生，你可以用它来检查自己的文章是否被误判为AI，或者了解AI写作的特点。上手难度：非常简单，打开网页，粘贴文字，点击检测，几秒钟出结果。但注意，检测结果并非100%准确，仅供参考。"
+      },
+      {
+        "name": "wank3r/Wan_2.2_I2V_14B_Custom_Lora_Wow",
+        "url": "https://huggingface.co/spaces/wank3r/Wan_2.2_I2V_14B_Custom_Lora_Wow",
+        "likes": 90,
+        "sdk": "gradio",
+        "desc": "Wan2.2 14B Custom Lora",
+        "tagline": "定制版视频生成模型，可加入个人风格。",
+        "explanation": "这个工具是基于Wan2.2的定制版本，允许用户加入自定义的LoRA（一种微调技术），从而生成具有特定风格或内容的视频。比如你可以训练一个“动漫风格”的LoRA，然后让生成的视频都带有动漫感。对于普通人，如果你对某个风格有特别偏好，可以尝试使用。但上手难度较高，因为需要了解LoRA的概念和训练方法，不过在线演示可能提供了预设的LoRA，你可以直接体验。对于想深入了解AI的人，这是一个学习微调的好机会。"
+      }
+    ],
+    "models": [
+      {
+        "name": "meta-models/Muse-Glimmer-30B",
+        "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+        "likes": 1276,
+        "downloads": 0,
+        "pipeline_tag": "image-text-to-text",
+        "tagline": "多模态AI模型，能同时处理文字和图片。",
+        "explanation": "Muse-Glimmer-30B是一个多模态模型，可以理解文字和图片，并生成相应的回复。比如你给它一张图片和问题“这是什么？”，它能回答。它解决了传统文本模型无法理解图像的问题。对于普通人，你可以用它来识别图片中的物体、翻译图片中的文字等。对于学英语，你可以拍下英文菜单，让它翻译并解释。上手难度：通常需要通过API或在线平台使用，对于非技术用户可能有些门槛，但一些网站提供了简单的聊天界面。"
+      },
+      {
+        "name": "MiniMaxAI/MiniMax-H3",
+        "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+        "likes": 3705,
+        "downloads": 83484,
+        "pipeline_tag": "image-text-to-video",
+        "tagline": "根据图片和文字生成视频，并自动配乐。",
+        "explanation": "MiniMax-H3是一个图像到视频的模型，你提供一张图片和一段文字描述，它就能生成一段视频，并且自动配上合适的音效。比如你上传一张森林图片，输入“清晨的森林”，它可能生成一段有鸟鸣声的视频。对于普通人，你可以用它制作创意短视频。对于学英语，你可以生成一些场景视频，然后练习描述。上手难度：在线演示，操作简单，但生成时间可能较长。"
+      },
+      {
+        "name": "larryvrh/MiniMax-H3-Turbo-Lora",
+        "url": "https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora",
+        "likes": 694,
+        "downloads": 0,
+        "pipeline_tag": "text-to-video",
+        "tagline": "文字生成视频的轻量版，速度快但效果稍减。",
+        "explanation": "MiniMax-H3-Turbo-Lora是MiniMax-H3的轻量版，通过LoRA技术优化，生成速度更快，但可能牺牲一些质量。它解决了用户需要快速生成视频的需求。比如你想快速预览一个想法，可以用它生成一个粗糙的视频。对于普通人，你可以用它快速制作简单的动画。上手难度：在线演示，输入文字，点击生成，等待时间比标准版短。适合快速迭代。"
+      },
+      {
+        "name": "deepseek-ai/DeepSeek-V4-Flash-0731",
+        "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+        "likes": 3228,
+        "downloads": 1048685,
+        "pipeline_tag": "text-generation",
+        "tagline": "DeepSeek最新AI模型，擅长文字生成和对话。",
+        "explanation": "DeepSeek-V4-Flash-0731是DeepSeek公司发布的文本生成模型，可以用于对话、写作、翻译等。它解决了人们需要智能助手的需求。对于普通人，你可以用它写邮件、写故事、翻译文章。对于学英语，你可以和它进行英语对话练习，或者让它帮你修改作文。上手难度：通常通过API或聊天界面使用，一些平台提供了免费试用，操作简单。"
+      },
+      {
+        "name": "Lightricks/LTX-2.5",
+        "url": "https://huggingface.co/Lightricks/LTX-2.5",
+        "likes": 553,
+        "downloads": 39,
+        "pipeline_tag": "image-to-video",
+        "tagline": "把静态图片变成动态视频，效果逼真。",
+        "explanation": "LTX-2.5是一个图像到视频的模型，你上传一张图片，它就能生成一段动态视频，比如让照片中的人物眨眼、微笑，或者让风景有微风吹动。它解决了静态图片缺乏生动性的问题。对于普通人，你可以把老照片变成动态回忆，或者制作有趣的动态表情包。对于学英语，你可以生成一些动态场景，然后进行描述练习。上手难度：在线演示，上传图片，点击生成，等待几分钟即可。"
+      }
+    ],
+    "papers": [
+      {
+        "date": "2026-08-12",
+        "items": [
+          {
+            "id": "2608.10915",
+            "title_en": "ComBodied Agents: a New Paradigm of Human-Centric Agentic AI",
+            "summary": "After an older adult misses a medication dose, a software agent can send another reminder and an embodied agent can bring the medication. Yet neither explains whether the person forgot, is confused, has side effects, or deliberately refused, nor what support is appropriate. This reveals a structural gap in Agentic AI: Digital Agents primarily transform software states, while Embodied Agents transform physical states; neither makes a person's evolving state and agency the primary object of modeli",
+            "upvotes": 166,
+            "url": "https://huggingface.co/papers/2608.10915",
+            "title_cn": "组合具身智能体：以人为中心的智能体AI新范式",
+            "note": "探讨数字与具身智能体结合，关注人的状态与能动性，适合了解AI前沿方向。"
+          },
+          {
+            "id": "2608.10299",
+            "title_en": "Co-Evolution in Agentic Systems: Toward Self-Directed Evolution Beyond Human Design",
+            "summary": "Agentic systems are increasingly expected to improve after deployment, yet single-entity self-evolution is often bounded by a static learning context, such as fixed tasks and feedback. This survey focuses on co-evolution in agentic systems, a multi-component form of self-evolution in which multiple agents and their environment impose adaptive pressure on one another. To organize existing papers, we propose a progressive three-stage taxonomy that traces how the system gradually sheds human-engine",
+            "upvotes": 107,
+            "url": "https://huggingface.co/papers/2608.10299",
+            "title_cn": "智能体系统中的协同进化：超越人类设计的自主进化",
+            "note": "综述多智能体协同进化，分三阶段分类，对理解AI自主进化有帮助。"
+          },
+          {
+            "id": "2608.10744",
+            "title_en": "Beyond Pixels: From Video Priors to 4D Worlds",
+            "summary": "4D generation synthesizes dynamic 3D scenes from conditions such as text or images. Existing methods either reconstruct generated RGB videos with a separate 4D model or adapt a particular video generator to predict geometry directly. The former suffers from distribution mismatch and error propagation, whereas the latter ties 4D prediction to a specific generator and may require retraining when the generator or conditioning regime changes. We ask whether the final denoised latents of video models",
+            "upvotes": 102,
+            "url": "https://huggingface.co/papers/2608.10744",
+            "title_cn": "超越像素：从视频先验到4D世界",
+            "note": "研究从视频生成动态3D场景，方法新颖，适合关注生成模型前沿。"
+          },
+          {
+            "id": "2607.27749",
+            "title_en": "Articulated Object Reconstruction from Rest-State Observation",
+            "summary": "Building interactive digital twins requires recovering both 3D geometry and the kinematic structures that govern how objects articulate. Yet existing methods for articulated object reconstruction require explicitly observable motion from multiple articulation states. We introduce a rest-state formulation that reconstructs articulated objects from a single closed configuration, an inherently ill-posed setting where geometry, semantics, and motion priors compensate for the absence of motion cues. ",
+            "upvotes": 34,
+            "url": "https://huggingface.co/papers/2607.27749",
+            "title_cn": "从静态观察重建铰接物体",
+            "note": "从单一闭合状态重建物体几何与运动结构，具挑战性，适合了解3D视觉。"
+          },
+          {
+            "id": "2608.11205",
+            "title_en": "AdvFD: Boosting Visual Generation via Adversarial Fr'echet Distance Loss",
+            "summary": "Fréchet distance has recently emerged as an effective distribution-level objective for generator post-training, complementing the conventional sample-level diffusion and flow-matching losses. However, directly optimizing Fréchet objectives can cause Fréchet hacking. The target metrics keep improving, but visual quality and Fréchet alignment in other feature spaces may stagnate or deteriorate. We attribute this failure to the static pretrained feature spaces used by existing Fréchet losses. These",
+            "upvotes": 17,
+            "url": "https://huggingface.co/papers/2608.11205",
+            "title_cn": "AdvFD：通过对抗弗雷歇距离损失提升视觉生成",
+            "note": "改进生成模型训练，解决弗雷歇距离优化问题，对生成质量提升有参考。"
+          }
+        ]
+      },
+      {
+        "date": "2026-08-11",
+        "items": [
+          {
+            "id": "2608.09888",
+            "title_en": "BDH-CQ: In-Context Learning with Recurrent Latent Reasoning",
+            "summary": "We introduce BDH-CQ, a reasoning model that combines in-context learning with recurrent latent reasoning. Inputs presented at inference time continuously update the model's recurrent memory; the model then solves a query through iterative computation in a high-dimensional latent space, without verbalizing its intermediate reasoning. We evaluate the model on the public ARC-AGI-1 evaluation set and use controlled ARC-like interventions to study what it learns from demonstrations, how consistently ",
+            "upvotes": 550,
+            "url": "https://huggingface.co/papers/2608.09888",
+            "title_cn": "BDH-CQ：循环潜在推理的上下文学习",
+            "note": "结合上下文学习与循环推理，在ARC-AGI上评估，适合关注推理模型。"
+          },
+          {
+            "id": "2608.09819",
+            "title_en": "Macaron-V1: Towards Open Continual Learning with Self-Improvement and Mixture-of-LoRA",
+            "summary": "Macaron-V1 is an open agent-model family for experiential intelligence: learning from experience in real environments and continuing to learn after deployment. It is organized around two system goals. Adaptation is pursued through recursive improvement of versioned model-harness pairs, where experience from one configuration is evaluated under an external contract and used to construct its successor. Collaboration is pursued via the Mixture-of-LoRA (MoL) architecture that freezes a base model, c",
+            "upvotes": 324,
+            "url": "https://huggingface.co/papers/2608.09819",
+            "title_cn": "Macaron-V1：迈向具有自我改进和LoRA混合的开放持续学习",
+            "note": "提出持续学习智能体模型，通过经验改进，适合了解AI自适应学习。"
+          },
+          {
+            "id": "2608.06296",
+            "title_en": "On-Policy Self-Distillation without Any Supervision",
+            "summary": "On-policy (Self-)Distillation (OPD / OPSD) has shown strong potential for post-training large language models (LLMs). However, existing methods still rely heavily on external supervision, including ground-truth signals, environmental feedback, or guidance from larger models, and therefore fall short of genuine \"self\"-distillation. In this study, we show that on-policy self-distillation can be achieved using only a model's own generations via internal consistency. We propose unsupervised on-polic",
+            "upvotes": 184,
+            "url": "https://huggingface.co/papers/2608.06296",
+            "title_cn": "无监督的在线自蒸馏",
+            "note": "仅用模型自身生成进行自蒸馏，无需外部监督，对LLM后训练有启发。"
+          },
+          {
+            "id": "2608.09802",
+            "title_en": "SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring",
+            "summary": "As AI coding agents take on increasingly complex, long-horizon software engineering tasks, existing benchmarks are rapidly saturating and their evaluation quality has come under serious scrutiny: a recent audit found that nearly 60% of unsolved SWE-bench Verified instances contain flawed tests -- either overly narrow tests that reject correct solutions or overly broad tests that check unstated requirements -- and that frontier models can verbatim reproduce gold patches from training data. Code r",
+            "upvotes": 125,
+            "url": "https://huggingface.co/papers/2608.09802",
+            "title_cn": "SWE-Bench ProMax：大规模多语言代码重构基准",
+            "note": "评估AI编码智能体在复杂重构任务上的表现，适合关注代码生成。"
+          },
+          {
+            "id": "2608.09867",
+            "title_en": "Stealing Reasoning Traces from Proprietary LLM APIs",
+            "summary": "Leading large language model providers now conceal their models' step-by-step reasoning, or chain-of-thought, to protect intellectual property and limit information leakage. Rather than storing these traces server-side, providers return them to the client as blocks of encrypted text, which the client passes back with each subsequent request. Building on prior research, we identify an architectural vulnerability: these encrypted blocks are fully compatible and interchangeable across different ses",
+            "upvotes": 86,
+            "url": "https://huggingface.co/papers/2608.09867",
+            "title_cn": "从专有LLM API窃取推理痕迹",
+            "note": "揭示LLM API安全漏洞，可窃取推理过程，对AI安全有警示。"
+          }
+        ]
+      },
+      {
+        "date": "2026-08-10",
+        "items": [
+          {
+            "id": "2608.07468",
+            "title_en": "SimWAM: A Simple World Action Model for End-to-End Autonomous Driving",
+            "summary": "World-Action Models (WAMs) improve end-to-end autonomous driving by transferring video dynamics priors to action prediction, but existing methods require costly future generation at inference. We present SimWAM, a simple yet effective WAM that uses video generation purely as a training signal. It co-trains a pretrained video expert and a lightweight action expert with joint flow matching. An isolated attention mask keeps action prediction independent of future frames, allowing the video branch t",
+            "upvotes": 102,
+            "url": "https://huggingface.co/papers/2608.07468",
+            "title_cn": "SimWAM：用于端到端自动驾驶的简单世界动作模型",
+            "note": "利用视频生成作为训练信号，提升自动驾驶动作预测，适合关注自动驾驶。"
+          },
+          {
+            "id": "2608.03573",
+            "title_en": "SFT Conflicts, RL Coexists: A Theoretical and Empirical Analysis of Multi-Task Learning for LLMs",
+            "summary": "Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL) exhibit fundamentally different behaviors in enhancing multi-task reasoning for large language models (LLMs). Our preliminary experiments revealed a phenomenon: SFT suffers from severe task conflicts under multi-stage training, whereas RL enables stable coexistence across diverse tasks. Empirically, we trace this to the parameter level, observing that RL induces sparse and approximately orthogonal updates across tasks. We provide a the",
+            "upvotes": 51,
+            "url": "https://huggingface.co/papers/2608.03573",
+            "title_cn": "SFT冲突，RL共存：多任务学习的理论与实证分析",
+            "note": "分析SFT和RL在多任务学习中的差异，对理解LLM训练有参考。"
+          },
+          {
+            "id": "2608.03571",
+            "title_en": "Beyond Simply Environment Scaling: Designing Effective Environment Distributions for Multimodal Agent Learning",
+            "summary": "Recent works train agents by constructing large-scale multimodal environment pools. However, we find that simply increasing the number of multimodal environments does not always benefit. We further analyze the limitations in current multimodal environment distributions through a series of experiments. Based on these findings, we study how to build more effective training environment distributions from two dimensions: **diversity** and **difficulty structure**. For diversity, we propose **Ability",
+            "upvotes": 42,
+            "url": "https://huggingface.co/papers/2608.03571",
+            "title_cn": "超越环境规模：设计多模态智能体学习的有效环境分布",
+            "note": "研究多模态环境分布设计，强调多样性和难度结构，适合关注智能体训练。"
+          },
+          {
+            "id": "2608.04205",
+            "title_en": "MatrAIx: Simulating the World with 8.3 Billion Persona Agents",
+            "summary": "Human evaluation of AI systems and digital products is costly, slow, and difficult to scale. Offline evaluations are more scalable but often abstract away human diversity and interactive behavior. We therefore introduce MatrAIx, a population-scale simulated-user evaluation infrastructure for testing AI systems and digital products with heterogeneous users. MatrAIx has three core components: First, Persona 8B contains 8.3 billion persona records represented by 1,290 categorical dimensions. Record",
+            "upvotes": 33,
+            "url": "https://huggingface.co/papers/2608.04205",
+            "title_cn": "MatrAIx：用83亿人设智能体模拟世界",
+            "note": "构建大规模模拟用户评估基础设施，用于测试AI系统，适合了解AI评估。"
+          },
+          {
+            "id": "2608.07051",
+            "title_en": "YOLO-PEFT: Parameter-Efficient Fine-Tuning on YOLO Family",
+            "summary": "Generic parameter-efficient fine-tuning (PEFT) methods transferred from language models can fail silently on real-time detectors, whose heterogeneous operators and detection-specific components impose placement constraints absent from regular Transformer stacks. We propose YOLO-PEFT, a structure-aware framework that formulates adapter placement as an auditable constraint-planning problem. Given a detector graph, a PEFT request, and a resource budget, YOLO-PEFT assigns operator and semantic roles",
+            "upvotes": 20,
+            "url": "https://huggingface.co/papers/2608.07051",
+            "title_cn": "YOLO-PEFT：YOLO系列参数高效微调",
+            "note": "针对实时检测器设计PEFT方法，解决适配器放置问题，适合关注模型微调。"
+          }
+        ]
+      },
+      {
+        "date": "2026-08-07",
+        "items": [
+          {
+            "id": "2608.05987",
+            "title_en": "AgentOPSD: Recursive Self-Distillation for Agentic Reinforcement Learning",
+            "summary": "Reinforcement learning (RL) with verifiable rewards constructs trajectory-level advantage estimates, yet it often fails to credit the few pivotal decisions that determine outcomes in long-horizon, multi-turn agentic tasks. Recent work introduces privileged self-distillation for credit assignment, providing denser supervision, but it remains unclear how such local signals should represent sequential credit. We propose AgentOPSD, a critic-free, recursive method for turn-level credit assignment in ",
+            "upvotes": 92,
+            "url": "https://huggingface.co/papers/2608.05987",
+            "title_cn": "AgentOPSD：用于智能体强化学习的递归自蒸馏",
+            "note": "提出递归方法进行回合级信用分配，提升长程任务强化学习，适合关注RL。"
+          },
+          {
+            "id": "2608.01481",
+            "title_en": "Interpretable MEG Decoding of Perceived Speech: Cortical Sources and the Stimulus Features That Drive Retrieval",
+            "summary": "Short segments of perceived speech can be retrieved from non-invasive magnetoencephalographic (MEG) recordings by deep networks trained with a CLIP-style objective against wav2vec 2.0 audio embeddings. Yet their weights do not map onto electrophysiological quantities, and it remains unclear which speech properties drive retrieval.\n  We build on a high-performing MEG-to-audio retrieval architecture but redesign both its front end and decoder. Its spatial attention operates on a flattened sensor l",
+            "upvotes": 69,
+            "url": "https://huggingface.co/papers/2608.01481",
+            "title_cn": "可解释的MEG语音解码：皮层源与驱动检索的刺激特征",
+            "note": "从脑磁图解码感知语音，研究刺激特征，适合关注脑机接口与AI。"
+          },
+          {
+            "id": "2607.28609",
+            "title_en": "OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models",
+            "summary": "Computer-using agents (CUAs) are advancing rapidly across the digital world. A CUA trajectory records the agent's actions, states, and reasoning. Verifying whether it fulfilled the task instruction is central to CUA evaluation, data curation, and reinforcement learning. Neither human-written verifiers nor human annotators can provide such verification at scale, so the field increasingly turns to vision-language models (VLMs) as judges of CUA trajectories. But a fundamental question has long gone",
+            "upvotes": 69,
+            "url": "https://huggingface.co/papers/2607.28609",
+            "title_cn": "OSReward：跨平台计算机使用奖励模型标准化评估",
+            "note": "建立计算机使用智能体奖励模型评估标准，适合关注智能体评估。"
+          },
+          {
+            "id": "2608.05248",
+            "title_en": "WorldClaw: Agentic 3D Open-World Generation at Scale",
+            "summary": "Generating large-scale, freely explorable 3D worlds from open-ended text remains challenging because a system must jointly maintain global spatial coherence, rich local content, and explicit assets suitable for downstream editing and reuse. We present WorldClaw, a fully agentic, coarse-to-fine framework for open-world 3D scene generation. Planning agents translate a text prompt into a structured specification of regions, terrain, assets, materials, and spatial relations. WorldClaw then builds a ",
+            "upvotes": 67,
+            "url": "https://huggingface.co/papers/2608.05248",
+            "title_cn": "WorldClaw：大规模智能体3D开放世界生成",
+            "note": "智能体从文本生成可探索3D世界，保持空间连贯性，适合关注3D生成。"
+          },
+          {
+            "id": "2608.05747",
+            "title_en": "GST-Bench: Can VLMs Develop Global Spatial Awareness from Video?",
+            "summary": "Spatial intelligence is fundamental to embodied agents, yet existing benchmarks focus on local spatial perception from single or few viewpoints, overlooking global spatial awareness over continuous, long-horizon visual streams. To address this limitation, we introduce the Global-Spatial-Temporal Benchmark (GST-Bench), a VQA benchmark for global spatial intelligence in video understanding, comprising human-verified questions derived from 6,790 minutes of synthetically generated video. It requires",
+            "upvotes": 46,
+            "url": "https://huggingface.co/papers/2608.05747",
+            "title_cn": "GST-Bench：视频中全局空间意识基准",
+            "note": "评估视频理解中的全局空间智能，适合关注多模态理解。"
+          }
+        ]
+      },
+      {
+        "date": "2026-08-06",
+        "items": [
+          {
+            "id": "2608.05466",
+            "title_en": "Recursive Synthesis for Long-Horizon Terminal Tasks",
+            "summary": "High-quality long-horizon training data for terminal agents is expensive to produce, often costing hundreds to thousands of dollars per task, because each task must keep the instruction, environment, reference solution, and verifier mutually consistent. Human authoring does not scale, and direct generation with large language models (LLMs) often breaks these dependencies. We present Recursive Synthetic Terminal Tasks (RST), a recursive verified synthesis framework for constructing long-horizon t",
+            "upvotes": 238,
+            "url": "https://huggingface.co/papers/2608.05466",
+            "title_cn": "长时程终端任务的递归合成",
+            "note": "递归合成高质量长时程训练数据，解决一致性问题，适合关注数据生成。"
+          },
+          {
+            "id": "2608.05102",
+            "title_en": "ABSeeker: Training Long-Horizon Search Agents via Answer-Backtracked Credit Assignment",
+            "summary": "Long-horizon search agents must make multiple sequential actions (steps) to search, retrieve, verify, and integrate evidence to reach a final answer. However, existing methods for training these agents typically treat all steps within a trajectory uniformly during both supervised fine-tuning (SFT) and reinforcement learning (RL), failing to distinguish useful actions from erroneous or redundant ones. In this paper, we propose Answer-Backtracked Credit Assignment (ABC), a fine-grained credit assi",
+            "upvotes": 65,
+            "url": "https://huggingface.co/papers/2608.05102",
+            "title_cn": "ABSeeker：通过答案回溯信用分配训练长时程搜索智能体",
+            "note": "细粒度信用分配提升搜索智能体训练，适合关注智能体学习。"
+          },
+          {
+            "id": "2608.05000",
+            "title_en": "Towards Physics of Multimodal Pretraining: Knowledge Flow, Modality Synergy, Early Unification, and Recipes",
+            "summary": "Vision offers a critical axis for advancing foundation models, driving a shift towards natively unified multimodal pretraining. Despite this momentum, the design space and the fundamental mechanisms of how modalities interact during unified training remain underexplored. We provide empirical clarity through a systematic exploration of multimodal pretraining. Our controlled experiments on both synthetic and large-scale real-world datasets yield four key insights into the physics of multimodal pre",
+            "upvotes": 59,
+            "url": "https://huggingface.co/papers/2608.05000",
+            "title_cn": "多模态预训练的物理：知识流动、模态协同、早期统一与配方",
+            "note": "系统探索多模态预训练机制，提供经验见解，适合关注多模态模型。"
+          },
+          {
+            "id": "2608.04436",
+            "title_en": "ToolArtist: Tool-Using Unified Multimodal Models for Agentic Image Generation",
+            "summary": "Text-to-image (T2I) models can produce visually compelling images, yet they remain limited on open-world tasks that require complex semantic understanding, multi-step reasoning, and the integration of external world knowledge. Existing efforts introduce agent capabilities into image generation, but they either prescribe a fixed workflow or place only a subset of the open-world image generation process under agent control. Consequently, reasoning, tool invocation, and image generation are not coo",
+            "upvotes": 58,
+            "url": "https://huggingface.co/papers/2608.04436",
+            "title_cn": "ToolArtist：使用工具的统一多模态模型用于智能体图像生成",
+            "note": "将工具使用与图像生成结合，提升开放世界图像生成能力，适合关注多模态。"
+          },
+          {
+            "id": "2608.04570",
+            "title_en": "The Personalization Mirage: How LLMs Fabricate User Profiles, and Why Self-Monitoring Misleads",
+            "summary": "Personalized LLMs with persistent memory are increasingly deployed, yet the faithfulness of their user models remains unexamined. We study over-inference (OI): the phenomenon where LLMs fabricate user attributes beyond what evidence supports. We introduce MirageBench, comprising 150 personas balanced across stereotypical, counter-stereotypical, and neutral profiles, 6 personalization tasks spanning an ``imagination gradient'', a four-way faithfulness taxonomy operationalized by an independent ju",
+            "upvotes": 40,
+            "url": "https://huggingface.co/papers/2608.04570",
+            "title_cn": "个性化幻象：LLM如何捏造用户画像及自我监控为何误导",
+            "note": "研究LLM过度推断用户属性，提供基准，适合关注AI伦理与个性化。"
+          }
+        ]
+      },
+      {
+        "date": "2026-08-05",
+        "items": [
+          {
+            "id": "2607.28956",
+            "title_en": "MerchantBench: Benchmarking LLM Agents for Long-Term Coherence in E-Commerce Operations",
+            "summary": "Large language model agents are increasingly evaluated as autonomous tool users, yet most benchmarks focus on bounded tasks with immediate success criteria. Real-world deployments often require Long-Term Coherence, the capacity to preserve purposeful behavior across extended horizons while adapting decisions to accumulated evidence. Evaluating this capacity requires a persistent environment in which actions constrain future choices, feedback arrives at heterogeneous delays, and incoherent behavi",
+            "upvotes": 96,
+            "url": "https://huggingface.co/papers/2607.28956",
+            "title_cn": "MerchantBench：评估LLM智能体在电商运营中的长期连贯性",
+            "note": "评估智能体在长时程任务中的连贯性，适合关注智能体应用。"
+          },
+          {
+            "id": "2608.03974",
+            "title_en": "JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion",
+            "summary": "Real-time video editing requires low-latency causal generation with bounded computational resources while preserving source fidelity and long-term temporal consistency. We present JoyAI-Video-Edit, a 16B-parameter autoregressive diffusion framework for real-time, open-ended video editing without access to future frames or a predefined video duration. Our method combines chunk-wise autoregressive adaptation, Source-Anchored Distribution Matching Distillation (SA-DMD), and Long-Horizon Autoregress",
+            "upvotes": 91,
+            "url": "https://huggingface.co/papers/2608.03974",
+            "title_cn": "JoyAI-Video-Edit：自回归扩散实现实时开放式视频编辑",
+            "note": "实时视频编辑框架，无需未来帧，适合关注视频生成与编辑。"
+          },
+          {
+            "id": "2608.02711",
+            "title_en": "Hunyuan3D-Buffalo 1.0: A Unified Multimodal Model for Scalable 3D Generation, Understanding, and Editing",
+            "summary": "Recent advances in image generation have demonstrated the potential of unified multimodal models that integrate understanding, generation, and editing. However, unified 3D modeling remains constrained by scarce multimodal data, particularly the lack of large-scale and geometrically consistent editing data. To address this limitation, we propose Hunyuan3D-Buffalo 1.0, a unified framework supporting 3D understanding, text-to-3D generation, instruction-guided 3D editing, and text-grounded part gene",
+            "upvotes": 88,
+            "url": "https://huggingface.co/papers/2608.02711",
+            "title_cn": "Hunyuan3D-Buffalo 1.0：统一多模态模型用于可扩展3D生成、理解与编辑",
+            "note": "统一3D模型支持多种任务，适合关注3D生成与编辑。"
+          },
+          {
+            "id": "2608.02602",
+            "title_en": "AURORA-LM: Autoencoding Unified Representation for Continuous-Latent Diffusion Language Modeling",
+            "summary": "Language remains an outlier in generative modeling: while images, video, and audio are increasingly modeled in continuous latent spaces, text generation still relies predominantly on discrete tokens. Existing continuous language models either inherit embedding spaces not designed for joint generation and decoding, or compress autoencoded latents to ease diffusion, sacrificing token-level fidelity. Instead of simplifying the representation to suit the generative model, we preserve a high-capacity",
+            "upvotes": 79,
+            "url": "https://huggingface.co/papers/2608.02602",
+            "title_cn": "AURORA-LM：用于连续潜在扩散语言建模的自编码统一表示",
+            "note": "在连续潜在空间建模语言，保留高保真度，适合关注语言模型新方向。"
+          },
+          {
+            "id": "2608.03979",
+            "title_en": "Video-DeepResearch: Towards the Next-Generation Multimodal Deepresearch Agent",
+            "summary": "We introduce Video-DeepResearch (Video-DR), extending multimodal agents from static images to continuous video streams, a setting that demands dense spatiotemporal grounding coupled with open-web exploration. Preliminary evaluations reveal two critical bottlenecks in current models: (1) modality bias, where agents bypass visual tools in favor of textual search, and (2) parametric knowledge leakage, where models rely on internal memory rather than genuine tool-augmented execution. To address thes",
+            "upvotes": 50,
+            "url": "https://huggingface.co/papers/2608.03979",
+            "title_cn": "Video-DeepResearch：下一代多模态深度研究智能体",
+            "note": "扩展多模态智能体到视频流，解决模态偏差等问题，适合关注智能体。"
+          }
+        ]
+      },
+      {
+        "date": "2026-08-04",
+        "items": [
+          {
+            "id": "2608.01964",
+            "title_en": "LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks",
+            "summary": "Large language model (LLM) agents increasingly undertake long-horizon tasks that require sustained reasoning, tool use, and revision across many interdependent steps. However, existing agent harnesses maintain task execution, task state, and completion assessment within a growing context, making the state difficult to track and allowing incorrect self-assessments to propagate into later decisions. We reformulate long-horizon execution as a task-state management problem and propose LongHorizon-Ha",
+            "upvotes": 168,
+            "url": "https://huggingface.co/papers/2608.01964",
+            "title_cn": "LongHorizon-Harness：推进长时程智能体用于真实世界任务",
+            "note": "将长时程执行视为任务状态管理，提升智能体性能，适合关注智能体。"
+          },
+          {
+            "id": "2608.02023",
+            "title_en": "SwanTale: Unified Multi-Speaker Speech and Audio Generation for Instruct and Zero-Shot Tasks",
+            "summary": "Speech and audio generation is often needed in animation dubbing, audio drama, movies, advertising, games, podcasts, and short-video production. In these scenarios, creators may need to design voices without reference recordings, control speaker styles with natural language, support acoustic scenes with environments and audio effects, and later reuse the designed voices. Therefore, it is important to support multi-speaker speech and audio generation for both instruct and zero-shot tasks. The ins",
+            "upvotes": 155,
+            "url": "https://huggingface.co/papers/2608.02023",
+            "title_cn": "SwanTale：统一多说话人语音和音频生成",
+            "note": "支持指令和零样本的多说话人语音生成，适合关注语音生成。"
+          },
+          {
+            "id": "2608.01735",
+            "title_en": "DAPD: Dual-Anchored Policy Distillation",
+            "summary": "On-policy (self) distillation (OPSD) is increasingly adopted for language-model post-training. It strengthens the teacher with privileged information but can induce a privilege illusion: the student learns privilege-dependent behavior it cannot reproduce from its inference-time context, yet behaves as if the training-time privileged information remained available, ultimately degrading performance. In this paper, we identify information asymmetry between the privileged teacher and the student at ",
+            "upvotes": 146,
+            "url": "https://huggingface.co/papers/2608.01735",
+            "title_cn": "DAPD：双锚策略蒸馏",
+            "note": "解决策略蒸馏中的特权幻觉问题，提升学生模型性能，适合关注LLM训练。"
+          },
+          {
+            "id": "2608.01755",
+            "title_en": "Deferred Exposure of Future Trajectories for Verifiable Reasoning in Autonomous Driving VLMs",
+            "summary": "Recent Vision-Language-Action (VLA) models for autonomous driving (AD) increasingly utilize chain-of-thought (CoT) supervision to enhance the reasoning capabilities of their Vision-Language Model (VLM) components, yet existing annotation pipelines commonly expose the teacher model to the logged ground-truth (GT) future trajectory. We empirically show that this induces trajectory anchoring bias: teacher models rationalize the revealed outcome rather than infer a decision from scene evidence, prod",
+            "upvotes": 140,
+            "url": "https://huggingface.co/papers/2608.01755",
+            "title_cn": "自动驾驶VLM中未来轨迹的延迟暴露",
+            "note": "避免轨迹锚定偏差，提升自动驾驶推理，适合关注自动驾驶。"
+          },
+          {
+            "id": "2608.02437",
+            "title_en": "InfiniSplat: Implicit Gaussian Decoding for Large-Baseline Monocular View Synthesis",
+            "summary": "Single-image feed-forward 3D Gaussian Splatting (3DGS) aims to directly generate a renderable 3D scene representation from one input image, avoiding the cost of multi-view capture and per-scene optimization. However, existing methods are often constrained by a pixel-aligned representation, where Gaussians are predicted from fixed image-grid locations. Such pixel-aligned primitives can produce promising nearby-view renderings, but they remain weakly coupled to underlying scene surfaces and strugg",
+            "upvotes": 66,
+            "url": "https://huggingface.co/papers/2608.02437",
+            "title_cn": "InfiniSplat：大基线单目视图合成的隐式高斯解码",
+            "note": "从单张图像生成3D场景表示，改进像素对齐限制，适合关注3D重建。"
+          }
+        ]
+      }
+    ],
+    "models_summary": "这些热门模型反映了AI生成内容（AIGC）的快速发展，特别是视频生成和多模态理解。视频生成模型（如Wan2.2、MiniMax-H3）让普通人也能轻松创作视频，而多模态模型（如Muse-Glimmer）则能同时处理文字和图片。对于想跟进AI圈的人，值得注意：视频生成是当前热点，多模态是未来趋势，同时模型越来越注重速度和定制化（如LoRA）。备考AI方向时，应关注这些技术的基本原理和应用场景，并动手体验在线演示，加深理解。",
+    "papers_summary": "这批论文主要围绕AI智能体、多模态生成、模型训练与评估等方向。热门话题包括智能体的自主进化、长时程任务、多模态统一模型、3D生成与编辑、以及LLM的安全与个性化。备考AI方向的新手应记住关键词：智能体（Agent）、多模态（Multimodal）、生成模型（Generative Models）、强化学习（RL）、参数高效微调（PEFT）、基准测试（Benchmark）等。"
+  }
+}
