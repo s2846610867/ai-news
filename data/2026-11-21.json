@@ -1,0 +1,641 @@
+{
+  "date": "2026-11-21",
+  "generated_at": "2026-11-21 10:57",
+  "notices": [],
+  "articles": [
+    {
+      "title": "Signal阻止AI助手读取你的屏幕",
+      "summary": "Signal在安卓和iOS上限制截图功能，防止系统内置的AI代理读取用户聊天内容，称AI读屏削弱了其隐私保障能力。",
+      "why": "手机系统级AI开始能看你屏幕上的一切，隐私边界正在被重新划定，普通用户需要知道这个变化。",
+      "category": "政策",
+      "beginner_takeaway": "留意你手机上的AI助手有没有「读屏」权限，以及哪些App在主动抵抗。",
+      "for_me": "",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app",
+      "source_title": "Signal is blocking Gemini and Siri AI from reading your screen",
+      "source_name": "The Verge AI"
+    },
+    {
+      "title": "特朗普威胁对海外建数据中心征税",
+      "summary": "特朗普表示将对在美国境外建设AI数据中心的企业征收「巨额税」，同时美国多地正在限制新建数据中心。",
+      "why": "数据中心是AI的「厂房」，这项政策若落地会影响AI服务的成本和供给，间接影响用户用AI的价格。",
+      "category": "政策",
+      "beginner_takeaway": "AI服务的价格和可用性，背后不只看技术，还看这类基础设施政策。",
+      "for_me": "",
+      "url": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax",
+      "source_title": "Trump threatens ‘tremendous tax’ for moving AI data centers outside the US",
+      "source_name": "The Verge AI"
+    },
+    {
+      "title": "英伟达股价较峰值跌近四成",
+      "summary": "英伟达第三季度财报后股价约150美元，较10月6日历史高点下跌近40%，临时CEO称公司「扛得住」。",
+      "why": "英伟达是这轮AI热潮的风向标，股价大幅波动反映市场对AI持续投入的信心在动摇。",
+      "category": "公司",
+      "beginner_takeaway": "AI行业不只有技术新闻，资本市场的情绪也会影响产品节奏和就业。",
+      "for_me": "",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1038063/nvidia-stock-market-price-earnings",
+      "source_title": "A brief history of Nvidia’s recent stock fluctuations",
+      "source_name": "The Verge AI"
+    },
+    {
+      "title": "AI能力增长图更新：编程强于判断",
+      "summary": "AI评估机构METR更新其「时间跨度」图表，发现部分AI能力仍指数级提升，但模型在需要判断力的任务上不如编程。",
+      "why": "这告诉你AI擅长什么、不擅长什么，用AI时别把需要判断的事全交给它。",
+      "category": "模型",
+      "beginner_takeaway": "AI写代码进步快，但做判断类任务仍弱，使用时要有自己的把关。",
+      "for_me": "",
+      "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update",
+      "source_title": "The most misunderstood graph in AI just got a major update",
+      "source_name": "MIT科技评论"
+    },
+    {
+      "title": "六款AI小工具让居家办公更顺手",
+      "summary": "TechCrunch盘点六款AI办公小设备，包括AI记事本、智能摄像头等，用于升级家庭办公桌面。",
+      "why": "对想入手AI硬件的普通用户，这是一份具体的选购参考，但属于导购类内容。",
+      "category": "工具",
+      "beginner_takeaway": "先想清楚自己缺什么功能，再决定要不要买AI硬件，别为「AI」两个字买单。",
+      "for_me": "",
+      "url": "https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter",
+      "source_title": "Six AI-powered gadgets that could make your home office smarter",
+      "source_name": "TechCrunch AI"
+    },
+    {
+      "title": "安卓手机有望变成Win11电脑副屏",
+      "summary": "微软「连接至Windows」应用被发现正在开发「扩展显示」功能，可把电脑桌面部分画面传到安卓手机上当第二块屏。",
+      "why": "闲置手机变副屏是实用小功能，对多任务办公的人有实际帮助，但目前只是代码线索，未正式发布。",
+      "category": "工具",
+      "beginner_takeaway": "这类功能目前只是测试线索，等微软正式宣布再考虑使用。",
+      "for_me": "",
+      "url": "https://www.ithome.com/1/030/330.htm",
+      "source_title": "安卓手机有望变身 Win11 PC 副屏，微软“连接至 Windows”新功能曝光",
+      "source_name": "IT之家"
+    },
+    {
+      "title": "华为发布鸿蒙AI手机新品牌OSTA",
+      "summary": "华为推出全新子品牌OSTA星芒，发布首款鸿蒙AI手机，并公布「增援未来计划」。",
+      "why": "这是鸿蒙生态在AI手机方向的新动作，对关注国产AI设备的人有参考价值。",
+      "category": "应用",
+      "beginner_takeaway": "国产手机厂商都在把AI做成系统级功能，可以留意实际体验而非宣传词。",
+      "for_me": "",
+      "url": "https://www.ifanr.com/1690642",
+      "source_title": "首款鸿蒙 AI 手机发布：华为全新子品牌 OSTA 星芒有一个「增援未来计划」",
+      "source_name": "爱范儿"
+    }
+  ],
+  "plain_summary": "隐私方面，Signal在安卓和iOS上限制截图功能，防止系统内置AI代理读取聊天内容。政策方面，特朗普表示将对在美国境外建设AI数据中心的企业征收“巨额税”。市场方面，英伟达股价约150美元，较10月高点下跌近40%。研究方面，METR更新AI能力“时间跨度”图表，称部分能力仍指数级提升，但模型在需要判断力的任务上不如编程。产品方面，华为推出子品牌OSTA星芒并发布首款鸿蒙AI手机；微软“连接至Windows”应用被曝开发“扩展显示”功能，可让安卓手机充当Win11电脑副屏，但目前仅为代码线索，未正式发布。另有TechCrunch盘点六款AI办公小设备。",
+  "github": {
+    "top_starred": [
+      {
+        "name": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "stars": 307895,
+        "forks": 45315,
+        "language": "JavaScript",
+        "desc": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+        "tagline": "为 AI 编程助手做性能优化的技能与记忆系统",
+        "explanation": "这个项目面向使用 Claude Code、Codex、Cursor 等 AI 编程工具的人，提供一套让 AI 助手表现更好的机制，包括技能、直觉、记忆、安全和研究优先的开发方式。它解决的是 AI 编程助手在长期使用中能力不足、缺乏记忆和安全约束的问题。适合已经在用这类编程助手、希望进一步提升效果的用户。具体安装和使用方式描述有限，请查看原项目确认。"
+      },
+      {
+        "name": "NousResearch/hermes-agent",
+        "url": "https://github.com/NousResearch/hermes-agent",
+        "stars": 265010,
+        "forks": 59878,
+        "language": "Python",
+        "desc": "The agent that grows with you",
+        "tagline": "一个会随使用不断成长的 AI 智能体",
+        "explanation": "项目描述只有一句「与你一起成长的智能体」，信息非常有限，无法确定它具体提供哪些功能、如何运行、支持什么平台。从名称看它是一个 AI 智能体项目，可能用于让助手在使用过程中逐步适应使用者，但这只是推测。建议查看原项目确认具体功能后再判断是否适合自己。"
+      },
+      {
+        "name": "firecrawl/firecrawl",
+        "url": "https://github.com/firecrawl/firecrawl",
+        "stars": 205362,
+        "forks": 10742,
+        "language": "TypeScript",
+        "desc": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
+        "tagline": "让 AI 智能体更聪明的网页数据获取基础设施",
+        "explanation": "这个项目提供一套知识基础设施，让 AI 智能体通过一个 API 就能搜索、抓取网页，并访问 550 多个数据来源。它解决的是 AI 应用获取外部实时信息困难的问题。例如做研究助手、问答机器人或需要联网查资料的智能体时可以用它。适合需要给 AI 接入网络数据的开发者。具体接入方式和费用描述有限，请查看原项目确认。"
+      },
+      {
+        "name": "DietrichGebert/ponytail",
+        "url": "https://github.com/DietrichGebert/ponytail",
+        "stars": 195677,
+        "forks": 11018,
+        "language": "JavaScript",
+        "desc": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+        "tagline": "让 AI 编程助手像最懒的资深程序员那样思考",
+        "explanation": "这个项目给 AI 编程助手注入一种「懒惰资深开发者」的思路：最好的代码是根本没写的代码。它试图让 AI 少写冗余代码、优先选择更简单的方案，从而减少不必要的复杂度。适合希望 AI 生成的代码更精简、更务实的开发者。这是一个理念型工具，具体实现和效果描述有限，请查看原项目确认。"
+      },
+      {
+        "name": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "stars": 188120,
+        "forks": 45833,
+        "language": "Python",
+        "desc": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+        "tagline": "让人人都能使用和构建 AI 的开源智能体平台",
+        "explanation": "AutoGPT 是一个知名开源项目，目标是让 AI 对所有人都可用，并提供工具让用户在此基础上构建自己的应用。它适合想尝试自主 AI 智能体、或想基于现成框架开发 AI 应用的人。项目描述偏愿景，没有说明具体功能细节、安装方式和运行要求，请查看原项目确认后再判断是否适合自己。"
+      }
+    ],
+    "trending": [
+      {
+        "name": "agentes-chat/agentes-chat",
+        "url": "https://github.com/agentes-chat/agentes-chat",
+        "stars": 1854,
+        "forks": 357,
+        "language": "TypeScript",
+        "desc": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGP",
+        "tagline": "团队与 AI 智能体在频道里协作的开源 Slack 替代品",
+        "explanation": "这是一个可自托管的团队聊天工具，类似 Slack，但人和 AI 智能体可以在频道和私信中一起工作。智能体可运行在 Claude、ChatGPT、Gemini 等模型上，带工具调用、浏览器、记忆和审批机制，并有网页、桌面和手机应用。适合想让 AI 参与团队日常协作的组织。需要自行部署，涉及 Docker 等技术，对新手有一定门槛。"
+      },
+      {
+        "name": "bookwjitchieni1986/blender-ai-mcp-addon",
+        "url": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon",
+        "stars": 1804,
+        "forks": 16,
+        "language": "",
+        "desc": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.",
+        "tagline": "在 Blender 里用聊天方式让 AI 帮你做 3D",
+        "explanation": "这是 Blender 的 AI 插件兼 MCP 服务器，提供可视化聊天、场景操作工具和多智能体工作流，可配合 ChatGPT、Claude、Gemini、Ollama 等模型使用，支持用 Python 脚本控制 Blender。适合做 3D 建模、想用自然语言辅助操作 Blender 的人。例如让 AI 帮忙搭建场景或写脚本。需要先会用 Blender，具体安装配置请查看原项目。"
+      },
+      {
+        "name": "sybil-solutions/inference-optimisation-skill",
+        "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
+        "stars": 1346,
+        "forks": 122,
+        "language": "Python",
+        "desc": "Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization",
+        "tagline": "调优本地大模型推理速度的智能体技能",
+        "explanation": "这个项目是一个智能体技能，用于在任意硬件和量化设置下，通过逐步爬坡的方式优化本地大语言模型的推理速度，涉及解码、推测解码、预填充、KV 缓存、启动时间和首字延迟等环节。适合自己部署本地模型、希望提升响应速度的技术用户。属于偏底层的性能调优工具，新手理解和使用门槛较高，具体用法请查看原项目。"
+      },
+      {
+        "name": "Dodaios/ste80-humanizer",
+        "url": "https://github.com/Dodaios/ste80-humanizer",
+        "stars": 1020,
+        "forks": 71,
+        "language": "Python",
+        "desc": "STE80 Humanizer: agent skill that removes AI tells and rewrites text 80% of the way to ASD-STE100 (Simplified Technical English), the method Andrej Karpathy shared.",
+        "tagline": "把文字改写成简化技术英语、去掉 AI 味的技能",
+        "explanation": "这是一个智能体技能，用来去除文本中的「AI 腔」，并把文字改写为接近 ASD-STE100 简化技术英语的风格，据描述是 Andrej Karpathy 分享过的方法。适合需要写技术文档、说明书，或希望文字更简洁清晰、不像 AI 生成的人。它关注的是写作风格改写，不涉及其他功能。具体效果和使用方式请查看原项目确认。"
+      },
+      {
+        "name": "mankidev/antialgorithm",
+        "url": "https://github.com/mankidev/antialgorithm",
+        "stars": 572,
+        "forks": 34,
+        "language": "Python",
+        "desc": "Agent skill that steers the model away from its first, most average pick in creative work: names, ideas, logo, posters, UI.",
+        "tagline": "让 AI 在创意工作中避开最平庸的第一选择",
+        "explanation": "这是一个智能体技能，用于在创意类任务中引导模型偏离它最先想到、最普通的选择，比如起名字、想点子、设计标志、海报或界面。它解决的是 AI 输出千篇一律、缺乏新意的问题。适合用 AI 做创意发想、希望得到更有区分度方案的人。它只影响创意选择倾向，具体用法和效果请查看原项目确认。"
+      }
+    ]
+  },
+  "huggingface": {
+    "spaces": [
+      {
+        "name": "huggingface/moe-blogpost",
+        "url": "https://huggingface.co/spaces/huggingface/moe-blogpost",
+        "likes": 783,
+        "sdk": "docker",
+        "desc": "A hands-on guide to training Mixture-of-Experts models",
+        "tagline": "手把手教你训练混合专家模型的实战教程",
+        "explanation": "这是一个以 Docker 形式提供的实操指南，主题是训练混合专家（MoE）模型。适合想了解这类模型训练流程的人按步骤动手实践。具体包含哪些章节、需要什么基础，资料未详细说明，建议查看项目页。"
+      },
+      {
+        "name": "JCisHERE/wan2-2-i2v-v3",
+        "url": "https://huggingface.co/spaces/JCisHERE/wan2-2-i2v-v3",
+        "likes": 531,
+        "sdk": "gradio",
+        "desc": "Wan2.2 14B Fast Preview [NEW]",
+        "tagline": "Wan2.2 14B 图生视频模型的快速预览版",
+        "explanation": "这是一个 Gradio 在线应用，基于 Wan2.2 14B 模型，从名称看属于图生视频方向，标注为快速预览版。具体生成效果、时长、使用限制等资料不足，具体功能请查看项目页。"
+      },
+      {
+        "name": "MiniMaxAI/minimax-h3-image",
+        "url": "https://huggingface.co/spaces/MiniMaxAI/minimax-h3-image",
+        "likes": 223,
+        "sdk": "gradio",
+        "desc": "Text-to-image and multi-image editing in 6 steps",
+        "tagline": "六步完成文生图与多图编辑的在线工具",
+        "explanation": "这是一个 Gradio 应用，提供文本生成图像和多图编辑功能，描述称可在 6 步内完成。适合想快速体验图像生成与编辑的人。具体画质、尺寸、是否有限制等资料不足，请查看项目页。"
+      },
+      {
+        "name": "joelniklaus/harness-leaderboard",
+        "url": "https://huggingface.co/spaces/joelniklaus/harness-leaderboard",
+        "likes": 483,
+        "sdk": "docker",
+        "desc": "Which coding-agent harness should you use for your model?",
+        "tagline": "帮你挑选编码智能体框架的对比榜单",
+        "explanation": "这是一个 Docker 形式的榜单工具，用来对比不同 coding-agent harness（编码智能体运行框架）在你所用模型上的表现，帮助判断该选哪个框架。具体评测指标和覆盖范围资料不足，请查看项目页。"
+      },
+      {
+        "name": "hugging-apps/bfs-best-face-swap",
+        "url": "https://huggingface.co/spaces/hugging-apps/bfs-best-face-swap",
+        "likes": 1011,
+        "sdk": "gradio",
+        "desc": "Head swap with the BFS LoRA on Qwen-Image-2.1 (+turbo)",
+        "tagline": "基于 Qwen-Image 的换脸 LoRA 在线演示",
+        "explanation": "这是一个 Gradio 应用，用 BFS LoRA 在 Qwen-Image-2.1（含 turbo 版本）上做头部替换（换脸）。适合想体验图像换脸效果的人。具体输入要求、效果和限制资料不足，请查看项目页。"
+      }
+    ],
+    "models": [
+      {
+        "name": "higurashi-ai/Haru-4B",
+        "url": "https://huggingface.co/higurashi-ai/Haru-4B",
+        "likes": 5691,
+        "downloads": 7323,
+        "pipeline_tag": "audio-to-audio",
+        "tagline": "音频到音频转换的 4B 参数模型",
+        "explanation": "这是一个音频到音频（audio-to-audio）类型的模型，参数量约 4B。项目页没有提供描述，因此无法确认它具体做变声、降噪还是其他音频转换任务。资料不足，具体功能请查看项目页。"
+      },
+      {
+        "name": "harness-hub/Qwen3.8-27B-pi-adapted",
+        "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
+        "likes": 866,
+        "downloads": 1874,
+        "pipeline_tag": "image-text-to-text",
+        "tagline": "可处理图文输入并输出文本的 27B 模型",
+        "explanation": "这是一个 image-text-to-text 类型的模型，即接收图像和文本输入、输出文本，名称显示参数量约 27B，并带有适配标记。项目页没有描述，具体能力、训练数据和适用场景资料不足，请查看项目页。"
+      },
+      {
+        "name": "thinkingmachines/Inkling-2-Mini",
+        "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
+        "likes": 744,
+        "downloads": 136,
+        "pipeline_tag": "image-text-to-text",
+        "tagline": "支持图文输入生成文本的 Mini 模型",
+        "explanation": "这是一个 image-text-to-text 类型的模型，可接收图像与文本并输出文本，名称带 Mini 字样，可能为较小规模版本。项目页没有描述，具体参数、能力和用途资料不足，请查看项目页。"
+      },
+      {
+        "name": "Sentinel7/h3",
+        "url": "https://huggingface.co/Sentinel7/h3",
+        "likes": 308,
+        "downloads": 0,
+        "pipeline_tag": "",
+        "tagline": "信息缺失、类型未知的模型项目",
+        "explanation": "该项目类型标注为未知，且没有提供任何描述，无法判断它是什么模型、能做什么。资料不足，具体功能请查看项目页。"
+      },
+      {
+        "name": "Qwen/Qwen3.8-27B",
+        "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+        "likes": 20813,
+        "downloads": 6454419,
+        "pipeline_tag": "image-text-to-text",
+        "tagline": "通义千问 27B 图文输入文本输出模型",
+        "explanation": "这是 Qwen 系列的 27B 参数模型，类型为 image-text-to-text，即接收图像和文本输入并输出文本。项目页没有描述，具体能力、上下文长度和适用场景资料不足，请查看项目页。"
+      }
+    ],
+    "papers": [
+      {
+        "date": "2026-11-20",
+        "items": [
+          {
+            "id": "2611.21373",
+            "title_en": "WeVisForensics: Self-Evolving Agent for Omni AI-Generated Video Detection",
+            "summary": "Recent advances in video generation call for reliable detection grounded in explicit forensic evidence. However, current methods primarily depend on single-pass chain-of-thought reasoning that overlooks brief or localized artifacts, or on predefined multi-agent workflows that offer limited flexibility in selecting relevant inspections. Even with adaptive investigation, optimizing the investigation policy alone does not directly improve the forensic capabilities of fixed experts. We introduce WeV",
+            "upvotes": 49,
+            "url": "https://huggingface.co/papers/2611.21373",
+            "title_cn": "WeVisForensics：用于全模态AI生成视频检测的自进化智能体",
+            "note": "提出自进化智能体，靠显式取证证据检测AI生成视频，弥补单次推理漏掉局部痕迹的问题。"
+          },
+          {
+            "id": "2611.26444",
+            "title_en": "Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation",
+            "summary": "Embodied intelligence aims to let robots perform complex physical tasks with human-like adaptability and reliability, which requires three complementary capabilities: history-based cognitive reasoning, precise and timely physical execution, and the composition of reasoning and execution through environmental feedback. Yet existing benchmarks either evaluate reasoning and execution within the same tasks or assess them separately without their composition, so they reveal little about whether a fai",
+            "upvotes": 45,
+            "url": "https://huggingface.co/papers/2611.26444",
+            "title_cn": "Mind2Act World：机器人操作中具身心智、物理动作及心智-动作组合的诊断基准",
+            "note": "构建新基准，分别并组合评测机器人的认知推理、物理执行与环境反馈下的协同能力。"
+          },
+          {
+            "id": "2611.26590",
+            "title_en": "Probing the \"Conscious\" Mind: Selective Access and Global Workspace in Vision-Language Models",
+            "summary": "Vision-language models (VLMs) integrate visual and textual information, but their outputs do not reveal internal concept representations. Global workspace theory (GWT) proposes that information is selected from parallel brain processes, integrated in a shared workspace, and made available to specialised processes. We introduce the Multimodal Concept Lens (MC-Lens), a multimodal Jacobian lens, to study these functions in VLM concept processing. Its vision encoder and language decoder lenses map i",
+            "upvotes": 40,
+            "url": "https://huggingface.co/papers/2611.26590",
+            "title_cn": "探查“意识”心智：视觉语言模型中的选择性访问与全局工作空间",
+            "note": "提出多模态概念透镜，用全局工作空间理论研究视觉语言模型内部概念如何被选择整合。"
+          },
+          {
+            "id": "2611.26409",
+            "title_en": "WeMM-Video: Pushing the Frontiers of Open-Source Omni-Modal Video Understanding",
+            "summary": "Video understanding, particularly with accompanying audio, remains a central challenge in multimodal intelligence. In this report, we introduce WeMM-Video, a family of Chinese-English bilingual omni-modal foundation models spanning 2B, 4B, 9B, and 35B-A3B variants. Centering on joint audio-visual perception and reasoning, WeMM-Video unifies text, image, audio, and video processing within a hybrid-thinking paradigm, seamlessly supporting both a non-thinking instruct mode for fast, direct response",
+            "upvotes": 40,
+            "url": "https://huggingface.co/papers/2611.26409",
+            "title_cn": "WeMM-Video：推动开源全模态视频理解前沿",
+            "note": "发布中英双语全模态视频基础模型系列，统一文本图像音频视频并支持思考与非思考模式。"
+          },
+          {
+            "id": "2611.26595",
+            "title_en": "Coda-DaVinci: Reimagining Video Generation with Code2Video",
+            "summary": "Code2Video uses agent-authored 3D proxies to guide video generation, enabling explicit control over structure and dynamics. However, how to construct proxies and prompts for optimal downstream quality remains underexplored, as do the capabilities and limitations of this paradigm. Through controlled experiments and blinded human evaluation, we study proxy granularity, physics simulation, and prompting. The results reveal task-dependent trade-offs: coarse proxies favor natural motion, while medium",
+            "upvotes": 32,
+            "url": "https://huggingface.co/papers/2611.26595",
+            "title_cn": "Coda-DaVinci：用代码生成视频重新构想视频生成",
+            "note": "研究智能体编写3D代理引导视频生成，实验揭示代理粒度与提示的任务相关权衡。"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-19",
+        "items": [
+          {
+            "id": "2611.24738",
+            "title_en": "Jeveration: System One Models Now Generate",
+            "summary": "System One models such as Jev return decisions through fast, parallel prediction. In this paper, we introduce Jeveration, showing that the same decision paradigm can also generate high-quality images in a single forward pass. Jeveration builds on a frozen vision-language model, repurposing its visual-semantic knowledge for holistic image generation. The key challenge is to maintain global consistency. A single prompt admits many valid images, yet parallel predictions must converge on a coherent ",
+            "upvotes": 146,
+            "url": "https://huggingface.co/papers/2611.24738",
+            "title_cn": "Jeveration：System One模型现在能生成图像",
+            "note": "基于冻结视觉语言模型，用快速并行预测单次前向生成图像，重点解决全局一致性。"
+          },
+          {
+            "id": "2611.14848",
+            "title_en": "Tideway: Phase-Aware Tiered Memory Management for MoE Inference on Consumer Devices",
+            "summary": "Large language model (LLM) agents are rapidly becoming a dominant paradigm for AI applications. Recently, there is a growing demand to deploy large-scale Mixture-of-Experts (MoE) models locally on consumer PCs to balance data privacy, API costs, and inference efficiency. However, unlike datacenter servers with abundant DRAM, consumer devices are tightly constrained in both GPU VRAM and host RAM, forcing massive MoE weights to spill across VRAM, host RAM, and SSD. Under such spilling, we observe ",
+            "upvotes": 65,
+            "url": "https://huggingface.co/papers/2611.14848",
+            "title_cn": "Tideway：消费设备上MoE推理的阶段感知分层内存管理",
+            "note": "针对消费级设备显存内存受限，设计分层内存管理，缓解大规模MoE权重溢出问题。"
+          },
+          {
+            "id": "2611.21366",
+            "title_en": "ALIVE: Making Streaming Video Models Interactive",
+            "summary": "Streaming video LLMs can continuously observe the world, yet often handle user requests in isolation. We introduce ALIVE, an interactive streaming video model supporting proactive monitoring, streaming task coordination, and feedback-seeking interaction. We construct ALIVE-SFT-288K and ALIVE-RL-3K for two-stage training. Contrastive supervised fine-tuning teaches when and how to respond, while reinforcement learning with Behavior-Aligned Credit Assignment (BACA) combines trajectory-level and loc",
+            "upvotes": 40,
+            "url": "https://huggingface.co/papers/2611.21366",
+            "title_cn": "ALIVE：让流式视频模型具备交互能力",
+            "note": "提出交互式流式视频模型，支持主动监控与任务协调，用两阶段训练教模型何时如何回应。"
+          },
+          {
+            "id": "2611.23068",
+            "title_en": "The Resolution Hypothesis: Agent Evolution's Key Is Identifying Improvements",
+            "summary": "Agent evolution follows a simple loop: a proposer writes candidate artifacts (prompts, skills, memories) and selection accepts those that score higher. This loop has shown promise, yet practitioners face a puzzle: methods trade wins across papers, and evolution often fails to bootstrap on certain tasks. We trace this puzzle to the Resolution Hypothesis: agent evolution stalls not because methods fail to propose better artifacts, but because noisy evaluations cannot reliably identify them. Across",
+            "upvotes": 37,
+            "url": "https://huggingface.co/papers/2611.23068",
+            "title_cn": "分辨率假说：智能体进化的关键是识别改进",
+            "note": "指出智能体进化停滞主因是噪声评估难以可靠识别更优产物，而非提议能力不足。"
+          },
+          {
+            "id": "2611.24154",
+            "title_en": "Game2Player: Scaling Gameplay Experience for Visual Agents through Environment-Player Co-Development",
+            "summary": "Games are a rich testbed for visual agents, demanding perception, long-horizon planning, and precise control. However, collecting human gameplay is costly, and learning from gameplay videos requires inferring missing actions. Existing datasets also cover a limited range of games, often without explicit tasks or verifiable outcomes. To address these gaps, we introduce Game2Player, a framework that co-develops game environments and players to collect diverse and verifiable gameplay experience at s",
+            "upvotes": 28,
+            "url": "https://huggingface.co/papers/2611.24154",
+            "title_cn": "Game2Player：通过环境与玩家共同开发扩展视觉智能体的游戏经验",
+            "note": "共同开发游戏环境与玩家，低成本收集多样且可验证的游戏操作经验用于训练视觉智能体。"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-18",
+        "items": [
+          {
+            "id": "2611.22115",
+            "title_en": "TeleChat to Xing4: Advancing Frontier Agentic Models on Domestic Chips and Frameworks",
+            "summary": "We present Xing 4, a series of large language models that extends the TeleChat lineage through coordinated advances in model architecture and training infrastructure on Ascend. This report describes the design principles and systems engineering behind the series, spanning architecture selection, large-scale pretraining, and reasoning and agentic post-training. We study how sparse activation, attention design, model depth and width, and speculative decoding balance model capacity with computation",
+            "upvotes": 165,
+            "url": "https://huggingface.co/papers/2611.22115",
+            "title_cn": "从TeleChat到Xing4：在国产芯片与框架上推进前沿智能体模型",
+            "note": "介绍在昇腾上训练的大模型系列，探讨稀疏激活、注意力设计与投机解码等架构取舍。"
+          },
+          {
+            "id": "2611.17621",
+            "title_en": "AscendGYM: A Cost-Aware Kernel Optimization Benchmark for Real-World Workloads on Ascend NPUs",
+            "summary": "Kernel optimization is essential for efficient large language model (LLM) training and inference on Ascend NPUs. Existing Ascend kernel benchmarks primarily focus on kernel generation, with less emphasis on the ability of agents to optimize existing implementations under input configurations drawn from real workloads. To address this requirement, we introduce AscendGYM, a benchmark whose initial suite comprises 48 kernels across three difficulty levels. Each kernel is paired with test cases whos",
+            "upvotes": 92,
+            "url": "https://huggingface.co/papers/2611.17621",
+            "title_cn": "AscendGYM：面向昇腾NPU真实负载的成本感知算子优化基准",
+            "note": "推出含48个算子的基准，评测智能体在真实输入配置下优化已有算子实现的能力。"
+          },
+          {
+            "id": "2611.22055",
+            "title_en": "Weight-Space Programming Doesn't Need Transformers",
+            "summary": "Standard neural architectures such as the Transformer were chosen because they train well with gradient descent and run fast on GPUs. In weight-space programming, a large language model (LLM) writes target weights by hand without gradient-based training, so those reasons no longer apply. Should we keep the Transformer? Given minimal guidance, ten labeled examples, and a sandbox, mainly on multiple-choice questions, we task three frontier LLMs with either generating the weights of a fixed archite",
+            "upvotes": 58,
+            "url": "https://huggingface.co/papers/2611.22055",
+            "title_cn": "权重空间编程不需要Transformer",
+            "note": "让大模型手写目标权重而非梯度训练，比较固定架构选择，质疑Transformer是否仍必要。"
+          },
+          {
+            "id": "2611.19800",
+            "title_en": "Multi-Branch Transformer",
+            "summary": "Transformer language models are commonly scaled by making their blocks wider or stacking them deeper. In this work, we explore a complementary path: branching, the parallel composition of full Transformer blocks. We introduce the Multi-Branch Transformer (MBT), which processes the input through shared initial layers, executes independently parameterized branches of sequential blocks in parallel, and fuses their outputs before shared final layers. At comparable training compute, we study three MB",
+            "upvotes": 46,
+            "url": "https://huggingface.co/papers/2611.19800",
+            "title_cn": "多分支Transformer",
+            "note": "提出并行组合完整Transformer块的分支结构，在相近训练算力下研究三种分支方案。"
+          },
+          {
+            "id": "2611.21099",
+            "title_en": "ForceHarness: Turning Force into Action and Physics for Frozen Frontier Models",
+            "summary": "Frontier multimodal models can now control robots zero-shot from images, yet many manipulation tasks depend on contact forces that images cannot show. Bringing force to an API-only frozen model raises two challenges. First, contact evolves much faster than an API model can decide, so the system must close the loop on force beneath the model. Second, a frozen model cannot interpret raw force streams, so force must be returned in a form the model can reason about. Therefore, we present ForceHarnes",
+            "upvotes": 44,
+            "url": "https://huggingface.co/papers/2611.21099",
+            "title_cn": "ForceHarness：为冻结前沿模型把力转化为动作与物理",
+            "note": "让仅API的冻结多模态模型用上接触力，在模型之下闭环控制力并以可理解形式回传。"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-17",
+        "items": [
+          {
+            "id": "2611.21218",
+            "title_en": "InclusionMed: Benchmarking AI for Inclusive Healthcare",
+            "summary": "Advancing medical AI for inclusive healthcare requires evaluation across diverse healthcare roles, tasks, and care settings, but benchmark coverage remains uneven. We introduce InclusionMed, an open medical AI evaluation initiative for inclusive healthcare. The InclusionMed Atlas organizes benchmarks across three healthcare roles and three AI capabilities. For the first release, we selected four public benchmarks from 388 candidates through structured audits and independent reproduction. With In",
+            "upvotes": 104,
+            "url": "https://huggingface.co/papers/2611.21218",
+            "title_cn": "InclusionMed：评测AI在包容性医疗中的表现",
+            "note": "发起开放医疗AI评测计划，按医疗角色与能力组织基准，首期精选并复现四个公开基准。"
+          },
+          {
+            "id": "2611.21072",
+            "title_en": "Sage S2.1 Flash Technical Report",
+            "summary": "We introduce Sage S1.5 Flash, a 320-billion-parameter general-purpose mixture-of-experts model designed to reason over scientific evidence and act in interactive environments. Sage Sci-Perception uses dedicated encoders for molecular graphs and biological sequences and represents spectra as ordered patches of measurements. Modality-specific projectors map these representations into the input space of a shared backbone, which processes them alongside text and images. To develop the model's agent ",
+            "upvotes": 98,
+            "url": "https://huggingface.co/papers/2611.21072",
+            "title_cn": "Sage S2.1 Flash技术报告",
+            "note": "推出3200亿参数通用MoE模型，用专用编码器处理分子、序列与光谱，面向科学推理与交互。"
+          },
+          {
+            "id": "2611.21003",
+            "title_en": "K2-Horizon: A Frontier Fleet of Open Source Language Models",
+            "summary": "We present K2-Horizon, a fleet of six fully open language models, from a 0.9B dense model to a 375B-A23B MoE, built for general-purpose reasoning and agentic work across math and science, software engineering, deep research, office automation, and beyond. The models lead or are competitive with strong open models of their size on agentic and coding benchmarks. On the modeling side, to strengthen reasoning, we introduce Mixture-of-Value Attention (MoVA), applying MoE to attention value projection",
+            "upvotes": 88,
+            "url": "https://huggingface.co/papers/2611.21003",
+            "title_cn": "K2-Horizon：前沿开源语言模型舰队",
+            "note": "发布0.9B到375B-A23B六款全开源模型，并提出混合价值注意力增强推理能力。"
+          },
+          {
+            "id": "2611.19937",
+            "title_en": "AllocFlow: End-to-End Portfolio Trading Action Generation from Raw Market Data",
+            "summary": "Real-world portfolio management requires converting noisy market observations into coordinated, simultaneous allocations across multiple assets under shared capital constraints. Advances in forecasting models and alpha discovery help identify opportunities. However, traditional pipelines often decouple signal forecasting from portfolio construction, potentially misaligning learning with allocation and execution objectives. We present AllocFlow, an end-to-end flow-matching framework that directly",
+            "upvotes": 72,
+            "url": "https://huggingface.co/papers/2611.19937",
+            "title_cn": "AllocFlow：从原始市场数据端到端生成组合交易动作",
+            "note": "用端到端流匹配框架直接从噪声市场数据生成多资产协同配置，避免预测与决策脱节。"
+          },
+          {
+            "id": "2611.20218",
+            "title_en": "SWE-CoWork: Benchmarking Coding Agents as Digital Employees in Organizations",
+            "summary": "A coding agent working within a software organization must establish what to build, collaborate with colleagues, and verify what it delivers. We introduce SWE-CoWork, a benchmark comprising 101 development assignments across 101 real repositories, 11 programming languages, and 12 application domains. Each assignment places an agent in a simulated engineering organization with 26 colleagues who have distinct responsibilities, bounded knowledge, and controlled collaboration behavior. Starting from",
+            "upvotes": 51,
+            "url": "https://huggingface.co/papers/2611.20218",
+            "title_cn": "SWE-CoWork：把编码智能体作为组织数字员工来评测",
+            "note": "构建101个真实仓库任务，让编码智能体在模拟工程组织中与26位同事协作并交付。"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-16",
+        "items": [
+          {
+            "id": "2611.18397",
+            "title_en": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
+            "summary": "We introduce Gamer, a generalist agent framework built for long-horizon tasks in complex interactive environments. Its end-to-end architecture combines perception, memory management, and multi-step reasoning. A shared training and deployment pipeline supports interaction with both conventional 2D graphical interfaces and complex 3D simulated worlds. We first continue pre-training on a dataset constructed from tens of thousands of hours of device-level keyboard and mouse interaction. These trajec",
+            "upvotes": 144,
+            "url": "https://huggingface.co/papers/2611.18397",
+            "title_cn": "Gamer：面向长时程实时游戏智能体的通用视觉-语言-动作基础模型",
+            "note": "提出端到端通用游戏智能体，融合感知、记忆与多步推理，支持2D界面与3D模拟世界。"
+          },
+          {
+            "id": "2611.18359",
+            "title_en": "Envisioning Agentic Robotics: A New Era of Robotic Systems",
+            "summary": "The release of GPT-6 Astra marks the emergence of a new paradigm in robotics: agentic robotics. Within weeks, frontier models with agentic harnesses matched or exceeded task-specific policies on many embodied benchmarks. Instead of training a dedicated policy for each family of tasks, an agentic robotic system applies a foundation model to open-world embodied tasks. It operates in a closed loop: observing the environment, interpreting user intent, reasoning about the task, invoking skills and to",
+            "upvotes": 136,
+            "url": "https://huggingface.co/papers/2611.18359",
+            "title_cn": "构想智能体机器人：机器人系统的新时代",
+            "note": "提出智能体机器人范式，用基础模型闭环观察、理解意图、推理并调用技能完成开放任务。"
+          },
+          {
+            "id": "2611.15789",
+            "title_en": "VibePrevisBench: Evaluating Agentic Coding for 4D Scene Generation in Blender",
+            "summary": "Controllable real-world video generation models can condition on a rendered graybox proxy video, which fixes layout, motion and camera. Coding agents can build such videos by reconstructing a 4D scene in Blender, yet no benchmark checks both these videos and the long, multi-shot scenes behind them. We introduce VibePrevisBench, a benchmark for 4D scene reconstruction: an agent turns a brief into an executable 4D scene and renders its proxy video. Its 242 tasks span four input kinds, including sc",
+            "upvotes": 87,
+            "url": "https://huggingface.co/papers/2611.15789",
+            "title_cn": "VibePrevisBench：评测Blender中4D场景生成的智能体编码能力",
+            "note": "推出242项任务的基准，检验编码智能体能否按简报重建4D场景并渲染代理视频。"
+          },
+          {
+            "id": "2611.12068",
+            "title_en": "MIRIX-2.0: Multi-Agent Memory System",
+            "summary": "Long-term memory lets LLM agents personalize, stay consistent, and reuse what worked before. Parametric memories need training, consolidation can lose details for good, and keeping every record leaves a growing store to search. We present MIRIX-2.0, a multi-agent memory system designed to be practical, accurate, and efficient at once. It is the most accurate of the compared systems on four of five QA benchmarks. It reaches 91.4% on LoCoMo and 72.6% on LongMemEval-S, where it leads the strongest ",
+            "upvotes": 55,
+            "url": "https://huggingface.co/papers/2611.12068",
+            "title_cn": "MIRIX-2.0：多智能体记忆系统",
+            "note": "设计多智能体长期记忆系统，兼顾准确与高效，在多个问答基准上取得领先表现。"
+          },
+          {
+            "id": "2611.18482",
+            "title_en": "MMFlash: Faster Speculative Decoding for Vision-Language Models",
+            "summary": "Speculative decoding accelerates generation by letting a lightweight drafter propose tokens for parallel verification by a target model. Diffusion drafters such as DFlash propose an entire token block in a single forward pass, but mainly focus on text-only tasks, leaving multimodal drafting underexplored. To study this setting, we first introduce a metric of token-level visual dependence based on the KL divergence between next-token distributions with and without visual input. We find that accep",
+            "upvotes": 42,
+            "url": "https://huggingface.co/papers/2611.18482",
+            "title_cn": "MMFlash：面向视觉语言模型的更快投机解码",
+            "note": "研究多模态投机解码，提出基于KL散度的视觉依赖度量，以提升草稿令牌的接受率。"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-13",
+        "items": [
+          {
+            "id": "2611.15777",
+            "title_en": "SO-Arena: Benchmarking the Capability Spectrum and Reliability of System One Models",
+            "summary": "System One models promise fast, general-purpose decision-making without lengthy token generation. However, understanding their capability spectrum and decision reliability requires more than aggregate performance on current benchmarks. Existing evaluations often provide limited insight into the breadth of model capabilities and the reliability of their decisions. We introduce SO-Arena, a benchmark characterizing the capability spectrum and decision reliability of System One models across 11 doma",
+            "upvotes": 72,
+            "url": "https://huggingface.co/papers/2611.15777",
+            "title_cn": "SO-Arena：评测System One模型的能力谱系与决策可靠性",
+            "note": "构建覆盖11个领域的基准，刻画快速决策模型的能力广度与决策可靠性，而非只看总分。"
+          },
+          {
+            "id": "2611.14815",
+            "title_en": "BirdDreams: Joint Perspective and BEV Video Generation for a Plausible, Reactive Driving World Model",
+            "summary": "Driving world models aim to simulate how a scene unfolds under different ego actions. This requires plausible motion of surrounding vehicles as well as precise ego-trajectory control. Learning vehicle motion from perspective video alone is challenging because motion is entangled with appearance and vehicles can be occluded. Prior work therefore conditions video generation on layouts that specify vehicle motion, providing control over surrounding vehicles but requiring their future trajectories a",
+            "upvotes": 56,
+            "url": "https://huggingface.co/papers/2611.14815",
+            "title_cn": "BirdDreams：面向可信反应式驾驶世界模型的联合视角与BEV视频生成",
+            "note": "联合生成透视与鸟瞰视频，无需未来轨迹标注即可控制自车并模拟周围车辆运动。"
+          },
+          {
+            "id": "2611.15131",
+            "title_en": "Duo: A Reciprocal World Model for Full-Duplex Interaction",
+            "summary": "In this report, we introduce the Reciprocal World Model (RWM) and present Duo v1, a full-duplex world model that continuously perceives audiovisual inputs while responding to users in real time. The RWM treats intelligence and physical reality as equally fundamental to what constitutes a world. Existing world models largely focus on simulating the latter, leaving reasoning and decision-making as external controls rather than intrinsic parts of the world itself. In RWM, we identify two equally fu",
+            "upvotes": 47,
+            "url": "https://huggingface.co/papers/2611.15131",
+            "title_cn": "Duo：面向全双工交互的互惠世界模型",
+            "note": "提出互惠世界模型，把推理决策视为世界内在部分，构建实时视听全双工交互模型。"
+          },
+          {
+            "id": "2611.13004",
+            "title_en": "G-STAR: Group-Scaled Token Capacity for Deeply Compressed Autoregressive Generation",
+            "summary": "Discrete autoregressive models offer a scalable framework for image generation. However, they face a fundamental trade-off: long token sequences preserve representation quality but slow generation, while aggressive spatial compression reduces representation capacity. Based on product quantization, we show that, under a fixed nominal information budget, group size should scale quadratically with the per-axis spatial compression factor. Building on this principle, we propose GSTAR, a spatial--grou",
+            "upvotes": 46,
+            "url": "https://huggingface.co/papers/2611.13004",
+            "title_cn": "G-STAR：面向深度压缩自回归生成的组缩放令牌容量",
+            "note": "基于乘积量化推导组大小与空间压缩的关系，提出空间分组方法平衡图像质量与生成速度。"
+          },
+          {
+            "id": "2611.16748",
+            "title_en": "PhysLoop: Harnessing LLMs' Physics Awareness for Self-Improving Video Generation Models",
+            "summary": "Video generation models produce visually realistic videos but still struggle with physical dynamics and causal consistency. Learning from generated videos requires fine-grained physical supervision, yet reliable quality judgments, correction pairs, and controlled variations are difficult to obtain. Large language models (LLMs) possess physical knowledge, but struggle to reliably guide video generation models in producing their training videos. We present PhysLoop, a unified harness designed to s",
+            "upvotes": 42,
+            "url": "https://huggingface.co/papers/2611.16748",
+            "title_cn": "PhysLoop：利用大模型物理意识自我改进视频生成模型",
+            "note": "构建统一框架，借大模型物理知识为生成视频提供细粒度监督，改善物理动态与因果一致性。"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-12",
+        "items": [
+          {
+            "id": "2610.40394",
+            "title_en": "Scaling Mathematical Proof Supervision from Structured Textbooks",
+            "summary": "Mathematical supervision for language models is typically flattened into isolated problem-solution pairs, discarding the curricular organization and evidential structure of the original sources. We introduce TOME-Math (Textbook-Oriented Mathematical Evidence), a large-scale corpus that converts 2,118 textbooks spanning the core areas of university-level mathematics subjects into approximately 380K structured proof-supervision records while preserving chapter order, proposition-proof links, depen",
+            "upvotes": 48,
+            "url": "https://huggingface.co/papers/2610.40394",
+            "title_cn": "从结构化教科书扩展数学证明监督",
+            "note": "构建大规模语料，把2118本大学数学教材转为约38万条保留章节与依赖结构的证明监督记录。"
+          },
+          {
+            "id": "2611.13410",
+            "title_en": "SteerDistill: Quantizing LLM Agents via Closed-Loop Teacher Steering",
+            "summary": "Low-bit quantization reduces the inference cost of LLM agents but can compromise task success. Examining failed rollouts, we find that quantized agents overlook task requirements or environmental conditions, producing environment transitions that diverge from successful full-precision references. Correcting these behavioral divergences remains difficult: offline data may miss the student's failure contexts, while its own rollouts may provide few correct responses in those contexts. We introduce ",
+            "upvotes": 36,
+            "url": "https://huggingface.co/papers/2611.13410",
+            "title_cn": "SteerDistill：通过闭环教师引导量化LLM智能体",
+            "note": "针对低比特量化智能体行为偏离问题，用闭环教师引导蒸馏纠正失败上下文中的行为。"
+          },
+          {
+            "id": "2610.39671",
+            "title_en": "Incentivizing Self-Learning in Large Language Models via Reinforcement Learning",
+            "summary": "Large language models (LLMs) draw on parametric knowledge and retrieval-augmented generation (RAG) to solve knowledge-intensive tasks. Yet problem solving in unfamiliar domains calls for tightly coupled knowledge acquisition and reasoning, beyond factual retrieval and aggregation or learning solely from a preassembled context. We study self-learning -- autonomously retrieving, studying, and applying knowledge from long-form reference materials on the fly. To investigate this capability, we formu",
+            "upvotes": 34,
+            "url": "https://huggingface.co/papers/2610.39671",
+            "title_cn": "通过强化学习激励大语言模型自我学习",
+            "note": "研究模型自主检索、研读并应用长文档知识的能力，并构建相应评测与强化学习方法。"
+          },
+          {
+            "id": "2608.22237",
+            "title_en": "Read Less, Solve More: Token-Efficient Sparse Reading of External Content for AI Agents",
+            "summary": "Web-facing AI agents repeatedly access webpages, documents, repositories, and tool responses, yet reading interfaces often expose entire objects when only sparse evidence is needed. This over-reading increases token and latency costs and can dilute relevant evidence. We present SparseRead, a reusable reading control layer that governs content admission without modifying the agent model. Its Read Intent Protocol tracks evolving needs and source coverage; Adaptive Reader Backends select how eviden",
+            "upvotes": 23,
+            "url": "https://huggingface.co/papers/2608.22237",
+            "title_cn": "少读多解：AI智能体对外部内容的令牌高效稀疏阅读",
+            "note": "提出可复用阅读控制层，按需只读稀疏证据，降低令牌与延迟并减少无关信息干扰。"
+          },
+          {
+            "id": "2611.08286",
+            "title_en": "Interactive Visual Gym: Evaluating Visual Interaction Models with Simulated Users in Interactive Worlds",
+            "summary": "Visual interaction models that support users during ongoing physical tasks require evaluation in closed loop, where assistant responses can change subsequent user behavior and task outcomes. Existing benchmarks largely rely on offline replay and therefore cannot capture these effects. We introduce Interactive Visual Gym, a framework for closed-loop evaluation and training of visual interaction models through joint simulation of executable task environments and human users. We contribute three si",
+            "upvotes": 14,
+            "url": "https://huggingface.co/papers/2611.08286",
+            "title_cn": "交互式视觉健身房：用模拟用户在交互世界中评测视觉交互模型",
+            "note": "构建闭环评测与训练框架，联合模拟任务环境与人类用户，捕捉助手回应改变用户行为的影响。"
+          }
+        ]
+      }
+    ],
+    "models_summary": "这几个热门模型里，多数是“图文输入、输出文本”的多模态模型，参数量从 Mini 到 27B 不等，说明多模态理解正成为主流方向；同时也有音频到音频这类专门模型。对想跟进 AI 圈和备考的人，值得注意模型按规模和用途分层、命名带版本与适配标记，看模型时要先确认输入输出类型和参数规模，别只看名字猜能力。",
+    "papers_summary": "这批论文集中在几大方向：视频与多模态生成理解（含全模态、物理一致性、交互式流式视频）、智能体（编码、游戏、机器人、记忆与工具阅读）、评测基准（医疗、算子、组织协作）、以及模型架构与推理效率（MoE、量化、投机解码、分支结构）。新手可记住关键词：多模态、智能体、世界模型、基准评测、MoE、量化、投机解码、强化学习。"
+  }
+}
